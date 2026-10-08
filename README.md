@@ -1,10 +1,27 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Güneş Dili Logo" width="280"/>
+</p>
+
 # Güneş Dili (Sun Language) Ekosistemi
 ### Matematiksel, Fonetik ve Fraktal Temelli Evrensel Dil Mimarisi
 
 ![Repo Status: Private](https://img.shields.io/badge/Repo%20Status-Private%20%2F%20Confidential-red.svg)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+[![License: BBL Draft](https://img.shields.io/badge/License-BBL%20v1.0%20(Bar%C4%B1%C5%9F%20Bilim%20Liyakat)-gold.svg)](docs/BBL_LISANS_DEGERLENDIRMESI.md)
 [![UD Turkish Validated](https://img.shields.io/badge/UD%20Turkish-Validated-success.svg)](https://universaldependencies.org/)
 [![Mandelbrot Fractal Trajectory](https://img.shields.io/badge/Fractal-Mandelbrot%20MFNS-orange.svg)](https://doi.org/10.5281/zenodo.22802921)
+
+---
+
+## 📚 Kılavuzlar ve Özel Dokümantasyon
+
+| Doküman | Hedef Kitle ve Kapsam | Bağlantı |
+| :--- | :--- | :--- |
+| ☀️ **Logo Felsefesi ve Geometrisi** | Amblemin sembolik dili, Ag kökü, 53 koma ve fraktal dalga analizi | [İncele](docs/LOGO_FELSEFESI_VE_TEKNIK_ACIKLAMASI.md) |
+| 🎓 **Teknik ve Akademik Rehber** | Dilbilimciler, matematikçiler ve mühendisler için biçimsel ispatlar (T1-T5) | [İncele](docs/TEKNIK_VE_AKADEMIK_REHBER.md) |
+| 🌍 **Halka Anlatım Rehberi** | Karmaşık terimlerden arındırılmış, 7'den 77'ye Güneş Dili ve Atatürk mirası | [İncele](docs/HALKA_ANLATIM_REHBERI.md) |
+| 🛡️ **Açıklık ve Gizlilik Matrisi** | Halka açılacak ve özel kalacak bileşenlerin güvenlik sınıflandırması | [İncele](docs/ACIKLIK_GIZLILIK_MATRISI.md) |
+| ⚖️ **BBL Lisans Modeli** | Barış, Bilim, Liyakat ve Beerware/Çay dual lisans manifestosu | [İncele](docs/BBL_LISANS_DEGERLENDIRMESI.md) |
 
 ---
 
@@ -130,6 +147,20 @@ Bu repoda kuramın dayandığı orijinal el yazması ve tarihi tahliller tam set
 
 ---
 
-## 🔒 Gizlilik ve Telif Hakları
+## ⚖️ Lisans ve Hukuki Statü (BBL Modeli)
 
-Bu depo ve içerisindeki Güneş Dili motoru, tokenizer'ı, matematiksel kanıtları ve tarihsel arşiv tahlilleri **ÖZEL VE GİZLİ (PRIVATE & CONFIDENTIAL)** araştırma niteliğindedir. İzinsiz çoğaltılamaz, kamuya açık paylaşılamaz veya üçüncü taraflara dağıtılamaz. Tüm hakları saklıdır (All Rights Reserved).
+Bu ekosistem, kamuya açılma aşamasında **BBL v1.0 (Barış, Bilim, Liyakat & Beerware/Çay)** hibrit lisansı ile korunacaktır:
+
+1. **Barış (Peace):** Bu yazılım ve matematiksel kuram hiçbir askeri taarruz, gözetim veya insan onuruna aykırı amaçla kullanılamaz.
+2. **Bilim (Science):** Kod, algoritma ve ispatlar tamamen şeffaf, akademik ve hakemli doğrulamaya açıktır.
+3. **Liyakat (Merit):** Geliştirici ve katkıcı hakları, Atatürk'ün 1935 mirası ve WERR külliyatı atıf zinciri asla silinemez.
+4. **Beerware / Çay Maddesi:** Bir gün geliştiricilerle karşılaşırsanız ve bu kod işinize yaradıysa, bir bardak çay ısmarlamanız yeterlidir.
+
+Ayrıntılı yasal ve felsefi analiz için [BBL Lisans Değerlendirmesi](docs/BBL_LISANS_DEGERLENDIRMESI.md) belgesini inceleyiniz.
+
+---
+
+## 🔒 Gizlilik ve Erişim Denetimi
+
+Bu depo ve içerisindeki Güneş Dili motoru, tokenizer'ı, matematiksel kanıtları ve tarihsel arşiv tahlilleri şu an için **ÖZEL VE GİZLİ (PRIVATE)** araştırma safhasındadır. Dosyaların halka arzı için [Açıklık ve Gizlilik Matrisi](docs/ACIKLIK_GIZLILIK_MATRISI.md) uygulanacaktır.
+
