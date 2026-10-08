@@ -1,0 +1,261 @@
+{
+ "T1_determinizm": {
+  "taranan_durum": 2048,
+  "ek_sayisi": 53,
+  "ihlal": 0
+ },
+ "T2_kaba_kuvvet": {
+  "denenen_dizi": 1291220,
+  "gecerli_kelime": 84124,
+  "tek_cozumleme_hatasi": 0,
+  "sure_sn": 3.2
+ },
+ "T3_rastgele_gecerlilik": 0.03275,
+ "T4_ceviri": {
+  "kelime": 17297,
+  "gd_gecerli": 17078,
+  "gidis_donus_ok": 17078,
+  "kok_geri": 16143,
+  "tr_cozumlenemedi": 96,
+  "soru_eki": 96,
+  "gd_uretilemedi": 10,
+  "gd_gecersiz": 17
+ },
+ "T4_oranlar": {
+  "gecerli/cevrilen": 0.9928492529504098,
+  "gidis_donus": 1.0,
+  "kok_geri_kazanim": 0.9452512003747512
+ },
+ "T4_gecersiz_ornek": [
+  [
+   "otururlarken",
+   "oturkowusa",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "Benimkisi",
+   "benmihusi",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "Bakınız",
+   "bakbinama",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "getiriniz",
+   "getirbinama",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "olmayabilirdi",
+   "oldetukoya",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "solgunlaşarak",
+   "sonononontegogatopu",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "utansınlar",
+   "utanbisisa",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "solgundular",
+   "sonononontegoyasa",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "kenardakilere",
+   "kenarrahulare",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "toplantıdayken",
+   "topolanatinrawu",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "iktidardayken",
+   "ikitidarrawu",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "somurtkan",
+   "somurununtago",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "somurtkan",
+   "somurununtago",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "sizinkine",
+   "sisnihunire",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ],
+  [
+   "Okumayabilir",
+   "okundetuko",
+   "Ek sırası Güneş Dili şablonuna aykırı"
+  ]
+ ],
+ "T5_ogrenilebilirlik": {
+  "turkce_islev_basina_ortalama_bicim": 5.721311475409836,
+  "turkce_en_cok_bicimli": [
+   [
+    "sıfat-fiil",
+    30,
+    [
+     "acak",
+     "acağ",
+     "an",
+     "dik",
+     "diğ",
+     "duk",
+     "duğ",
+     "dük",
+     "düğ",
+     "dık",
+     "dığ",
+     "ecek"
+    ]
+   ],
+   [
+    "zarf-fiil",
+    30,
+    [
+     "a",
+     "alı",
+     "arak",
+     "dikçe",
+     "dükçe",
+     "dıkça",
+     "erek",
+     "ince",
+     "ip",
+     "ken",
+     "madan",
+     "maksızın"
+    ]
+   ],
+   [
+    "belirtme hali",
+    12,
+    [
+     "i",
+     "ni",
+     "nu",
+     "nü",
+     "nı",
+     "u",
+     "yi",
+     "yu",
+     "yü",
+     "yı",
+     "ü",
+     "ı"
+    ]
+   ],
+   [
+    "ek-fiil hikâye",
+    12,
+    [
+     "di",
+     "du",
+     "dü",
+     "dı",
+     "ti",
+     "tu",
+     "tü",
+     "tı",
+     "ydi",
+     "ydu",
+     "ydü",
+     "ydı"
+    ]
+   ],
+   [
+    "fiilden isim",
+    10,
+    [
+     "gi",
+     "gu",
+     "im",
+     "ki",
+     "kı",
+     "m",
+     "um",
+     "üm",
+     "üntü",
+     "ım"
+    ]
+   ],
+   [
+    "isim-fiil",
+    8,
+    [
+     "iş",
+     "ma",
+     "me",
+     "uş",
+     "yiş",
+     "yış",
+     "üş",
+     "ış"
+    ]
+   ],
+   [
+    "iyelik 3.tekil",
+    8,
+    [
+     "i",
+     "si",
+     "su",
+     "sü",
+     "sı",
+     "u",
+     "ü",
+     "ı"
+    ]
+   ],
+   [
+    "gelecek zaman",
+    8,
+    [
+     "acak",
+     "acağ",
+     "ecek",
+     "eceğ",
+     "yacak",
+     "yacağ",
+     "yecek",
+     "yeceğ"
+    ]
+   ]
+  ],
+  "gunes_dili_islev_basina_bicim": 1,
+  "turkce_ortalama_aday_cozumleme": 2.6627886582870506,
+  "gunes_dili_aday_cozumleme": 1,
+  "turkce_ses_kurali": [
+   "2'li ünlü uyumu",
+   "4'lü ünlü uyumu",
+   "ünsüz benzeşmesi (d/t, c/ç)",
+   "yumuşama (p/b, ç/c, t/d, k/ğ)",
+   "kaynaştırma (y, n, s)",
+   "ünlü düşmesi",
+   "ikizleşme",
+   "daralma (-yor)",
+   "zamir n'si",
+   "ince ünlülü alıntılar"
+  ],
+  "gunes_dili_ses_kurali": [],
+  "ortalama_harf_tr": 6.448354608267947,
+  "ortalama_harf_gd": 7.030624194870594,
+  "ortalama_morfem_tr": 1.8788499824335403,
+  "ortalama_morfem_gd": 1.9716008900339619
+ }
+}
