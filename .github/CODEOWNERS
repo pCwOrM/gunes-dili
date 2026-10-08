@@ -1,4 +1,15 @@
 # CODEOWNERS for Gunes Dili Ecosystem
-# Herhangi bir dal veya dosya değişikliğinde zorunlu onay yetkilisi: @pCwOrM
+# Çekirdek Proje Sahibi & Nihai Onay Mercii: @pCwOrM
 
+# Varsayılan sahip (Tüm repo)
 * @pCwOrM
+
+# Akademik, Teorem ve Matematiksel Kanıt Alanları (Ortak İnceleme ve Çalışma)
+/proofs/ @pCwOrM @Lexovian @jesmaat @Bekirhan
+/engine/ @pCwOrM @Lexovian @jesmaat @Bekirhan
+/tokenizer/ @pCwOrM @Lexovian @jesmaat @Bekirhan
+
+# Arşiv, Tarihsel Belgeler ve Kasa Alanı (Özel Araştırma İnceleme)
+/archive/ @pCwOrM @Lexovian @jesmaat @Bekirhan
+/docs/ @pCwOrM @Lexovian @jesmaat @Bekirhan
+

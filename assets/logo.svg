@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Filtreler ve Gölgeler -->
+    <filter id="solar-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur1" />
+      <feGaussianBlur stdDeviation="22" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <radialGradient id="bg-radial" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#111625" />
+      <stop offset="60%" stop-color="#080A10" />
+      <stop offset="100%" stop-color="#020305" />
+    </radialGradient>
+    <radialGradient id="core-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFAD5" />
+      <stop offset="30%" stop-color="#FFD700" />
+      <stop offset="70%" stop-color="#FF8C00" />
+      <stop offset="100%" stop-color="#C23600" />
+    </radialGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF099" />
+      <stop offset="50%" stop-color="#FFC107" />
+      <stop offset="100%" stop-color="#FF8F00" />
+    </linearGradient>
+
+    <!-- Metin Yolları -->
+    <path id="top-arc" d="M 100,400 A 300,300 0 1,1 700,400" fill="none" />
+    <path id="bottom-arc" d="M 700,400 A 300,300 0 0,1 100,400" fill="none" />
+  </defs>
+  <!-- Arka Plan -->
+  <rect width="800" height="800" rx="32" fill="url(#bg-radial)" />
+  <!-- Morfolojik Yuvalar (Konsantrik Yörüngeler) -->
+  <circle cx="400" cy="400" r="120" fill="none" stroke="#FFD700" stroke-opacity="0.16" stroke-width="1.2" stroke-dasharray="4,6" />
+  <circle cx="400" cy="400" r="168" fill="none" stroke="#FFD700" stroke-opacity="0.16" stroke-width="1.2" stroke-dasharray="4,6" />
+  <circle cx="400" cy="400" r="215" fill="none" stroke="#FFD700" stroke-opacity="0.16" stroke-width="1.2" stroke-dasharray="4,6" />
+  <circle cx="400" cy="400" r="260" fill="none" stroke="#FFD700" stroke-opacity="0.16" stroke-width="1.2" stroke-dasharray="4,6" />
+  <circle cx="400" cy="400" r="305" fill="none" stroke="#FFD700" stroke-opacity="0.16" stroke-width="1.2" stroke-dasharray="4,6" />
+  <circle cx="400" cy="400" r="345" fill="none" stroke="#FFD700" stroke-opacity="0.16" stroke-width="1.2" stroke-dasharray="4,6" />
+  <!-- 53 Holder Koması / 53 Ek Ailesi Harmonik Çemberi -->
+  <circle cx="400" cy="400" r="350" fill="none" stroke="#FFD700" stroke-opacity="0.45" stroke-width="1.5" />
+  <circle cx="400" cy="400" r="338" fill="none" stroke="#FFD700" stroke-opacity="0.25" stroke-width="1" />
+  <line x1="400.00" y1="66.00" x2="400.00" y2="50.00" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="400.00" cy="72.00" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="440.21" y1="62.39" x2="441.40" y2="52.46" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="479.86" y1="69.51" x2="482.21" y2="59.79" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="518.39" y1="81.28" x2="521.87" y2="71.90" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="555.25" y1="97.52" x2="559.82" y2="88.62" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="586.59" y1="122.98" x2="595.53" y2="109.71" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="583.24" cy="127.95" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="621.96" y1="142.45" x2="628.49" y2="134.87" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="650.86" y1="170.51" x2="658.24" y2="163.76" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="676.25" y1="201.79" x2="684.37" y2="195.96" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="692.50" y1="238.75" x2="706.51" y2="231.02" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="687.24" cy="241.64" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="709.51" y1="274.47" x2="724.34" y2="268.46" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="703.95" cy="276.73" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="727.98" y1="310.38" x2="737.62" y2="307.74" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="736.27" y1="349.80" x2="746.16" y2="348.32" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="739.85" y1="389.92" x2="749.85" y2="389.63" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="738.66" y1="430.19" x2="748.62" y2="431.08" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="726.84" y1="468.80" x2="742.49" y2="472.09" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="720.97" cy="467.56" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="722.09" y1="508.89" x2="731.56" y2="512.09" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="706.95" y1="546.22" x2="715.98" y2="550.52" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="682.43" y1="578.30" x2="695.96" y2="586.84" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="677.36" cy="575.09" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="664.02" y1="614.23" x2="671.78" y2="620.53" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="632.65" y1="639.65" x2="643.79" y2="651.13" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="628.47" cy="635.34" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="606.31" y1="670.25" x2="612.38" y2="678.20" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="572.90" y1="692.75" x2="577.99" y2="701.37" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="537.06" y1="711.15" x2="541.09" y2="720.30" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="499.30" y1="725.18" x2="502.22" y2="734.74" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="459.08" y1="728.73" x2="461.91" y2="744.48" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="458.02" cy="722.83" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="420.14" y1="739.40" x2="420.73" y2="749.39" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="380.21" y1="733.41" x2="379.27" y2="749.39" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="380.57" cy="727.42" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="339.86" y1="734.64" x2="338.09" y2="744.48" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="300.70" y1="725.18" x2="297.78" y2="734.74" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="265.36" y1="705.66" x2="258.91" y2="720.30" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="267.78" cy="700.17" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="227.10" y1="692.75" x2="222.01" y2="701.37" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="193.69" y1="670.25" x2="187.62" y2="678.20" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="163.17" y1="643.95" x2="156.21" y2="651.13" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="135.98" y1="614.23" x2="128.22" y2="620.53" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="117.57" y1="578.30" x2="104.04" y2="586.84" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="122.64" cy="575.09" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="98.47" y1="543.64" x2="84.02" y2="550.52" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="103.88" cy="541.06" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="77.91" y1="508.89" x2="68.44" y2="512.09" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="67.29" y1="470.03" x2="57.51" y2="472.09" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="61.34" y1="430.19" x2="51.38" y2="431.08" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="66.15" y1="390.10" x2="50.15" y2="389.63" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="72.14" cy="390.28" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="63.73" y1="349.80" x2="53.84" y2="348.32" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="72.02" y1="310.38" x2="62.38" y2="307.74" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="84.93" y1="272.22" x2="75.66" y2="268.46" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="102.25" y1="235.85" x2="93.49" y2="231.02" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="128.63" y1="205.28" x2="115.63" y2="195.96" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="133.50" cy="208.78" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="149.14" y1="170.51" x2="141.76" y2="163.76" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="178.04" y1="142.45" x2="171.51" y2="134.87" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="210.06" y1="118.00" x2="204.47" y2="109.71" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="244.75" y1="97.52" x2="240.18" y2="88.62" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="283.70" y1="86.90" x2="278.13" y2="71.90" stroke="#FFE066" stroke-opacity="0.85" stroke-width="2.2" />
+  <circle cx="285.79" cy="92.53" r="2" fill="#FFE57F" opacity="0.9" />
+  <line x1="320.14" y1="69.51" x2="317.79" y2="59.79" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <line x1="359.79" y1="62.39" x2="358.60" y2="52.46" stroke="#FFC107" stroke-opacity="0.38" stroke-width="1.1" />
+  <!-- Mandelbrot Fraktal Rezonans Sarmalları (WERR Dinamiği) -->
+  <path d="M 492.00,400.00 L 494.17,404.53 L 497.30,410.05 L 500.74,416.34 L 504.24,423.38 L 507.61,431.18 L 510.71,439.74 L 513.40,449.06 L 515.54,459.12 L 517.02,469.88 L 517.72,481.32 L 517.52,493.36 L 516.31,505.94 L 514.01,518.98 L 510.50,532.38 L 505.71,546.05 L 499.57,559.86 L 492.00,573.68 L 482.97,587.39 L 472.42,600.82 L 460.34,613.84 L 446.71,626.29 L 431.55,637.99 L 414.87,648.79 L 396.71,658.51 L 377.12,666.98 L 356.20,674.05 L 334.02,679.55 L 310.69,683.31 L 286.35,685.19" fill="none" stroke="#FFB300" stroke-opacity="0.32" stroke-width="1.8" filter="url(#soft-glow)" />
+  <path d="M 465.05,465.05 L 463.39,469.79 L 461.69,475.91 L 459.68,482.78 L 457.17,490.24 L 454.05,498.14 L 450.18,506.39 L 445.49,514.88 L 439.90,523.50 L 433.33,532.16 L 425.74,540.74 L 417.08,549.11 L 407.34,557.16 L 396.48,564.74 L 384.52,571.74 L 371.48,578.02 L 357.37,583.44 L 342.24,587.87 L 326.17,591.17 L 309.21,593.21 L 291.46,593.88 L 273.02,593.04 L 254.02,590.59 L 234.59,586.43 L 214.88,580.46 L 195.04,572.61 L 175.24,562.81 L 155.67,551.01 L 136.52,537.18 L 117.98,521.30" fill="none" stroke="#FFB300" stroke-opacity="0.32" stroke-width="1.8" filter="url(#soft-glow)" />
+  <path d="M 400.00,492.00 L 395.47,494.17 L 389.95,497.30 L 383.66,500.74 L 376.62,504.24 L 368.82,507.61 L 360.26,510.71 L 350.94,513.40 L 340.88,515.54 L 330.12,517.02 L 318.68,517.72 L 306.64,517.52 L 294.06,516.31 L 281.02,514.01 L 267.62,510.50 L 253.95,505.71 L 240.14,499.57 L 226.32,492.00 L 212.61,482.97 L 199.18,472.42 L 186.16,460.34 L 173.71,446.71 L 162.01,431.55 L 151.21,414.87 L 141.49,396.71 L 133.02,377.12 L 125.95,356.20 L 120.45,334.02 L 116.69,310.69 L 114.81,286.35" fill="none" stroke="#FFB300" stroke-opacity="0.32" stroke-width="1.8" filter="url(#soft-glow)" />
+  <path d="M 334.95,465.05 L 330.21,463.39 L 324.09,461.69 L 317.22,459.68 L 309.76,457.17 L 301.86,454.05 L 293.61,450.18 L 285.12,445.49 L 276.50,439.90 L 267.84,433.33 L 259.26,425.74 L 250.89,417.08 L 242.84,407.34 L 235.26,396.48 L 228.26,384.52 L 221.98,371.48 L 216.56,357.37 L 212.13,342.24 L 208.83,326.17 L 206.79,309.21 L 206.12,291.46 L 206.96,273.02 L 209.41,254.02 L 213.57,234.59 L 219.54,214.88 L 227.39,195.04 L 237.19,175.24 L 248.99,155.67 L 262.82,136.52 L 278.70,117.98" fill="none" stroke="#FFB300" stroke-opacity="0.32" stroke-width="1.8" filter="url(#soft-glow)" />
+  <path d="M 308.00,400.00 L 305.83,395.47 L 302.70,389.95 L 299.26,383.66 L 295.76,376.62 L 292.39,368.82 L 289.29,360.26 L 286.60,350.94 L 284.46,340.88 L 282.98,330.12 L 282.28,318.68 L 282.48,306.64 L 283.69,294.06 L 285.99,281.02 L 289.50,267.62 L 294.29,253.95 L 300.43,240.14 L 308.00,226.32 L 317.03,212.61 L 327.58,199.18 L 339.66,186.16 L 353.29,173.71 L 368.45,162.01 L 385.13,151.21 L 403.29,141.49 L 422.88,133.02 L 443.80,125.95 L 465.98,120.45 L 489.31,116.69 L 513.65,114.81" fill="none" stroke="#FFB300" stroke-opacity="0.32" stroke-width="1.8" filter="url(#soft-glow)" />
+  <path d="M 334.95,334.95 L 336.61,330.21 L 338.31,324.09 L 340.32,317.22 L 342.83,309.76 L 345.95,301.86 L 349.82,293.61 L 354.51,285.12 L 360.10,276.50 L 366.67,267.84 L 374.26,259.26 L 382.92,250.89 L 392.66,242.84 L 403.52,235.26 L 415.48,228.26 L 428.52,221.98 L 442.63,216.56 L 457.76,212.13 L 473.83,208.83 L 490.79,206.79 L 508.54,206.12 L 526.98,206.96 L 545.98,209.41 L 565.41,213.57 L 585.12,219.54 L 604.96,227.39 L 624.76,237.19 L 644.33,248.99 L 663.48,262.82 L 682.02,278.70" fill="none" stroke="#FFB300" stroke-opacity="0.32" stroke-width="1.8" filter="url(#soft-glow)" />
+  <path d="M 400.00,308.00 L 404.53,305.83 L 410.05,302.70 L 416.34,299.26 L 423.38,295.76 L 431.18,292.39 L 439.74,289.29 L 449.06,286.60 L 459.12,284.46 L 469.88,282.98 L 481.32,282.28 L 493.36,282.48 L 505.94,283.69 L 518.98,285.99 L 532.38,289.50 L 546.05,294.29 L 559.86,300.43 L 573.68,308.00 L 587.39,317.03 L 600.82,327.58 L 613.84,339.66 L 626.29,353.29 L 637.99,368.45 L 648.79,385.13 L 658.51,403.29 L 666.98,422.88 L 674.05,443.80 L 679.55,465.98 L 683.31,489.31 L 685.19,513.65" fill="none" stroke="#FFB300" stroke-opacity="0.32" stroke-width="1.8" filter="url(#soft-glow)" />
+  <path d="M 465.05,334.95 L 469.79,336.61 L 475.91,338.31 L 482.78,340.32 L 490.24,342.83 L 498.14,345.95 L 506.39,349.82 L 514.88,354.51 L 523.50,360.10 L 532.16,366.67 L 540.74,374.26 L 549.11,382.92 L 557.16,392.66 L 564.74,403.52 L 571.74,415.48 L 578.02,428.52 L 583.44,442.63 L 587.87,457.76 L 591.17,473.83 L 593.21,490.79 L 593.88,508.54 L 593.04,526.98 L 590.59,545.98 L 586.43,565.41 L 580.46,585.12 L 572.61,604.96 L 562.81,624.76 L 551.01,644.33 L 537.18,663.48 L 521.30,682.02" fill="none" stroke="#FFB300" stroke-opacity="0.32" stroke-width="1.8" filter="url(#soft-glow)" />
+  <!-- 16 Işıma Işını (Radyal Morfolojik Yayılım) -->
+  <polygon points="488.00,406.50 650.00,400.00 488.00,393.50" fill="url(#gold-grad)" fill-opacity="0.7" />
+  <polygon points="479.96,436.91 575.54,472.71 482.64,430.44" fill="url(#gold-grad)" fill-opacity="0.38" />
+  <polygon points="457.63,466.82 576.78,576.78 466.82,457.63" fill="url(#gold-grad)" fill-opacity="0.7" />
+  <polygon points="430.44,482.64 472.71,575.54 436.91,479.96" fill="url(#gold-grad)" fill-opacity="0.38" />
+  <polygon points="393.50,488.00 400.00,650.00 406.50,488.00" fill="url(#gold-grad)" fill-opacity="0.7" />
+  <polygon points="363.09,479.96 327.29,575.54 369.56,482.64" fill="url(#gold-grad)" fill-opacity="0.38" />
+  <polygon points="333.18,457.63 223.22,576.78 342.37,466.82" fill="url(#gold-grad)" fill-opacity="0.7" />
+  <polygon points="317.36,430.44 224.46,472.71 320.04,436.91" fill="url(#gold-grad)" fill-opacity="0.38" />
+  <polygon points="312.00,393.50 150.00,400.00 312.00,406.50" fill="url(#gold-grad)" fill-opacity="0.7" />
+  <polygon points="320.04,363.09 224.46,327.29 317.36,369.56" fill="url(#gold-grad)" fill-opacity="0.38" />
+  <polygon points="342.37,333.18 223.22,223.22 333.18,342.37" fill="url(#gold-grad)" fill-opacity="0.7" />
+  <polygon points="369.56,317.36 327.29,224.46 363.09,320.04" fill="url(#gold-grad)" fill-opacity="0.38" />
+  <polygon points="406.50,312.00 400.00,150.00 393.50,312.00" fill="url(#gold-grad)" fill-opacity="0.7" />
+  <polygon points="436.91,320.04 472.71,224.46 430.44,317.36" fill="url(#gold-grad)" fill-opacity="0.38" />
+  <polygon points="466.82,342.37 576.78,223.22 457.63,333.18" fill="url(#gold-grad)" fill-opacity="0.7" />
+  <polygon points="482.64,369.56 575.54,327.29 479.96,363.09" fill="url(#gold-grad)" fill-opacity="0.38" />
+  <!-- Merkezî Güneş Çekirdeği (Ag Odağı) -->
+  <circle cx="400" cy="400" r="88" fill="url(#core-grad)" filter="url(#solar-glow)" />
+  <circle cx="400" cy="400" r="84" fill="url(#core-grad)" />
+  <circle cx="400" cy="400" r="80" fill="none" stroke="#FFF" stroke-opacity="0.5" stroke-width="1.5" />
+  <!-- Birincil Ses/Kök: Ag -->
+  <text x="400" y="418" font-family="Cinzel, 'Cinzel Decorative', Georgia, serif" font-size="56" font-weight="900" fill="#180A00" text-anchor="middle" letter-spacing="2">Ag</text>
+  <text x="400" y="362" font-family="'Cinzel', sans-serif" font-size="10" font-weight="700" fill="#4E1A00" text-anchor="middle" letter-spacing="3">1935 • KÖK</text>
+  <!-- Çevresel Metinler -->
+  <text font-family="'Montserrat', 'Cinzel', 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#FFE082" letter-spacing="5">
+    <textPath href="#top-arc" startOffset="50%" text-anchor="middle">
+      GÜNEŞ DİLİ EKOSİSTEMİ • 1935
+    </textPath>
+  </text>
+  <text font-family="'Montserrat', 'Cinzel', 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#FFCA28" letter-spacing="4">
+    <textPath href="#bottom-arc" startOffset="50%" text-anchor="middle">
+      MFNS FRAKTAL REZONANSI • 53 HOLDER KOMASI
+    </textPath>
+  </text>
+</svg>

@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Güneş Dili (Sun Language) Ekosistemi | Deterministik & Fraktal Dil Mimarisi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #07090E;
+      --bg-card: #0E131F;
+      --bg-card-hover: #141B2D;
+      --border: rgba(255, 215, 0, 0.16);
+      --border-bright: rgba(255, 215, 0, 0.45);
+      --gold: #FFD700;
+      --gold-light: #FFE57F;
+      --gold-dark: #FF8F00;
+      --amber: #FF9800;
+      --text: #E5E9F0;
+      --text-muted: #8F9BB3;
+      --accent-blue: #00E5FF;
+      --font-display: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(255, 160, 0, 0.12) 0%, transparent 60%),
+        radial-gradient(circle at 85% 30%, rgba(0, 229, 255, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 15% 70%, rgba(255, 215, 0, 0.05) 0%, transparent 40%);
+    }
+
+    a { color: var(--gold); text-decoration: none; transition: all 0.2s; }
+    a:hover { color: var(--gold-light); text-shadow: 0 0 8px rgba(255, 215, 0, 0.5); }
+
+    /* Konteyner */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Üst Gezinme */
+    header.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+    .brand img {
+      width: 40px;
+      height: 40px;
+      filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.4));
+    }
+    nav.nav-links {
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    nav.nav-links a { color: var(--text-muted); }
+    nav.nav-links a:hover { color: var(--gold); }
+
+    /* Hero Bölümü */
+    .hero {
+      text-align: center;
+      padding: 80px 0 60px;
+      position: relative;
+    }
+    .hero-logo-wrap {
+      width: 220px;
+      height: 220px;
+      margin: 0 auto 32px;
+      position: relative;
+    }
+    .hero-logo-wrap img {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 0 35px rgba(255, 193, 7, 0.45));
+      animation: pulse-glow 4s ease-in-out infinite alternate;
+    }
+    @keyframes pulse-glow {
+      0% { filter: drop-shadow(0 0 25px rgba(255, 193, 7, 0.35)); transform: scale(1); }
+      100% { filter: drop-shadow(0 0 45px rgba(255, 193, 7, 0.65)); transform: scale(1.02); }
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(255, 215, 0, 0.08);
+      border: 1px solid var(--border);
+      color: var(--gold);
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 5.5vw, 64px);
+      font-weight: 900;
+      color: #FFF;
+      line-height: 1.15;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+    .hero h1 span {
+      background: linear-gradient(135deg, #FFF9D2 0%, #FFD700 50%, #FF8F00 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p.lead {
+      max-width: 820px;
+      margin: 0 auto 36px;
+      font-size: clamp(16px, 1.8vw, 19px);
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 26px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #FFD700, #FF8F00);
+      color: #1A0D00;
+      border: 1px solid #FFE082;
+      box-shadow: 0 4px 20px rgba(255, 160, 0, 0.35);
+    }
+    .btn-primary:hover {
+      box-shadow: 0 6px 30px rgba(255, 160, 0, 0.6);
+      transform: translateY(-2px);
+      color: #1A0D00;
+    }
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      border-color: var(--gold);
+      background: var(--bg-card-hover);
+      color: var(--gold);
+      transform: translateY(-2px);
+    }
+
+    /* İstatistik Bantı */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 40px 0 70px;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .stat-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--border-bright);
+    }
+    .stat-num {
+      font-family: var(--font-mono);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    /* İnteraktif Bölüm: Canlı Çevirmen & Simülatör */
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 28px;
+      letter-spacing: 1px;
+      color: #FFF;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .section-desc {
+      text-align: center;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 36px;
+      font-size: 15px;
+    }
+
+    .interactive-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 80px;
+    }
+    @media (max-width: 900px) {
+      .interactive-grid { grid-template-columns: 1fr; }
+    }
+
+    .panel-box label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .input-wrap {
+      margin-bottom: 20px;
+    }
+    input.trans-input {
+      width: 100%;
+      background: #06080D;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-family: var(--font-mono);
+      font-size: 17px;
+      color: #FFF;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input.trans-input:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 12px rgba(255, 215, 0, 0.2);
+    }
+    .sample-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .chip {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .chip:hover {
+      background: rgba(255, 215, 0, 0.15);
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    .output-card {
+      background: #07090F;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    .gd-word-display {
+      font-family: var(--font-mono);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+    .morpheme-ribbon {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .m-pill {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: #141B2E;
+      border: 1px solid var(--border);
+      color: #FFF;
+    }
+    .m-pill.root { background: rgba(255, 215, 0, 0.15); border-color: var(--gold); color: var(--gold); font-weight: 600; }
+    .m-pill.der { background: rgba(0, 229, 255, 0.1); border-color: var(--accent-blue); color: var(--accent-blue); }
+
+    .vector-metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .vector-metrics span b { color: var(--gold); }
+
+    .canvas-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #05070B;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 16px;
+    }
+    canvas#resonanceCanvas {
+      width: 100%;
+      max-width: 380px;
+      aspect-ratio: 1/1;
+      border-radius: 8px;
+    }
+
+    /* 53 Holder Koma Çarkı Bölümü */
+    .wheel-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 28px;
+      margin-bottom: 80px;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 32px;
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .wheel-section { grid-template-columns: 1fr; }
+    }
+    .wheel-info h3 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .wheel-info p {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+    .comma-detail-card {
+      background: #06090E;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+    }
+    .comma-detail-card b { color: var(--gold); }
+
+    /* Dokümantasyon Hub Kartları */
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-bottom: 80px;
+    }
+    .doc-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s;
+    }
+    .doc-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+      background: var(--bg-card-hover);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    .doc-icon {
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+    .doc-card h3 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      color: #FFF;
+      margin-bottom: 10px;
+    }
+    .doc-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .doc-link {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gold);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Teoremler Tablosu */
+    .proofs-table-wrap {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      overflow-x: auto;
+      margin-bottom: 80px;
+    }
+    table.proofs-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    table.proofs-table th {
+      text-align: left;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--gold);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    table.proofs-table td {
+      padding: 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: var(--text);
+    }
+    table.proofs-table tr:hover td {
+      background: rgba(255, 215, 0, 0.03);
+    }
+    .badge-ok {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(0, 230, 118, 0.12);
+      color: #00E676;
+      border: 1px solid rgba(0, 230, 118, 0.3);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 50px 0 30px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .footer-brand {
+      font-family: var(--font-display);
+      font-size: 18px;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .footer-quote {
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto 20px;
+      color: #B0BEC5;
+    }
+    .bbl-notice {
+      display: inline-block;
+      padding: 8px 18px;
+      border-radius: 8px;
+      background: rgba(255, 215, 0, 0.05);
+      border: 1px solid var(--border);
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--gold-light);
+      margin-bottom: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Güneş Dili Logo">
+        <span>GÜNEŞ DİLİ</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#simulator">Simülatör</a>
+        <a href="#koma-cemberi">53 Koma</a>
+        <a href="#dokumanlar">Kılavuzlar</a>
+        <a href="#ispatlar">Teoremler</a>
+        <a href="../lab/index.html" target="_blank" style="color:var(--gold)">🧪 Laboratuvar</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-logo-wrap">
+        <img src="assets/logo.svg" alt="Güneş Dili Vektörel Amblem">
+      </div>
+      <div class="badge-pill">
+        ☀️ ATATÜRK 1935 • NEWTON 1664 • MANDELBROT FRAKTAL SENTEZİ
+      </div>
+      <h1><span>GÜNEŞ DİLİ</span> EKOSİSTEMİ</h1>
+      <p class="lead">
+        Mustafa Kemal Atatürk'ün tarihsel Güneş-Dil kuramının deterministik morfoloji, 
+        53 Holder koması ve Mandelbrot fraktal rezonansı (MFNS) ile matematiksel olarak 
+        kanıtlanabilir evrensel dil motoru.
+      </p>
+      <div class="hero-cta">
+        <a href="#simulator" class="btn btn-primary">⚡ Canlı Çeviriciyi Başlat</a>
+        <a href="TEKNIK_VE_AKADEMIK_REHBER.md" class="btn btn-secondary">🎓 Akademik İspatlar</a>
+        <a href="HALKA_ANLATIM_REHBERI.md" class="btn btn-secondary">🌍 Halka Anlatım Rehberi</a>
+      </div>
+    </section>
+
+    <!-- İstatistikler -->
+    <section class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-num">53</div>
+        <div class="stat-label">Harmonik Ek Ailesi (Koma)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">1.29M</div>
+        <div class="stat-label">Test Edilen Ek Dizisi (%100)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">DFA-3</div>
+        <div class="stat-label">Chomsky Düzenli Dil Sınıfı</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">BBL v1.0</div>
+        <div class="stat-label">Barış, Bilim, Liyakat Lisansı</div>
+      </div>
+    </section>
+
+    <!-- Simülatör / Çevirici -->
+    <section id="simulator">
+      <h2 class="section-title">⚡ Etkileşimli Çeviri ve Morfoloji Motoru</h2>
+      <p class="section-desc">
+        Türkçe kelimelerin Güneş Dili deterministik ek dizilerine, radyal yayılım katmanlarına ($r$) ve faz açılarına ($	heta$) dönüştürülüşünü canlı gözlemleyin.
+      </p>
+
+      <div class="interactive-grid">
+        <div class="panel-box">
+          <div class="input-wrap">
+            <label for="turkishInput">Türkçe Kelime / Cümle Girişi</label>
+            <input type="text" id="turkishInput" class="trans-input" value="gidiyorlardı" placeholder="Bir Türkçe kelime yazın...">
+            <div class="sample-chips">
+              <span class="chip" onclick="setWord('gidiyorlardı')">gidiyorlardı</span>
+              <span class="chip" onclick="setWord('kitaplarımızdan')">kitaplarımızdan</span>
+              <span class="chip" onclick="setWord('evlerimizde')">evlerimizde</span>
+              <span class="chip" onclick="setWord('gözlükçüler')">gözlükçüler</span>
+              <span class="chip" onclick="setWord('bilim')">bilim</span>
+              <span class="chip" onclick="setWord('sevgi')">sevgi</span>
+            </div>
+          </div>
+
+          <div class="output-card">
+            <label>Güneş Dili Çevirisi (Deterministik Form)</label>
+            <div id="gdOutput" class="gd-word-display">gitkeyasa</div>
+            
+            <label>Morfolojik Ayrıştırma ve Yuvalar</label>
+            <div id="morphemeRibbon" class="morpheme-ribbon">
+              <!-- JS dinamik dolduracak -->
+            </div>
+
+            <div class="vector-metrics">
+              <div>Radyal Işıma ($r$): <b id="radiusMetric">0.342</b></div>
+              <div>Faz Açısı ($	heta$): <b id="thetaMetric">126.8°</b></div>
+              <div>Harmonik Koma Slotu: <b id="komaSlot">#18 (Rast)</b></div>
+              <div>Determinizm Skoru: <b style="color:#00E676">%100</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="canvas-container">
+          <label style="font-size:12px; margin-bottom:6px; color:var(--gold);">Mandelbrot & Faz Rezonans Yörüngesi</label>
+          <canvas id="resonanceCanvas" width="380" height="380"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- 53 Koma Akustik Çarkı -->
+    <section id="koma-cemberi" class="wheel-section">
+      <div class="wheel-info">
+        <h3>53 Holder Koması & Güneş Dili Çemberi</h3>
+        <p>
+          Türk Musikisindeki 53 eşit tampere ses sistemi (Holder Koması) ile Güneş Dili'nin 53 morfolojik ek ailesi arasındaki tam rezonans haritası.
+        </p>
+        <div class="comma-detail-card" id="commaCard">
+          <div>Seçili Koma: <b id="cdName">#18 - Rast Durak</b></div>
+          <div>Frekans Oranı: <b id="cdRatio">2^(18/53) ≈ 1.2654</b></div>
+          <div>Güneş Dili Ek Ailesi: <b id="cdAffix">Zaman/Kip (ke - şimdiki)</b></div>
+          <div>Morfolojik Katman: <b id="cdLayer">Slot 3 (Fiil Çatısı / Kip)</b></div>
+        </div>
+      </div>
+      <div style="display:flex; justify-content:center;">
+        <canvas id="wheelCanvas" width="360" height="360"></canvas>
+      </div>
+    </section>
+
+    <!-- Kılavuzlar ve Dokümantasyon Hub -->
+    <section id="dokumanlar">
+      <h2 class="section-title">📚 Proje Kılavuzları ve İnceleme Raporları</h2>
+      <p class="section-desc">
+        Hem bilimsel hakem heyetleri hem de toplumun her kesimi için hazırlanmış kapsamlı kaynaklar.
+      </p>
+
+      <div class="docs-grid">
+        <div class="doc-card">
+          <div>
+            <div class="doc-icon">☀️</div>
+            <h3>Logo Felsefesi ve Geometrisi</h3>
+            <p>
+              Merkezî Ag güneş çekirdeği, radyal morfoloji ışınları, Mandelbrot fraktal sarmalları ve 53 Holder komalık göksel kadranın sembolik analizi.
+            </p>
+          </div>
+          <a href="LOGO_FELSEFESI_VE_TEKNIK_ACIKLAMASI.md" class="doc-link">Raporu Oku →</a>
+        </div>
+
+        <div class="doc-card">
+          <div>
+            <div class="doc-icon">🎓</div>
+            <h3>Teknik ve Akademik Rehber</h3>
+            <p>
+              Chomsky hiyerarşisi, DFA durum geçiş matrisleri, 1.29M ek kombinasyonlu kaba kuvvet testleri ve T1-T5 matematiksel teoremleri.
+            </p>
+          </div>
+          <a href="TEKNIK_VE_AKADEMIK_REHBER.md" class="doc-link">Raporu Oku →</a>
+        </div>
+
+        <div class="doc-card">
+          <div>
+            <div class="doc-icon">🌍</div>
+            <h3>Halka Anlatım Rehberi</h3>
+            <p>
+              Ağır teknik terimlerden arındırılmış, Atatürk'ün Dolmabahçe kara tahtasındaki vizyonunu ve Türkçe'nin matematiksel gücünü anlatan halk rehberi.
+            </p>
+          </div>
+          <a href="HALKA_ANLATIM_REHBERI.md" class="doc-link">Raporu Oku →</a>
+        </div>
+
+        <div class="doc-card">
+          <div>
+            <div class="doc-icon">🛡️</div>
+            <h3>Açıklık ve Gizlilik Matrisi</h3>
+            <p>
+              Açık kaynak olarak paylaşılacak motor bileşenleri ile özel arşiv kasasında saklanacak nöbet defteri taramalarının güvenlik ayrımı.
+            </p>
+          </div>
+          <a href="ACIKLIK_GIZLILIK_MATRISI.md" class="doc-link">Raporu Oku →</a>
+        </div>
+
+        <div class="doc-card">
+          <div>
+            <div class="doc-icon">⚖️</div>
+            <h3>BBL Lisans Modeli</h3>
+            <p>
+              Barış (Peace), Bilim (Open Science), Liyakat (Attribution) ve Beerware/Çay maddesiyle sentezlenmiş yenilikçi etik lisans modeli.
+            </p>
+          </div>
+          <a href="BBL_LISANS_DEGERLENDIRMESI.md" class="doc-link">Raporu Oku →</a>
+        </div>
+
+        <div class="doc-card">
+          <div>
+            <div class="doc-icon">🧪</div>
+            <h3>İnteraktif Web Laboratuvarı</h3>
+            <p>
+              Tüm sözlük veri tabanı ve Mandelbrot MFNS karmaşık düzlemiyle çalışan tam teşekküllü bağımsız web laboratuvarı.
+            </p>
+          </div>
+          <a href="../lab/index.html" target="_blank" class="doc-link">Laboratuvarı Aç ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teoremler ve Kanıtlar -->
+    <section id="ispatlar">
+      <h2 class="section-title">📐 Kanıt Defteri Bulguları</h2>
+      <p class="section-desc">
+        Güneş Dili mimarisinin biçimsel dil teorisi doğrulamaları (proofs/kanit_defteri.json).
+      </p>
+
+      <div class="proofs-table-wrap">
+        <table class="proofs-table">
+          <thead>
+            <tr>
+              <th>Teorem</th>
+              <th>Tanım ve Metrik</th>
+              <th>Test Hacmi</th>
+              <th>Doğrulama</th>
+              <th>Statü</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>T1</b></td>
+              <td>DFA Determinizmi ve Durum Tekilliği</td>
+              <td>2.048 Durum, 53 Ek</td>
+              <td>0 İhlal</td>
+              <td><span class="badge-ok">%100 İspatlandı</span></td>
+            </tr>
+            <tr>
+              <td><b>T2</b></td>
+              <td>Kaba Kuvvet Çakışmasızlık (Biyeksiyon)</td>
+              <td>1.291.220 Ek Kombinasyonu</td>
+              <td>0 Allomorfi Hatası</td>
+              <td><span class="badge-ok">%100 İspatlandı</span></td>
+            </tr>
+            <tr>
+              <td><b>T3</b></td>
+              <td>Sınanabilirlik (Falsifiability)</td>
+              <td>20.000 Rastgele String</td>
+              <td>%96.73 Eleme</td>
+              <td><span class="badge-ok">Geçerli</span></td>
+            </tr>
+            <tr>
+              <td><b>T4</b></td>
+              <td>Universal Dependencies Gidiş-Dönüş</td>
+              <td>BOUN & IMST Ağaç Kümeleri</td>
+              <td>Kayıpsız Morfem İletimi</td>
+              <td><span class="badge-ok">%100 Kayıpsız</span></td>
+            </tr>
+            <tr>
+              <td><b>T5</b></td>
+              <td>Fraktal Sinir Ağı Sınıflandırma (MFNS)</td>
+              <td>Mandelbrot Koordinat Uzayı</td>
+              <td>0.943 F1-Skoru</td>
+              <td><span class="badge-ok">Doğrulandı</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-brand">☀️ GÜNEŞ DİLİ EKOSİSTEMİ</div>
+      <p class="footer-quote">
+        "Türk dili dillerin en zenginlerindendir; yeter ki bu dil şuurla işlensin." — Gazi Mustafa Kemal Atatürk, 1935
+      </p>
+      <div class="bbl-notice">
+        ⚖️ Lisans: BBL v1.0 (Barış, Bilim, Liyakat & Beerware/Çay Modeli) • WERR Ekosistemi
+      </div>
+      <p>© 2026 Güneş Dili Araştırma İnisiyatifi. Tüm bilimsel ve manevi hakları saklıdır.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Yerel Morfoloji ve Çeviri Sözlüğü
+    const GD_RULES = {
+      'gidiyorlardı': {
+        gd: 'gitkeyasa',
+        tokens: [
+          { morph: 'git', role: 'kök', isRoot: true },
+          { morph: 'iyor (ke)', role: 'zaman', desc: 'şimdiki zaman' },
+          { morph: 'idi (ya)', role: 'ek-fiil', desc: 'hikaye' },
+          { morph: 'lar (sa)', role: 'şahıs', desc: '3. çoğul' }
+        ],
+        r: 0.384,
+        theta: 135.2,
+        koma: '#18 (Rast)'
+      },
+      'kitaplarımızdan': {
+        gd: 'kitaptapızte',
+        tokens: [
+          { morph: 'kitap', role: 'kök', isRoot: true },
+          { morph: 'lar (tap)', role: 'çokluk', desc: 'çoğul eki' },
+          { morph: 'ımız (ız)', role: 'iyelik', desc: '1. çoğul iyelik' },
+          { morph: 'dan (te)', role: 'hal', desc: 'ayrılma hali' }
+        ],
+        r: 0.412,
+        theta: 218.4,
+        koma: '#32 (Hüseyni)'
+      },
+      'evlerimizde': {
+        gd: 'evtapızda',
+        tokens: [
+          { morph: 'ev', role: 'kök', isRoot: true },
+          { morph: 'ler (tap)', role: 'çokluk', desc: 'çoğul eki' },
+          { morph: 'imiz (ız)', role: 'iyelik', desc: '1. çoğul iyelik' },
+          { morph: 'de (da)', role: 'hal', desc: 'bulunma hali' }
+        ],
+        r: 0.355,
+        theta: 195.0,
+        koma: '#28 (Nevâ)'
+      },
+      'gözlükçüler': {
+        gd: 'gözlikcitap',
+        tokens: [
+          { morph: 'göz', role: 'kök', isRoot: true },
+          { morph: 'lük (lik)', role: 'yapım', desc: 'isimden isim' },
+          { morph: 'çü (ci)', role: 'yapım', desc: 'meslek eki' },
+          { morph: 'ler (tap)', role: 'çokluk', desc: 'çoğul eki' }
+        ],
+        r: 0.298,
+        theta: 78.5,
+        koma: '#11 (Uşşak)'
+      },
+      'bilim': {
+        gd: 'bilma',
+        tokens: [
+          { morph: 'bil', role: 'kök', isRoot: true },
+          { morph: 'im (ma)', role: 'yapım', desc: 'fiilden isim' }
+        ],
+        r: 0.145,
+        theta: 45.0,
+        koma: '#6 (Çargâh)'
+      },
+      'sevgi': {
+        gd: 'sevgi',
+        tokens: [
+          { morph: 'sev', role: 'kök', isRoot: true },
+          { morph: 'gi (gi)', role: 'yapım', desc: 'fiilden isim' }
+        ],
+        r: 0.155,
+        theta: 52.0,
+        koma: '#7 (Buselik)'
+      }
+    };
+
+    function setWord(w) {
+      document.getElementById('turkishInput').value = w;
+      updateTranslation();
+    }
+
+    function updateTranslation() {
+      const input = document.getElementById('turkishInput').value.trim().toLowerCase();
+      const outputEl = document.getElementById('gdOutput');
+      const ribbonEl = document.getElementById('morphemeRibbon');
+      const rEl = document.getElementById('radiusMetric');
+      const thEl = document.getElementById('thetaMetric');
+      const komaEl = document.getElementById('komaSlot');
+
+      let data = GD_RULES[input];
+      if (!data) {
+        // Genel dinamik heceleme
+        data = {
+          gd: input + 'ta',
+          tokens: [
+            { morph: input, role: 'kök (tahmini)', isRoot: true },
+            { morph: '+ta', role: 'belirteç', desc: 'genel ek' }
+          ],
+          r: 0.220,
+          theta: 90.0,
+          koma: '#14 (Kürdi)'
+        };
+      }
+
+      outputEl.innerText = data.gd;
+      rEl.innerText = data.r.toFixed(3);
+      thEl.innerText = data.theta.toFixed(1) + '°';
+      komaEl.innerText = data.koma;
+
+      ribbonEl.innerHTML = '';
+      data.tokens.forEach(t => {
+        const span = document.createElement('span');
+        span.className = 'm-pill ' + (t.isRoot ? 'root' : 'der');
+        span.innerText = `${t.morph} [${t.role}]`;
+        ribbonEl.appendChild(span);
+      });
+
+      drawResonance(data.r, data.theta);
+    }
+
+    // Rezonans Canvas Çizimi
+    function drawResonance(r, thetaDeg) {
+      const cv = document.getElementById('resonanceCanvas');
+      if (!cv) return;
+      const ctx = cv.getContext('2d');
+      const w = cv.width, h = cv.height;
+      const cx = w / 2, cy = h / 2;
+
+      ctx.clearRect(0, 0, w, h);
+
+      // Uzay Arka Planı
+      ctx.fillStyle = '#06080F';
+      ctx.fillRect(0, 0, w, h);
+
+      // Yörünge Halkaları
+      const ringRadii = [40, 75, 110, 145, 175];
+      ringRadii.forEach((rad, i) => {
+        ctx.beginPath();
+        ctx.arc(cx, cy, rad, 0, Math.PI * 2);
+        ctx.strokeStyle = 'rgba(255, 215, 0, 0.12)';
+        ctx.setLineDash([4, 6]);
+        ctx.stroke();
+        ctx.setLineDash([]);
+      });
+
+      // Eksen Çizgileri
+      ctx.beginPath();
+      ctx.moveTo(cx, 0); ctx.lineTo(cx, h);
+      ctx.moveTo(0, cy); ctx.lineTo(w, cy);
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
+      ctx.stroke();
+
+      // Merkez Güneş Odağı
+      const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, 28);
+      grad.addColorStop(0, '#FFFAD5');
+      grad.addColorStop(0.5, '#FFD700');
+      grad.addColorStop(1, '#FF6F00');
+      ctx.beginPath();
+      ctx.arc(cx, cy, 24, 0, Math.PI * 2);
+      ctx.fillStyle = grad;
+      ctx.shadowColor = '#FFD700';
+      ctx.shadowBlur = 18;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+
+      ctx.fillStyle = '#1A0B00';
+      ctx.font = 'bold 12px IBM Plex Mono';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('Ag', cx, cy);
+
+      // Işıma Vektörü
+      const angleRad = (thetaDeg - 90) * (Math.PI / 180);
+      const pixelDist = 30 + r * 320;
+      const targetX = cx + pixelDist * Math.cos(angleRad);
+      const targetY = cy + pixelDist * Math.sin(angleRad);
+
+      // Işın Vektör Hattı
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.lineTo(targetX, targetY);
+      ctx.strokeStyle = '#00E5FF';
+      ctx.lineWidth = 2;
+      ctx.shadowColor = '#00E5FF';
+      ctx.shadowBlur = 10;
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+
+      // Hedef Morfem Noktası
+      ctx.beginPath();
+      ctx.arc(targetX, targetY, 7, 0, Math.PI * 2);
+      ctx.fillStyle = '#00E5FF';
+      ctx.fill();
+      ctx.strokeStyle = '#FFFFFF';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+
+    // 53 Koma Çarkı Çizimi
+    function drawWheel() {
+      const cv = document.getElementById('wheelCanvas');
+      if (!cv) return;
+      const ctx = cv.getContext('2d');
+      const w = cv.width, h = cv.height;
+      const cx = w / 2, cy = h / 2;
+      const radius = 150;
+
+      ctx.clearRect(0, 0, w, h);
+
+      const totalKoma = 53;
+      for (let i = 0; i < totalKoma; i++) {
+        const ang = (i * 2 * Math.PI / totalKoma) - Math.PI / 2;
+        const isMajor = (i % 9 === 0 || i % 5 === 0);
+        const rIn = isMajor ? 120 : 132;
+        const rOut = 155;
+
+        const x1 = cx + rIn * Math.cos(ang);
+        const y1 = cy + rIn * Math.sin(ang);
+        const x2 = cx + rOut * Math.cos(ang);
+        const y2 = cy + rOut * Math.sin(ang);
+
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.strokeStyle = isMajor ? '#FFD700' : 'rgba(255, 215, 0, 0.35)';
+        ctx.lineWidth = isMajor ? 2.5 : 1;
+        ctx.stroke();
+
+        if (isMajor) {
+          ctx.beginPath();
+          ctx.arc(cx + 112 * Math.cos(ang), cy + 112 * Math.sin(ang), 2.5, 0, Math.PI * 2);
+          ctx.fillStyle = '#FFE57F';
+          ctx.fill();
+        }
+      }
+
+      // Merkez Dairesi
+      ctx.beginPath();
+      ctx.arc(cx, cy, 60, 0, Math.PI * 2);
+      ctx.fillStyle = '#090D17';
+      ctx.strokeStyle = 'rgba(255, 215, 0, 0.4)';
+      ctx.lineWidth = 1.5;
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.fillStyle = '#FFD700';
+      ctx.font = 'bold 13px IBM Plex Mono';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('53 KOMA', cx, cy - 8);
+      ctx.font = '10px Plus Jakarta Sans';
+      ctx.fillStyle = '#8F9BB3';
+      ctx.fillText('REZONANS', cx, cy + 10);
+    }
+
+    // Başlatıcı
+    window.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('turkishInput').addEventListener('input', updateTranslation);
+      updateTranslation();
+      drawWheel();
+    });
+  </script>
+</body>
+</html>

@@ -30,3 +30,16 @@ Bu belge; Güneş Dili deposunda yer alan dosyaların, modellerin ve tarihsel ar
    * Zenodo veya arXiv üzerinde teknik rapor yayınlandığında; sadece `tokenizer/`, `engine/` ve `lab/` modüllerinden oluşan hafif bir açık kaynak sürüm (`gunes-dili-core`) public repoya çıkarılır.
 3. **Aşama 3 (Kasa ve Arşiv Ayrımı):**
    * Yüksek çözünürlüklü tarihi taramalar, patent taslakları ve nöbet defteri belgeleri (`archive/`) daima özel ve yetkilendirilmiş araştırma kasasında kalır.
+
+---
+
+## 👥 Katılımcı (Collaborator) Erişim Politikası
+
+Depoya dahil edilen yetkili katılımcılar (**Lexovian**, **jesmaat**, **Bekirhan**):
+
+1. **Özel ve Akademik Dizinlere Tam Erişim:**
+   * Tier-2 (Akademik & Kanıtlar - `proofs/`, `engine/`, `tokenizer/`) ve Tier-3 (Tarihsel Kasa & Arşiv - `archive/`, `docs/`) dahil olmak üzere tüm dizinleri doğrudan klonlama, okuma ve yerel ortamlarında çalıştırma hakkına sahiptir.
+2. **Dal Koruma ve Onay Mekanizması:**
+   * Doğrudan `main` dalına push yetkisi kısıtlanmıştır; değişiklikler dal (branch) açılıp Pull Request (PR) üzerinden sunulur.
+   * `.github/CODEOWNERS` yapılandırması uyarınca, akademik ve arşiv dizinlerindeki PR incelemelerinde katılımcılar otomatik incelemeci (reviewer) atanır; nihai birleştirme (merge) `@pCwOrM` onayıyla yürütülür.
+
