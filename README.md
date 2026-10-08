@@ -6,6 +6,7 @@
 ### Matematiksel, Fonetik ve Fraktal Temelli Evrensel Dil Mimarisi
 
 ![Repo Status: Private](https://img.shields.io/badge/Repo%20Status-Private%20%2F%20Confidential-red.svg)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Canl%C4%B1%20Portal-success.svg?logo=github)](https://pcworm.github.io/gunes-dili/)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![License: BBL Draft](https://img.shields.io/badge/License-BBL%20v1.0%20(Bar%C4%B1%C5%9F%20Bilim%20Liyakat)-gold.svg)](docs/BBL_LISANS_DEGERLENDIRMESI.md)
 [![UD Turkish Validated](https://img.shields.io/badge/UD%20Turkish-Validated-success.svg)](https://universaldependencies.org/)
@@ -13,10 +14,11 @@
 
 ---
 
-## 📚 Kılavuzlar ve Özel Dokümantasyon
+## 📚 Kılavuzlar, Canlı Portal ve Özel Dokümantasyon
 
 | Doküman | Hedef Kitle ve Kapsam | Bağlantı |
 | :--- | :--- | :--- |
+| 🌐 **Canlı Web Portalı & Simülatör** | Etkileşimli çevirmen, 53 koma çarkı ve görsel rezonans arayüzü | [**Siteyi Aç (GitHub Pages)**](https://pcworm.github.io/gunes-dili/) |
 | ☀️ **Logo Felsefesi ve Geometrisi** | Amblemin sembolik dili, Ag kökü, 53 koma ve fraktal dalga analizi | [İncele](docs/LOGO_FELSEFESI_VE_TEKNIK_ACIKLAMASI.md) |
 | 🎓 **Teknik ve Akademik Rehber** | Dilbilimciler, matematikçiler ve mühendisler için biçimsel ispatlar (T1-T5) | [İncele](docs/TEKNIK_VE_AKADEMIK_REHBER.md) |
 | 🌍 **Halka Anlatım Rehberi** | Karmaşık terimlerden arındırılmış, 7'den 77'ye Güneş Dili ve Atatürk mirası | [İncele](docs/HALKA_ANLATIM_REHBERI.md) |
@@ -29,7 +31,11 @@
 
 **Güneş Dili Ekosistemi**; Mustafa Kemal Atatürk'ün 1935 yılında başlattığı tarihsel **Güneş-Dil Teorisi**'ni, çağdaş **biçimsel diller teorisi (formal language theory)**, **hesaplamalı morfoloji**, **Mandelbrot fraktal geometrisi** ve **53 eşit parçalı harmonik ses sistemi (Holder koma çemberi)** ile birleştirerek matematiksel olarak kanıtlanabilir, deterministik ve evrensel bir sentetik dil motoruna dönüştüren açık kaynaklı bir monorepodur.
 
-Doğal dillerdeki morfolojik belirsizlikler (allomorfi, ünlü uyumu istisnaları, ek çakışmaları), Güneş Dili mimarisinde **1 Ek = 1 Biçim = 1 İşlev** aksiyomuyla sıfırlanmıştır.
+> ### ⚡ Temel İlke ve Devrimsel Doğrulama:
+> **«Dilde %100 biçimbilimsel determinizm sağlamakta ve morfolojik belirsizliği (ambiguity) tamamen sıfırlamaktadır.»**
+>
+> Doğal dillerin ve Türkçenin bin yıllık zengin ek yapısındaki allomorfi (ünlü/ünsüz uyumu türevleri), homofon ekler ve biçimbirim çakışmaları, Güneş Dili mimarisinde **1 Ek = 1 Biçim = 1 İşlev** aksiyomuyla mutlak bir matematiksel tekilliğe kavuşturulmuştur. Böylece her geçerli kelime için olası çözümleme sayısı tam olarak **1'e (Deterministik Sonlu Durum Otomatı - DFA)** indirgenmiş; dildeki tüm anlamsal gürültü ve belirsizlik sıfırlanmıştır.
+
 
 ---
 
@@ -144,6 +150,20 @@ Bu repoda kuramın dayandığı orijinal el yazması ve tarihi tahliller tam set
 * Türkçe $\to$ Güneş Dili çeviri motorunu çalıştırabilir,
 * Kelimelerin Mandelbrot fraktal koordinat haritasını inceleyebilir,
 * Tersine ayrıştırıcı (reverse parser) ile Güneş Dili metinlerini çözümleyebilirsiniz.
+
+---
+
+## 👥 Kadim ve Çağdaş Mimarlar / Külliyat Künyesi
+
+Bu ekosistem; 1935'ten günümüze uzanan derin bir felsefi arayışın, matematiksel dehanın ve kolektif bir adanmışlığın meyvesidir:
+
+* **🏛️ Gazi Mustafa Kemal Atatürk (1935):** Güneş-Dil Teorisinin kurucu dehası, başöğretmeni ve tarihsel vizyoneri.
+* **📜 Sir Isaac Newton (1664):** Trinity College not defterindeki *Of an Universall Language* ile fonetik evrensel dil tasarımının öncüsü.
+* **☀️ @pCwOrM (Sistem Mimarı):** Sistemin ruhunu üfleyen, parçaları birbirine bağlayan tutkalı süren; WERR fraktal sentezi, MFNS teorem modellemeleri ve ontolojik omurganın kurucusu.
+* **⚙️ Bekirhan Dağlı ([@bdagli](https://github.com/bdagli)):** Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`) kurucu geliştiricisi.
+* **🔬 Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)):** Işıma ve Rezonans Tabanlı Morfolojik Tokenizer'ın (`tokenizer/gunes_dil_v4.py`) mimarı.
+* **🌌 Semih Salar:** Kozmik İşletim Sistemi, Kuantum Mitoloji, Dil-Evren Ontolojisi ve Yunus Emre mistisizmi çözümlemeleri (`archive/kozmik_isletim_sistemi/`).
+* **🛡️ Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)):** Takım koordinasyonu, stratejik süreklilik ve çekirdek ekip desteği.
 
 ---
 
