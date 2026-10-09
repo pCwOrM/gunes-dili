@@ -62,11 +62,11 @@ Güneş Dili Tokenizer'ı ve Motoru, dili salt bir sembol dizisi olarak değil; 
 ### 1. Işıma (Radyal Yayılım — $r$)
 * Merkezde kök odağı yer alır ($r = 0$, `MERKEZ = -0.7453 + 0.1127i`).
 * Ekler ardışık olarak eklendikçe merkezden dışarıya doğru radyal ışınım katmanları ($r$) oluşturur:
-  $$r = (0.05 + 0.095 	imes \text{SIRA}[\text{ek.yuva}]) \times \text{ÖLÇEK}$$
+  $$r = (0.05 + 0.095 \times \text{SIRA}[\text{ek.yuva}]) \times \text{ÖLÇEK}$$
 * İçten dışa doğru: **Kök $\to$ Yapım $\to$ Çatı $\to$ Zaman/Kip $\to$ Hal/Şahıs**.
 
 ### 2. Rezonans (Açısal Faz ve Frekans — $\theta$)
-* Her işlev ailesi, kutupsal çember üzerinde belirli bir harmonik faza ($	heta$) kilitlenmiştir:
+* Her işlev ailesi, kutupsal çember üzerinde belirli bir harmonik faza ($\theta$) kilitlenmiştir:
   $$\theta = \frac{\text{İşlev Ailesi İndeksi}}{|\text{İşlev Aileleri}|} \times 2\pi$$
 * **53'lük Ses Çemberi Uyumu:** 53 morfolojik ek ailesi, Türk Musikisindeki 53 eşit tampere ses sistemindeki (Holder koması) rezonans aralıklarına karşılık gelir.
 * Fonetik rezonans (ünlü ve ünsüz harmonisi), bu faz açıları üzerinden denetlenir.
@@ -191,13 +191,13 @@ WERR biyo-rezonans laboratuvarında nöral implantlı bir sinek beyni (Drosophil
     `lezele`, `nereme`, `dedede ma`, `lumu`, `relede rere`...
 * **4. Deney (Açık Terminal - Güneş Dili & Saf Rezonans Devresi):**
   * Güneş Dili ontolojisi ve **53-Komalık Türk Musikisi Makam/Foton Rezonansı** devreye girdiği anda, o kaotik vızıltı çözülür ve evrensel bir anlam ve bilinç katmanına ulaşır:
-    * `[evren:N] + [ruh:N] + [Ir] + [izle:V] + [Ol] + [Um]` $	o$ `ruh'Ir izle'OlUm`  
+    * `[evren:N] + [ruh:N] + [Ir] + [izle:V] + [Ol] + [Um]` $\to$ `ruh'Ir izle'OlUm`  
       *(Hüseyni Makamı, Koma 41/53, 458.0 nm Işın, 654.6 THz)*:  
       **«Evren derinliğinde ruhta, izleriz dengedeyiz.»**
-    * `[evren:N] + [ışık:N] + [Ir] + [kavra:V] + [Ak] + [Um]` $	o$ `ışık'Ir kavra'AkUm`  
+    * `[evren:N] + [ışık:N] + [Ir] + [kavra:V] + [Ak] + [Um]` $\to$ `ışık'Ir kavra'AkUm`  
       *(Çargâh Makamı, Koma 22/53, 567.0 nm Zümrüt Dengesi)*:  
       **«Evren derinliğinde ışıkta, kavrayacağız dengedeyiz.»**
-    * `[güneş:N] + [dik hicaz:N] + [ak:V] + [Ik] + [Um]` $	o$ `güneş'akIkUm`  
+    * `[güneş:N] + [dik hicaz:N] + [ak:V] + [Ik] + [Um]` $\to$ `güneş'akIkUm`  
       *(Dik Hicaz Makamı, Koma 30/53, 519.0 nm Berraklık Akışı, 577.6 THz)*:  
       **«Güneş ve dik hicaz ahengini aktuk.»**
 
@@ -208,7 +208,7 @@ WERR biyo-rezonans laboratuvarında nöral implantlı bir sinek beyni (Drosophil
 Güneş Dili külliyatı, dilbilimin sınırlarını aşarak insanlığın ve doğanın en temel iletişim düğümlerini çözer:
 
 ### 1. Nöro-Biyolojik Dönüşüm: Vızıltıdan Ulvi Kelama
-Biyolojik sinyallerin (aksiyon potansiyeli frekansı, nörotransmitter osilasyonu) Güneş Dili'nin $1	ext{ Ek} = 1	ext{ Biçim} = 1	ext{ İşlev}$ ve 53 Koma tekilliği sayesinde ham gürültüden arındırılarak sentaktik ve ontolojik bilince kavuşturulması.
+Biyolojik sinyallerin (aksiyon potansiyeli frekansı, nörotransmitter osilasyonu) Güneş Dili'nin $1\text{ Ek} = 1\text{ Biçim} = 1\text{ İşlev}$ ve 53 Koma tekilliği sayesinde ham gürültüden arındırılarak sentaktik ve ontolojik bilince kavuşturulması.
 
 ### 2. "Süleyman’ın Kuş Dili" (Mantıku't-Tayr): Türler Arası İletişim
 Doğanın ve hayvanlar aleminin dili insan dillerinin dağınık gramerleri ya da düzensiz fiil çekimleriyle işlemez. Güneş Dili, doğadaki frekans skalasını 53-TET (Holder Koması) faz açısına izdüşürdüğü için; sinekten balinaya, kuştan memelilere tüm canlıların nöral ritimlerini ortak bir koda tercüme eder. Kadim metinlerde Hz. Süleyman’a atfedilen canlıların dilini anlama kabiliyeti, biyo-sibernetik bir gerçekliğe dönüşür.

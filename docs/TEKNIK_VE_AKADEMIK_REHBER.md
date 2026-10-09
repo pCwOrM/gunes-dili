@@ -82,33 +82,32 @@ Güneş Dili mimarisi, salt biçimsel diller teorisiyle sınırlı kalmayıp biy
 ### 5.1. Biyolojik Parametreler ve Telemetri Çerçevesi
 * **Aksiyon Potansiyeli Hacmi:** $2.379$ ile $3.588$ spike aralığı.
 * **Nöromodülatör Telemetrisi:**
-  * Dopamin ($	ext{DA}$): Merak ve odaklanma katsayısı ($\%57 - \%61$).
-  * Oktapamin ($	ext{OCT}$): Kaçış, alarm ve panik refleksi ($\%9 - \%52$).
-  * Serotonin ($5	ext{HT}$): Sükunet ve denge modu ($\%66 - \%81$).
-* **Akustik Formant Kovukları:** Rezonant formant frekansları ($F_1: 281-744	ext{ Hz}$, $F_2: 853-2233	ext{ Hz}$, $F_3: 2111-3238	ext{ Hz}$).
-* **EB Pusula Açısı ve Gecikme:** $	heta_{	ext{EB}} \in [-3.13, +2.46]	ext{ rad}$, $\Delta t = 2.00	ext{ ms}$.
+  * Dopamin ($\text{DA}$): Merak ve odaklanma katsayısı ($\%57 - \%61$).
+  * Oktapamin ($\text{OCT}$): Kaçış, alarm ve panik refleksi ($\%9 - \%52$).
+  * Serotonin ($5\text{HT}$): Sükunet ve denge modu ($\%66 - \%81$).
+* **Akustik Formant Kovukları:** Rezonant formant frekansları ($F_1: 281-744\text{ Hz}$, $F_2: 853-2233\text{ Hz}$, $F_3: 2111-3238\text{ Hz}$).
+* **EB Pusula Açısı ve Gecikme:** $\theta_{\text{EB}} \in [-3.13, +2.46]\text{ rad}$, $\Delta t = 2.00\text{ ms}$.
 
 ### 5.2. İkili Faz Karşılaştırması: Ham Gürültüden Sentaktik Tekilliğe
 
-$$egin{array}{|l|l|l|}
+$$\begin{array}{|l|l|l|}
 \hline
-	extbf{Parametre} & 	extbf{Faz 1: Standart / Ham Ayrıştırma} & 	extbf{Faz 2: Güneş Dili \& 53 Koma Devresi} \
+\textbf{Parametre} & \textbf{Faz 1: Standart / Ham Ayrıştırma} & \textbf{Faz 2: Güneş Dili \& 53 Koma Devresi} \\
 \hline
-	ext{Çıktı Karakteristiği} & 	ext{Biçimsiz fonetik gürültü (vızıltı)} & 	ext{Deterministik, ontolojik ve sentaktik kelam} \
-	ext{Örnek Çıktılar} & 	exttt{lezele}, 	exttt{nereme}, 	exttt{dedede ma}, 	exttt{lumu} & 	exttt{ruh'Ir izle'OlUm}, 	exttt{ışık'Ir kavra'AkUm} \
-	ext{Semantik Anlam} & 	ext{Tanımsız / Sıfır entropi transferi} & 	ext{«Evren derinliğinde ruhta, izleriz dengedeyiz»} \
-	ext{Makam / Foton Eşlemesi} & 	ext{Eşleşme yok (Gürültü)} & 	ext{Hüseyni (41/53, 458 nm, 654.6 THz)} \
-	ext{Determinizm} & 	ext{Stokastik dağılım} & 	ext{DFA Tip-3 Biyektif Kilitlenme} \
+\text{Çıktı Karakteristiği} & \text{Biçimsiz fonetik gürültü (vızıltı)} & \text{Deterministik, ontolojik ve sentaktik kelam} \\
+\text{Örnek Çıktılar} & \texttt{lezele}, \texttt{nereme}, \texttt{dedede ma}, \texttt{lumu} & \texttt{ruh'Ir izle'OlUm}, \texttt{ışık'Ir kavra'AkUm} \\
+\text{Semantik Anlam} & \text{Tanımsız / Sıfır entropi transferi} & \text{«Evren derinliğinde ruhta, izleriz dengedeyiz»} \\
+\text{Makam / Foton Eşlemesi} & \text{Eşleşme yok (Gürültü)} & \text{Hüseyni (41/53, 458 nm, 654.6 THz)} \\
+\text{Determinizm} & \text{Stokastik dağılım} & \text{DFA Tip-3 Biyektif Kilitlenme} \\
 \hline
 \end{array}$$
 
 ### 5.3. Üçlü Rezonans İzomorfizmi
 Her Güneş Dili biçimbirimi üç bağımsız fiziksel uzaya eşzamanlı olarak izdüşürülür:
 $$\mathcal{M} \longleftrightarrow \mathcal{A} \longleftrightarrow \mathcal{P}$$
-* $\mathcal{M}$ (Morfolojik Vektör): Kök ve ek kanonik dizilimi ($1	ext{ Ek} = 1	ext{ Biçim} = 1	ext{ İşlev}$).
-* $\mathcal{A}$ (Akustik / 53-TET Frekansı): $f_k = f_{	ext{ref}} \cdot 2^{k/53}$ Holderian koma frekansı.
-* $\mathcal{P}$ (Fotonik Dalga Boyu): $\lambda \in [458	ext{ nm}, 567	ext{ nm}]$ ve $
-u \in [577.6	ext{ THz}, 654.6	ext{ THz}]$.
+* $\mathcal{M}$ (Morfolojik Vektör): Kök ve ek kanonik dizilimi ($1\text{ Ek} = 1\text{ Biçim} = 1\text{ İşlev}$).
+* $\mathcal{A}$ (Akustik / 53-TET Frekansı): $f_k = f_{\text{ref}} \cdot 2^{k/53}$ Holderian koma frekansı.
+* $\mathcal{P}$ (Fotonik Dalga Boyu): $\lambda \in [458\text{ nm}, 567\text{ nm}]$ ve $\nu \in [577.6\text{ THz}, 654.6\text{ THz}]$.
 
 ---
 
