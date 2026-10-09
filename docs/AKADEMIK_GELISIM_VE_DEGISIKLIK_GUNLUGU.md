@@ -94,6 +94,18 @@
 
 ---
 
+### [v4.4.0-PDFPublication] — 2026-10-09
+#### 1. 📄 Yüksek Çözünürlüklü A4 PDF Dokümantasyon Paketinin Üretimi (`docs/pdf/`)
+* **Gerekçe:** Kullanıcının tüm kuramsal metinleri, WERR matematiksel modellerini, 53 Holder komalık ek tablolarını ve nöro-biyolojik telemetri grafiklerini çevrimdışı ve baskıya hazır halde tek tıkla indirebilmesi sağlandı.
+* **Derlenen Dokümanlar:**
+  1. `docs/pdf/GUNES_DILI_MANIFESTOSU.pdf` (~2.6 MB): Tam külliyat manifestosu, 4 renkli telemetri deney görseli, T1-T5 kanıt defteri.
+  2. `docs/pdf/LOGO_FELSEFESI_VE_TEKNIK_ACIKLAMASI.pdf` (~1.2 MB): 53 komalık rezonans çemberi, Mandelbrot fraktal spirali, yüksek çözünürlüklü vektörel logo analizi.
+  3. `docs/pdf/TEKNIK_VE_AKADEMIK_REHBER.pdf` (~340 KB): Chomsky Tip-3 düzenli gramer, DFA geçişleri, 53 ek ailesinin tam tablosu.
+  4. `docs/pdf/HALKA_ANLATIM_REHBERI.pdf` (~230 KB): Atatürk'ün 1935 dil sezgisi, popüler bilim ve müzik-dil sentezi.
+* **Erişim:** `README.md` ve `docs/index.html` dokümantasyon merkezine doğrudan indirme bağlantıları eklendi.
+
+---
+
 ## 🔒 Güvenlik, İzlenebilirlik ve Geri Alınabilirlik Güvencesi
 
 Tüm değişiklikler Git versiyon kontrol sistemi üzerinde atomik commit'ler ile kayıt altında tutulmakta olup, önceki sürümlere tam uyumludur. Hiçbir kök, ek veya sözlük verisi silinmemiş ya da biçimi bozulmamıştır.

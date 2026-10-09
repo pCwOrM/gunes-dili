@@ -156,6 +156,16 @@ Bu repoda kuramın dayandığı orijinal el yazması ve tarihi tahliller tam set
 
 ---
 
+## 📄 İndirilebilir Yüksek Çözünürlüklü PDF Dokümanları (`docs/pdf/`)
+
+Külliyatın tüm temel metinleri, WERR matematiksel modelleri, formülleri, şemaları ve nöro-biyolojik telemetri görselleri eksiksiz olarak A4 baskı formatında PDF olarak derlenmiştir:
+
+| Belge Adı | PDF Dosyası | Boyut | İçerik ve Kapsam |
+| :--- | :--- | :--- | :--- |
+| **Güneş Dili Manifestosu** | [GUNES_DILI_MANIFESTOSU.pdf](docs/pdf/GUNES_DILI_MANIFESTOSU.pdf) | ~2.6 MB | Tüm külliyat manifestosu, telemetri deneyleri, 4 renkli terminal görseli ve T1-T5 kanıt defteri. |
+| **Logo Felsefesi ve Geometrisi** | [LOGO_FELSEFESI_VE_TEKNIK_ACIKLAMASI.pdf](docs/pdf/LOGO_FELSEFESI_VE_TEKNIK_ACIKLAMASI.pdf) | ~1.2 MB | 53 komalık rezonans çemberi, Ag güneş çekirdeği ve Mandelbrot fraktal spirali. |
+| **Teknik ve Akademik Rehber** | [TEKNIK_VE_AKADEMIK_REHBER.pdf](docs/pdf/TEKNIK_VE_AKADEMIK_REHBER.pdf) | ~340 KB | Chomsky Tip-3 düzenli gramer, 53 ek ailesinin tam tablosu ve DFA durum matrisi. |
+| **Halka Anlatım Rehberi** | [HALKA_ANLATIM_REHBERI.pdf](docs/pdf/HALKA_ANLATIM_REHBERI.pdf) | ~230 KB | Atatürk'ün 1935 sezgisi, müzik-dil rezonansı ve popüler bilim anlatımı. |
 
 ---
 
