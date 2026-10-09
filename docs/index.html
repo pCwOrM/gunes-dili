@@ -925,44 +925,85 @@
       line-height: 1.55;
     }
 
-    /* HISTORICAL FOUNDING VISIONARIES (SEPARATED & ELEVATED TRIBUTE) */
-    .founders-showcase {
-      display: grid;
-      grid-template-columns: 1.3fr 1fr;
-      gap: 28px;
-      margin-bottom: 90px;
-    }
-    @media (max-width: 900px) {
-      .founders-showcase { grid-template-columns: 1fr; }
-    }
-    .founder-card {
-      background: var(--bg-card-trans);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 32px;
+    /* ATATÜRK: MONUMENTAL INDEPENDENT TRIBUTE SECTION */
+    .ataturk-monumental-card {
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(14, 18, 32, 0.95) 50%, rgba(255, 215, 0, 0.03) 100%);
+      border: 2px solid var(--gold);
+      border-radius: 20px;
+      padding: 38px 42px;
       position: relative;
-      backdrop-filter: blur(14px);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 45px rgba(255, 215, 0, 0.18);
+      margin-bottom: 75px;
+      transition: all 0.3s ease;
+    }
+    .ataturk-monumental-card:hover {
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.9), 0 0 60px rgba(255, 215, 0, 0.28);
+      transform: translateY(-3px);
+    }
+    .ataturk-badge-gold {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      padding: 5px 14px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      background: rgba(255, 215, 0, 0.18);
+      color: var(--gold-light);
+      border: 1px solid var(--gold);
+      margin-bottom: 16px;
+    }
+    .ataturk-monumental-card h3 {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 3.2vw, 36px);
+      color: #FFF;
+      margin-bottom: 8px;
+      letter-spacing: 0.8px;
+    }
+    .ataturk-subtitle {
+      font-family: var(--font-mono);
+      font-size: 14.5px;
+      color: var(--gold-light);
+      margin-bottom: 20px;
+      display: block;
+    }
+    .ataturk-monumental-card p {
+      font-size: 15.5px;
+      color: #D1D9E6;
+      line-height: 1.75;
+      margin-bottom: 20px;
+      max-width: 950px;
+    }
+
+    /* HISTORICAL ARCHIVE NOTE: NEWTON (SEPARATE & DISTINCT) */
+    .newton-archive-card {
+      background: var(--bg-card-trans);
+      border: 1px solid rgba(0, 229, 255, 0.35);
+      border-radius: 16px;
+      padding: 28px 32px;
+      backdrop-filter: blur(12px);
+      margin-bottom: 75px;
       transition: all 0.3s ease;
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
     }
-    .founder-card.ataturk {
-      border: 1.5px solid rgba(255, 215, 0, 0.45);
-      background: linear-gradient(145deg, rgba(255, 215, 0, 0.05) 0%, rgba(10, 14, 26, 0.95) 100%);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 35px rgba(255, 215, 0, 0.12);
-    }
-    .founder-card.ataturk:hover {
-      border-color: var(--gold);
-      box-shadow: 0 20px 55px rgba(0, 0, 0, 0.7), 0 0 45px rgba(255, 215, 0, 0.22);
-      transform: translateY(-4px);
-    }
-    .founder-card.newton {
-      border: 1px solid rgba(0, 229, 255, 0.3);
-      background: linear-gradient(145deg, rgba(0, 229, 255, 0.03) 0%, rgba(10, 14, 26, 0.95) 100%);
-    }
-    .founder-card.newton:hover {
+    .newton-archive-card:hover {
       border-color: var(--accent-cyan);
       box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 229, 255, 0.15);
-      transform: translateY(-4px);
+      transform: translateY(-2px);
+    }
+    .newton-archive-card h3 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      color: #FFF;
+      margin-bottom: 6px;
+    }
+    .newton-archive-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 16px;
     }
     .founder-badge {
       display: inline-block;
@@ -1193,8 +1234,8 @@
         <a href="#lab-tam-motor">🧪 Tam Laboratuvar</a>
         <a href="#koma-cemberi">🎵 53 Koma</a>
         <a href="#ispatlar">📐 Lean 4 İspatlar</a>
-        <a href="#arsiv">📜 Arşiv</a>
-        <a href="#tarihsel-onculer">🏛️ Kurucu Deha</a>
+        <a href="#kurucu-deha">🏛️ Kurucu Deha</a>
+        <a href="#tarihsel-notlar">📜 Newton Notları</a>
         <a href="#ekip">⚙️ Ekip</a>
         <a href="lab/index.html" target="_blank" class="nav-btn-highlight">🧪 Lab (Ayrı Sekme) ↗</a>
       </nav>
@@ -1211,9 +1252,9 @@
       <a href="#lab-tam-motor" onclick="toggleMobileMenu()">🧪 Tam Donanımlı Laboratuvar Motoru (Bu Sayfada) <span>→</span></a>
       <a href="#koma-cemberi" onclick="toggleMobileMenu()">🎵 53 Holder Koma Çarkı <span>→</span></a>
       <a href="#ispatlar" onclick="toggleMobileMenu()">📐 Lean 4 Biçimsel İspatlar <span>→</span></a>
-      <a href="#arsiv" onclick="toggleMobileMenu()">📜 Atatürk & Newton Tarihsel Arşivi <span>→</span></a>
+      <a href="#kurucu-deha" onclick="toggleMobileMenu()">🏛️ Kurucu Deha ve Başöğretmen: Atatürk <span>→</span></a>
+      <a href="#tarihsel-notlar" onclick="toggleMobileMenu()">📜 1664 Newton Evrensel Dil Notları <span>→</span></a>
       <a href="#dokumanlar" onclick="toggleMobileMenu()">📚 Dokümantasyon & Raporlar <span>→</span></a>
-      <a href="#tarihsel-onculer" onclick="toggleMobileMenu()">🏛️ Tarihsel Kurucu Öncüler <span>→</span></a>
       <a href="#ekip" onclick="toggleMobileMenu()">⚙️ Proje Geliştirme Ekibi <span>→</span></a>
       <a href="lab/index.html" target="_blank" style="color:var(--gold); font-weight:700;">🧪 Bağımsız Sayfada Laboratuvar ↗ <span>→</span></a>
     </div>
@@ -1716,41 +1757,48 @@
       </div>
     </section>
 
-    <!-- HISTORICAL FOUNDING VISIONARIES (SEPARATED & ELEVATED TRIBUTE) -->
-    <section id="tarihsel-onculer" style="margin-bottom: 75px;">
+    <!-- 1. ATATÜRK: KURUCU DEHA VE BAŞÖĞRETMEN (MÜSTAKİL ANMA ALANI) -->
+    <section id="kurucu-deha" style="margin-bottom: 75px;">
       <div class="section-header">
-        <span class="section-tag">TARİHSEL KURUCU VİZYON VE ENTELEKTÜEL KÖKLER</span>
-        <h2 class="section-title">🏛️ Tarihsel Kurucu Deha ve Fikir Babaları</h2>
+        <span class="section-tag">KURUCU DEHA VE TARİHSEL BAŞÖĞRETMEN</span>
+        <h2 class="section-title">🏛️ Gazi Mustafa Kemal Atatürk (1935)</h2>
         <p class="section-desc">
-          Güneş Dili kuramının tarihsel temellerini ve evrensel dil arayışının kilometre taşlarını oluşturan büyük tarihsel figürler.
+          Güneş-Dil Teorisinin kurucu dehası, başöğretmeni ve Türk dil devriminin ebedî mimarı.
         </p>
       </div>
 
-      <div class="founders-showcase">
-        <!-- Gazi Mustafa Kemal Atatürk Tribute Card -->
-        <div class="founder-card ataturk">
-          <div class="founder-badge gold">KURUCU DEHA VE BAŞÖĞRETMEN</div>
-          <h3>Gazi Mustafa Kemal Atatürk (1935)</h3>
-          <span class="founder-role">Güneş-Dil Teorisinin Kurucu Dehası ve Başöğretmeni</span>
-          <p>
-            1935 yılında Dolmabahçe Sarayı'nda dilbilimciler ve bilim heyetleriyle birlikte Türk milletinin kadim dilinin kök hücresini ve dünya dilleriyle olan derin fonetik bağlarını ortaya koymak amacıyla <b>Güneş-Dil Teorisini</b> inşa etmiştir. Dildeki kök hücresini Güneş ("Ag") ışığı ve radyasyon felsefesiyle tanımlayarak modern dilbilime ufuk açan tarihsel kurucu vizyonun sahibidir.
-          </p>
-          <div class="founder-quote-box">
-            "Türk dili dillerin en zenginlerindendir; yeter ki bu dil şuurla işlensin."
-          </div>
+      <div class="ataturk-monumental-card">
+        <div class="ataturk-badge-gold">KURUCU DEHA VE BAŞÖĞRETMEN</div>
+        <h3>Gazi Mustafa Kemal Atatürk</h3>
+        <span class="ataturk-subtitle">1935 Dolmabahçe Sarayı • Güneş-Dil Teorisinin Kurucusu</span>
+        <p>
+          1935 yılında Dolmabahçe Sarayı'nda dilbilimciler ve bilim heyetleriyle birlikte Türk milletinin kadim dilinin kök hücresini ve dünya dilleriyle olan derin fonetik bağlarını ortaya koymak amacıyla <b>Güneş-Dil Teorisini</b> bizzat inşa etmiştir. Dildeki kök hücresini Güneş ("Ag") ışığı ve radyasyon felsefesiyle tanımlayarak modern dilbilime ufuk açan tarihsel kurucu vizyonun yegâne mimarıdır.
+        </p>
+        <div class="founder-quote-box">
+          "Türk dili dillerin en zenginlerindendir; yeter ki bu dil şuurla işlensin." — Gazi Mustafa Kemal Atatürk
         </div>
+      </div>
+    </section>
 
-        <!-- Sir Isaac Newton Tribute Card -->
-        <div class="founder-card newton">
-          <div class="founder-badge cyan">17. YÜZYIL FONETİK DİL TASARIMI ÖNCÜSÜ</div>
-          <h3>Sir Isaac Newton (1664)</h3>
-          <span class="founder-role">Trinity College Not Defteri: <i>Of an Universall Language</i></span>
-          <p>
-            1664 yılında Trinity College'daki çalışma not defterinde fonetik seslere, sesli-sessiz harf düzenlerine ve kavramsal köklere dayalı evrensel bir sentetik dil tasarlamıştır. Güneş Dili'nin fonemik determinizm ilkeleriyle kavramsal paralellik taşıyan erken dönem tarihsel bir arayıştır.
-          </p>
-          <div class="founder-quote-box" style="border-left-color: var(--accent-cyan); background: rgba(0, 229, 255, 0.04);">
-            "A comprehensive universal dialect founded upon philosophical and phonetic roots."
-          </div>
+    <!-- 2. TARİHSEL ARŞİV İNCELEMESİ: NEWTON (KARŞILAŞTIRMALI NOT) -->
+    <section id="tarihsel-notlar" style="margin-bottom: 75px;">
+      <div class="section-header">
+        <span class="section-tag">TARİHSEL ARŞİV VE DİL TASARIMI NOTLARI</span>
+        <h2 class="section-title">📜 17. Yüzyıl Evrensel Dil Tasarımı İncelemesi</h2>
+        <p class="section-desc">
+          Tarihsel fonetik ve yapay dil çalışmalarına dair arşivsel karşılaştırma kaydı.
+        </p>
+      </div>
+
+      <div class="newton-archive-card">
+        <div class="founder-badge cyan">1664 TRINITY COLLEGE ARŞİVİ</div>
+        <h3>Sir Isaac Newton (1664)</h3>
+        <span class="founder-role">Not Defteri İncelemesi: <i>Of an Universall Language</i></span>
+        <p>
+          1664 yılında Trinity College'daki çalışma not defterinde fonetik seslere, sesli-sessiz harf düzenlerine ve kavramsal köklere dayalı erken dönem bir sentetik dil taslağı kaleme almıştır. Bu metin, Güneş Dili'nin matematiksel kök analizleri bağlamında arşivsel bir karşılaştırma materyali olarak incelenmektedir.
+        </p>
+        <div class="founder-quote-box" style="border-left-color: var(--accent-cyan); background: rgba(0, 229, 255, 0.04);">
+          "A comprehensive universal dialect founded upon philosophical and phonetic roots."
         </div>
       </div>
     </section>

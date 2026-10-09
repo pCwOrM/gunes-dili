@@ -228,12 +228,19 @@ Bu vizyon doğrultusunda Güneş Dili külliyatının öncülük edeceği yeni e
 
 ---
 
-## 🏛️ Tarihsel Kurucu Vizyon ve Felsefi Öncüler
+## 🏛️ Kurucu Deha ve Tarihsel Başöğretmen (1935)
 
-Bu kuramın kavramsal ve tarihsel temelleri iki büyük tarihsel şahsiyetin evrensel dil arayışlarına dayanır:
+Güneş-Dil Teorisinin yegâne kurucusu, dil devriminin önderi ve vizyoneri:
 
-* **🏛️ Gazi Mustafa Kemal Atatürk (1935):** Güneş-Dil Teorisinin kurucu dehası, başöğretmeni ve tarihsel vizyoneri. Dilin kök hücresini Güneş ("Ag") ve 53 Hold olarak tanımlayan ilk kaynak.
-* **📜 Sir Isaac Newton (1664):** Trinity College not defterindeki *Of an Universall Language* ile kavramsal ve fonetik evrensel dil tasarımının 17. yüzyıldaki öncüsü.
+* **🏛️ Gazi Mustafa Kemal Atatürk (1935):** Güneş-Dil Teorisinin kurucu dehası, başöğretmeni ve tarihsel vizyoneri. Türk dilinin kök hücresini Güneş ("Ag") ve 53 Hold olarak bizzat tanımlayan ilk ve kurucu kaynak.
+
+---
+
+## 📜 Tarihsel Karşılaştırmalı Arşiv (1664)
+
+17. yüzyılda fonetik ve sentetik dil tasarımı arayışlarına dair tarihsel karşılaştırma kaydı:
+
+* **Sir Isaac Newton (1664):** Trinity College not defterindeki *Of an Universall Language* ile kavramsal ve fonetik evrensel dil taslağını kaleme alan 17. yüzyıl öncüsü.
 
 ---
 

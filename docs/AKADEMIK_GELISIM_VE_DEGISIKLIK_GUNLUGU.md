@@ -83,6 +83,17 @@
 
 ---
 
+### [v4.3.1-HierarchyRefinement] — 2026-10-09
+#### 1. 🏛️ Kurucu Deha Olarak Gazi Mustafa Kemal Atatürk'ün Tekil ve Zirve Konumu
+* **Gerekçe:** Güneş-Dil Teorisinin yegâne mimarı ve başöğretmeni olan Gazi Mustafa Kemal Atatürk'ün, 17. yüzyıl bilim insanı Sir Isaac Newton ile dahi aynı kategorik seviyede tutulmaması; Atatürk'ün kurucu deha olarak mutlak zirvede bağımsız bir anma alanında konumlandırılması sağlandı.
+* **Uygulanan Değişiklik:**
+  * `docs/index.html` ve `README.md` içerisinde:
+    1. **Kurucu Deha ve Tarihsel Başöğretmen (`#kurucu-deha`):** Gazi Mustafa Kemal Atatürk'e adanmış müstakil, altın çerçeveli anıtsal bölüm.
+    2. **Tarihsel Karşılaştırmalı Arşiv Notları (`#tarihsel-notlar`):** Sir Isaac Newton'un 1664 tarihli *Of an Universall Language* not defteri, kuramsal kök analizlerinde incelenen arşivsel bir karşılaştırma dokümanı olarak ayrı bir başlığa taşındı.
+    3. **Proje Geliştirme Ekibi (`#ekip`):** Çağdaş mühendislik ve geliştirici kadrosu bağımsız çalışma tablosunda muhafaza edildi.
+
+---
+
 ## 🔒 Güvenlik, İzlenebilirlik ve Geri Alınabilirlik Güvencesi
 
 Tüm değişiklikler Git versiyon kontrol sistemi üzerinde atomik commit'ler ile kayıt altında tutulmakta olup, önceki sürümlere tam uyumludur. Hiçbir kök, ek veya sözlük verisi silinmemiş ya da biçimi bozulmamıştır.
