@@ -12,7 +12,9 @@
 * **Morfolojik Tokenizer:** Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian))
 * **Akademik & Stratejik Koordinasyon:** Dr. Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat))
 * **Kozmik ve Felsefi Arşiv:** Semih Salar
-* **Patent Önceliği:** TÜRKPATENT TR 2026/016285 (WERR Engine & OED)
+* **Patent Öncelikleri:**
+  * TÜRKPATENT TR 2026/016285 (*WERR Engine & OED - Waves & Errors Reflex Resonator*)
+  * TÜRKPATENT TR 2026/016633 (*WerrSoma - Bio-Synthetic Neuromorphic Interfacing & Drosophila Connectome*)
 
 ---
 

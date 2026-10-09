@@ -4,7 +4,9 @@
 
 Authors: Volkan Dağlı (@pCwOrM), Bekirhan Dağlı (@bdagli-web), Dağhan Dağlı (@Lexovian), Dr. Zerrin Dağlı (@jesmaat)
 Historical Foundation: Gazi Mustafa Kemal Atatürk (1935 Güneş-Dil Teorisi) & Sir Isaac Newton (1664 Of an Universall Language)
-Patent Priority: TÜRKPATENT TR 2026/016285 (WERR Engine & OED - Waves & Errors Reflex Resonator)
+Patent Priority:
+  - TÜRKPATENT TR 2026/016285 (WERR Engine & OED - Waves & Errors Reflex Resonator)
+  - TÜRKPATENT TR 2026/016633 (WerrSoma - Bio-Synthetic Neuromorphic Interfacing & Drosophila Connectome)
 Software Integration: Güneş Dili Ecosystem (https://github.com/pCwOrM/gunes-dili / https://pcworm.github.io/gunes-dili/)
 
 This module formally specifies and mechanically proves the core axioms and mathematical theorems

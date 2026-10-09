@@ -275,6 +275,11 @@ Bu ekosistem, kamuya açılma aşamasında **BBL v1.0 (Barış, Bilim, Liyakat &
 3. **Liyakat (Merit):** Geliştirici ve katkıcı hakları, Atatürk'ün 1935 mirası ve WERR külliyatı atıf zinciri asla silinemez.
 4. **Beerware / Çay Maddesi:** Bir gün geliştiricilerle karşılaşırsanız ve bu kod işinize yaradıysa, bir bardak çay ısmarlamanız yeterlidir.
 
+### 🛡️ Sınai Mülkiyet ve Patent Öncelikleri
+Güneş Dili kuramının prosedürel karar motoru, nöromorfik biyolojik rezonansı ve tüm-beyin konnektom telemetrisi tescilli patent başvuruları ile korunmaktadır:
+* **TÜRKPATENT TR 2026/016285:** *Yörüngesel Hata Dinamikleri ve Sıfır Bellekli Fraktal Sinirsel Sentez Yöntemi (OED / MFNS / WERR Engine)*
+* **TÜRKPATENT TR 2026/016633:** *Biyo-Sentetik Nöromorfik Arayüzleme: Tüm-Beyin Drosophila Connectome ve Sıfır-Bellekli Fraktal Karar Motoru Entegrasyonu (WerrSoma / BCI)*
+
 Ayrıntılı yasal ve felsefi analiz için [BBL Lisans Değerlendirmesi](docs/BBL_LISANS_DEGERLENDIRMESI.md) belgesini inceleyiniz.
 
 ---
