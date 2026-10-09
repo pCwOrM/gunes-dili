@@ -10,7 +10,7 @@
 * **Sistem ve Ontoloji Mimarı:** [@pCwOrM](https://github.com/pCwOrM) (WERR / MFNS Külliyatı)
 * **Gramer ve Çeviri Motoru:** Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web))
 * **Morfolojik Tokenizer:** Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian))
-* **Koordinasyon ve Takım:** Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat))
+* **Akademik & Stratejik Koordinasyon:** Dr. Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat))
 * **Kozmik ve Felsefi Arşiv:** Semih Salar
 * **Patent Önceliği:** TÜRKPATENT TR 2026/016285 (WERR Engine & OED)
 
@@ -74,7 +74,7 @@
 * **Uygulanan Değişiklik:**
   * `docs/index.html` ve `README.md` içerisinde iki bağımsız bölüm oluşturuldu:
     1. **Tarihsel Kurucu Vizyon ve Felsefi Öncüler:** Atatürk (Kurucu Deha ve Başöğretmen) ve Newton (17. Yüzyıl Fonetik Evrensel Dil Tasarımı).
-    2. **Proje Geliştirme Ekibi & Modern Katkıda Bulunanlar:** [@pCwOrM](https://github.com/pCwOrM), Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web)), Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)), Semih Salar ve Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)).
+    2. **Proje Geliştirme Ekibi & Modern Katkıda Bulunanlar:** [@pCwOrM](https://github.com/pCwOrM), Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web)), Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)), Semih Salar ve Dr. Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)).
 
 #### 2. 🧪 Sayfa İçi Tam Donanımlı Güneş Dili Laboratuvar Motoru (`#lab-tam-motor`)
 * **Gerekçe:** Kullanıcının harici bir sayfaya gitmeksizin tüm sözlük köklerine, 53 ek ailesine ve morfolojik tersine çözümleme motoruna doğrudan tek sayfa üzerinden erişebilmesi sağlandı.

@@ -2,7 +2,7 @@
 # Güneş Dili: Machine-Checked Formal Verification in Lean 4
 ## Deterministic Morphology, Canonical Root-Suffix Boundary Uniqueness, and 53-Holder Comma Acoustic Resonance
 
-Authors: Volkan Dağlı (@pCwOrM), Bekirhan Dağlı (@bdagli-web), Dağhan Dağlı (@Lexovian), Zerrin Dağlı (@jesmaat)
+Authors: Volkan Dağlı (@pCwOrM), Bekirhan Dağlı (@bdagli-web), Dağhan Dağlı (@Lexovian), Dr. Zerrin Dağlı (@jesmaat)
 Historical Foundation: Gazi Mustafa Kemal Atatürk (1935 Güneş-Dil Teorisi) & Sir Isaac Newton (1664 Of an Universall Language)
 Patent Priority: TÜRKPATENT TR 2026/016285 (WERR Engine & OED - Waves & Errors Reflex Resonator)
 Software Integration: Güneş Dili Ecosystem (https://github.com/pCwOrM/gunes-dili / https://pcworm.github.io/gunes-dili/)

@@ -262,7 +262,7 @@ Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel i
 * **⚙️ Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web)):** Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`) kurucu geliştiricisi.
 * **🔬 Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)):** Işıma ve Rezonans Tabanlı Morfolojik Tokenizer'ın (`tokenizer/gunes_dil_v4.py`) mimarı.
 * **🌌 Semih Salar:** Kozmik ve Felsefi Arşiv Araştırmacısı (`archive/`).
-* **🛡️ Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)):** Takım koordinasyonu, stratejik süreklilik ve çekirdek ekip desteği.
+* **🛡️ Dr. Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)):** Takım koordinasyonu, akademik ve kurumsal strateji, dokümantasyon sürekliliği.
 
 ---
 
