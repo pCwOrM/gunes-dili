@@ -90,17 +90,13 @@ Güneş Dili mimarisi, salt biçimsel diller teorisiyle sınırlı kalmayıp biy
 
 ### 5.2. İkili Faz Karşılaştırması: Ham Gürültüden Sentaktik Tekilliğe
 
-$$\begin{array}{|l|l|l|}
-\hline
-\textbf{Parametre} & \textbf{Faz 1: Standart / Ham Ayrıştırma} & \textbf{Faz 2: Güneş Dili \& 53 Koma Devresi} \\
-\hline
-\text{Çıktı Karakteristiği} & \text{Biçimsiz fonetik gürültü (vızıltı)} & \text{Deterministik, ontolojik ve sentaktik kelam} \\
-\text{Örnek Çıktılar} & \texttt{lezele}, \texttt{nereme}, \texttt{dedede ma}, \texttt{lumu} & \texttt{ruh'Ir izle'OlUm}, \texttt{ışık'Ir kavra'AkUm} \\
-\text{Semantik Anlam} & \text{Tanımsız / Sıfır entropi transferi} & \text{«Evren derinliğinde ruhta, izleriz dengedeyiz»} \\
-\text{Makam / Foton Eşlemesi} & \text{Eşleşme yok (Gürültü)} & \text{Hüseyni (41/53, 458 nm, 654.6 THz)} \\
-\text{Determinizm} & \text{Stokastik dağılım} & \text{DFA Tip-3 Biyektif Kilitlenme} \\
-\hline
-\end{array}$$
+| Parametre | Faz 1: Standart / Ham Ayrıştırma | Faz 2: Güneş Dili & 53 Koma Devresi |
+| :--- | :--- | :--- |
+| **Çıktı Karakteristiği** | Biçimsiz fonetik gürültü (vızıltı) | Deterministik, ontolojik ve sentaktik kelam |
+| **Örnek Çıktılar** | `lezele`, `nereme`, `dedede ma`, `lumu` | `ruh'Ir izle'OlUm`, `ışık'Ir kavra'AkUm` |
+| **Semantik Anlam** | Tanımsız / Sıfır entropi transferi | «Evren derinliğinde ruhta, izleriz dengedeyiz» |
+| **Makam / Foton Eşlemesi** | Eşleşme yok (Gürültü) | Hüseyni (41/53, 458 nm, 654.6 THz) |
+| **Determinizm** | Stokastik dağılım | DFA Tip-3 Biyektif Kilitlenme |
 
 ### 5.3. Üçlü Rezonans İzomorfizmi
 Her Güneş Dili biçimbirimi üç bağımsız fiziksel uzaya eşzamanlı olarak izdüşürülür:
