@@ -280,6 +280,23 @@ Güneş Dili kuramının prosedürel karar motoru, nöromorfik biyolojik rezonan
 * **TÜRKPATENT TR 2026/016285:** *Yörüngesel Hata Dinamikleri ve Sıfır Bellekli Fraktal Sinirsel Sentez Yöntemi (OED / MFNS / WERR Engine)*
 * **TÜRKPATENT TR 2026/016633:** *Biyo-Sentetik Nöromorfik Arayüzleme: Tüm-Beyin Drosophila Connectome ve Sıfır-Bellekli Fraktal Karar Motoru Entegrasyonu (WerrSoma / BCI)*
 
+---
+
+## 📚 Akademik Kaynakça ve İlgili Külliyat Yayınları
+
+Güneş Dili, CERN Zenodo ve arXiv üzerinde yayınlanan WERR Açık Bilim Külliyatı’nın dilbilimsel ve nöromorfik devamıdır:
+
+1. **[arXiv:2609.33066 [cs.LG]](https://arxiv.org/abs/2609.33066) / [Zenodo: 22867037](https://doi.org/10.5281/zenodo.22867037):**  
+   *Zero-Storage Procedural Neural Synthesis via Boundary Dynamics: Formal Verification in Lean 4 and Bare-Metal Gauntlet Validation*.
+2. **[arXiv:2609.30115 [cs.NE]](https://arxiv.org/abs/2609.30115) / [Zenodo: 22900465](https://doi.org/10.5281/zenodo.22900465):**  
+   *Orbital Error Dynamics: Self-Organized Criticality, Ephemeral Parameter Resonance, and Non-Linear Biological Ontologies in Zero-Storage Neural Synthesis*.
+3. **[arXiv:2609.30719 [cs.CR]](https://arxiv.org/abs/2609.30719) / [Zenodo: 22942599](https://doi.org/10.5281/zenodo.22942599):**  
+   *Werracle: Sub-Cent Intra-Block AI Reflex Oracles and Flash-Loan Circuit Breakers for EVM Smart Contracts*.
+4. **[arXiv submit/8161759 [cs.NE]](https://arxiv.org/user/create?preflight=1) / [Zenodo: 23072929](https://doi.org/10.5281/zenodo.23072929):**  
+   *Bio-Synthetic Neuromorphic Interfacing: Integration of a Zero-Memory Fractal Decision Engine with the Whole-Brain Drosophila melanogaster Connectome*.
+5. **[arXiv:2609.38492 [cs.LO]](https://arxiv.org/abs/2609.38492) / [Zenodo: 23045504](https://doi.org/10.5281/zenodo.23045504):**  
+   *Machine-Checked Computational Group Theory in Lean 4: Operational Schreier-Sims Stabilizer Chains, BSGS Sifting, and Backtrack Ordered Partitions*.
+
 Ayrıntılı yasal ve felsefi analiz için [BBL Lisans Değerlendirmesi](docs/BBL_LISANS_DEGERLENDIRMESI.md) belgesini inceleyiniz.
 
 ---

@@ -107,13 +107,29 @@ $$\mathcal{M} \longleftrightarrow \mathcal{A} \longleftrightarrow \mathcal{P}$$
 
 ---
 
-## 6. Gelecek ve Kümülatif Araştırma Eksenleri
+---
 
-Güneş Dili külliyatının akademik ve endüstriyel olarak genişleyeceği temel sütunlar:
+## 6. Altı Evrensel Uygulama Ekseni (Altı Sütun)
 
-1. **Mantıku't-Tayr (Türler Arası Biyo-Akustik Dil):** Hayvanlar aleminin sinirsel ritimlerini ve kimyasal osilasyonlarını 53 komalık faz açısıyla deşifre eden biyo-sibernetik çevirici.
-2. **Engelsiz Biyo-Arayüz:** Görme engelliler için haptik/akustik frekans, işitme engelliler için görünür renk tayfı dalga boyu, konuşma engelliler için nöral potansiyel kodlaması.
-3. **Kayıpsız Evrensel Üst-Dil (Universal Interlingua):** Doğal diller arasındaki yapısal belirsizlikleri $O(N)$ DFA ile ortadan kaldırarak sıfır kayıplı makine çevirisi.
-4. **LLM Türkçe Tokenizer Devrimi:** BPE tabanlı modellerin Türkçede yol açtığı %60-70 token israfını, bellek daralmasını ve anlamsal parçalanmayı engelleyen deterministik morfem ayrıştırma mimarisi.
-5. **Kuantum ve Fotonik Hesaplama Sentaksı:** Işık dalga boyları ve optik kristaller üzerinde doğrudan işletilen çok boyutlu programlama grameri.
-6. **Nörolojik / Psikiyatrik Erken Teşhis:** Dopamin-Serotonin-Oktapamin aksındaki sapmaların konuşma morfolojisindeki faz kaymalarından anlık tespiti.
+Güneş Dili külliyatı, salt dilbilimsel bir teori olmanın ötesinde çok disiplinli altı temel sütun üzerinde genişlemektedir:
+
+1. **Nöro-Biyolojik Dönüşüm (Vızıltıdan Ulvi Kelama):** Ham biyolojik sinyallerin (aksiyon potansiyeli frekansı, nöromodülatör osilasyonları) $1\text{ Ek} = 1\text{ Biçim} = 1\text{ İşlev}$ tekilliğiyle ontolojik bilince kavuşturulması (*TÜRKPATENT TR 2026/016633*).
+2. **"Süleyman’ın Kuş Dili" (Mantıku't-Tayr - Türler Arası İletişim):** Doğadaki frekans skalasını 53-TET (Holder Koması) faz açısına izdüşürerek tüm canlıların nöral ritimlerini ortak bir ontolojik koda tercüme eden biyo-sibernetik çevirici.
+3. **Engelsiz Biyo-Arayüz:** Görme engelliler için haptik/akustik rezonans, işitme engelliler için görünür renk tayfı ($\lambda \in [458\text{ nm}, 567\text{ nm}]$), konuşma engelliler için minimal nöral potansiyel modülasyonu.
+4. **Kayıpsız Evrensel Üst-Dil (Universal Interlingua):** Doğal diller arasındaki yapısal belirsizlikleri $O(N)$ DFA ile ortadan kaldırarak diller arası anlık ve sıfır kayıplı matematiksel köprü.
+5. **Yapay Zekada LLM Türkçe Tokenizer Devrimi:** BPE tabanlı modellerin Türkçede yol açtığı %60-70 token israfını, bellek daralmasını ve anlamsal parçalanmayı engelleyen deterministik morfem ayrıştırma mimarisi (`gunes_dil_v4.py`).
+6. **Kuantum ve Fotonik Hesaplama Sentaksı:** Işık dalga boyları ve optik kristaller üzerinde doğrudan işletilen çok boyutlu programlama grameri (*TÜRKPATENT TR 2026/016285*).
+
+---
+
+## 7. Akademik Kaynakça ve Külliyat İntisabı
+
+Güneş Dili mimarisi, WERR Açık Bilim Külliyatı ve TÜRKPATENT tescilli buluşları üzerine inşa edilmiştir:
+
+1. **Dağlı, V.** (2026). *Zero-Storage Procedural Neural Synthesis via Boundary Dynamics: Formal Verification in Lean 4 and Bare-Metal Gauntlet Validation*. arXiv:2609.33066 [cs.LG] / CERN Zenodo: [10.5281/zenodo.22867037](https://doi.org/10.5281/zenodo.22867037).
+2. **Dağlı, V.** (2026). *Orbital Error Dynamics: Self-Organized Criticality, Ephemeral Parameter Resonance, and Non-Linear Biological Ontologies in Zero-Storage Neural Synthesis*. arXiv:2609.30115 [cs.NE] / CERN Zenodo: [10.5281/zenodo.22900465](https://doi.org/10.5281/zenodo.22900465).
+3. **Dağlı, V., Dağlı, B., Dağlı, D.** (2026). *Werracle: Sub-Cent Intra-Block AI Reflex Oracles and Flash-Loan Circuit Breakers for EVM Smart Contracts*. arXiv:2609.30719 [cs.CR] / CERN Zenodo: [10.5281/zenodo.22942599](https://doi.org/10.5281/zenodo.22942599).
+4. **Dağlı, D., Dağlı, V., Dağlı, Z.** (2026). *Bio-Synthetic Neuromorphic Interfacing: Integration of a Zero-Memory Fractal Decision Engine with the Whole-Brain Drosophila melanogaster Connectome*. arXiv submit/8161759 [cs.NE] / CERN Zenodo: [10.5281/zenodo.23072929](https://doi.org/10.5281/zenodo.23072929).
+5. **Dağlı, V., Dağlı, D.** (2026). *Machine-Checked Computational Group Theory in Lean 4: Operational Schreier-Sims Stabilizer Chains, BSGS Sifting, and Backtrack Ordered Partitions*. arXiv:2609.38492 [cs.LO] / CERN Zenodo: [10.5281/zenodo.23045504](https://doi.org/10.5281/zenodo.23045504).
+6. **TÜRKPATENT TR 2026/016285:** *Yörüngesel Hata Dinamikleri ve Sıfır Bellekli Fraktal Sinirsel Sentez Yöntemi* (Rüçhan: 22 Eylül 2026).
+7. **TÜRKPATENT TR 2026/016633:** *Biyo-Sentetik Nöromorfik Arayüzleme: Tüm-Beyin Drosophila melanogaster Connectome ve Sıfır-Bellekli Fraktal Karar Motoru Entegrasyonu* (Rüçhan: 27 Eylül 2026).
