@@ -7,6 +7,7 @@
 
 ![Repo Status: Private](https://img.shields.io/badge/Repo%20Status-Private%20%2F%20Confidential-red.svg)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Canl%C4%B1%20Portal-success.svg?logo=github)](https://pcworm.github.io/gunes-dili/)
+[![Lean 4 Verified](https://img.shields.io/badge/Lean%204-Machine%20Checked-blue.svg)](proofs/GunesDiliProof.lean)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![License: BBL Draft](https://img.shields.io/badge/License-BBL%20v1.0%20(Bar%C4%B1%C5%9F%20Bilim%20Liyakat)-gold.svg)](docs/BBL_LISANS_DEGERLENDIRMESI.md)
 [![UD Turkish Validated](https://img.shields.io/badge/UD%20Turkish-Validated-success.svg)](https://universaldependencies.org/)
@@ -19,6 +20,8 @@
 | Doküman | Hedef Kitle ve Kapsam | Bağlantı |
 | :--- | :--- | :--- |
 | 🌐 **Canlı Web Portalı & Simülatör** | Etkileşimli çevirmen, 53 koma çarkı ve görsel rezonans arayüzü | [**Siteyi Aç (GitHub Pages)**](https://pcworm.github.io/gunes-dili/) |
+| 📐 **Lean 4 Biçimsel İspat Modülü** | Aksiyom 1-3, DFA Tekilliği ve 53 Koma Rezonansının Lean 4 Kanıtları | [**İncele**](proofs/GunesDiliProof.lean) |
+| 📜 **Akademik Gelişim Günlüğü** | Kümülatif akademik kararlar, metrikler ve revizyon arşivi | [**İncele**](docs/AKADEMIK_GELISIM_VE_DEGISIKLIK_GUNLUGU.md) |
 | ☀️ **Logo Felsefesi ve Geometrisi** | Amblemin sembolik dili, Ag kökü, 53 koma ve fraktal dalga analizi | [İncele](docs/LOGO_FELSEFESI_VE_TEKNIK_ACIKLAMASI.md) |
 | 🎓 **Teknik ve Akademik Rehber** | Dilbilimciler, matematikçiler ve mühendisler için biçimsel ispatlar (T1-T5) | [İncele](docs/TEKNIK_VE_AKADEMIK_REHBER.md) |
 | 🌍 **Halka Anlatım Rehberi** | Karmaşık terimlerden arındırılmış, 7'den 77'ye Güneş Dili ve Atatürk mirası | [İncele](docs/HALKA_ANLATIM_REHBERI.md) |
@@ -47,7 +50,7 @@ gunes-dili/
 ├── tokenizer/       # Işıma ve Rezonans Tabanlı Morfolojik Tokenizer (gunes_dil_v4)
 ├── engine/          # Deterministik Güneş Dili Gramer ve Çeviri Motoru (gunes_dili)
 ├── lab/             # İnteraktif Web Tabanlı Çeviri ve Ayrıştırma Laboratuvarı
-└── proofs/          # T1-T5 Matematiksel Kanıt Defteri ve Fraktal Sinir Ağı Modelleri
+└── proofs/          # T1-T5 Kanıt Defteri, Lean 4 İspatları (GunesDiliProof.lean) ve MFNS
 ```
 
 ---

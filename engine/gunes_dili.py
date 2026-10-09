@@ -451,6 +451,9 @@ def kaba_kuvvet_dogrulama(kokler, max_ek=3):
 
 
 if __name__ == "__main__":
+    import sys
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
     print(teorem_kaniti())
     ih, d = fsa_determinizm()
     print("FSA determinizm:", d, "durum tarandı, ihlal:", len(ih), ih[:5])

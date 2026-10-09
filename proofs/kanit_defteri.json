@@ -8,7 +8,7 @@
   "denenen_dizi": 1291220,
   "gecerli_kelime": 84124,
   "tek_cozumleme_hatasi": 0,
-  "sure_sn": 3.2
+  "sure_sn": 8.5
  },
  "T3_rastgele_gecerlilik": 0.03275,
  "T4_ceviri": {
@@ -257,5 +257,6 @@
   "ortalama_harf_gd": 7.030624194870594,
   "ortalama_morfem_tr": 1.8788499824335403,
   "ortalama_morfem_gd": 1.9716008900339619
- }
+ },
+ "T4_canli_ornek_dogrulama": "6/6 başarılı"
 }
