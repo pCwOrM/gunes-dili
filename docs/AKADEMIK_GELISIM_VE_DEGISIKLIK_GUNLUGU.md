@@ -44,6 +44,29 @@
 
 ---
 
+### [v4.2.0-WebPortal] — 2026-10-09
+#### 1. 🌐 Canlı Web Portalı & İnteraktif Laboratuvarın Baştan Aşağı Yenilenmesi (`docs/index.html`)
+* **Tespit Edilen Eksiklik ve Hatalar:**
+  1. Mobil ve orta ölçekli ekranlarda menü kırılmaları, taşmalar ve mobil açılır menü (hamburger drawer) eksikliği.
+  2. Eski simülatörün statik kurallarla çalışması (`kitaptapızte` gibi sahte üretimler) ve `engine/gunes_dili.py` kanonik morfolojisine uymaması.
+  3. GitHub Pages kök dizin dışındaki dosyalara erişemediği için `../lab/index.html` bağlantısının 404 Not Found hatası üretmesi.
+  4. HTML DOM yapısında kapatılmamış div/section etiketleri (`div.proofs-table-wrap`) nedeniyle mimarlar bölümünün ispat tablosunun içine hapsolması.
+* **Uygulanan Akademik ve Tasarımsal İyileştirmeler:**
+  1. **Ultra-Modern Kozmik/Siber Glassmorphic Arayüz:** Cinzel, Plus Jakarta Sans ve IBM Plex Mono tipografileriyle Güneş Dili'nin hem kadim Atatürk/Newton mirasını hem de modern WERR/MFNS sibernetik karakterini yansıtan elit görsel mimari.
+  2. **Duyarlı Gezinme & Mobil Drawer:** Masaüstünde cam efektli navbar, mobilde pürüzsüz açılır çekmece menüsü (`#mobileDrawer`).
+  3. **Deterministik İki Yönlü Morfoloji Motoru (İstemci Taraflı JavaScript):**
+     * Türkçe &rarr; Güneş Dili: Kanonik kök dönüştürücü (`(C)V(CV)*C`), 53 ek tablosu (`EK_TABLOSU`), zengin iki dilli korpus (`BILINGUAL_CORPUS`) ve morfem şeridi (kök, çatı, zaman, ek-fiil, hal/şahıs).
+     * Güneş Dili &rarr; Türkçe: Aksiyom 2 tabanlı DFA tekil konsonant kümesi ayrıştırması ($CC$) ve $O(N)$ geri-çözümleyici.
+  4. **Canlı 53-Holder Koması Akustik Sentezleyici (Web Audio API):**
+     * 53-TET mikrotonal frekans formülü $f_k = 440 \cdot 2^{(k - 9)/53}\text{ Hz}$ ile saf sinüs osilatörü ve dinamik gain envelope eşliğinde işitsel rezonans çalma yeteneği.
+  5. **Çift Etkileşimli Canvas:**
+     * *Canvas 1:* Mandelbrot kutupsal faz yörüngesi çizici ($r, \theta$ ışıma vektörü).
+     * *Canvas 2:* Tıklanabilir 53-Komalı Türk Musikisi Makam Çarkı (Rast, Segâh, Dügâh, Çargâh, Hüseyni, Nevâ vb.).
+  6. **Bağlantı Bütünlüğü & Lab Entegrasyonu:** `lab/` paketi Pages kökü olan `docs/lab/` altına doğrudan kopyalanarak tüm 404 riskleri bertaraf edildi.
+  7. **Biçimsel Doğrulama ve Arşiv Vitrini:** Lean 4 `GunesDiliProof.lean` teorem kartları, Dolmabahçe 1935, Newton 1664 ve Semih Salar kozmik arşivleri öne çıkarıldı.
+
+---
+
 ## 🔒 Güvenlik, İzlenebilirlik ve Geri Alınabilirlik Güvencesi
 
 Tüm değişiklikler Git versiyon kontrol sistemi üzerinde atomik commit'ler ile kayıt altında tutulmakta olup, önceki sürümlere tam uyumludur. Hiçbir kök, ek veya sözlük verisi silinmemiş ya da biçimi bozulmamıştır.
