@@ -228,16 +228,23 @@ Bu vizyon doğrultusunda Güneş Dili külliyatının öncülük edeceği yeni e
 
 ---
 
-## 👥 Kadim ve Çağdaş Mimarlar / Külliyat Künyesi
+## 🏛️ Tarihsel Kurucu Vizyon ve Felsefi Öncüler
 
-Bu ekosistem; 1935'ten günümüze uzanan derin bir felsefi arayışın, matematiksel dehanın ve kolektif bir adanmışlığın meyvesidir:
+Bu kuramın kavramsal ve tarihsel temelleri iki büyük tarihsel şahsiyetin evrensel dil arayışlarına dayanır:
 
-* **🏛️ Gazi Mustafa Kemal Atatürk (1935):** Güneş-Dil Teorisinin kurucu dehası, başöğretmeni ve tarihsel vizyoneri.
-* **📜 Sir Isaac Newton (1664):** Trinity College not defterindeki *Of an Universall Language* ile fonetik evrensel dil tasarımının öncüsü.
-* **☀️ @pCwOrM (Sistem Mimarı):** Sistemin ruhunu üfleyen, parçaları birbirine bağlayan tutkalı süren; WERR fraktal sentezi, MFNS teorem modellemeleri ve ontolojik omurganın kurucusu.
+* **🏛️ Gazi Mustafa Kemal Atatürk (1935):** Güneş-Dil Teorisinin kurucu dehası, başöğretmeni ve tarihsel vizyoneri. Dilin kök hücresini Güneş ("Ag") ve 53 Hold olarak tanımlayan ilk kaynak.
+* **📜 Sir Isaac Newton (1664):** Trinity College not defterindeki *Of an Universall Language* ile kavramsal ve fonetik evrensel dil tasarımının 17. yüzyıldaki öncüsü.
+
+---
+
+## ⚙️ Proje Geliştirme Ekibi & Modern Katkıda Bulunanlar
+
+Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel ispatları, morfolojik tokenizer ve çeviri motoruyla geliştiren çalışma grubu:
+
+* **☀️ @pCwOrM (Sistem Mimarı):** Sistemin mimarisi, WERR fraktal sentezi, MFNS teorem modellemeleri ve ontolojik omurganın kurucusu.
 * **⚙️ Bekirhan Dağlı ([@bdagli](https://github.com/bdagli)):** Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`) kurucu geliştiricisi.
 * **🔬 Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)):** Işıma ve Rezonans Tabanlı Morfolojik Tokenizer'ın (`tokenizer/gunes_dil_v4.py`) mimarı.
-* **🌌 Semih Salar:** Kozmik İşletim Sistemi, Kuantum Mitoloji, Dil-Evren Ontolojisi ve Yunus Emre mistisizmi çözümlemeleri (`archive/kozmik_isletim_sistemi/`).
+* **🌌 Semih Salar:** Kozmik ve Felsefi Arşiv Araştırmacısı (`archive/`).
 * **🛡️ Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)):** Takım koordinasyonu, stratejik süreklilik ve çekirdek ekip desteği.
 
 ---

@@ -925,7 +925,98 @@
       line-height: 1.55;
     }
 
-    /* PANTHEON OF ARCHITECTS */
+    /* HISTORICAL FOUNDING VISIONARIES (SEPARATED & ELEVATED TRIBUTE) */
+    .founders-showcase {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 28px;
+      margin-bottom: 90px;
+    }
+    @media (max-width: 900px) {
+      .founders-showcase { grid-template-columns: 1fr; }
+    }
+    .founder-card {
+      background: var(--bg-card-trans);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 32px;
+      position: relative;
+      backdrop-filter: blur(14px);
+      transition: all 0.3s ease;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    }
+    .founder-card.ataturk {
+      border: 1.5px solid rgba(255, 215, 0, 0.45);
+      background: linear-gradient(145deg, rgba(255, 215, 0, 0.05) 0%, rgba(10, 14, 26, 0.95) 100%);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 35px rgba(255, 215, 0, 0.12);
+    }
+    .founder-card.ataturk:hover {
+      border-color: var(--gold);
+      box-shadow: 0 20px 55px rgba(0, 0, 0, 0.7), 0 0 45px rgba(255, 215, 0, 0.22);
+      transform: translateY(-4px);
+    }
+    .founder-card.newton {
+      border: 1px solid rgba(0, 229, 255, 0.3);
+      background: linear-gradient(145deg, rgba(0, 229, 255, 0.03) 0%, rgba(10, 14, 26, 0.95) 100%);
+    }
+    .founder-card.newton:hover {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 229, 255, 0.15);
+      transform: translateY(-4px);
+    }
+    .founder-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .founder-badge.gold {
+      background: rgba(255, 215, 0, 0.15);
+      color: var(--gold);
+      border: 1px solid rgba(255, 215, 0, 0.35);
+    }
+    .founder-badge.cyan {
+      background: rgba(0, 229, 255, 0.12);
+      color: var(--accent-cyan);
+      border: 1px solid rgba(0, 229, 255, 0.3);
+    }
+    .founder-card h3 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      color: #FFF;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+    .founder-role {
+      font-family: var(--font-mono);
+      font-size: 13.5px;
+      color: var(--gold-light);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .founder-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 14px;
+    }
+    .founder-quote-box {
+      border-left: 3px solid var(--gold);
+      padding: 10px 16px;
+      background: rgba(255, 215, 0, 0.04);
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #E0E6ED;
+      font-size: 13.5px;
+      line-height: 1.55;
+    }
+
+    /* MODERN ENGINEERING & DEV TEAM */
     .architects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -967,6 +1058,72 @@
       font-size: 13.5px;
       color: var(--text-muted);
       line-height: 1.55;
+    }
+
+    /* EMBEDDED LABORATORY ENGINE CONTAINER */
+    .embedded-lab-section {
+      background: var(--bg-card-trans);
+      border: 1px solid var(--border-bright);
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 90px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(16px);
+    }
+    .lab-frame-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .lab-frame-bar .lab-title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .lab-frame-actions {
+      display: flex;
+      gap: 10px;
+    }
+    .lab-frame-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      font-size: 13px;
+      font-family: var(--font-mono);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .lab-frame-btn:hover {
+      background: rgba(255, 215, 0, 0.15);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    .lab-iframe-wrap {
+      width: 100%;
+      height: 780px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #0F1320;
+    }
+    .lab-iframe-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
     }
 
     /* FOOTER */
@@ -1032,13 +1189,14 @@
 
       <!-- Desktop Navigation Links -->
       <nav class="nav-links">
-        <a href="#simulator">⚡ Simülatör</a>
+        <a href="#simulator">⚡ Hızlı Motor</a>
+        <a href="#lab-tam-motor">🧪 Tam Laboratuvar</a>
         <a href="#koma-cemberi">🎵 53 Koma</a>
         <a href="#ispatlar">📐 Lean 4 İspatlar</a>
-        <a href="#arsiv">📜 Arşiv & El Yazması</a>
-        <a href="#dokumanlar">📚 Kılavuzlar</a>
-        <a href="#mimarlar">👥 Mimarlar</a>
-        <a href="lab/index.html" target="_blank" class="nav-btn-highlight">🧪 Canlı Laboratuvar ↗</a>
+        <a href="#arsiv">📜 Arşiv</a>
+        <a href="#tarihsel-onculer">🏛️ Kurucu Deha</a>
+        <a href="#ekip">⚙️ Ekip</a>
+        <a href="lab/index.html" target="_blank" class="nav-btn-highlight">🧪 Lab (Ayrı Sekme) ↗</a>
       </nav>
 
       <!-- Mobile Hamburger Button -->
@@ -1049,13 +1207,15 @@
 
     <!-- Mobile Drawer Menu -->
     <div class="mobile-drawer" id="mobileDrawer">
-      <a href="#simulator" onclick="toggleMobileMenu()">⚡ Canlı Morfoloji Simülatörü <span>→</span></a>
+      <a href="#simulator" onclick="toggleMobileMenu()">⚡ Hızlı Morfoloji Simülatörü <span>→</span></a>
+      <a href="#lab-tam-motor" onclick="toggleMobileMenu()">🧪 Tam Donanımlı Laboratuvar Motoru (Bu Sayfada) <span>→</span></a>
       <a href="#koma-cemberi" onclick="toggleMobileMenu()">🎵 53 Holder Koma Çarkı <span>→</span></a>
       <a href="#ispatlar" onclick="toggleMobileMenu()">📐 Lean 4 Biçimsel İspatlar <span>→</span></a>
-      <a href="#arsiv" onclick="toggleMobileMenu()">📜 Atatürk & Newton Arşivi <span>→</span></a>
+      <a href="#arsiv" onclick="toggleMobileMenu()">📜 Atatürk & Newton Tarihsel Arşivi <span>→</span></a>
       <a href="#dokumanlar" onclick="toggleMobileMenu()">📚 Dokümantasyon & Raporlar <span>→</span></a>
-      <a href="#mimarlar" onclick="toggleMobileMenu()">👥 Kadim ve Çağdaş Mimarlar <span>→</span></a>
-      <a href="lab/index.html" target="_blank" style="color:var(--gold); font-weight:700;">🧪 Bağımsız Web Laboratuvarı ↗ <span>→</span></a>
+      <a href="#tarihsel-onculer" onclick="toggleMobileMenu()">🏛️ Tarihsel Kurucu Öncüler <span>→</span></a>
+      <a href="#ekip" onclick="toggleMobileMenu()">⚙️ Proje Geliştirme Ekibi <span>→</span></a>
+      <a href="lab/index.html" target="_blank" style="color:var(--gold); font-weight:700;">🧪 Bağımsız Sayfada Laboratuvar ↗ <span>→</span></a>
     </div>
   </header>
 
@@ -1085,9 +1245,9 @@
       </p>
 
       <div class="hero-cta">
-        <a href="#simulator" class="btn btn-primary">⚡ Canlı Morfoloji Motorunu Dene</a>
-        <a href="lab/index.html" target="_blank" class="btn btn-cyan">🧪 Tam Web Laboratuvarı ↗</a>
-        <a href="#ispatlar" class="btn btn-secondary">📐 Lean 4 İspat Defteri</a>
+        <a href="#simulator" class="btn btn-primary">⚡ Hızlı Morfoloji Motoru</a>
+        <a href="#lab-tam-motor" class="btn btn-cyan">🧪 Tam Laboratuvarı Aç</a>
+        <a href="lab/index.html" target="_blank" class="btn btn-secondary">🔗 Ayrı Sayfada Aç ↗</a>
         <a href="https://github.com/pCwOrM/gunes-dili" target="_blank" class="btn btn-secondary">🐙 GitHub Deposu ↗</a>
       </div>
 
@@ -1226,6 +1386,31 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- EMBEDDED FULL LABORATORY ENGINE SECTION -->
+    <section id="lab-tam-motor" class="embedded-lab-section">
+      <div class="lab-frame-bar">
+        <div class="lab-title">
+          <span>🧪</span>
+          <span>Tam Teşekküllü Güneş Dili Laboratuvar Motoru</span>
+          <span style="font-size:12px; font-family:var(--font-mono); color:var(--gold-light); background:rgba(255,215,0,0.1); padding:3px 8px; border-radius:6px; border:1px solid rgba(255,215,0,0.25);">Doğrudan İstemci Motoru Aktif</span>
+        </div>
+        <div class="lab-frame-actions">
+          <a href="lab/index.html" target="_blank" class="lab-frame-btn" title="Laboratuvarı Yeni Sekmede Aç">
+            <span>Ayrı Sayfada Aç</span> <span>↗</span>
+          </a>
+          <button class="lab-frame-btn" onclick="document.getElementById('labIframe').src = document.getElementById('labIframe').src" title="Laboratuvarı Yeniden Başlat">
+            <span>Yeniden Yükle</span> <span>↻</span>
+          </button>
+        </div>
+      </div>
+      <div style="font-size: 14px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.6;">
+        Tüm sözlük kökleri, 53 ek ailesi kombinasyonları, tersine morfolojik analiz ve çift dilli çeviri motorunu sayfa değiştirmeden doğrudan bu panel üzerinden çalıştırabilirsiniz:
+      </div>
+      <div class="lab-iframe-wrap">
+        <iframe id="labIframe" src="lab/index.html" title="Güneş Dili Bağımsız Laboratuvarı" loading="lazy"></iframe>
       </div>
     </section>
 
@@ -1531,64 +1716,89 @@
       </div>
     </section>
 
-    <!-- PANTHEON OF ARCHITECTS SECTION -->
-    <section id="mimarlar" style="margin-bottom: 70px;">
+    <!-- HISTORICAL FOUNDING VISIONARIES (SEPARATED & ELEVATED TRIBUTE) -->
+    <section id="tarihsel-onculer" style="margin-bottom: 75px;">
       <div class="section-header">
-        <span class="section-tag">KÜLLİYAT KÜNYESİ VE EMEK SAHİPLERİ</span>
-        <h2 class="section-title">👥 Kadim ve Çağdaş Mimarlar</h2>
+        <span class="section-tag">TARİHSEL KURUCU VİZYON VE ENTELEKTÜEL KÖKLER</span>
+        <h2 class="section-title">🏛️ Tarihsel Kurucu Deha ve Fikir Babaları</h2>
         <p class="section-desc">
-          1935'ten günümüze uzanan derin bir felsefi arayışın, matematiksel dehanın ve kolektif bir adanmışlığın mimarları.
+          Güneş Dili kuramının tarihsel temellerini ve evrensel dil arayışının kilometre taşlarını oluşturan büyük tarihsel figürler.
+        </p>
+      </div>
+
+      <div class="founders-showcase">
+        <!-- Gazi Mustafa Kemal Atatürk Tribute Card -->
+        <div class="founder-card ataturk">
+          <div class="founder-badge gold">KURUCU DEHA VE BAŞÖĞRETMEN</div>
+          <h3>Gazi Mustafa Kemal Atatürk (1935)</h3>
+          <span class="founder-role">Güneş-Dil Teorisinin Kurucu Dehası ve Başöğretmeni</span>
+          <p>
+            1935 yılında Dolmabahçe Sarayı'nda dilbilimciler ve bilim heyetleriyle birlikte Türk milletinin kadim dilinin kök hücresini ve dünya dilleriyle olan derin fonetik bağlarını ortaya koymak amacıyla <b>Güneş-Dil Teorisini</b> inşa etmiştir. Dildeki kök hücresini Güneş ("Ag") ışığı ve radyasyon felsefesiyle tanımlayarak modern dilbilime ufuk açan tarihsel kurucu vizyonun sahibidir.
+          </p>
+          <div class="founder-quote-box">
+            "Türk dili dillerin en zenginlerindendir; yeter ki bu dil şuurla işlensin."
+          </div>
+        </div>
+
+        <!-- Sir Isaac Newton Tribute Card -->
+        <div class="founder-card newton">
+          <div class="founder-badge cyan">17. YÜZYIL FONETİK DİL TASARIMI ÖNCÜSÜ</div>
+          <h3>Sir Isaac Newton (1664)</h3>
+          <span class="founder-role">Trinity College Not Defteri: <i>Of an Universall Language</i></span>
+          <p>
+            1664 yılında Trinity College'daki çalışma not defterinde fonetik seslere, sesli-sessiz harf düzenlerine ve kavramsal köklere dayalı evrensel bir sentetik dil tasarlamıştır. Güneş Dili'nin fonemik determinizm ilkeleriyle kavramsal paralellik taşıyan erken dönem tarihsel bir arayıştır.
+          </p>
+          <div class="founder-quote-box" style="border-left-color: var(--accent-cyan); background: rgba(0, 229, 255, 0.04);">
+            "A comprehensive universal dialect founded upon philosophical and phonetic roots."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODERN ENGINEERING & PROJECT DEV TEAM -->
+    <section id="ekip" style="margin-bottom: 70px;">
+      <div class="section-header">
+        <span class="section-tag">YAZILIM GELİŞTİRME & ÇALIŞMA EKİBİ</span>
+        <h2 class="section-title">⚙️ Proje Geliştirme Ekibi ve Katkıda Bulunanlar</h2>
+        <p class="section-desc">
+          Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel ispatları, morfolojik tokenizer ve web motoruyla geliştiren modern çağ çalışma grubu.
         </p>
       </div>
 
       <div class="architects-grid">
-        <div class="arch-card">
-          <div class="arch-icon">🏛️</div>
-          <h3>Gazi Mustafa Kemal Atatürk (1935)</h3>
-          <span class="arch-role">Kurucu Deha ve Başöğretmen</span>
-          <p>Güneş-Dil Teorisinin kurucu dehası ve tarihsel vizyoneri. Dilin kök hücresini Güneş ("Ag") ve 53 Hold olarak tanımlayan ilk kaynak.</p>
-        </div>
-
-        <div class="arch-card">
-          <div class="arch-icon">📜</div>
-          <h3>Sir Isaac Newton (1664)</h3>
-          <span class="arch-role">Evrensel Dil Öncüsü</span>
-          <p>Trinity College not defterindeki <i>Of an Universall Language</i> ile fonetik evrensel dil tasarımının öncüsü.</p>
-        </div>
-
         <div class="arch-card highlight">
           <div class="arch-icon">☀️</div>
           <h3>@pCwOrM (Sistem Mimarı)</h3>
-          <span class="arch-role">Ontoloji, WERR & MFNS Kurucusu</span>
-          <p>Sistemin ruhu ve tutkalı; WERR fraktal sentezi, MFNS teorem modellemeleri, 53 Holder koması ses fiziği ve ontolojik omurganın mimarı.</p>
+          <span class="arch-role">Ontoloji, WERR & MFNS Sistem Kurucusu</span>
+          <p>Sistem mimarisi, WERR fraktal sentezi, MFNS teorem modellemeleri, 53 Holder koması ses fiziği ve ontolojik omurganın mimarı.</p>
         </div>
 
         <div class="arch-card">
           <div class="arch-icon">⚙️</div>
           <h3>Bekirhan Dağlı (@bdagli)</h3>
-          <span class="arch-role">Gramer ve Deterministik Motor</span>
-          <p>Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`), sözlük kurucusunun ve DFA durum makinesinin kurucu geliştiricisi.</p>
+          <span class="arch-role">Gramer ve Deterministik Motor Geliştiricisi</span>
+          <p>Güneş Dili Gramer ve Deterministik Çeviri Motorunun (<code>engine/gunes_dili.py</code>), sözlük kurucusunun ve DFA durum makinesinin geliştiricisi.</p>
         </div>
 
         <div class="arch-card">
           <div class="arch-icon">🔬</div>
           <h3>Dağhan Dağlı (@Lexovian)</h3>
-          <span class="arch-role">Morfolojik Tokenizer Mimarı</span>
-          <p>Işıma ve Rezonans Tabanlı Morfolojik Tokenizer'ın (`tokenizer/gunes_dil_v4.py`), arşifonem kurallarının ve UD ağaç bankası ayrıştırıcısının mimarı.</p>
+          <span class="arch-role">Morfolojik Tokenizer Geliştiricisi</span>
+          <p>Işıma ve Rezonans Tabanlı Morfolojik Tokenizer'ın (<code>tokenizer/gunes_dil_v4.py</code>), arşifonem kurallarının ve ağaç bankası ayrıştırıcısının mimarı.</p>
         </div>
 
         <div class="arch-card">
           <div class="arch-icon">🌌</div>
           <h3>Semih Salar</h3>
-          <span class="arch-role">Kozmik Dil-Evren Ontoloğu</span>
-          <p>Kozmik İşletim Sistemi, Kuantum Mitoloji, Dil-Evren Ontolojisi ve Yunus Emre mistisizmi çözümlemeleri (`archive/kozmik_ve_kuantum/`).</p>
+          <span class="arch-role">Kozmik ve Felsefi Arşiv Araştırmacısı</span>
+          <p>Kozmik ve felsefi arşiv metinleri, dil-evren ontolojisi ve kültürel dokümantasyon araştırmaları (<code>archive/kozmik_ve_kuantum/</code>).</p>
         </div>
 
         <div class="arch-card">
           <div class="arch-icon">🛡️</div>
           <h3>Zerrin Dağlı (@jesmaat)</h3>
-          <span class="arch-role">Takım Koordinasyonu & Strateji</span>
-          <p>Takım koordinasyonu, stratejik süreklilik, bilimsel iletişim ve çekirdek ekip desteği.</p>
+          <span class="arch-role">Takım Koordinasyonu & Proje Desteği</span>
+          <p>Takım koordinasyonu, stratejik süreklilik, dokümantasyon takibi ve çekirdek ekip desteği.</p>
         </div>
       </div>
     </section>

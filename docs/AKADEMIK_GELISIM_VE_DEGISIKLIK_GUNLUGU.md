@@ -67,6 +67,22 @@
 
 ---
 
+### [v4.3.0-TributeAndLab] — 2026-10-09
+#### 1. 🏛️ Tarihsel Kurucuların ve Geliştirici Ekibin Net Ayrımı
+* **Gerekçe:** Gazi Mustafa Kemal Atatürk (1935) ve Sir Isaac Newton (1664) gibi kurucu ve tarihsel figürlerin modern geliştirici ekiple aynı ızgarada yer alması yerine; tarihsel saygı ve hiyerarşik zarafete uygun olarak müstakil bir anma ve kurucu ilham bölümüne taşınması sağlandı.
+* **Uygulanan Değişiklik:**
+  * `docs/index.html` ve `README.md` içerisinde iki bağımsız bölüm oluşturuldu:
+    1. **Tarihsel Kurucu Vizyon ve Felsefi Öncüler:** Atatürk (Kurucu Deha ve Başöğretmen) ve Newton (17. Yüzyıl Fonetik Evrensel Dil Tasarımı).
+    2. **Proje Geliştirme Ekibi & Modern Katkıda Bulunanlar:** @pCwOrM, Bekirhan Dağlı (@bdagli), Dağhan Dağlı (@Lexovian), Semih Salar ve Zerrin Dağlı (@jesmaat).
+
+#### 2. 🧪 Sayfa İçi Tam Donanımlı Güneş Dili Laboratuvar Motoru (`#lab-tam-motor`)
+* **Gerekçe:** Kullanıcının harici bir sayfaya gitmeksizin tüm sözlük köklerine, 53 ek ailesine ve morfolojik tersine çözümleme motoruna doğrudan tek sayfa üzerinden erişebilmesi sağlandı.
+* **Uygulanan Değişiklik:**
+  * Sayfa içerisine gömülü duyarlı iframe konteyneri (`#lab-tam-motor`) eklendi.
+  * Gezinme çubuğuna, mobil menüye ve ana başlık (Hero CTA) butonlarına doğrudan motora ve laboratuvara atlama kısayolları yerleştirildi.
+
+---
+
 ## 🔒 Güvenlik, İzlenebilirlik ve Geri Alınabilirlik Güvencesi
 
 Tüm değişiklikler Git versiyon kontrol sistemi üzerinde atomik commit'ler ile kayıt altında tutulmakta olup, önceki sürümlere tam uyumludur. Hiçbir kök, ek veya sözlük verisi silinmemiş ya da biçimi bozulmamıştır.
