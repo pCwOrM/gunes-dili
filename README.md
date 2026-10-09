@@ -258,8 +258,8 @@ Güneş-Dil Teorisinin yegâne kurucusu, dil devriminin önderi ve vizyoneri:
 
 Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel ispatları, morfolojik tokenizer ve çeviri motoruyla geliştiren çalışma grubu:
 
-* **☀️ @pCwOrM (Sistem Mimarı):** Sistemin mimarisi, WERR fraktal sentezi, MFNS teorem modellemeleri ve ontolojik omurganın kurucusu.
-* **⚙️ Bekirhan Dağlı ([@bdagli](https://github.com/bdagli)):** Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`) kurucu geliştiricisi.
+* **☀️ [@pCwOrM](https://github.com/pCwOrM) (Sistem Mimarı):** Sistemin mimarisi, WERR fraktal sentezi, MFNS teorem modellemeleri ve ontolojik omurganın kurucusu.
+* **⚙️ Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web)):** Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`) kurucu geliştiricisi.
 * **🔬 Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)):** Işıma ve Rezonans Tabanlı Morfolojik Tokenizer'ın (`tokenizer/gunes_dil_v4.py`) mimarı.
 * **🌌 Semih Salar:** Kozmik ve Felsefi Arşiv Araştırmacısı (`archive/`).
 * **🛡️ Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)):** Takım koordinasyonu, stratejik süreklilik ve çekirdek ekip desteği.

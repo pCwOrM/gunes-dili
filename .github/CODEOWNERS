@@ -5,12 +5,12 @@
 * @pCwOrM
 
 # Akademik, Teorem ve Matematiksel Kanıt Alanları (Ortak İnceleme ve Çalışma)
-/proofs/ @pCwOrM @Lexovian @jesmaat @bdagli @Bekirhan
-/engine/ @pCwOrM @Lexovian @jesmaat @bdagli @Bekirhan
-/tokenizer/ @pCwOrM @Lexovian @jesmaat @bdagli @Bekirhan
+/proofs/ @pCwOrM @Lexovian @jesmaat @bdagli-web @bdagli @Bekirhan
+/engine/ @pCwOrM @Lexovian @jesmaat @bdagli-web @bdagli @Bekirhan
+/tokenizer/ @pCwOrM @Lexovian @jesmaat @bdagli-web @bdagli @Bekirhan
 
 # Arşiv, Tarihsel Belgeler ve Kasa Alanı (Özel Araştırma İnceleme)
-/archive/ @pCwOrM @Lexovian @jesmaat @bdagli @Bekirhan
-/docs/ @pCwOrM @Lexovian @jesmaat @bdagli @Bekirhan
+/archive/ @pCwOrM @Lexovian @jesmaat @bdagli-web @bdagli @Bekirhan
+/docs/ @pCwOrM @Lexovian @jesmaat @bdagli-web @bdagli @Bekirhan
 
 
