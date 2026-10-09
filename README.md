@@ -6,7 +6,7 @@
 ### Matematiksel, Fonetik ve Fraktal Temelli Evrensel Dil Mimarisi
 
 ![Repo Status: Private](https://img.shields.io/badge/Repo%20Status-Private%20%2F%20Confidential-red.svg)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Canl%C4%B1%20Portal-success.svg?logo=github)](https://pcworm.github.io/gunes-dili/)
+[![Portal: Local / Private](https://img.shields.io/badge/Portal-Private%20%2F%20Local-yellow.svg)](docs/index.html)
 [![Lean 4 Verified](https://img.shields.io/badge/Lean%204-Machine%20Checked-blue.svg)](proofs/GunesDiliProof.lean)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![License: BBL Draft](https://img.shields.io/badge/License-BBL%20v1.0%20(Bar%C4%B1%C5%9F%20Bilim%20Liyakat)-gold.svg)](docs/BBL_LISANS_DEGERLENDIRMESI.md)
@@ -15,11 +15,11 @@
 
 ---
 
-## 📚 Kılavuzlar, Canlı Portal ve Özel Dokümantasyon
+## 📚 Kılavuzlar, Çevrimdışı Portal ve Özel Dokümantasyon
 
 | Doküman | Hedef Kitle ve Kapsam | Bağlantı |
 | :--- | :--- | :--- |
-| 🌐 **Canlı Web Portalı & Simülatör** | Etkileşimli çevirmen, 53 koma çarkı ve görsel rezonans arayüzü | [**Siteyi Aç (GitHub Pages)**](https://pcworm.github.io/gunes-dili/) |
+| 🌐 **Özel Web Portalı & Simülatör** | Çevrimdışı/yerel çevirmen, 53 koma çarkı ve görsel rezonans arayüzü | [**Portal Dosyası (`docs/index.html`)**](docs/index.html) |
 | 📐 **Lean 4 Biçimsel İspat Modülü** | Aksiyom 1-3, DFA Tekilliği ve 53 Koma Rezonansının Lean 4 Kanıtları | [**İncele**](proofs/GunesDiliProof.lean) |
 | 📜 **Akademik Gelişim Günlüğü** | Kümülatif akademik kararlar, metrikler ve revizyon arşivi | [**İncele**](docs/AKADEMIK_GELISIM_VE_DEGISIKLIK_GUNLUGU.md) |
 | ☀️ **Logo Felsefesi ve Geometrisi** | Amblemin sembolik dili, Ag kökü, 53 koma ve fraktal dalga analizi | [İncele](docs/LOGO_FELSEFESI_VE_TEKNIK_ACIKLAMASI.md) |
