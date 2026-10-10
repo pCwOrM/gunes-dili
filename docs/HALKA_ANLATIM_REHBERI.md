@@ -53,7 +53,7 @@ Güneş Dili; tarihin derinliklerinden gelen milli bir hafızanın, dünyanın e
 
 ---
 
-## 🐝 4. Bir Sinek Vızıltısından Evrenin Şiirine: Mucizevi Deney
+## 🐝 5. Bir Sinek Vızıltısından Evrenin Şiirine: Mucizevi Deney
 
 Laboratuvarımızda yürütülen bir deney, Güneş Dili'nin kağıt üstünde bir teori olmadığını tüm dünyaya kanıtladı:
 
