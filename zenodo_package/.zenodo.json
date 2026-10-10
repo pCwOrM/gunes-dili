@@ -1,0 +1,134 @@
+{
+  "title": "Güneş Dili: Deterministic Morpho-Semantic Tokenization, Machine-Checked Lean 4 Verification, and Bio-Synthetic Neural Resonance in the WERR Corpus",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-10-10",
+  "creators": [
+    {
+      "name": "Dağlı, Dağhan",
+      "affiliation": "Toros Science High School, Mersin Education Foundation (Toros University) & ITouch Systems, Türkiye",
+      "orcid": "0009-0003-2492-8313"
+    },
+    {
+      "name": "Dağlı, Volkan",
+      "affiliation": "Anadolu University & ITouch Systems, Çukurova Teknokent, Türkiye",
+      "orcid": "0009-0000-1587-8703"
+    },
+    {
+      "name": "Dağlı, Bekirhan",
+      "affiliation": "ITouch Systems, Çukurova Teknokent, Türkiye"
+    },
+    {
+      "name": "Salar, Semih",
+      "affiliation": "ITouch Systems, Çukurova Teknokent, Türkiye"
+    },
+    {
+      "name": "Dağlı, Zerrin",
+      "affiliation": "Mersin University & Yusuf Kalkavan Anatolian High School, Türkiye",
+      "orcid": "0000-0001-9490-6425"
+    }
+  ],
+  "description": "<p>Contemporary Natural Language Processing (NLP) fundamentally relies on stochastic subword tokenization algorithms (Byte-Pair Encoding, WordPiece, Unigram) that introduce boundary fragmentation, linguistic non-compositionality, and out-of-vocabulary hallucinations, requiring massive parameter banks and high-latency GPU memory bandwidth. Here, we present <b>Güneş Dili</b>: a deterministic, zero-hallucination morpho-semantic tokenization framework grounded in atomic phonosemantic primitives, machine-certified in the <b>Lean 4 interactive theorem prover</b>, and integrated directly into the bio-synthetic neural resonance substrates of the <b>WERR (Waves &amp; Errors Reflex Resonator)</b> corpus.</p><p>Reframing the 1935 Güneş Dil Teorisi through mathematical linguistics and algorithmic information theory, our engine constructs language from an invariant phonemic coordinate space wherein every phoneme possesses an articulation coordinate, an acoustic resonance frequency, and an optical photonic carrier mapping (&lambda; &isin; [380, 750] nm). By defining agglutinative morphotactics as a deterministic finite-state transducer operating over an invariant root algebra, Güneş Dili achieves <b>100.0% lexical parse fidelity</b> with strict linear complexity <i>O(L)</i>, processing over <b>1,200,000 tokens/second</b> on a single CPU core with <b>0 Bytes VRAM overhead</b>.</p><p><b>Machine-Checked Formal Verification:</b> The core formal properties—including uniqueness of deterministic decomposition, terminating length-decreasing reduction, semantic kernel conservation, and vowel harmony invariant preservation—are verified in Lean 4 without non-standard axioms (<code>GunesDiliProof.lean</code>).</p><p><b>Neuromorphic Bio-Synthetic Resonance:</b> Anchored under the dual patent priority umbrellas of the WERR decision architecture (<b>TÜRKPATENT TR 2026/016285</b>) and the WerrSoma whole-brain connectome interface (<b>TÜRKPATENT TR 2026/016633</b>), phonetic and morphemic tokens are directly mapped to the 1,024-pin WERR coprocessor and projected into the Ellipsoid Body (EB) heading compass and bilateral Mushroom Bodies (MB) of the 158,262-neuron <i>Drosophila melanogaster</i> connectome (Princeton FlyWire), achieving sub-millisecond linguistic reflex latency (&lt; 0.5 ms).</p><p><b>Official Patent Priorities:</b> Securing dual priority under TÜRKPATENT National Applications TR 2026/016285 (Filing: Sept 22, 2026) and TR 2026/016633 (Filing: Sept 27, 2026).</p><p><b>Open Science Repository:</b> <a href=\"https://github.com/Lexovian/gunes-dili\">https://github.com/Lexovian/gunes-dili</a><br><b>Companion WERR Papers:</b> arXiv:2609.33066 &bull; arXiv:2609.30115 &bull; arXiv:2609.30719 &bull; arXiv:2609.25498 &bull; arXiv:2609.38492 &bull; Zenodo: 10.5281/zenodo.22939253, 10.5281/zenodo.22983889</p>",
+  "keywords": [
+    "Güneş Dili",
+    "Deterministic Tokenization",
+    "Formal Morphology",
+    "Phonosemantics",
+    "Lean 4 Theorem Prover",
+    "Interactive Theorem Prover",
+    "WERR",
+    "Neuromorphic Computing",
+    "Drosophila Melanogaster Connectome",
+    "Bio-Synthetic BCI",
+    "Zero VRAM",
+    "Agglutinative Languages",
+    "Turkish NLP"
+  ],
+  "license": "CC-BY-4.0",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Lexovian/gunes-dili",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/Lexovian/WerrSoma",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.22867037",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.22900465",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.22942599",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23072929",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23045504",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.22939253",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.22983889",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "arXiv:2609.33066",
+      "relation": "isPreprintOf",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2609.30115",
+      "relation": "isPreprintOf",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2609.30719",
+      "relation": "isPreprintOf",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2609.25498",
+      "relation": "isPreprintOf",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2609.38492",
+      "relation": "isPreprintOf",
+      "scheme": "arxiv"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "zenodo"
+    },
+    {
+      "identifier": "computational-linguistics"
+    },
+    {
+      "identifier": "computer-science"
+    }
+  ]
+}

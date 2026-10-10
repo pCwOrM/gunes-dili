@@ -254,15 +254,39 @@ Güneş-Dil Teorisinin yegâne kurucusu, dil devriminin önderi ve vizyoneri:
 
 ---
 
-## ⚙️ Proje Geliştirme Ekibi & Modern Katkıda Bulunanlar
+## ⚙️ Proje Geliştirme Ekibi, Yazarlar & Kurumsal Künyeler
 
-Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel ispatları, morfolojik tokenizer ve çeviri motoruyla geliştiren çalışma grubu:
+Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel ispatları, morfolojik tokenizer, çeviri motoru ve biyo-sentetik konnektom rezonansıyla geliştiren çalışma grubu ve Zenodo yayın künyesi:
 
-* **☀️ [@pCwOrM](https://github.com/pCwOrM) (Sistem Mimarı):** Sistemin mimarisi, WERR fraktal sentezi, MFNS teorem modellemeleri ve ontolojik omurganın kurucusu.
-* **⚙️ Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web)):** Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`) kurucu geliştiricisi.
-* **🔬 Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)):** Işıma ve Rezonans Tabanlı Morfolojik Tokenizer'ın (`tokenizer/gunes_dil_v4.py`) mimarı.
-* **🌌 Semih Salar:** Kozmik ve Felsefi Arşiv Araştırmacısı (`archive/`).
-* **🛡️ Dr. Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)):** Takım koordinasyonu, akademik ve kurumsal strateji, dokümantasyon sürekliliği.
+* **🔬 Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian))** — *1. Yazar & Mimari Lideri*  
+  Toros Science High School, Mersin Education Foundation (Toros University) & ITouch Systems, Çukurova Teknokent  
+  *ORCID:* [0009-0003-2492-8313](https://orcid.org/0009-0003-2492-8313)
+* **☀️ Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM))** — *Sorumlu Yazar & WERR Çekirdek Mimarı*  
+  Anadolu University & ITouch Systems, Çukurova Teknokent  
+  *ORCID:* [0009-0000-1587-8703](https://orcid.org/0009-0000-1587-8703) | *İletişim:* `ask@answerr.me`
+* **⚙️ Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web))** — *Yazar & Sistem Geliştirme Lideri*  
+  ITouch Systems, Çukurova Teknokent  
+  Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`) kurucu geliştiricisi.
+* **🌌 Semih Salar** — *Yazar & Platform Mühendisliği Lideri*  
+  ITouch Systems, Çukurova Teknokent  
+  Kozmik, fonosemantik ve felsefi arşiv araştırmacısı (`archive/`).
+* **🛡️ Dr. Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat))** — *Yazar & Akademik ve Stratejik Koordinasyon*  
+  Mersin University & Yusuf Kalkavan Anatolian High School  
+  *ORCID:* [0000-0001-9490-6425](https://orcid.org/0000-0001-9490-6425)
+
+---
+
+## 📦 Zenodo Araştırma Önbaskısı ve Replikasyon Paketi (`zenodo_package/`)
+
+WERR Külliyatı açık bilim standartlarına uygun olarak derlenen resmi Zenodo önbaskı paketi depoya dahil edilmiştir:
+
+* **Makale Başlığı:** *«Güneş Dili: Deterministic Morpho-Semantic Tokenization, Machine-Checked Lean 4 Verification, and Bio-Synthetic Neural Resonance in the WERR Corpus»*
+* **Yükleme Rehberi:** [`zenodo_package/ZENODO_YUKLEME_REHBERI.md`](zenodo_package/ZENODO_YUKLEME_REHBERI.md)
+* **Zenodo Metadata JSON:** [`zenodo_package/.zenodo.json`](zenodo_package/.zenodo.json)
+* **LaTeX Makale Metni:** [`zenodo_package/Gunes_Dili_WERR_Preprint.tex`](zenodo_package/Gunes_Dili_WERR_Preprint.tex) & [`zenodo_package/references.bib`](zenodo_package/references.bib)
+* **Önbaskı Özeti (Markdown):** [`zenodo_package/gunes_dili_preprint_summary.md`](zenodo_package/gunes_dili_preprint_summary.md)
+* **Hazır Replikasyon Arşivi:** [`zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip`](zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip) *(919 KB, SHA256 doğrulamalı)*
+* **Akademik Atıf Dosyası:** [`zenodo_package/CITATION.cff`](zenodo_package/CITATION.cff)
 
 ---
 

@@ -3,22 +3,48 @@
 
 ---
 
-## 🏛️ Yönetici Künyesi ve Tarihsel Öncelik
+## 🏛️ Yönetici Künyesi, Yazarlar ve Tarihsel Öncelik
 
 * **Kurucu Düşünce ve Tarihsel Vizyon:** Gazi Mustafa Kemal Atatürk (1935 Güneş-Dil Teorisi)
 * **Tarihsel Karşılaştırma Arşivi:** Sir Isaac Newton (1664 Trinity College *Of an Universall Language*)
-* **Sistem ve Ontoloji Mimarı:** [@pCwOrM](https://github.com/pCwOrM) (WERR / MFNS Külliyatı)
-* **Gramer ve Çeviri Motoru:** Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web))
-* **Morfolojik Tokenizer:** Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian))
-* **Akademik & Stratejik Koordinasyon:** Dr. Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat))
-* **Kozmik ve Felsefi Arşiv:** Semih Salar
-* **Patent Öncelikleri:**
-  * TÜRKPATENT TR 2026/016285 (*WERR Engine & OED - Waves & Errors Reflex Resonator*)
-  * TÜRKPATENT TR 2026/016633 (*WerrSoma - Bio-Synthetic Neuromorphic Interfacing & Drosophila Connectome*)
+* **1. Yazar & Mimari Lideri:** Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)) — Toros Science High School, MEV (Toros University) & ITouch Systems
+* **Sorumlu Yazar & WERR Mimarı:** Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM)) — Anadolu University & ITouch Systems, Çukurova Teknokent (`ask@answerr.me`)
+* **Yazar & Sistem Geliştirme Lideri:** Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web)) — ITouch Systems, Çukurova Teknokent (Gramer ve Çeviri Motoru, `engine/gunes_dili.py`)
+* **Yazar & Platform Mühendisliği Lideri:** Semih Salar — ITouch Systems, Çukurova Teknokent (Kozmik ve Felsefi Arşiv, `archive/`)
+* **Yazar & Akademik ve Stratejik Koordinasyon:** Dr. Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)) — Mersin University & Yusuf Kalkavan Anatolian High School
+* **Tescilli Patent Öncelikleri:**
+  * TÜRKPATENT TR 2026/016285 (*WERR Engine & OED - Waves & Errors Reflex Resonator*, Başvuru: 22.09.2026)
+  * TÜRKPATENT TR 2026/016633 (*WerrSoma - Bio-Synthetic Neuromorphic Interfacing & Drosophila Connectome*, Başvuru: 27.09.2026)
 
 ---
 
 ## 📅 Sürüm ve Değişiklik Kronolojisi
+
+### [v4.5.0-ZenodoPublication] — 2026-10-10
+#### 1. 📦 WERR Külliyatı Resmi Zenodo Araştırma Önbaskısı ve Replikasyon Paketi (`zenodo_package/`)
+* **Amaç:** Güneş Dili mimarisini, WERR külliyatının açık bilim protokollerine (CERN Zenodo & arXiv) uygun olarak kamera-hazır makale metni, Lean 4 biçimsel ispatları, tam replikasyon kodu ve kriptografik özetleriyle uluslararası akademik dolaşıma sokmak.
+* **Makale Künyesi:**
+  * **Başlık:** *«Güneş Dili: Deterministic Morpho-Semantic Tokenization, Machine-Checked Lean 4 Verification, and Bio-Synthetic Neural Resonance in the WERR Corpus»*
+  * **Yazarlar & Kurumsal Künyeler:**
+    * Dağhan Dağlı (Toros Science High School & ITouch Systems, ORCID: 0009-0003-2492-8313)
+    * Volkan Dağlı (Anadolu University & ITouch Systems, ORCID: 0009-0000-1587-8703, `ask@answerr.me`)
+    * Bekirhan Dağlı (ITouch Systems, Çukurova Teknokent)
+    * Semih Salar (ITouch Systems, Çukurova Teknokent)
+    * Dr. Zerrin Dağlı (Mersin University & Yusuf Kalkavan Anatolian High School, ORCID: 0000-0001-9490-6425)
+* **Tescilli Çift Patent Önceliğiyle Koruma:**
+  * TÜRKPATENT TR 2026/016285 (*OED / MFNS / WERR Karar Motoru*, Başvuru: 22.09.2026)
+  * TÜRKPATENT TR 2026/016633 (*WerrSoma Drosophila Connectome BCI*, Başvuru: 27.09.2026)
+* **Paket Bileşenleri:**
+  1. `zenodo_package/.zenodo.json`: Zenodo API ve web yükleme metadata şeması.
+  2. `zenodo_package/ZENODO_YUKLEME_REHBERI.md`: Kopyala-yapıştır alanları ve adım adım yükleme kılavuzu.
+  3. `zenodo_package/Gunes_Dili_WERR_Preprint.tex` & `references.bib`: Tam akademik LaTeX makale kaynağı ve bibliyografya.
+  4. `zenodo_package/zenodo_description.html`: Zenodo portalı için zenginleştirilmiş HTML açıklaması.
+  5. `zenodo_package/CITATION.cff`: Standart akademik atıf dosyası.
+  6. `zenodo_package/create_replication_bundle.py`: Replikasyon paketleyici ve hash doğrulayıcı.
+  7. `zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip` (919 KB, SHA256: `9f316fbd3b8e6e133e7d48e3f806960823ffd44d9c42976e7a6876901dbcd561`).
+  8. `zenodo_package/SHA256SUMS.txt`: Kriptografik mühür manifestosu.
+
+---
 
 ### [v4.1.0-Formal] — 2026-10-09
 #### 1. 📐 Lean 4 Biçimsel Doğrulama Modülü Eklendi (`proofs/GunesDiliProof.lean`)
