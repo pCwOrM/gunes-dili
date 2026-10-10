@@ -4,13 +4,15 @@
 # Varsayılan sahip (Tüm repo)
 * @pCwOrM
 
-# Akademik, Teorem ve Matematiksel Kanıt Alanları (Ortak İnceleme ve Çalışma)
-/proofs/ @pCwOrM @Lexovian @jesmaat @bdagli-web
-/engine/ @pCwOrM @Lexovian @jesmaat @bdagli-web
-/tokenizer/ @pCwOrM @Lexovian @jesmaat @bdagli-web
+# Akademik, Teorem, Kanıt ve Çekirdek Dizinler (Ortak İnceleme ve Çalışma)
+/proofs/ @pCwOrM @Lexovian @jesmaat @bdagli
+/engine/ @pCwOrM @Lexovian @jesmaat @bdagli
+/tokenizer/ @pCwOrM @Lexovian @jesmaat @bdagli
+/zenodo_package/ @pCwOrM @Lexovian @jesmaat @bdagli
 
-# Arşiv, Tarihsel Belgeler ve Kasa Alanı (Özel Araştırma İnceleme)
-/archive/ @pCwOrM @Lexovian @jesmaat @bdagli-web
-/docs/ @pCwOrM @Lexovian @jesmaat @bdagli-web
+# Arşiv, Tarihsel Belgeler ve Dokümantasyon (Özel Araştırma İnceleme)
+/archive/ @pCwOrM @Lexovian @jesmaat @bdagli
+/docs/ @pCwOrM @Lexovian @jesmaat @bdagli
+
 
 

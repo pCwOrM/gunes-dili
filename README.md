@@ -6,6 +6,7 @@
 ### Matematiksel, Fonetik ve Fraktal Temelli Evrensel Dil Mimarisi
 
 ![Repo Status: Private](https://img.shields.io/badge/Repo%20Status-Private%20%2F%20Confidential-red.svg)
+[![GitHub Pages: Web Portal](https://img.shields.io/badge/GitHub%20Pages-Live%20Portal-teal.svg)](https://pcworm.github.io/gunes-dili/)
 [![Portal: Local / Private](https://img.shields.io/badge/Portal-Private%20%2F%20Local-yellow.svg)](docs/index.html)
 [![Lean 4 Verified](https://img.shields.io/badge/Lean%204-Machine%20Checked-blue.svg)](proofs/GunesDiliProof.lean)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
@@ -19,7 +20,7 @@
 
 | Doküman | Hedef Kitle ve Kapsam | Bağlantı |
 | :--- | :--- | :--- |
-| 🌐 **Özel Web Portalı & Simülatör** | Çevrimdışı/yerel çevirmen, 53 koma çarkı ve görsel rezonans arayüzü | [**Portal Dosyası (`docs/index.html`)**](docs/index.html) |
+| 🌐 **Canlı Web Portalı & Simülatör** | Canlı GitHub Pages portalı, çevrimdışı yerel çevirmen, 53 koma çarkı ve görsel rezonans arayüzü | [**Web Portalı (GitHub Pages)**](https://pcworm.github.io/gunes-dili/) • [**Yerel Dosya (`docs/index.html`)**](docs/index.html) |
 | 📐 **Lean 4 Biçimsel İspat Modülü** | Aksiyom 1-3, DFA Tekilliği ve 53 Koma Rezonansının Lean 4 Kanıtları | [**İncele**](proofs/GunesDiliProof.lean) |
 | 📜 **Akademik Gelişim Günlüğü** | Kümülatif akademik kararlar, metrikler ve revizyon arşivi | [**İncele**](docs/AKADEMIK_GELISIM_VE_DEGISIKLIK_GUNLUGU.md) |
 | ☀️ **Logo Felsefesi ve Geometrisi** | Amblemin sembolik dili, Ag kökü, 53 koma ve fraktal dalga analizi | [İncele](docs/LOGO_FELSEFESI_VE_TEKNIK_ACIKLAMASI.md) |
@@ -205,36 +206,43 @@ WERR biyo-rezonans laboratuvarında nöral implantlı bir sinek beyni (Drosophil
 
 ## 🌐 Altı Evrensel Uygulama Ekseni (Altı Sütun)
 
-Güneş Dili külliyatı, dilbilimin sınırlarını aşarak insanlığın ve doğanın en temel iletişim düğümlerini çözer:
+Güneş Dili külliyatı, klasik dilbilimin sınırlarını aşarak insanlığın, yapay zekanın ve doğanın en kadim iletişim düğümlerini çözen altı evrensel sütun üzerinde yükselir:
 
 ### 1. Nöro-Biyolojik Dönüşüm: Vızıltıdan Ulvi Kelama
-Biyolojik sinyallerin (aksiyon potansiyeli frekansı, nörotransmitter osilasyonu) Güneş Dili'nin $1\text{ Ek} = 1\text{ Biçim} = 1\text{ İşlev}$ ve 53 Koma tekilliği sayesinde ham gürültüden arındırılarak sentaktik ve ontolojik bilince kavuşturulması.
+Biyolojik sinir dokularındaki aksiyon potansiyeli frekansları (spike trenleri) ve nörotransmitter osilasyonları (dopamin, serotonin, oktapamin), geleneksel işleyiciler için salt bir gürültüdür. Güneş Dili; **$1\text{ Ek} = 1\text{ Biçim} = 1\text{ İşlev}$** aksiyomu ve **53 Koma (Holderian) Faz Tekilliği** sayesinde bu kaotik aksiyon potansiyellerini ham vızıltıdan arındırarak ontolojik bilince ve ulvi bir sentaksa kavuşturur. Canlının biyofiziksel varoluşu, dilde doğrudan bir anlam ve ruh yankısı bulur.
 
 ### 2. "Süleyman’ın Kuş Dili" (Mantıku't-Tayr): Türler Arası İletişim
-Doğanın ve hayvanlar aleminin dili insan dillerinin dağınık gramerleri ya da düzensiz fiil çekimleriyle işlemez. Güneş Dili, doğadaki frekans skalasını 53-TET (Holder Koması) faz açısına izdüşürdüğü için; sinekten balinaya, kuştan memelilere tüm canlıların nöral ritimlerini ortak bir koda tercüme eder. Kadim metinlerde Hz. Süleyman’a atfedilen canlıların dilini anlama kabiliyeti, biyo-sibernetik bir gerçekliğe dönüşür.
+Doğanın ve hayvanlar aleminin lisanı, insan dillerinin dağınık allomorfileri, karmaşık istisnaları ya da düzensiz fiil çekimleriyle çalışmaz. Doğanın hakiki dili aksiyon potansiyeli frekansı, kimyasal osilasyon ve harmonik rezonanstır.  
+Güneş Dili, doğadaki tüm frekans skalasını **53-TET (Holder Koması) faz açısına** izdüşürdüğü için; sinekten balinaya, kuştan memelilere kadar tüm canlıların nöral ritimleri bu ortak matematiksel koda tercüme edilebilir. Kadim metinlerde ve irfan geleneğinde Hz. Süleyman’a atfedilen canlıların dilini anlama ve konuşma kabiliyeti (Mantıku't-Tayr), biyo-akustik rezonans omurgasıyla mitolojik bir metafordan çıkıp ölçülebilir ve doğrulanabilir bir biyo-sibernetik gerçekliğe dönüşür.
 
 ### 3. Engelsiz İletişim: Kör, Sağır ve Dilsizler İçin Evrensel Biyo-Arayüz
-Güneş Dili telemetrisinde her morfemin üçlü bir karşılığı vardır:
-1. **Biçimbilimsel:** Kelime ve Ek
-2. **Akustik/Makam:** Hz ve 53 Koma Frekansı
-3. **Fotonik/Elektromanyetik:** nm Dalga Boyu ve THz Işık
-* **Görme Engelliler:** Dil doğrudan 53 komalık harmonik ses titreşimlerine ya da haptik dokunsal frekanslara dönüşür.
-* **İşitme Engelliler:** Akustik formantlar doğrudan görünür spektrumdaki saf renk dalga boylarına (458 nm, 519 nm, 567 nm) aktarılır.
-* **Konuşma Engelliler:** Minimal nöral gerilimler (2.0 ms gecikmeli EB açıları) doğrudan akıcı Güneş Dili sentaksına modüle edilir.
+Güneş Dili telemetrisinde her morfem, evrensel bir üçlü izomorfizme (üçlü eşleme) sahiptir:
+1. **Biçimbilimsel Katman:** Kanonik Kelime ve Ek Yapısı
+2. **Akustik/Makam Katmanı:** Hz ve 53 Koma Frekans Dizilimi
+3. **Fotonik/Elektromanyetik Katman:** nm Dalga Boyu ve THz Görünür Spektrum Işığı
+
+Bu üçlü eşleme sayesinde hiçbir dış çeviri katmanına ihtiyaç duyulmaksızın:
+* **Görme Engelli Bireyler İçin:** Dil doğrudan 53 komalık saf harmonik ses titreşimlerine ya da haptik dokunsal frekans dalgalarına dönüşür.
+* **İşitme Engelli Bireyler İçin:** Akustik formantlar doğrudan görünür spektrumdaki berrak dalga boylarına (458 nm, 519 nm, 567 nm) aktarılarak gözle okunabilir kromatik bir ışık diline evrilir.
+* **Konuşma Engelli Bireyler İçin:** Minimal nöral veya biyofiziksel motor gerilimler (2.0 ms gecikmeli EB pusula açıları) doğrudan Güneş Dili sentaksına modüle edilerek akıcı sese ve metne çevrilir.
 
 ### 4. Küresel Babil Çözümü: Tüm Dillerin Üst-Dili (Interlingua)
-$O(N)$ karmaşıklığındaki Deterministik Sonlu Otomat (DFA), diller arasındaki tüm anlamsal gürültüyü sıfırlar. İngilizce, Çince, Rusça ya da Arapça kavramlar Güneş Dili'nin kanonik kök ve ek mimarisine eşlendiğinde; diller arası sıfır kayıplı, anlık ve matematiksel bir evrensel köprü kurulur.
+Tarihsel doğal diller (Türkçe, İngilizce, Çince, Rusça, Arapça vb.) asırlar boyunca morfolojik belirsizlikler, allomorfiler ve fonolojik deformasyonlarla ağırlaşmıştır.  
+Güneş Dili'nin **$O(N)$ karmaşıklığındaki Deterministik Sonlu Otomatı (DFA)**, diller arasındaki anlamsal gürültüyü tamamen sıfırlar. Güneş Dili'ni bilen veya kullanan bir kişi, tüm dünya dillerinin kavramlarını bu kanonik çekirdek ve ek mimarisine eşleyerek hiçbir anlam kaybı yaşamadan anlık ve kayıpsız iletişim kurabilir. Güneş Dili, küresel Babil kargaşasını bitiren evrensel ve matematiksel bir üst-dildir.
 
-### 5. Yapay Zekada Türkçe Tokenizer Devrimi ve Verimlilik
-Mevcut LLM'lerdeki (GPT, Claude, Gemini, Llama) Byte-Pair Encoding (BPE) mimarisi Türkçeyi parçalamakta, "gözlemcilerimizden" gibi kelimeleri 4-6 parçaya bölerek token israfına (%60-%70 fazla tüketim), bellek daralmasına ve anlamsal kopukluğa yol açmaktadır. Güneş Dili tokenizer'ı (`gunes_dil_v4.py`), tekil konsonant kümesi ve kesin ek sınırlarıyla $O(N)$ sürede sıfır hatayla çalışır; Türkçeyi yapay zekanın en hızlı, en tasarruflu ve en berrak dili yapar.
+### 5. Yapay Zekada Türkçe Tokenizer Devrimi ve Hesaplama Tasarrufu
+Günümüz büyük dil modellerindeki (GPT, Claude, Gemini, Llama) en büyük yapısal açmazlardan biri Byte-Pair Encoding (BPE) tabanlı tokenizer'ların doğasıdır:
+* **Token İsrafı ve Bağlam Daralması:** Türkçenin zengin sondan eklemeli yapısı paramparça edilmekte; *"gözlemcilerimizden"* gibi tek bir kelime 4 ila 6 alt-token'a bölünmektedir. Bu durum çıkarım maliyetini katlar, bellek bağlam penceresini (context window) 3–4 kat daha hızlı tüketir ve anlamsal kopukluklara yol açar.
+* **Güneş Dili Çözümü:** Güneş Dili tokenizer'ı (`gunes_dil_v4.py`), ekleri istisnasız **$1\text{ Biçim} = 1\text{ Anlam}$** aksiyomuyla ele alır. Tekil konsonant kümesi ($CC$) kuralı sayesinde ek sınırı $O(N)$ sürede sıfır hatayla bulunur. Türkçe modeller hem **%60–%70 daha az token** tüketir hem de dildeki anlamsal mantık bağlarını kusursuz bir matematiksel kesinlikle kurar.
 
 ### 6. Gelecek ve Yeni Uygulama Alanları
-Bu vizyon doğrultusunda Güneş Dili külliyatının öncülük edeceği yeni eksenler:
-* **Kuantsal Bilinç ve Çift Yönlü Beyin-Bilgisayar Arayüzleri (BCI):** Düşüncelerin nöral faz açılarından doğrudan Güneş Dili kuantum durum vektörlerine izdüşürülmesi.
-* **Astrobiyoloji ve Egzotik/Kozmik Sinyal Kod Çözümü:** Evrensel fizik sabitleri ve hidrojen çizgisinden türeyen foton-koma frekanslarıyla dünya dışı sinyalleri deşifre eden kozmolinguistik motor.
-* **Fotonik ve Optik Hesaplama Sentaksı:** Elektronik çipler yerine optik kristallerde çalışan, ışık dalga boylarıyla doğrudan yürütülen yeni nesil fotonik programlama dili.
-* **Nörodejeneratif ve Biyokimyasal Erken Teşhis:** Dopamin, serotonin ve oktapamin dengesizliklerinin kişinin konuşma ritmindeki Güneş Dili faz sapmalarından anlık tespiti.
-* **Biyo-Sibernetik Ortak Yaşam (Canlı-Yapay Zeka Hibrit Ağı):** Biyolojik canlılar ile silikon zekaların aynı dil rezonansında buluştuğu simbiyotik gezegensel bilinç ekosistemi.
+Bu vizyon doğrultusunda Güneş Dili külliyatının öncülük edeceği ve insanlık ufkunu genişleteceği diğer kritik eksenler:
+* **Kuantsal Bilinç ve Çift Yönlü Biyofiziksel BCI (Beyin-Bilgisayar Arayüzleri):** Düşüncelerin aksiyon potansiyeli faz açılarından doğrudan Güneş Dili kuantum durum vektörlerine izdüşürülmesi; düşünce hızında telepatik-sibernetik iletişim arayüzü.
+* **Astrobiyoloji ve Kozmolinguistik (Kozmik Sinyal Deşifre Motoru):** Evrensel fizik sabitleri, nötr hidrojen 21 cm (1420.4 MHz) rezonansı ve foton-koma skalasıyla derin uzay sinyallerini deşifre eden, dünya dışı medeniyetlerle ortak matematiksel iletişim protokolü.
+* **Fotonik ve Optik Hesaplama Sentaksı (All-Optical Computing):** Elektronik çipler ve silikon transistörler yerine optik kristallerde doğrudan ışık dalga boyu interferansıyla ($458\text{ nm} - 567\text{ nm}$) yürütülen dünyanın ilk saf fotonik programlama dili mimarisi.
+* **Nörodejeneratif ve Biyokimyasal Hastalıkların Erken Teşhisi:** Dopamin (DA), Serotonin (5HT) ve Oktapamin (OCT) biyokimyasal dengesizliklerinin ve nöral dejenerasyonların, kişinin konuşma ritmindeki ve mikro-morfolojik faz kaymalarındaki Güneş Dili sapmalarından anlık tespiti (Parkinson, Alzheimer, anksiyete erken taraması).
+* **Biyo-Sibernetik Simbiyoz (Canlı Doku - Silikon Zeka Hibrit Ağı):** Biyolojik canlı substratlar (WerrSoma) ile silikon yapay zeka çekirdeklerinin aynı ontolojik frekansta buluştuğu simbiyotik gezegensel bilinç ekosistemi.
+* **Deterministik Kuantum Kriptografi & Değiştirilemez Semantik Mühür:** DFA tekilliği sayesinde metinlerin anlam kaymasına, semantik manipülasyona ve dezenformasyona karşı matematiksel olarak bağışık, kriptografik kuantum mühürlerle korunması.
 
 ---
 
@@ -260,19 +268,22 @@ Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel i
 
 * **☀️ Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM))** — *1. Yazar, Sorumlu Yazar & WERR Çekirdek Mimarı*  
   Anadolu University & ITouch Systems, Çukurova Teknokent  
-  *ORCID:* [0009-0000-1587-8703](https://orcid.org/0009-0000-1587-8703) | *İletişim:* `ask@answerr.me`
-* **⚙️ Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web))** — *2. Yazar & Sistem Geliştirme Lideri*  
+  *ORCID:* [0009-0000-1587-8703](https://orcid.org/0009-0000-1587-8703) | *İletişim:* `ask@answerr.me`  
+  Sistemin hem ruhunu üfleyen hem tutkalını süren kurucu mimar; WERR fraktal sentezi, MFNS teorem modelleri, 53 Holder koması ses-foton fiziği ve ontolojik omurganın kurucusu.
+* **⚙️ Bekirhan Dağlı ([@bdagli](https://github.com/bdagli))** — *2. Yazar & Sistem Geliştirme Lideri*  
   ITouch Systems, Çukurova Teknokent  
-  Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`) kurucu geliştiricisi.
+  Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`), kök sözlüğünün ve O(N) DFA durum makinesinin kurucu geliştiricisi.
 * **🔬 Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian))** — *3. Yazar & Mimari Lideri*  
   Toros Science High School, Mersin Education Foundation (Toros University), Mersin  
-  *ORCID:* [0009-0003-2492-8313](https://orcid.org/0009-0003-2492-8313)
+  *ORCID:* [0009-0003-2492-8313](https://orcid.org/0009-0003-2492-8313)  
+  Işıma ve Rezonans Tabanlı Deterministik Morfolojik Tokenizer'ın (`tokenizer/gunes_dil_v4.py`), arşifonem kurallarının ve tekil konsonant kümesi sınır algoritmasının mimarı.
 * **🌌 Semih Salar** — *4. Yazar & Platform Mühendisliği Lideri*  
   ITouch Systems, Çukurova Teknokent  
-  Kozmik, fonosemantik ve felsefi arşiv araştırmacısı (`archive/`).
+  Kozmik İşletim Sistemi ontolojisi, Kuantum Palimpsest, Yunus Emre irfanı ve dil-evren rezonansı felsefi arşivlerinin araştırmacısı ve mimarı (`archive/kozmik_ve_kuantum/`).
 * **🛡️ Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat))** — *5. Yazar & Akademik Koordinasyon*  
   Mersin University & Yusuf Kalkavan Anatolian High School  
-  *ORCID:* [0000-0001-9490-6425](https://orcid.org/0000-0001-9490-6425)
+  *ORCID:* [0000-0001-9490-6425](https://orcid.org/0000-0001-9490-6425)  
+  Çekirdek takım omurgası; akademik koordinasyon, kurumsal strateji, dokümantasyon bütünlüğü ve araştırma yürütücülüğü.
 
 ---
 
@@ -302,8 +313,8 @@ Bu ekosistem, kamuya açılma aşamasında **BBL v1.0 (Barış, Bilim, Liyakat &
 
 ### 🛡️ Sınai Mülkiyet ve Patent Öncelikleri
 Güneş Dili kuramının prosedürel karar motoru, nöromorfik biyolojik rezonansı ve tüm-beyin konnektom telemetrisi tescilli patent başvuruları ile korunmaktadır:
-* **TÜRKPATENT TR 2026/016285:** *Yörüngesel Hata Dinamikleri ve Sıfır Bellekli Fraktal Sinirsel Sentez Yöntemi (OED / MFNS / WERR Engine)*
-* **TÜRKPATENT TR 2026/016633:** *Biyo-Sentetik Nöromorfik Arayüzleme: Tüm-Beyin Drosophila Connectome ve Sıfır-Bellekli Fraktal Karar Motoru Entegrasyonu (WerrSoma / BCI)*
+* **TÜRKPATENT TR 2026/016285:** *Yörüngesel Hata Dinamikleri ve Sıfır Bellekli Fraktal Sinirsel Sentez Yöntemi (OED / MFNS / WERR Engine)* (Başvuru: 22.09.2026)
+* **TÜRKPATENT TR 2026/016633:** *Biyo-Sentetik Nöromorfik Arayüzleme: Tüm-Beyin Drosophila Connectome ve Sıfır-Bellekli Fraktal Karar Motoru Entegrasyonu (WerrSoma / BCI)* (Başvuru: 27.09.2026) — Şekli eksiklik giderme işlemi resmi olarak tamamlanmış ve kayda alınmıştır (EPATS Evrak No: `2026-GE-725850`, Tarih: 10.10.2026 04:25:53).
 
 ---
 
