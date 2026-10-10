@@ -6,6 +6,8 @@
 ### Matematiksel, Fonetik ve Fraktal Temelli Evrensel Dil Mimarisi
 
 ![Repo Status: Public Open Science](https://img.shields.io/badge/Repo%20Status-Public%20Open%20Science-success.svg)
+[![Zenodo DOI](https://img.shields.io/badge/Zenodo%20DOI-10.5281%2Fzenodo.23273006-blue.svg)](https://doi.org/10.5281/zenodo.23273006)
+[![Concept DOI](https://img.shields.io/badge/Concept%20DOI-10.5281%2Fzenodo.23273005-purple.svg)](https://doi.org/10.5281/zenodo.23273005)
 [![GitHub Pages: Web Portal](https://img.shields.io/badge/GitHub%20Pages-Live%20Portal-teal.svg)](https://pcworm.github.io/gunes-dili/)
 [![Portal: Docs / Simulator](https://img.shields.io/badge/Simulator-Interactive%20Portal-gold.svg)](docs/index.html)
 [![Lean 4 Verified](https://img.shields.io/badge/Lean%204-Machine%20Checked-blue.svg)](proofs/GunesDiliProof.lean)
@@ -289,12 +291,14 @@ Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel i
 
 ## 📦 Zenodo Araştırma Önbaskısı ve Replikasyon Paketi (`zenodo_package/`)
 
-WERR Külliyatı açık bilim standartlarına uygun olarak derlenen resmi Zenodo önbaskı paketi depoya dahil edilmiştir:
+WERR Külliyatı açık bilim standartlarına uygun olarak derlenen resmi araştırma önbaskısı ve replikasyon paketi CERN Zenodo üzerinde başarıyla yayımlanmıştır:
 
+* **Zenodo Canlı Yayın Kaydı:** [**zenodo.org/records/23273006**](https://zenodo.org/records/23273006)
+* **Kalıcı Sürüm DOI:** [**10.5281/zenodo.23273006**](https://doi.org/10.5281/zenodo.23273006)
+* **Kalıcı Çatı (Concept) DOI:** [**10.5281/zenodo.23273005**](https://doi.org/10.5281/zenodo.23273005)
 * **Makale Başlığı:** *«Güneş Dili: Deterministic Morpho-Semantic Tokenization, Machine-Checked Lean 4 Verification, and Bio-Synthetic Neural Resonance in the WERR Corpus»*
-* **Kamera-Hazır Araştırma Makalesi (PDF):** [`zenodo_package/Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf`](zenodo_package/Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf) *(322 KB, KaTeX renderli, formülleri ve Lean 4 kanıtlarını içeren baskı hazır metin)*
-* **Hazır Replikasyon Arşivi (ZIP):** [`zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip`](zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip) *(1.22 MB, SHA256 doğrulamalı, tüm kodlar ve modeller)*
-* **Yükleme Rehberi:** [`zenodo_package/ZENODO_YUKLEME_REHBERI.md`](zenodo_package/ZENODO_YUKLEME_REHBERI.md) *(Adım adım Zenodo yükleme yönergesi)*
+* **Kamera-Hazır Araştırma Makalesi (PDF):** [`zenodo_package/Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf`](zenodo_package/Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf) *(334 KB, KaTeX renderli, Lean 4 kanıtları, Newton/Atatürk arşiv atıfları ve canlı simülatör linkini içeren baskı hazır metin)*
+* **Hazır Replikasyon Arşivi (ZIP):** [`zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip`](zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip) *(1.24 MB, SHA256 doğrulamalı, tüm kodlar ve modeller)*
 * **Zenodo Metadata JSON:** [`zenodo_package/.zenodo.json`](zenodo_package/.zenodo.json)
 * **LaTeX Makale Metni:** [`zenodo_package/Gunes_Dili_WERR_Preprint.tex`](zenodo_package/Gunes_Dili_WERR_Preprint.tex) & [`zenodo_package/references.bib`](zenodo_package/references.bib)
 * **Önbaskı Özeti (Markdown):** [`zenodo_package/gunes_dili_preprint_summary.md`](zenodo_package/gunes_dili_preprint_summary.md)

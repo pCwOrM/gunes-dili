@@ -11,6 +11,8 @@
 - **Semih Salar** (ITouch Systems, Çukurova Teknokent, Türkiye)
 - **Zerrin Dağlı** (Mersin University & Yusuf Kalkavan Anatolian High School, Türkiye — ORCID: 0000-0001-9490-6425)
 
+*Resmi Zenodo Yayını:* [https://zenodo.org/records/23273006](https://zenodo.org/records/23273006)  
+*Kalıcı Sürüm DOI:* [10.5281/zenodo.23273006](https://doi.org/10.5281/zenodo.23273006) | *Çatı (Concept) DOI:* [10.5281/zenodo.23273005](https://doi.org/10.5281/zenodo.23273005)  
 *Kaynak Kod Reposu:* [https://github.com/pCwOrM/gunes-dili](https://github.com/pCwOrM/gunes-dili)  
 *Canlı Web Portalı & İnteraktif Simülatör:* [https://pcworm.github.io/gunes-dili/](https://pcworm.github.io/gunes-dili/)
 

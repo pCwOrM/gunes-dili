@@ -23,6 +23,7 @@ authors:
 version: "1.0.0"
 date-released: "2026-10-10"
 license: "CC-BY-4.0"
+doi: "10.5281/zenodo.23273006"
 repository-code: "https://github.com/pCwOrM/gunes-dili"
 url: "https://pcworm.github.io/gunes-dili/"
 keywords:
