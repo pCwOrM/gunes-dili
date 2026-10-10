@@ -1,7 +1,12 @@
-<title>Güneş Dili Laboratuvarı</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Güneş Dili Laboratuvarı | Tam Teşekküllü İnteraktif Motor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
 [hidden]{display:none !important}
 :root{
@@ -99,7 +104,17 @@ canvas.plane{display:block;width:100%;height:100%}
 .legend b{font-family:var(--mono)}
 #tip{position:absolute;pointer-events:none;background:rgba(15,19,32,.92);color:#fff;font-size:12.5px;padding:6px 8px;border-radius:6px;max-width:240px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (max-width:640px){
+  body{padding-inline:10px;padding-block:16px 40px}
+  .tabs{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+  .tab{white-space:nowrap;font-size:13.5px;padding:8px 11px}
+  .panel{padding:14px}
+  .seg{font-size:20px}
+  .canvasbox{max-width:100%}
+}
 </style>
+</head>
+<body>
 
 <div class="wrap">
   <header>
@@ -954,3 +969,5 @@ cevir(); coz();
 matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => { cevir(); });
 })();
 </script>
+</body>
+</html>

@@ -1202,19 +1202,87 @@
       margin-bottom: 24px;
     }
 
-    /* Responsive Media Queries */
+    /* Responsive Media Queries — Ergonomic, Mobile-First & Ultra-Polished */
     @media (max-width: 992px) {
-      .interactive-grid { grid-template-columns: 1fr; }
-      .wheel-section { grid-template-columns: 1fr; }
+      .interactive-grid { grid-template-columns: 1fr; gap: 24px; }
+      .wheel-section { grid-template-columns: 1fr; padding: 32px 24px; gap: 28px; }
+      .wheel-canvas-wrap { order: -1; }
       nav.nav-links { display: none; }
       .mobile-menu-btn { display: flex; }
+      .embedded-lab-section { padding: 22px 18px; }
+      .lean-proofs-container { padding: 28px 20px; }
     }
-    @media (max-width: 600px) {
-      .hero { padding: 40px 0 30px; }
-      .hero-logo-wrap { width: 150px; height: 150px; }
-      .simulator-container { padding: 20px 16px; }
-      .wheel-section { padding: 24px 18px; }
-      .btn { width: 100%; justify-content: center; }
+
+    @media (max-width: 768px) {
+      .container { padding: 0 16px; }
+      .hero { padding: 48px 0 32px; }
+      .hero-logo-wrap { width: 150px; height: 150px; margin-bottom: 20px; }
+      .badge-bar { gap: 6px; margin-bottom: 18px; }
+      .badge-pill { font-size: 11px; padding: 5px 10px; }
+      .hero h1 { font-size: clamp(26px, 7.5vw, 40px); letter-spacing: 1.2px; }
+      .hero p.lead { font-size: 15px; margin-bottom: 24px; }
+      .hero-cta { flex-direction: column; width: 100%; gap: 10px; }
+      .hero-cta .btn { width: 100%; justify-content: center; min-height: 48px; }
+      
+      .axiom-banner { padding: 18px 14px; margin-top: 24px; border-radius: 12px; }
+      .axiom-label { font-size: 11px; }
+      .axiom-quote { font-size: 15px; }
+      .axiom-desc { font-size: 13px; }
+
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 30px 0 50px;
+      }
+      .stat-card { padding: 14px 12px; text-align: center; }
+      .stat-card:last-child { grid-column: span 2; }
+      .stat-num { font-size: 26px; }
+      .stat-label { font-size: 11.5px; }
+
+      .simulator-container { padding: 20px 14px; margin-bottom: 50px; border-radius: 16px; }
+      .sim-mode-toggle { flex-direction: column; width: 100%; gap: 8px; }
+      .mode-btn { width: 100%; text-align: center; padding: 12px 14px; font-size: 13px; }
+      input.trans-input { font-size: 16px; padding: 14px 16px; min-height: 48px; }
+      .gd-word-display { font-size: 26px; word-break: break-all; }
+      .output-card { padding: 16px 14px; }
+      .output-header { flex-wrap: wrap; gap: 8px; }
+      .action-icons { width: 100%; justify-content: flex-end; }
+      .vector-metrics { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+
+      .embedded-lab-section { padding: 16px 12px; margin-bottom: 50px; border-radius: 14px; }
+      .lab-frame-bar { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .lab-frame-actions { width: 100%; justify-content: space-between; }
+      .lab-frame-btn { padding: 8px 14px; min-height: 42px; }
+      .lab-iframe-wrap { height: 580px; -webkit-overflow-scrolling: touch; border-radius: 8px; }
+
+      .wheel-section { padding: 22px 14px; margin-bottom: 50px; border-radius: 14px; }
+      .wheel-info h3 { font-size: 22px; }
+      .comma-interactive-card { padding: 14px; }
+      .comma-row { flex-wrap: wrap; gap: 4px; font-size: 12.5px; }
+      .sound-badge { min-height: 38px; padding: 6px 14px; }
+      canvas#wheelCanvas { max-width: 320px; }
+      canvas#resonanceCanvas { max-width: 320px; }
+
+      .lean-proofs-container { padding: 20px 14px; margin-bottom: 50px; border-radius: 14px; }
+      .lean-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .lean-code-card { font-size: 12px; padding: 14px; overflow-x: auto; }
+
+      .archive-card, .doc-card, .arch-card { padding: 18px 14px; }
+      .ataturk-monumental-card, .newton-archive-card { padding: 22px 16px; border-radius: 14px; }
+      
+      footer { padding: 40px 0 30px; }
+      .footer-quote { font-size: 13px; }
+      .bbl-notice { font-size: 11px; padding: 8px 14px; width: 100%; }
+    }
+
+    @media (max-width: 420px) {
+      .hero-logo-wrap { width: 125px; height: 125px; }
+      .hero h1 { font-size: 24px; }
+      .vector-metrics { grid-template-columns: 1fr; }
+      .stats-bar { grid-template-columns: 1fr; }
+      .stat-card:last-child { grid-column: auto; }
+      canvas#wheelCanvas { max-width: 270px; }
+      canvas#resonanceCanvas { max-width: 270px; }
     }
   </style>
 </head>
@@ -2554,12 +2622,14 @@
       ctx.fillText('53-TET SES ÇARKI', cx, cy + 11);
     }
 
-    // Wheel click interaction
-    document.getElementById('wheelCanvas').addEventListener('click', (e) => {
+    // Wheel interaction (Click + Mobile Touch with coordinate invariance)
+    function onWheelInteract(clientX, clientY) {
       const cv = document.getElementById('wheelCanvas');
+      if (!cv) return;
       const rect = cv.getBoundingClientRect();
-      const x = e.clientX - rect.left - cv.width / 2;
-      const y = e.clientY - rect.top - cv.height / 2;
+      // Use CSS bounding rect dimensions for true center invariance on any responsive screen resolution!
+      const x = clientX - rect.left - rect.width / 2;
+      const y = clientY - rect.top - rect.height / 2;
       
       let angle = Math.atan2(y, x) + Math.PI / 2;
       if (angle < 0) angle += Math.PI * 2;
@@ -2569,7 +2639,18 @@
       updateCommaCard(koma);
       drawWheel();
       playCommaSound(koma);
-    });
+    }
+
+    const wheelCv = document.getElementById('wheelCanvas');
+    if (wheelCv) {
+      wheelCv.addEventListener('click', (e) => onWheelInteract(e.clientX, e.clientY));
+      wheelCv.addEventListener('touchstart', (e) => {
+        if (e.touches && e.touches.length > 0) {
+          e.preventDefault();
+          onWheelInteract(e.touches[0].clientX, e.touches[0].clientY);
+        }
+      }, { passive: false });
+    }
 
     // -------------------------------------------------------------------------
     // 5. INITIALIZATION
