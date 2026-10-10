@@ -15,6 +15,10 @@
 [![License: BBL Draft](https://img.shields.io/badge/License-BBL%20v1.0%20(Bar%C4%B1%C5%9F%20Bilim%20Liyakat)-gold.svg)](docs/BBL_LISANS_DEGERLENDIRMESI.md)
 [![UD Turkish Validated](https://img.shields.io/badge/UD%20Turkish-Validated-success.svg)](https://universaldependencies.org/)
 [![Mandelbrot Fractal Trajectory](https://img.shields.io/badge/Fractal-Mandelbrot%20MFNS-orange.svg)](https://doi.org/10.5281/zenodo.22802921)
+[![Ecosystem: answerr.me](https://img.shields.io/badge/Ecosystem-answerr.me-0284c7.svg)](https://answerr.me)
+[![Sister Repo: WerreduR v4.0](https://img.shields.io/badge/Sister%20Repo-WerreduR%20v4.0-059669.svg)](https://github.com/jesmaat/WerreduR)
+[![Sister Repo: WerrSoma](https://img.shields.io/badge/Sister%20Repo-WerrSoma-purple.svg)](https://github.com/Lexovian/WerrSoma)
+[![Sister Repo: GAP--Lean4](https://img.shields.io/badge/Sister%20Repo-GAP--Lean4-7c3aed.svg)](https://github.com/pCwOrM/gap-lean4-port)
 
 ---
 
@@ -322,20 +326,24 @@ Güneş Dili kuramının prosedürel karar motoru, nöromorfik biyolojik rezonan
 
 ---
 
-## 📚 Akademik Kaynakça ve İlgili Külliyat Yayınları
+## 🌐 Bütünleşik Açık Bilim Külliyatı ve Ekosistem (Master Research Corpus)
 
-Güneş Dili, CERN Zenodo ve arXiv üzerinde yayınlanan WERR Açık Bilim Külliyatı’nın dilbilimsel ve nöromorfik devamıdır:
+Güneş Dili, CERN Zenodo, arXiv ve GitHub üzerinde yayınlanan ve birbiriyle çift yönlü doğrulanmış WERR Açık Bilim Külliyatı’nın dilbilimsel ve nöromorfik ayağıdır (Paper 9). Külliyatın tüm bileşenleri kümülatif olarak aşağıda eşzamanlanmıştır:
 
-1. **[arXiv:2609.33066 [cs.LG]](https://arxiv.org/abs/2609.33066) / [Zenodo: 22867037](https://doi.org/10.5281/zenodo.22867037):**  
-   *Zero-Storage Procedural Neural Synthesis via Boundary Dynamics: Formal Verification in Lean 4 and Bare-Metal Gauntlet Validation*.
-2. **[arXiv:2609.30115 [cs.NE]](https://arxiv.org/abs/2609.30115) / [Zenodo: 22900465](https://doi.org/10.5281/zenodo.22900465):**  
-   *Orbital Error Dynamics: Self-Organized Criticality, Ephemeral Parameter Resonance, and Non-Linear Biological Ontologies in Zero-Storage Neural Synthesis*.
-3. **[arXiv:2609.30719 [cs.CR]](https://arxiv.org/abs/2609.30719) / [Zenodo: 22942599](https://doi.org/10.5281/zenodo.22942599):**  
-   *Werracle: Sub-Cent Intra-Block AI Reflex Oracles and Flash-Loan Circuit Breakers for EVM Smart Contracts*.
-4. **[arXiv submit/8161759 [cs.NE]](https://arxiv.org/user/create?preflight=1) / [Zenodo: 23072929](https://doi.org/10.5281/zenodo.23072929):**  
-   *Bio-Synthetic Neuromorphic Interfacing: Integration of a Zero-Memory Fractal Decision Engine with the Whole-Brain Drosophila melanogaster Connectome*.
-5. **[arXiv:2609.38492 [cs.LO]](https://arxiv.org/abs/2609.38492) / [Zenodo: 23045504](https://doi.org/10.5281/zenodo.23045504):**  
-   *Machine-Checked Computational Group Theory in Lean 4: Operational Schreier-Sims Stabilizer Chains, BSGS Sifting, and Backtrack Ordered Partitions*.
+| Makale / Sütun | Başlık / Temel Katkı | Zenodo DOI | arXiv / Yayın | Birincil Depo |
+| :--- | :--- | :--- | :--- | :--- |
+| **Paper 1** | Mandelbrot Fractal Neural Synthesis | [`10.5281/zenodo.22867037`](https://doi.org/10.5281/zenodo.22867037) | Elsevier Chaos Solitons | [`pCwOrM/mandelbrot-fractal-neural-synthesis`](https://github.com/pCwOrM/mandelbrot-fractal-neural-synthesis) |
+| **Paper 2** | Orbital Error Dynamics (OED) | [`10.5281/zenodo.22900465`](https://doi.org/10.5281/zenodo.22900465) (v3) | [`arXiv:2609.30115`](https://arxiv.org/abs/2609.30115) | [`pCwOrM/mandelbrot-fractal-neural-synthesis`](https://github.com/pCwOrM/mandelbrot-fractal-neural-synthesis) |
+| **Paper 3** | Procedural Fractal Pedagogy (WerreduR v4.0) | [`10.5281/zenodo.23128224`](https://doi.org/10.5281/zenodo.23128224) | Hedef: Q1 AIED / CAEAI | [`jesmaat/WerreduR`](https://github.com/jesmaat/WerreduR) (Ayna: [`pCwOrM/WerreduR`](https://github.com/pCwOrM/WerreduR)) |
+| **Paper 4** | Black Hole Page Curve & Quantum Gravity | [`10.5281/zenodo.22961999`](https://doi.org/10.5281/zenodo.22961999) | CERN Record 22978460 | [`pCwOrM/mandelbrot-fractal-neural-synthesis`](https://github.com/pCwOrM/mandelbrot-fractal-neural-synthesis) |
+| **Paper 5** | Lean 4 Biçimsel Doğrulama & 40-Çekirdek Gauntlet | [`10.5281/zenodo.22983889`](https://doi.org/10.5281/zenodo.22983889) (v2) | [`arXiv:2609.33066`](https://arxiv.org/abs/2609.33066) | [`pCwOrM/werr`](https://github.com/pCwOrM/werr) & [`werracle`](https://github.com/pCwOrM/werracle) |
+| **Paper 6** | WerrSoma Drosophila Connectome (158K Nöron) | [`10.5281/zenodo.23072929`](https://doi.org/10.5281/zenodo.23072929) (v1.1) | Konsept: [`22996625`](https://doi.org/10.5281/zenodo.22996625) | [`Lexovian/WerrSoma`](https://github.com/Lexovian/WerrSoma) |
+| **Paper 7** | Werracle Sub-Cent Intra-Block EVM AI Oracle | [`10.5281/zenodo.22942598`](https://doi.org/10.5281/zenodo.22942598) | [`arXiv:2609.30719`](https://arxiv.org/abs/2609.30719) | [`pCwOrM/werracle`](https://github.com/pCwOrM/werracle) & [`werralem`](https://github.com/pCwOrM/werralem) |
+| **Paper 8** | Schönhage Tensor Carrier Compression ($W=176M$) | [`10.5281/zenodo.23268580`](https://doi.org/10.5281/zenodo.23268580) | `arXiv:submit/8207241` | [`pCwOrM/integer-mult-bounds`](https://github.com/pCwOrM/integer-mult-bounds) |
+| **Paper 9** | Güneş Dili Deterministik Morfoloji & 53 Koma (Bu Çalışma) | [`10.5281/zenodo.23273006`](https://doi.org/10.5281/zenodo.23273006) | Konsept: [`23273005`](https://doi.org/10.5281/zenodo.23273005) | [`pCwOrM/gunes-dili`](https://github.com/pCwOrM/gunes-dili) |
+| **Motor** | WERR Zero-VRAM Gauntlet & JevBench | [`10.5281/zenodo.22939253`](https://doi.org/10.5281/zenodo.22939253) | [`arXiv:2609.25498`](https://arxiv.org/abs/2609.25498) | [`pCwOrM/werr`](https://github.com/pCwOrM/werr) |
+| **Platform** | answerr Zero-Latency Dual-Cognition Reflex AI | Canlı: [`answerr.me`](https://answerr.me) | Awesome Jev Ekosistemi | [`pCwOrM/answerr`](https://github.com/pCwOrM/answerr) |
+| **Ayrık Alg** | GAP-Lean4 Biçimsel Doğrulanmış Port (Gokujo Gate PASS) | [`10.5281/zenodo.23045504`](https://doi.org/10.5281/zenodo.23045504) | [`arXiv:2609.38492`](https://arxiv.org/abs/2609.38492) | [`pCwOrM/gap-lean4-port`](https://github.com/pCwOrM/gap-lean4-port) |
 
 Ayrıntılı yasal ve felsefi analiz için [BBL Lisans Değerlendirmesi](docs/BBL_LISANS_DEGERLENDIRMESI.md) belgesini inceleyiniz.
 
