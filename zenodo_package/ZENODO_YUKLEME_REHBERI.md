@@ -87,18 +87,42 @@ Güneş Dili, Deterministic Tokenization, Formal Morphology, Phonosemantics, Lea
 ---
 
 ### F. İlgili Tanımlayıcılar (Related Identifiers)
-* `https://github.com/pCwOrM/gunes-dili` $\to$ `isSupplementTo` (URL - Kaynak Kod Reposu)
-* `https://pcworm.github.io/gunes-dili/` $\to$ `isSupplementTo` (URL - Canlı Web Portalı & Simülatör)
-* `https://github.com/Lexovian/WerrSoma` $\to$ `isSupplementTo` (URL)
-* `arXiv:2609.33066` $\to$ `isPreprintOf` (arXiv)
-* `arXiv:2609.30115` $\to$ `isPreprintOf` (arXiv)
-* `arXiv:2609.30719` $\to$ `isPreprintOf` (arXiv)
-* `arXiv:2609.25498` $\to$ `isPreprintOf` (arXiv)
-* `arXiv:2609.38492` $\to$ `isPreprintOf` (arXiv)
-* `10.5281/zenodo.22939253` $\to$ `isSupplementTo` (DOI)
-* `10.5281/zenodo.22983889` $\to$ `isSupplementTo` (DOI)
 
----
+Zenodo arayüzünde her bir satır için **"+ Add another related identifier"** butonuna basarak aşağıdaki alanları doldurunuz:
+
+#### 1. Ana Kaynak Kod Deposu (GitHub)
+* **Relation:** `Is supplement to`
+* **Identifier:** `https://github.com/pCwOrM/gunes-dili`
+* **Scheme:** `URL`
+* **Resource type:** `Software`
+
+#### 2. Canlı Web Portalı & İnteraktif Simülatör (GitHub Pages)
+* **Relation:** `Is supplement to`
+* **Identifier:** `https://pcworm.github.io/gunes-dili/`
+* **Scheme:** `URL`
+* **Resource type:** `Interactive resource`
+
+#### 3. Biyo-Sentetik Konnektom Eşlikçi Reposu (WerrSoma)
+* **Relation:** `Is supplement to`
+* **Identifier:** `https://github.com/Lexovian/WerrSoma`
+* **Scheme:** `URL`
+* **Resource type:** `Software`
+
+#### 4. WERR arXiv Önbaskıları
+* **Relation:** `Is preprint of` | **Identifier:** `arXiv:2609.33066` | **Scheme:** `arXiv` | **Resource type:** `Preprint`
+* **Relation:** `Is preprint of` | **Identifier:** `arXiv:2609.30115` | **Scheme:** `arXiv` | **Resource type:** `Preprint`
+* **Relation:** `Is preprint of` | **Identifier:** `arXiv:2609.30719` | **Scheme:** `arXiv` | **Resource type:** `Preprint`
+* **Relation:** `Is preprint of` | **Identifier:** `arXiv:2609.25498` | **Scheme:** `arXiv` | **Resource type:** `Preprint`
+* **Relation:** `Is preprint of` | **Identifier:** `arXiv:2609.38492` | **Scheme:** `arXiv` | **Resource type:** `Preprint`
+
+#### 5. WERR Zenodo Eşlikçi Yayınları (DOIs)
+* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.22939253` | **Scheme:** `DOI` | **Resource type:** `Preprint`
+* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.22983889` | **Scheme:** `DOI` | **Resource type:** `Preprint`
+* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.22867037` | **Scheme:** `DOI` | **Resource type:** `Publication`
+* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.22900465` | **Scheme:** `DOI` | **Resource type:** `Publication`
+* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.22942599` | **Scheme:** `DOI` | **Resource type:** `Publication`
+* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.23072929` | **Scheme:** `DOI` | **Resource type:** `Publication`
+* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.23045504` | **Scheme:** `DOI` | **Resource type:** `Publication`
 
 ### G. Topluluklar (Communities)
 * `zenodo`
