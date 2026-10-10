@@ -313,8 +313,8 @@ Bu ekosistem, kamuya açılma aşamasında **BBL v1.0 (Barış, Bilim, Liyakat &
 
 ### 🛡️ Sınai Mülkiyet ve Patent Öncelikleri
 Güneş Dili kuramının prosedürel karar motoru, nöromorfik biyolojik rezonansı ve tüm-beyin konnektom telemetrisi tescilli patent başvuruları ile korunmaktadır:
-* **TÜRKPATENT TR 2026/016285:** *Yörüngesel Hata Dinamikleri ve Sıfır Bellekli Fraktal Sinirsel Sentez Yöntemi (OED / MFNS / WERR Engine)* (Başvuru: 22.09.2026)
-* **TÜRKPATENT TR 2026/016633:** *Biyo-Sentetik Nöromorfik Arayüzleme: Tüm-Beyin Drosophila Connectome ve Sıfır-Bellekli Fraktal Karar Motoru Entegrasyonu (WerrSoma / BCI)* (Başvuru: 27.09.2026) — Şekli eksiklik giderme işlemi resmi olarak tamamlanmış ve kayda alınmıştır (EPATS Evrak No: `2026-GE-725850`, Tarih: 10.10.2026 04:25:53).
+* **TÜRKPATENT TR 2026/016285:** *Yörüngesel Hata Dinamikleri ve Sıfır Bellekli Fraktal Sinirsel Sentez Yöntemi (OED / MFNS / WERR Engine)*
+* **TÜRKPATENT TR 2026/016633:** *Biyo-Sentetik Nöromorfik Arayüzleme: Tüm-Beyin Drosophila Connectome ve Sıfır-Bellekli Fraktal Karar Motoru Entegrasyonu (WerrSoma / BCI)*
 
 ---
 

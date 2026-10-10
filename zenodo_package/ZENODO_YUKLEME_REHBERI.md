@@ -87,7 +87,7 @@ Güneş Dili, Deterministic Tokenization, Formal Morphology, Phonosemantics, Lea
 ---
 
 ### F. İlgili Tanımlayıcılar (Related Identifiers)
-* `https://github.com/Lexovian/gunes-dili` $\to$ `isSupplementTo` (URL)
+* `https://github.com/pCwOrM/gunes-dili` $\to$ `isSupplementTo` (URL)
 * `https://github.com/Lexovian/WerrSoma` $\to$ `isSupplementTo` (URL)
 * `arXiv:2609.33066` $\to$ `isPreprintOf` (arXiv)
 * `arXiv:2609.30115` $\to$ `isPreprintOf` (arXiv)

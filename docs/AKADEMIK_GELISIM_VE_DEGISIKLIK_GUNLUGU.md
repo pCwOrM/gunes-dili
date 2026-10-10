@@ -14,7 +14,7 @@
 * **5. Yazar & Akademik Koordinasyon:** Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)) — Mersin University & Yusuf Kalkavan Anatolian High School
 * **Tescilli Patent Öncelikleri:**
   * TÜRKPATENT TR 2026/016285 (*WERR Engine & OED - Waves & Errors Reflex Resonator*, Başvuru: 22.09.2026)
-  * TÜRKPATENT TR 2026/016633 (*WerrSoma - Bio-Synthetic Neuromorphic Interfacing & Drosophila Connectome*, Başvuru: 27.09.2026, Şekli Eksiklik Giderme Evrak No: `2026-GE-725850`, 10.10.2026 04:25:53)
+  * TÜRKPATENT TR 2026/016633 (*WerrSoma - Bio-Synthetic Neuromorphic Interfacing & Drosophila Connectome*, Başvuru: 27.09.2026)
 
 ---
 
