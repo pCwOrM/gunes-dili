@@ -9,7 +9,7 @@
 * **Tarihsel Karşılaştırma Arşivi:** Sir Isaac Newton (1664 Trinity College *Of an Universall Language*)
 * **1. Yazar, Sorumlu Yazar & WERR Mimarı:** Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM)) — Anadolu University & ITouch Systems, Çukurova Teknokent (`ask@answerr.me`)
 * **2. Yazar & Sistem Geliştirme Lideri:** Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web)) — ITouch Systems, Çukurova Teknokent (Gramer ve Çeviri Motoru, `engine/gunes_dili.py`)
-* **3. Yazar & Mimari Lideri:** Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)) — Toros Science High School, MEV (Toros University) & ITouch Systems
+* **3. Yazar & Mimari Lideri:** Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)) — Toros Science High School, MEV (Toros University)
 * **4. Yazar & Platform Mühendisliği Lideri:** Semih Salar — ITouch Systems, Çukurova Teknokent (Kozmik ve Felsefi Arşiv, `archive/`)
 * **5. Yazar & Akademik Koordinasyon:** Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)) — Mersin University & Yusuf Kalkavan Anatolian High School
 * **Tescilli Patent Öncelikleri:**
@@ -28,7 +28,7 @@
   * **Yazarlar & Kurumsal Künyeler:**
     * 1. Volkan Dağlı (Anadolu University & ITouch Systems, ORCID: 0009-0000-1587-8703, `ask@answerr.me`)
     * 2. Bekirhan Dağlı (ITouch Systems, Çukurova Teknokent)
-    * 3. Dağhan Dağlı (Toros Science High School & ITouch Systems, ORCID: 0009-0003-2492-8313)
+    * 3. Dağhan Dağlı (Toros Science High School, MEV (Toros University), ORCID: 0009-0003-2492-8313)
     * 4. Semih Salar (ITouch Systems, Çukurova Teknokent)
     * 5. Zerrin Dağlı (Mersin University & Yusuf Kalkavan Anatolian High School, ORCID: 0000-0001-9490-6425)
 * **Tescilli Çift Patent Önceliğiyle Koruma:**

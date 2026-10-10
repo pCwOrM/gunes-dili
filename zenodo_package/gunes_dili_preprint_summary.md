@@ -7,7 +7,7 @@
 ### Künye & Yazarlar (Authors & Affiliations)
 - **Volkan Dağlı** (*Sorumlu Yazar & WERR Çekirdek Mimarı*, Anadolu University & ITouch Systems, Çukurova Teknokent, Türkiye — ORCID: 0009-0000-1587-8703, E-posta: `ask@answerr.me`)
 - **Bekirhan Dağlı** (ITouch Systems, Çukurova Teknokent, Türkiye)
-- **Dağhan Dağlı** (Toros Science High School, MEV (Toros University) & ITouch Systems, Türkiye — ORCID: 0009-0003-2492-8313)
+- **Dağhan Dağlı** (Toros Science High School, MEV (Toros University), Türkiye — ORCID: 0009-0003-2492-8313)
 - **Semih Salar** (ITouch Systems, Çukurova Teknokent, Türkiye)
 - **Zerrin Dağlı** (Mersin University & Yusuf Kalkavan Anatolian High School, Türkiye — ORCID: 0000-0001-9490-6425)
 

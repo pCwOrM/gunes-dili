@@ -265,7 +265,7 @@ Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel i
   ITouch Systems, Çukurova Teknokent  
   Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`) kurucu geliştiricisi.
 * **🔬 Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian))** — *3. Yazar & Mimari Lideri*  
-  Toros Science High School, Mersin Education Foundation (Toros University) & ITouch Systems, Çukurova Teknokent  
+  Toros Science High School, Mersin Education Foundation (Toros University), Mersin  
   *ORCID:* [0009-0003-2492-8313](https://orcid.org/0009-0003-2492-8313)
 * **🌌 Semih Salar** — *4. Yazar & Platform Mühendisliği Lideri*  
   ITouch Systems, Çukurova Teknokent  
