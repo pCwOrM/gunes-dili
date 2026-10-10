@@ -126,11 +126,11 @@ Aşağıdaki **10 tekil tanımlayıcıyı** sırasıyla **"+ Add another related
 * **Scheme:** `DOI`
 * **Resource type:** `Publication`
 
-#### 5. WerrSoma Connectome Kod ve Veri Paketi (Yazılım DOI)
+#### 5. WERR Core: Lean 4 İspat Monografı (v2) *(Formal Verification Monograph)*
 * **Relation:** `Is supplement to`
 * **Identifier:** `10.5281/zenodo.22983889`
 * **Scheme:** `DOI`
-* **Resource type:** `Software`
+* **Resource type:** `Publication` $\to$ `Preprint`
 
 #### 6. WERR Core: Lean 4 İspatları & Bare-Metal Doğrulama *(arXiv:2609.33066 eşleniği)*
 * **Relation:** `Is supplement to`
