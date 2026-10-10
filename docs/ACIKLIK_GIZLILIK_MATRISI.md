@@ -1,45 +1,46 @@
-# Güneş Dili Ekosistemi: Açıklık ve Gizlilik (Public vs. Private) Matrisi
+# Güneş Dili Ekosistemi: Açık Bilim (Public Open Science) ve Fikri Mülkiyet Stratejisi
 
-Bu belge; Güneş Dili deposunda yer alan dosyaların, modellerin ve tarihsel arşivlerin hangilerinin gelecekte **Kamuya Açık (Public / Open-Source)** yapılabileceğini, hangilerinin ise **Özel ve Mülki (Private / Sovereign Vault)** olarak korunması gerektiğini belirleyen stratejik güvenlik ve fikri mülkiyet matrisidir.
-
----
-
-## 📊 1. Dosya Sınıflandırma Matrisi
-
-| Dosya / Dizin | Mevcut Durum | Önerilen Statü | Gerekçe ve Stratejik Neden |
-| :--- | :---: | :---: | :--- |
-| **`tokenizer/gunes_dil_v4.py`** | Private | 🟢 **PUBLIC** (Açılabilir) | Türkçe doğal dil işleme (NLP) ekosistemine kazandırılacak en güçlü açık kaynak tokenizer. Akademik atıf ve kabul üretir. |
-| **`tokenizer/gunes_dil_model.json`** | Private | 🟢 **PUBLIC** (Açılabilir) | UD ağaç bankası istatistiksel modeli. Topluluğun doğrulaması için gereklidir. |
-| **`tokenizer/tdk_kokler.json`** | Private | 🟢 **PUBLIC** (Açılabilir) | TDK kamuya açık kök listesi türevidir. Açılmasında risk yoktur. |
-| **`engine/gunes_dili.py`** | Private | 🟢 **PUBLIC** (Açılabilir) | Dilin temel dilbilgisi kuralları ve tersine ayrıştırıcısı. Ekosistemin standartlaşması için açık olmalıdır. |
-| **`engine/gunes_dili_koordinat.json`** | Private | 🟡 **RESTRICTED / YARI-AÇIK** | 53 ekin Mandelbrot koordinat haritası. Temel koordinatlar açılabilir, hassas eğitim ağırlıkları gizlenebilir. |
-| **`lab/index.html` & `motor.js`** | Private | 🟢 **PUBLIC** (Açılabilir) | Web tarayıcısında çalışan interaktif tanıtım ve eğitim arayüzü. Topluluk etkileşimi için harika bir vitrindir. |
-| **`proofs/kanit_defteri.py` & `.json`** | Private | 🟢 **PUBLIC** (Açılabilir) | Teoremlerin matematiksel ispatları. Hakemli dergiler ve akademik itibar için açık kanıt teşkil eder. |
-| **`archive/ataturk_1935_gunes_dil/`** | Private | 🔴 **PRIVATE / SOVEREIGN** | Atatürk'ün el yazması notları ve 1-53 Nöbet Defteri yüksek çözünürlüklü taramaları. Milli ve manevi mülkiyet olarak özel kasada saklanmalıdır. |
-| **`archive/newton_1664_universal_language/`** | Private | 🔴 **PRIVATE / SOVEREIGN** | Newton'un Trinity College defteri yüksek çözünürlüklü dijital arşivleri. Telif ve araştırma önceliği açısından özel tutulmalıdır. |
-| **`archive/kozmik_ve_kuantum/`** | Private | 🔴 **PRIVATE / SOVEREIGN** | Henüz yayınlanmamış kozmik işletim sistemi ve kuantum palimpsest araştırma notları. Fikri mülkiyet önceliği nedeniyle gizli kalmalıdır. |
-| **`archive/muzik_ve_53_ses_cemberi/`** | Private | 🟡 **RESTRICTED / ÖZEL** | 53 ses çemberinin ham analiz notları. Patent ve kurumsal yayın sonrasına kadar koruma altında tutulmalıdır. |
+Bu belge; Güneş Dili monoreposunun (**`https://github.com/pCwOrM/gunes-dili`**) açık bilim, akademik yayın ve kamuya açılma (Public Open Science) mimarisini, patent öncelikleriyle uyumunu ve dizin standartlarını tanımlayan resmi strateji belgesidir.
 
 ---
 
-## 🛡️ 2. Kademeli Açılma (Phased Rollout) Stratejisi
+## 🏛️ 1. Stratejik Temel: Patent Güvencesi ve Tam Açıklık İlkesi
 
-1. **Aşama 1 (Mevcut Durum - Tamamen Private):**
-   * Repo bütünüyle `pCwOrM/gunes-dili` altında gizli tutulur. Çekirdek ekip (`Lexovian`, `jesmaat`, `Bekirhan`) incelemelerini onay mekanizması altında sürdürür.
-2. **Aşama 2 (Akademik Preprint & Ön Sürüm):**
-   * Zenodo veya arXiv üzerinde teknik rapor yayınlandığında; sadece `tokenizer/`, `engine/` ve `lab/` modüllerinden oluşan hafif bir açık kaynak sürüm (`gunes-dili-core`) public repoya çıkarılır.
-3. **Aşama 3 (Kasa ve Arşiv Ayrımı):**
-   * Yüksek çözünürlüklü tarihi taramalar, patent taslakları ve nöbet defteri belgeleri (`archive/`) daima özel ve yetkilendirilmiş araştırma kasasında kalır.
+Önceki taslaklarda yer alan *"belirli arşivlerin veya dosyaların özel kasada saklanması"* yaklaşımı, patent başvuruları öncesi koruma tedbirlerine dayanan geçici bir varsayımdı. 
+
+Güncel durumda:
+1. **Resmi Patent Tescil Süreçleri:** TÜRKPATENT nezdinde **TR 2026/016285** *(Yörüngesel Hata Dinamikleri ve Sıfır Bellekli Fraktal Sinirsel Sentez Yöntemi)* ve **TR 2026/016633** *(Biyo-Sentetik Nöromorfik Arayüzleme: Drosophila Connectome & BCI Entegrasyonu)* başvuruları resmi olarak yapılmıştır.
+2. **Paris Sözleşmesi Rüçhan Koruması:** Patent başvuruları yapıldığı andan itibaren 12 aylık uluslararası rüçhan (priority) koruması devreye girmiştir.
+3. **Açık Bilim & Öncelik Hakkı (Prior Art):** Zenodo önbaskısı ve GitHub deposunun kamuya açılması (**Public** yapılması), patent haklarına halel getirmediği gibi; yazarların adını, külliyatın tarihsel köklerini ve buluş önceliğini küresel düzeyde geri dönülemez biçimde tescilleyen en güçlü akademik savunma kalkanıdır.
+
+Bu doğrultuda; **Güneş Dili reposunun tüm bileşenleri 100% Açık Bilim (Public Open Science) standardında kamuya açılacak şekilde kurgulanmıştır.**
 
 ---
 
-## 👥 Katılımcı (Collaborator) Erişim Politikası
+## 📊 2. Depo Mimarisi ve Açıklık Sınıflandırma Tablosu
 
-Depoya dahil edilen yetkili katılımcılar (**Lexovian**, **jesmaat**, **Bekirhan**):
+| Dizin / Dosya | Statü | Standart ve Kapsam | Açıklama ve Gerekçe |
+| :--- | :---: | :--- | :--- |
+| **`tokenizer/`** | 🟢 **PUBLIC** | Algoritmik Çekirdek | `gunes_dil_v4.py`, Universal Dependencies modeli (`gunes_dil_model.json`) ve TDK kök sözlüğü. Türkçe NLP topluluğu için deterministik O(N) morfolojik ayrıştırıcı. |
+| **`engine/`** | 🟢 **PUBLIC** | Gramer & Çeviri Motoru | `gunes_dili.py` ve 53 ekin Mandelbrot faz koordinatları (`gunes_dili_koordinat.json`). Fonetik uyum ve tersine ayrıştırma standardı. |
+| **`proofs/`** | 🟢 **PUBLIC** | Biçimsel Doğrulama | `GunesDiliProof.lean` (Lean 4 teorem kanıtları) ve `kanit_defteri.py`. T1-T5 morfolojik teklik teoremleri hakemli açık inceleme için tam şeffaftır. |
+| **`archive/`** | 🟢 **PUBLIC** | Tarihsel & Kültürel Miras | Atatürk 1935 Nöbet Defteri, Newton 1664 elyazmaları, Kozmik/Kuantum metinleri ve 53 Ses Çemberi. İnsanlığın ortak mirası ve kültürel açık erişim olarak sunulmaktadır. |
+| **`lab/`** | 🟢 **PUBLIC** | İnteraktif Web Simülatörü | Tarayıcı üzerinde istemci taraflı (client-side) çalışan interaktif görsel ayrıştırıcı ve 53 koma çarkı. |
+| **`docs/`** | 🟢 **PUBLIC** | Canlı Portal ve Kılavuzlar | GitHub Pages canlı portalı (`docs/index.html`), teknik rehberler, akademik günlük ve lisans metinleri. |
+| **`zenodo_package/`** | 🟢 **PUBLIC** | Akademik Önbaskı & Replikasyon | LaTeX kaynakları (`.tex`, `.bib`), kamera-hazır PDF, `.zenodo.json`, `CITATION.cff` ve bağımsız replikasyon arşivi. |
+| **Yerel Geçici Dosyalar** | 🔒 **IGNORED** | `.gitignore` Koruması | Yalnızca Python derleme kalıntıları (`__pycache__/`, `*.pyc`), sanal ortamlar (`.venv/`) ve yerel `scratch/` dizini gizlenir; repoya dahil edilmez. |
 
-1. **Özel ve Akademik Dizinlere Tam Erişim:**
-   * Tier-2 (Akademik & Kanıtlar - `proofs/`, `engine/`, `tokenizer/`) ve Tier-3 (Tarihsel Kasa & Arşiv - `archive/`, `docs/`) dahil olmak üzere tüm dizinleri doğrudan klonlama, okuma ve yerel ortamlarında çalıştırma hakkına sahiptir.
-2. **Dal Koruma ve Onay Mekanizması:**
-   * Doğrudan `main` dalına push yetkisi kısıtlanmıştır; değişiklikler dal (branch) açılıp Pull Request (PR) üzerinden sunulur.
-   * `.github/CODEOWNERS` yapılandırması uyarınca, akademik ve arşiv dizinlerindeki PR incelemelerinde katılımcılar otomatik incelemeci (reviewer) atanır; nihai birleştirme (merge) `@pCwOrM` onayıyla yürütülür.
+---
 
+## 🚀 3. Halka Arz (Public Rollout) ve Yayın İş Akışı
+
+1. **Zenodo Önbaskı Kaydı:**
+   - Resmi önbaskı PDF (`Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf`) ve replikasyon paketi (`zenodo_bundle_gunes_dili_v1.0.zip`) Zenodo platformuna yüklenir.
+   - Kalıcı DOI (Digital Object Identifier) alınarak WERR külliyatı zincirine bağlanır.
+
+2. **GitHub Deposunun Public Yapılması:**
+   - `https://github.com/pCwOrM/gunes-dili` deposunun görünürlüğü GitHub ayarlarından `Private` durumundan `Public` durumuna geçirilir.
+   - GitHub Pages yayını (`https://pcworm.github.io/gunes-dili/`) otomatik olarak küresel erişime açılır.
+
+3. **Lisanslama ve Koruma:**
+   - Açık kaynak kodları ve metinler **BBL v1.0 (Barış, Bilim, Liyakat & Beerware/Çay)** lisansı ve patent öncelik referanslarıyla birlikte korunur.

@@ -13,14 +13,14 @@
 
 Zenodo arayüzünde **"Files"** bölümüne sürüklenecek **2 ana dosya**:
 
-1. **`Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf` (322 KB):**
+1. **`Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf` (315 KB):**
    * Kamera-hazır, yüksek çözünürlüklü A4 formatında, formülleri, tabloları, Lean 4 teorem kutularını ve biyo-sentetik konnektom telemetrisini içeren **ana araştırma makalesi**. Zenodo web arayüzünde tarayıcı içi PDF önizleyicisinde doğrudan gösterilecek olan dosya budur.
-   * **SHA-256:** `d1580fd829a447d1b11bcef8e8934c28e12df77828236c01ae0a3bd5a417187e`
+   * **SHA-256:** `d795507320e8c75a23f446470b878b3ad84339fa61f77fbef2eb163544302d0d`
 
 2. **`zenodo_bundle_gunes_dili_v1.0.zip` (1.22 MB):**
    * Python motoru (`tokenizer/`, `engine/`), TDK sözlük ve model matrisleri (`gunes_dil_model.json`, `tdk_kokler.json`), Lean 4 makine teyitli kanıtları (`proofs/GunesDiliProof.lean`), LaTeX makale kaynakları (`Gunes_Dili_WERR_Preprint.tex`, `references.bib`) ve akademik atıf dosyasını (`CITATION.cff`) içeren **tam replikasyon arşivi**.
    * *Not:* Uluslararası açık bilim standartları gereği bu genel arşivin içerisine dahili yükleme rehberleri (`ZENODO_YUKLEME_REHBERI.md`, `zenodo_description.html`) dahil edilmemiştir; bu rehberler yerel repoda yükleyici için muhafaza edilir.
-   * **SHA-256:** `5c9412480d0f84924d23803c887903b84dd7afc42c447f56e761f9aa3a471e73`
+   * **SHA-256:** `6b3c380a2c0022ca4a747d09a700f1fdd0c889977be605dc63bb7537b3c4a34c`
 
 ---
 

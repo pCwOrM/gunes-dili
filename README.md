@@ -5,9 +5,9 @@
 # Güneş Dili (Sun Language) Ekosistemi
 ### Matematiksel, Fonetik ve Fraktal Temelli Evrensel Dil Mimarisi
 
-![Repo Status: Private](https://img.shields.io/badge/Repo%20Status-Private%20%2F%20Confidential-red.svg)
+![Repo Status: Public Open Science](https://img.shields.io/badge/Repo%20Status-Public%20Open%20Science-success.svg)
 [![GitHub Pages: Web Portal](https://img.shields.io/badge/GitHub%20Pages-Live%20Portal-teal.svg)](https://pcworm.github.io/gunes-dili/)
-[![Portal: Local / Private](https://img.shields.io/badge/Portal-Private%20%2F%20Local-yellow.svg)](docs/index.html)
+[![Portal: Docs / Simulator](https://img.shields.io/badge/Simulator-Interactive%20Portal-gold.svg)](docs/index.html)
 [![Lean 4 Verified](https://img.shields.io/badge/Lean%204-Machine%20Checked-blue.svg)](proofs/GunesDiliProof.lean)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![License: BBL Draft](https://img.shields.io/badge/License-BBL%20v1.0%20(Bar%C4%B1%C5%9F%20Bilim%20Liyakat)-gold.svg)](docs/BBL_LISANS_DEGERLENDIRMESI.md)
@@ -26,7 +26,7 @@
 | ☀️ **Logo Felsefesi ve Geometrisi** | Amblemin sembolik dili, Ag kökü, 53 koma ve fraktal dalga analizi | [İncele](docs/LOGO_FELSEFESI_VE_TEKNIK_ACIKLAMASI.md) |
 | 🎓 **Teknik ve Akademik Rehber** | Dilbilimciler, matematikçiler ve mühendisler için biçimsel ispatlar (T1-T5) | [İncele](docs/TEKNIK_VE_AKADEMIK_REHBER.md) |
 | 🌍 **Halka Anlatım Rehberi** | Karmaşık terimlerden arındırılmış, 7'den 77'ye Güneş Dili ve Atatürk mirası | [İncele](docs/HALKA_ANLATIM_REHBERI.md) |
-| 🛡️ **Açıklık ve Gizlilik Matrisi** | Halka açılacak ve özel kalacak bileşenlerin güvenlik sınıflandırması | [İncele](docs/ACIKLIK_GIZLILIK_MATRISI.md) |
+| 🛡️ **Açık Bilim ve Fikri Mülkiyet Stratejisi** | Patent rüçhanları ve halka açık bilim standartları | [İncele](docs/ACIKLIK_GIZLILIK_MATRISI.md) |
 | ⚖️ **BBL Lisans Modeli** | Barış, Bilim, Liyakat ve Beerware/Çay dual lisans manifestosu | [İncele](docs/BBL_LISANS_DEGERLENDIRMESI.md) |
 
 ---
@@ -337,7 +337,8 @@ Ayrıntılı yasal ve felsefi analiz için [BBL Lisans Değerlendirmesi](docs/BB
 
 ---
 
-## 🔒 Gizlilik ve Erişim Denetimi
+## 🌐 Depo Statüsü ve Açık Bilim (Public Release)
 
-Bu depo ve içerisindeki Güneş Dili motoru, tokenizer'ı, matematiksel kanıtları ve tarihsel arşiv tahlilleri şu an için **ÖZEL VE GİZLİ (PRIVATE)** araştırma safhasındadır. Dosyaların halka arzı için [Açıklık ve Gizlilik Matrisi](docs/ACIKLIK_GIZLILIK_MATRISI.md) uygulanacaktır.
+TÜRKPATENT nezdindeki **TR 2026/016285** ve **TR 2026/016633** resmi patent başvurularımızın Paris Sözleşmesi kapsamında 12 aylık uluslararası rüçhan (priority) koruması tesis edilmiş olduğundan, Güneş Dili ekosisteminin tüm bileşenleri (`tokenizer/`, `engine/`, `proofs/`, `archive/`, `lab/`, `docs/`, `zenodo_package/`) Zenodo önbaskısı ile eşzamanlı olarak **Açık Bilim ve Kamu Malı Araştırma Standardı (Public Open Science)** dahilinde dünya kamuoyuna ve araştırmacılara sunulmaktadır. Ayrıştırma ve fikri mülkiyet standartları için [Açık Bilim ve Fikri Mülkiyet Stratejisi](docs/ACIKLIK_GIZLILIK_MATRISI.md) belgesini inceleyiniz.
+
 
