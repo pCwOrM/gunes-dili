@@ -5,11 +5,6 @@
   "publication_date": "2026-10-10",
   "creators": [
     {
-      "name": "Dağlı, Dağhan",
-      "affiliation": "Toros Science High School, Mersin Education Foundation (Toros University) & ITouch Systems, Türkiye",
-      "orcid": "0009-0003-2492-8313"
-    },
-    {
       "name": "Dağlı, Volkan",
       "affiliation": "Anadolu University & ITouch Systems, Çukurova Teknokent, Türkiye",
       "orcid": "0009-0000-1587-8703"
@@ -17,6 +12,11 @@
     {
       "name": "Dağlı, Bekirhan",
       "affiliation": "ITouch Systems, Çukurova Teknokent, Türkiye"
+    },
+    {
+      "name": "Dağlı, Dağhan",
+      "affiliation": "Toros Science High School, Mersin Education Foundation (Toros University) & ITouch Systems, Türkiye",
+      "orcid": "0009-0003-2492-8313"
     },
     {
       "name": "Salar, Semih",

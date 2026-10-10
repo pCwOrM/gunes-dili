@@ -15,12 +15,12 @@ Zenodo arayüzünde **"Files"** bölümüne sürüklenecek **2 ana dosya**:
 
 1. **`Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf` (322 KB):**
    * Kamera-hazır, yüksek çözünürlüklü A4 formatında, formülleri, tabloları, Lean 4 teorem kutularını ve biyo-sentetik konnektom telemetrisini içeren **ana araştırma makalesi**. Zenodo web arayüzünde tarayıcı içi PDF önizleyicisinde doğrudan gösterilecek olan dosya budur.
-   * **SHA-256:** `79a89aed55982dbdb036be369d1deb282b53ef77a2678cab676f7ffbbe259232`
+   * **SHA-256:** `8b4bea06cfcabfcf1d93594347a35e3bb982d3ecd715aa3b557fde9aaee1db37`
 
 2. **`zenodo_bundle_gunes_dili_v1.0.zip` (1.22 MB):**
    * Python motoru (`tokenizer/`, `engine/`), TDK sözlük ve model matrisleri (`gunes_dil_model.json`, `tdk_kokler.json`), Lean 4 makine teyitli kanıtları (`proofs/GunesDiliProof.lean`), LaTeX makale kaynakları (`Gunes_Dili_WERR_Preprint.tex`, `references.bib`) ve akademik atıf dosyasını (`CITATION.cff`) içeren **tam replikasyon arşivi**.
    * *Not:* Uluslararası açık bilim standartları gereği bu genel arşivin içerisine dahili yükleme rehberleri (`ZENODO_YUKLEME_REHBERI.md`, `zenodo_description.html`) dahil edilmemiştir; bu rehberler yerel repoda yükleyici için muhafaza edilir.
-   * **SHA-256:** `e9e443dd00a57f645db5e86ac31bb7a3b4743b05d511b22b280c1bb9eb6bd6b3`
+   * **SHA-256:** `52c1dc4636573382f231bb9e6004ca903fd2b4f8ebaed1415c9e3b2108e2673a`
 
 ---
 
@@ -42,19 +42,19 @@ Zenodo'ya ([zenodo.org](https://zenodo.org)) giriş yapıp **"New Upload"** dedi
 
 Sıralama WERR külliyatı ve akademik protokol standartlarına uygundur:
 
-1. **1. Yazar (First / Lead Author):**
-   * **Family name:** `Dağlı` | **Given names:** `Dağhan`
-   * **Affiliation:** `Toros Science High School, Mersin Education Foundation (Toros University) & ITouch Systems, Türkiye`
-   * **ORCID:** `0009-0003-2492-8313`
-
-2. **2. Yazar (Corresponding Author):**
+1. **1. Yazar (First / Corresponding Author):**
    * **Family name:** `Dağlı` | **Given names:** `Volkan`
    * **Affiliation:** `Anadolu University & ITouch Systems, Çukurova Teknokent, Türkiye`
    * **ORCID:** `0009-0000-1587-8703`
 
-3. **3. Yazar:**
+2. **2. Yazar:**
    * **Family name:** `Dağlı` | **Given names:** `Bekirhan`
    * **Affiliation:** `ITouch Systems, Çukurova Teknokent, Türkiye`
+
+3. **3. Yazar:**
+   * **Family name:** `Dağlı` | **Given names:** `Dağhan`
+   * **Affiliation:** `Toros Science High School, Mersin Education Foundation (Toros University) & ITouch Systems, Türkiye`
+   * **ORCID:** `0009-0003-2492-8313`
 
 4. **4. Yazar:**
    * **Family name:** `Salar` | **Given names:** `Semih`

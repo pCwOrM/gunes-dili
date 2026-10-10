@@ -7,11 +7,11 @@
 
 * **Kurucu Düşünce ve Tarihsel Vizyon:** Gazi Mustafa Kemal Atatürk (1935 Güneş-Dil Teorisi)
 * **Tarihsel Karşılaştırma Arşivi:** Sir Isaac Newton (1664 Trinity College *Of an Universall Language*)
-* **1. Yazar & Mimari Lideri:** Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)) — Toros Science High School, MEV (Toros University) & ITouch Systems
-* **Sorumlu Yazar & WERR Mimarı:** Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM)) — Anadolu University & ITouch Systems, Çukurova Teknokent (`ask@answerr.me`)
-* **Yazar & Sistem Geliştirme Lideri:** Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web)) — ITouch Systems, Çukurova Teknokent (Gramer ve Çeviri Motoru, `engine/gunes_dili.py`)
-* **Yazar & Platform Mühendisliği Lideri:** Semih Salar — ITouch Systems, Çukurova Teknokent (Kozmik ve Felsefi Arşiv, `archive/`)
-* **Yazar & Akademik ve Stratejik Koordinasyon:** Dr. Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)) — Mersin University & Yusuf Kalkavan Anatolian High School
+* **1. Yazar, Sorumlu Yazar & WERR Mimarı:** Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM)) — Anadolu University & ITouch Systems, Çukurova Teknokent (`ask@answerr.me`)
+* **2. Yazar & Sistem Geliştirme Lideri:** Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web)) — ITouch Systems, Çukurova Teknokent (Gramer ve Çeviri Motoru, `engine/gunes_dili.py`)
+* **3. Yazar & Mimari Lideri:** Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)) — Toros Science High School, MEV (Toros University) & ITouch Systems
+* **4. Yazar & Platform Mühendisliği Lideri:** Semih Salar — ITouch Systems, Çukurova Teknokent (Kozmik ve Felsefi Arşiv, `archive/`)
+* **5. Yazar & Akademik Koordinasyon:** Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)) — Mersin University & Yusuf Kalkavan Anatolian High School
 * **Tescilli Patent Öncelikleri:**
   * TÜRKPATENT TR 2026/016285 (*WERR Engine & OED - Waves & Errors Reflex Resonator*, Başvuru: 22.09.2026)
   * TÜRKPATENT TR 2026/016633 (*WerrSoma - Bio-Synthetic Neuromorphic Interfacing & Drosophila Connectome*, Başvuru: 27.09.2026)
@@ -26,11 +26,11 @@
 * **Makale Künyesi:**
   * **Başlık:** *«Güneş Dili: Deterministic Morpho-Semantic Tokenization, Machine-Checked Lean 4 Verification, and Bio-Synthetic Neural Resonance in the WERR Corpus»*
   * **Yazarlar & Kurumsal Künyeler:**
-    * Dağhan Dağlı (Toros Science High School & ITouch Systems, ORCID: 0009-0003-2492-8313)
-    * Volkan Dağlı (Anadolu University & ITouch Systems, ORCID: 0009-0000-1587-8703, `ask@answerr.me`)
-    * Bekirhan Dağlı (ITouch Systems, Çukurova Teknokent)
-    * Semih Salar (ITouch Systems, Çukurova Teknokent)
-    * Dr. Zerrin Dağlı (Mersin University & Yusuf Kalkavan Anatolian High School, ORCID: 0000-0001-9490-6425)
+    * 1. Volkan Dağlı (Anadolu University & ITouch Systems, ORCID: 0009-0000-1587-8703, `ask@answerr.me`)
+    * 2. Bekirhan Dağlı (ITouch Systems, Çukurova Teknokent)
+    * 3. Dağhan Dağlı (Toros Science High School & ITouch Systems, ORCID: 0009-0003-2492-8313)
+    * 4. Semih Salar (ITouch Systems, Çukurova Teknokent)
+    * 5. Zerrin Dağlı (Mersin University & Yusuf Kalkavan Anatolian High School, ORCID: 0000-0001-9490-6425)
 * **Tescilli Çift Patent Önceliğiyle Koruma:**
   * TÜRKPATENT TR 2026/016285 (*OED / MFNS / WERR Karar Motoru*, Başvuru: 22.09.2026)
   * TÜRKPATENT TR 2026/016633 (*WerrSoma Drosophila Connectome BCI*, Başvuru: 27.09.2026)

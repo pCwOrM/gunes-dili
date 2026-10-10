@@ -258,19 +258,19 @@ Güneş-Dil Teorisinin yegâne kurucusu, dil devriminin önderi ve vizyoneri:
 
 Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel ispatları, morfolojik tokenizer, çeviri motoru ve biyo-sentetik konnektom rezonansıyla geliştiren çalışma grubu ve Zenodo yayın künyesi:
 
-* **🔬 Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian))** — *1. Yazar & Mimari Lideri*  
-  Toros Science High School, Mersin Education Foundation (Toros University) & ITouch Systems, Çukurova Teknokent  
-  *ORCID:* [0009-0003-2492-8313](https://orcid.org/0009-0003-2492-8313)
-* **☀️ Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM))** — *Sorumlu Yazar & WERR Çekirdek Mimarı*  
+* **☀️ Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM))** — *1. Yazar, Sorumlu Yazar & WERR Çekirdek Mimarı*  
   Anadolu University & ITouch Systems, Çukurova Teknokent  
   *ORCID:* [0009-0000-1587-8703](https://orcid.org/0009-0000-1587-8703) | *İletişim:* `ask@answerr.me`
-* **⚙️ Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web))** — *Yazar & Sistem Geliştirme Lideri*  
+* **⚙️ Bekirhan Dağlı ([@bdagli-web](https://github.com/bdagli-web))** — *2. Yazar & Sistem Geliştirme Lideri*  
   ITouch Systems, Çukurova Teknokent  
   Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`) kurucu geliştiricisi.
-* **🌌 Semih Salar** — *Yazar & Platform Mühendisliği Lideri*  
+* **🔬 Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian))** — *3. Yazar & Mimari Lideri*  
+  Toros Science High School, Mersin Education Foundation (Toros University) & ITouch Systems, Çukurova Teknokent  
+  *ORCID:* [0009-0003-2492-8313](https://orcid.org/0009-0003-2492-8313)
+* **🌌 Semih Salar** — *4. Yazar & Platform Mühendisliği Lideri*  
   ITouch Systems, Çukurova Teknokent  
   Kozmik, fonosemantik ve felsefi arşiv araştırmacısı (`archive/`).
-* **🛡️ Dr. Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat))** — *Yazar & Akademik ve Stratejik Koordinasyon*  
+* **🛡️ Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat))** — *5. Yazar & Akademik Koordinasyon*  
   Mersin University & Yusuf Kalkavan Anatolian High School  
   *ORCID:* [0000-0001-9490-6425](https://orcid.org/0000-0001-9490-6425)
 
