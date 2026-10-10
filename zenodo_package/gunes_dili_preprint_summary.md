@@ -11,11 +11,21 @@
 - **Semih Salar** (ITouch Systems, Çukurova Teknokent, Türkiye)
 - **Zerrin Dağlı** (Mersin University & Yusuf Kalkavan Anatolian High School, Türkiye — ORCID: 0000-0001-9490-6425)
 
+*Kaynak Kod Reposu:* [https://github.com/pCwOrM/gunes-dili](https://github.com/pCwOrM/gunes-dili)  
+*Canlı Web Portalı & İnteraktif Simülatör:* [https://pcworm.github.io/gunes-dili/](https://pcworm.github.io/gunes-dili/)
+
 ---
 
 ### Resmi Patent Öncelikleri (Official Patent Priorities)
 1. **TÜRKPATENT TR 2026/016285:** *Dalga ve Hata Refleks Rezonatörü ile Sıfır Bellekli Fraktal Karar ve Yörünge Düzeltme Sistemi* (Başvuru: 22 Eylül 2026, 04:52:16 UTC+3)
 2. **TÜRKPATENT TR 2026/016633:** *Biyo-Sentetik Nöromorfik Arayüz ve Tam-Beyin Konnektom BCI Karar Sistemi* (Başvuru: 27 Eylül 2026, 06:16:04 UTC+3)
+
+---
+
+### Tarihsel ve Arşivsel Birincil Kaynaklar (Primary Archival Foundations)
+Çalışma, depomuzda açık bilim standardında korunan iki kurucu el yazması arşivi üzerine inşa edilmiştir:
+1. **Sir Isaac Newton (1664) — Trinity College Defteri (`archive/newton_1664_universal_language/`):** Cambridge University Library MS Add. 3996 el yazmasında (*Of an Universall Language*) yer alan 23 sayfalık fonetik artikülasyon fizyolojisi, ses frekansları ve evrensel kavramsal kök tabloları.
+2. **Gazi Mustafa Kemal Atatürk (1935) — Nöbet Defteri ve 1–53 Kök Çizelgeleri (`archive/ataturk_1935_gunes_dil/`):** Güneş'ten dışa doğru ışıyarak radyal genişleyen fonosemantik çekirdek teorisi ve 53 ek hücreli deterministik morfolojik omurga.
 
 ---
 

@@ -13,14 +13,14 @@
 
 Zenodo arayüzünde **"Files"** bölümüne sürüklenecek **2 ana dosya**:
 
-1. **`Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf` (315 KB):**
+1. **`Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf` (334 KB):**
    * Kamera-hazır, yüksek çözünürlüklü A4 formatında, formülleri, tabloları, Lean 4 teorem kutularını ve biyo-sentetik konnektom telemetrisini içeren **ana araştırma makalesi**. Zenodo web arayüzünde tarayıcı içi PDF önizleyicisinde doğrudan gösterilecek olan dosya budur.
-   * **SHA-256:** `d795507320e8c75a23f446470b878b3ad84339fa61f77fbef2eb163544302d0d`
+   * **SHA-256:** `7bcce80591ead8f5ba37cd77f31e33e071f7e9afd904725df8feb5bb57784889`
 
-2. **`zenodo_bundle_gunes_dili_v1.0.zip` (1.22 MB):**
+2. **`zenodo_bundle_gunes_dili_v1.0.zip` (1.24 MB):**
    * Python motoru (`tokenizer/`, `engine/`), TDK sözlük ve model matrisleri (`gunes_dil_model.json`, `tdk_kokler.json`), Lean 4 makine teyitli kanıtları (`proofs/GunesDiliProof.lean`), LaTeX makale kaynakları (`Gunes_Dili_WERR_Preprint.tex`, `references.bib`) ve akademik atıf dosyasını (`CITATION.cff`) içeren **tam replikasyon arşivi**.
    * *Not:* Uluslararası açık bilim standartları gereği bu genel arşivin içerisine dahili yükleme rehberleri (`ZENODO_YUKLEME_REHBERI.md`, `zenodo_description.html`) dahil edilmemiştir; bu rehberler yerel repoda yükleyici için muhafaza edilir.
-   * **SHA-256:** `6b3c380a2c0022ca4a747d09a700f1fdd0c889977be605dc63bb7537b3c4a34c`
+   * **SHA-256:** `f9b5e6f86b9d9fcb516701d937169e8b82b8776cdbb4386524c129a8cd65033e`
 
 ---
 
@@ -87,7 +87,8 @@ Güneş Dili, Deterministic Tokenization, Formal Morphology, Phonosemantics, Lea
 ---
 
 ### F. İlgili Tanımlayıcılar (Related Identifiers)
-* `https://github.com/pCwOrM/gunes-dili` $\to$ `isSupplementTo` (URL)
+* `https://github.com/pCwOrM/gunes-dili` $\to$ `isSupplementTo` (URL - Kaynak Kod Reposu)
+* `https://pcworm.github.io/gunes-dili/` $\to$ `isSupplementTo` (URL - Canlı Web Portalı & Simülatör)
 * `https://github.com/Lexovian/WerrSoma` $\to$ `isSupplementTo` (URL)
 * `arXiv:2609.33066` $\to$ `isPreprintOf` (arXiv)
 * `arXiv:2609.30115` $\to$ `isPreprintOf` (arXiv)

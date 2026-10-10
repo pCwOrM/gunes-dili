@@ -24,6 +24,7 @@ version: "1.0.0"
 date-released: "2026-10-10"
 license: "CC-BY-4.0"
 repository-code: "https://github.com/pCwOrM/gunes-dili"
+url: "https://pcworm.github.io/gunes-dili/"
 keywords:
   - "Güneş Dili"
   - "Deterministic Tokenization"
