@@ -35,14 +35,15 @@
   * TÜRKPATENT TR 2026/016285 (*OED / MFNS / WERR Karar Motoru*, Başvuru: 22.09.2026)
   * TÜRKPATENT TR 2026/016633 (*WerrSoma Drosophila Connectome BCI*, Başvuru: 27.09.2026)
 * **Paket Bileşenleri:**
-  1. `zenodo_package/.zenodo.json`: Zenodo API ve web yükleme metadata şeması.
-  2. `zenodo_package/ZENODO_YUKLEME_REHBERI.md`: Kopyala-yapıştır alanları ve adım adım yükleme kılavuzu.
-  3. `zenodo_package/Gunes_Dili_WERR_Preprint.tex` & `references.bib`: Tam akademik LaTeX makale kaynağı ve bibliyografya.
-  4. `zenodo_package/zenodo_description.html`: Zenodo portalı için zenginleştirilmiş HTML açıklaması.
-  5. `zenodo_package/CITATION.cff`: Standart akademik atıf dosyası.
-  6. `zenodo_package/create_replication_bundle.py`: Replikasyon paketleyici ve hash doğrulayıcı.
-  7. `zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip` (919 KB, SHA256: `9f316fbd3b8e6e133e7d48e3f806960823ffd44d9c42976e7a6876901dbcd561`).
-  8. `zenodo_package/SHA256SUMS.txt`: Kriptografik mühür manifestosu.
+  1. `zenodo_package/Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf`: Standalone kamera-hazır makale metni (322 KB, KaTeX renderli).
+  2. `zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip`: Kod, model, Lean 4 ispatları ve LaTeX kaynaklarını içeren temiz açık bilim replikasyon arşivi (1.22 MB, SHA256: `e9e443dd00a57f645db5e86ac31bb7a3b4743b05d511b22b280c1bb9eb6bd6b3`).
+  3. `zenodo_package/ZENODO_YUKLEME_REHBERI.md`: Dahili adım adım yükleme kılavuzu (arşiv dışı, yerel).
+  4. `zenodo_package/zenodo_description.html`: Zenodo portalı için zenginleştirilmiş HTML açıklaması (yerel).
+  5. `zenodo_package/.zenodo.json`: Zenodo API ve web yükleme metadata şeması.
+  6. `zenodo_package/Gunes_Dili_WERR_Preprint.tex` & `references.bib`: Tam akademik LaTeX makale kaynağı ve bibliyografya.
+  7. `zenodo_package/CITATION.cff`: Standart akademik atıf dosyası.
+  8. `zenodo_package/create_replication_bundle.py` & `build_zenodo_pdf.py`: Derleme ve hash mühürleme scriptleri.
+  9. `zenodo_package/SHA256SUMS.txt`: Kriptografik mühür manifestosu.
 
 ---
 

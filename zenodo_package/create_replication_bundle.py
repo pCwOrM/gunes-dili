@@ -2,6 +2,8 @@
 """
 Güneş Dili Zenodo Replication Bundle Packager & Checksum Verifier
 Generates zenodo_bundle_gunes_dili_v1.0.zip and SHA256SUMS.txt
+Excludes internal upload guides (.zenodo.json, ZENODO_YUKLEME_REHBERI.md, zenodo_description.html)
+Includes the research paper PDF and full reproduction codebase.
 """
 
 import os
@@ -14,14 +16,16 @@ ZENODO_DIR = os.path.abspath(os.path.dirname(__file__))
 BUNDLE_NAME = "zenodo_bundle_gunes_dili_v1.0.zip"
 BUNDLE_PATH = os.path.join(ZENODO_DIR, BUNDLE_NAME)
 
+PDF_NAME = "Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf"
+PDF_PATH = os.path.join(ZENODO_DIR, PDF_NAME)
+
 FILES_TO_PACK = [
-    # Package metadata & sources
+    # Academic research paper manuscript & sources
+    (PDF_PATH, PDF_NAME),
     (os.path.join(ZENODO_DIR, "Gunes_Dili_WERR_Preprint.tex"), "Gunes_Dili_WERR_Preprint.tex"),
     (os.path.join(ZENODO_DIR, "references.bib"), "references.bib"),
-    (os.path.join(ZENODO_DIR, ".zenodo.json"), ".zenodo.json"),
     (os.path.join(ZENODO_DIR, "CITATION.cff"), "CITATION.cff"),
-    (os.path.join(ZENODO_DIR, "ZENODO_YUKLEME_REHBERI.md"), "ZENODO_YUKLEME_REHBERI.md"),
-    (os.path.join(ZENODO_DIR, "zenodo_description.html"), "zenodo_description.html"),
+    (os.path.join(ZENODO_DIR, "gunes_dili_preprint_summary.md"), "gunes_dili_preprint_summary.md"),
     # Core Repo Components
     (os.path.join(BASE_DIR, "README.md"), "README.md"),
     (os.path.join(BASE_DIR, "LICENSE"), "LICENSE"),
@@ -55,15 +59,18 @@ def build_bundle():
 
     bundle_hash = sha256_file(BUNDLE_PATH)
     bundle_size = os.path.getsize(BUNDLE_PATH)
+    pdf_hash = sha256_file(PDF_PATH) if os.path.exists(PDF_PATH) else "N/A"
     print(f"[+] Bundle created successfully: {bundle_size} bytes")
-    print(f"[+] SHA256: {bundle_hash}")
+    print(f"[+] Bundle SHA256: {bundle_hash}")
+    print(f"[+] PDF SHA256: {pdf_hash}")
 
-    # Generate SHA256SUMS.txt
+    # Generate SHA256SUMS.txt for all public deposit artifacts
     sums_file = os.path.join(ZENODO_DIR, "SHA256SUMS.txt")
     with open(sums_file, "w", encoding="utf-8") as f:
+        f.write(f"{pdf_hash}  {PDF_NAME}\n")
         f.write(f"{bundle_hash}  {BUNDLE_NAME}\n")
         for abs_path, rel_path in FILES_TO_PACK:
-            if os.path.exists(abs_path):
+            if os.path.exists(abs_path) and abs_path != PDF_PATH:
                 f.write(f"{sha256_file(abs_path)}  {os.path.basename(abs_path)}\n")
     print(f"[+] Written {sums_file}")
 

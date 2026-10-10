@@ -11,12 +11,16 @@
 
 ## 1. Hazırlanan ve Yüklenecek Dosyalar (`zenodo_package/`)
 
-Zenodo arayüzünde **"Files"** bölümüne sürüklenecek ana dosyalar:
+Zenodo arayüzünde **"Files"** bölümüne sürüklenecek **2 ana dosya**:
 
-1. **`zenodo_bundle_gunes_dili_v1.0.zip`:**
-   * Python motoru (`tokenizer/`, `engine/`), TDK sözlük ve model matrisleri (`gunes_dil_model.json`, `tdk_kokler.json`), Lean 4 makine teyitli kanıtları (`proofs/GunesDiliProof.lean`) ve LaTeX makale kaynaklarını içeren tam replikasyon paketi.
-2. **`Gunes_Dili_WERR_Preprint.tex` & `references.bib`:**
-   * Tam akademik LaTeX makale kaynağı ve BibTeX bibliyografyası.
+1. **`Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf` (322 KB):**
+   * Kamera-hazır, yüksek çözünürlüklü A4 formatında, formülleri, tabloları, Lean 4 teorem kutularını ve biyo-sentetik konnektom telemetrisini içeren **ana araştırma makalesi**. Zenodo web arayüzünde tarayıcı içi PDF önizleyicisinde doğrudan gösterilecek olan dosya budur.
+   * **SHA-256:** `79a89aed55982dbdb036be369d1deb282b53ef77a2678cab676f7ffbbe259232`
+
+2. **`zenodo_bundle_gunes_dili_v1.0.zip` (1.22 MB):**
+   * Python motoru (`tokenizer/`, `engine/`), TDK sözlük ve model matrisleri (`gunes_dil_model.json`, `tdk_kokler.json`), Lean 4 makine teyitli kanıtları (`proofs/GunesDiliProof.lean`), LaTeX makale kaynakları (`Gunes_Dili_WERR_Preprint.tex`, `references.bib`) ve akademik atıf dosyasını (`CITATION.cff`) içeren **tam replikasyon arşivi**.
+   * *Not:* Uluslararası açık bilim standartları gereği bu genel arşivin içerisine dahili yükleme rehberleri (`ZENODO_YUKLEME_REHBERI.md`, `zenodo_description.html`) dahil edilmemiştir; bu rehberler yerel repoda yükleyici için muhafaza edilir.
+   * **SHA-256:** `e9e443dd00a57f645db5e86ac31bb7a3b4743b05d511b22b280c1bb9eb6bd6b3`
 
 ---
 

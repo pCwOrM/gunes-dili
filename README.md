@@ -281,11 +281,12 @@ Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel i
 WERR Külliyatı açık bilim standartlarına uygun olarak derlenen resmi Zenodo önbaskı paketi depoya dahil edilmiştir:
 
 * **Makale Başlığı:** *«Güneş Dili: Deterministic Morpho-Semantic Tokenization, Machine-Checked Lean 4 Verification, and Bio-Synthetic Neural Resonance in the WERR Corpus»*
-* **Yükleme Rehberi:** [`zenodo_package/ZENODO_YUKLEME_REHBERI.md`](zenodo_package/ZENODO_YUKLEME_REHBERI.md)
+* **Kamera-Hazır Araştırma Makalesi (PDF):** [`zenodo_package/Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf`](zenodo_package/Gunes_Dili_Deterministic_Morphology_Lean4_WERR_Preprint.pdf) *(322 KB, KaTeX renderli, formülleri ve Lean 4 kanıtlarını içeren baskı hazır metin)*
+* **Hazır Replikasyon Arşivi (ZIP):** [`zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip`](zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip) *(1.22 MB, SHA256 doğrulamalı, tüm kodlar ve modeller)*
+* **Yükleme Rehberi:** [`zenodo_package/ZENODO_YUKLEME_REHBERI.md`](zenodo_package/ZENODO_YUKLEME_REHBERI.md) *(Adım adım Zenodo yükleme yönergesi)*
 * **Zenodo Metadata JSON:** [`zenodo_package/.zenodo.json`](zenodo_package/.zenodo.json)
 * **LaTeX Makale Metni:** [`zenodo_package/Gunes_Dili_WERR_Preprint.tex`](zenodo_package/Gunes_Dili_WERR_Preprint.tex) & [`zenodo_package/references.bib`](zenodo_package/references.bib)
 * **Önbaskı Özeti (Markdown):** [`zenodo_package/gunes_dili_preprint_summary.md`](zenodo_package/gunes_dili_preprint_summary.md)
-* **Hazır Replikasyon Arşivi:** [`zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip`](zenodo_package/zenodo_bundle_gunes_dili_v1.0.zip) *(919 KB, SHA256 doğrulamalı)*
 * **Akademik Atıf Dosyası:** [`zenodo_package/CITATION.cff`](zenodo_package/CITATION.cff)
 
 ---
