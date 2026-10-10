@@ -86,9 +86,21 @@ Güneş Dili, Deterministic Tokenization, Formal Morphology, Phonosemantics, Lea
 
 ---
 
+> [!WARNING]
+> **⚠️ SHA256SUMS.txt YÜKLENECEK Mİ?**
+> **HAYIR, YÜKLEMEYİNİZ!** Zenodo arayüzüne **yalnızca 2 dosya** (Preprint PDF ve Replikasyon ZIP) yüklenmelidir. Zenodo yüklediğiniz her dosyaya otomatik olarak kendi MD5/SHA256 özetini çıkarır. `SHA256SUMS.txt` yalnızca yerel repomuzdaki doğrulama içindir; Zenodo'ya yüklenirse gereksiz dosya kalabalığı oluşturur.
+
+---
+
 ### F. İlgili Tanımlayıcılar (Related Identifiers)
 
-Zenodo arayüzünde her bir satır için **"+ Add another related identifier"** butonuna basarak aşağıdaki alanları doldurunuz:
+> [!NOTE]
+> **Mükerrer Kayıt Temizliği ve Arayüz Uyumu:**
+> * Zenodo arayüzünde `Is preprint of` seçeneği bulunmamaktadır; tüm eşlikçi ve bağlantılı kayıtlar için açılır menüde yer alan standart **`Is supplement to`** seçeneği kullanılır.
+> * Web portalı için `Interactive resource` seçeneği Zenodo'da olmadığından **`Software`** (veya `Other`) seçilmelidir.
+> * Hem arXiv'de hem Zenodo'da bulunan makaleler **asla iki kez (mükerrer) girilmez**. Zenodo içi çift yönlü otomatik bağlantılama (inter-linking) sağlamak için daima **Zenodo DOI (`10.5281/zenodo.xxxxx`)** tercih edilir.
+
+Aşağıdaki **10 tekil tanımlayıcıyı** sırasıyla **"+ Add another related identifier"** diyerek ekleyiniz:
 
 #### 1. Ana Kaynak Kod Deposu (GitHub)
 * **Relation:** `Is supplement to`
@@ -100,29 +112,55 @@ Zenodo arayüzünde her bir satır için **"+ Add another related identifier"** 
 * **Relation:** `Is supplement to`
 * **Identifier:** `https://pcworm.github.io/gunes-dili/`
 * **Scheme:** `URL`
-* **Resource type:** `Interactive resource`
+* **Resource type:** `Software`
 
-#### 3. Biyo-Sentetik Konnektom Eşlikçi Reposu (WerrSoma)
+#### 3. Biyo-Sentetik Konnektom Eşlikçi Reposu (WerrSoma GitHub)
 * **Relation:** `Is supplement to`
 * **Identifier:** `https://github.com/Lexovian/WerrSoma`
 * **Scheme:** `URL`
 * **Resource type:** `Software`
 
-#### 4. WERR arXiv Önbaskıları
-* **Relation:** `Is preprint of` | **Identifier:** `arXiv:2609.33066` | **Scheme:** `arXiv` | **Resource type:** `Preprint`
-* **Relation:** `Is preprint of` | **Identifier:** `arXiv:2609.30115` | **Scheme:** `arXiv` | **Resource type:** `Preprint`
-* **Relation:** `Is preprint of` | **Identifier:** `arXiv:2609.30719` | **Scheme:** `arXiv` | **Resource type:** `Preprint`
-* **Relation:** `Is preprint of` | **Identifier:** `arXiv:2609.25498` | **Scheme:** `arXiv` | **Resource type:** `Preprint`
-* **Relation:** `Is preprint of` | **Identifier:** `arXiv:2609.38492` | **Scheme:** `arXiv` | **Resource type:** `Preprint`
+#### 4. WerrSoma Drosophila Connectome (Makale DOI)
+* **Relation:** `Is supplement to`
+* **Identifier:** `10.5281/zenodo.22939253`
+* **Scheme:** `DOI`
+* **Resource type:** `Publication`
 
-#### 5. WERR Zenodo Eşlikçi Yayınları (DOIs)
-* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.22939253` | **Scheme:** `DOI` | **Resource type:** `Preprint`
-* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.22983889` | **Scheme:** `DOI` | **Resource type:** `Preprint`
-* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.22867037` | **Scheme:** `DOI` | **Resource type:** `Publication`
-* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.22900465` | **Scheme:** `DOI` | **Resource type:** `Publication`
-* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.22942599` | **Scheme:** `DOI` | **Resource type:** `Publication`
-* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.23072929` | **Scheme:** `DOI` | **Resource type:** `Publication`
-* **Relation:** `Is supplement to` | **Identifier:** `10.5281/zenodo.23045504` | **Scheme:** `DOI` | **Resource type:** `Publication`
+#### 5. WerrSoma Connectome Kod ve Veri Paketi (Yazılım DOI)
+* **Relation:** `Is supplement to`
+* **Identifier:** `10.5281/zenodo.22983889`
+* **Scheme:** `DOI`
+* **Resource type:** `Software`
+
+#### 6. WERR Core: Lean 4 İspatları & Bare-Metal Doğrulama *(arXiv:2609.33066 eşleniği)*
+* **Relation:** `Is supplement to`
+* **Identifier:** `10.5281/zenodo.22867037`
+* **Scheme:** `DOI`
+* **Resource type:** `Publication`
+
+#### 7. Orbital Error Dynamics (OED) *(arXiv:2609.30115 eşleniği)*
+* **Relation:** `Is supplement to`
+* **Identifier:** `10.5281/zenodo.22900465`
+* **Scheme:** `DOI`
+* **Resource type:** `Publication`
+
+#### 8. Werracle: EVM Akıllı Kontrat Refleks Kahini *(arXiv:2609.30719 eşleniği)*
+* **Relation:** `Is supplement to`
+* **Identifier:** `10.5281/zenodo.22942599`
+* **Scheme:** `DOI`
+* **Resource type:** `Publication`
+
+#### 9. Schreier-Sims Hesaplamalı Grup Teorisi (Lean 4) *(arXiv:2609.38492 eşleniği)*
+* **Relation:** `Is supplement to`
+* **Identifier:** `10.5281/zenodo.23045504`
+* **Scheme:** `DOI`
+* **Resource type:** `Publication`
+
+#### 10. Biyo-Sentetik Tüm-Beyin Drosophila Telemetrisi
+* **Relation:** `Is supplement to`
+* **Identifier:** `10.5281/zenodo.23072929`
+* **Scheme:** `DOI`
+* **Resource type:** `Publication`
 
 ### G. Topluluklar (Communities)
 * `zenodo`

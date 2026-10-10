@@ -57,7 +57,7 @@
       "identifier": "https://pcworm.github.io/gunes-dili/",
       "relation": "isSupplementTo",
       "scheme": "url",
-      "resource_type": "interactive-resource"
+      "resource_type": "software"
     },
     {
       "identifier": "https://github.com/Lexovian/WerrSoma",
@@ -66,64 +66,46 @@
       "resource_type": "software"
     },
     {
-      "identifier": "10.5281/zenodo.22867037",
-      "relation": "isSupplementTo",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.5281/zenodo.22900465",
-      "relation": "isSupplementTo",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.5281/zenodo.22942599",
-      "relation": "isSupplementTo",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.5281/zenodo.23072929",
-      "relation": "isSupplementTo",
-      "scheme": "doi"
-    },
-    {
-      "identifier": "10.5281/zenodo.23045504",
-      "relation": "isSupplementTo",
-      "scheme": "doi"
-    },
-    {
       "identifier": "10.5281/zenodo.22939253",
       "relation": "isSupplementTo",
-      "scheme": "doi"
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
     },
     {
       "identifier": "10.5281/zenodo.22983889",
       "relation": "isSupplementTo",
-      "scheme": "doi"
+      "scheme": "doi",
+      "resource_type": "software"
     },
     {
-      "identifier": "arXiv:2609.33066",
-      "relation": "isPreprintOf",
-      "scheme": "arxiv"
+      "identifier": "10.5281/zenodo.22867037",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
     },
     {
-      "identifier": "arXiv:2609.30115",
-      "relation": "isPreprintOf",
-      "scheme": "arxiv"
+      "identifier": "10.5281/zenodo.22900465",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
     },
     {
-      "identifier": "arXiv:2609.30719",
-      "relation": "isPreprintOf",
-      "scheme": "arxiv"
+      "identifier": "10.5281/zenodo.22942599",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
     },
     {
-      "identifier": "arXiv:2609.25498",
-      "relation": "isPreprintOf",
-      "scheme": "arxiv"
+      "identifier": "10.5281/zenodo.23045504",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
     },
     {
-      "identifier": "arXiv:2609.38492",
-      "relation": "isPreprintOf",
-      "scheme": "arxiv"
+      "identifier": "10.5281/zenodo.23072929",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
     }
   ],
   "communities": [
