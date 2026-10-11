@@ -1,0 +1,98 @@
+\begin{thebibliography}{99}
+
+\bibitem{sennrich2016bpe}
+R.~Sennrich, B.~Haddow, and A.~Birch,
+\textit{Neural Machine Translation of Rare Words with Subword Units},
+in Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp.~1715--1725, 2016.
+
+\bibitem{kudo2018subword}
+T.~Kudo,
+\textit{Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates},
+in Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp.~66--75, 2018.
+
+\bibitem{newton1664universal}
+I.~Newton,
+\textit{Of an Universall Language},
+Trinity College Notebook, Cambridge University Library MS Add. 3996, ff. 88r--92v, 1664; primary archival manuscript preserved in G\"{u}ne\c{s} Dili Open Science Repository (\texttt{archive/newton\_1664\_universal\_language/}).
+
+\bibitem{ataturk1935nobet}
+G.~M.~K.~Atat\"{u}rk,
+\textit{G\"{u}ne\c{s}-Dil Teorisi \c{C}al\i\c{s}ma Notlar\i{} ve 1--53 K\"{o}k \c{C}izelgeleri (N\"{o}bet Defteri)},
+Historical Primary Archival Manuscript, Republic of T\"{u}rkiye Presidential State Archives, 1935; preserved in G\"{u}ne\c{s} Dili Open Science Repository (\texttt{archive/ataturk\_1935\_gunes\_dil/}).
+
+\bibitem{kosay1936gunes}
+H.~Z.~Ko\c{s}ay,
+\textit{G\"{u}ne\c{s}-Dil Teorisi Hakk\i{}nda Bir \.{I}zah},
+T\"{u}rk Dil Kurumu Yay\i{}nlar\i, Ankara, 1936.
+
+\bibitem{tdk1936kurultay}
+T\"{u}rk Dil Kurumu,
+\textit{\"{U}\c{c}\"{u}nc\"{u} T\"{u}rk Dil Kurultay\i{} Tezler ve Tutanaklar},
+Devlet Bas\i{}mevi, \.{I}stanbul, 1936.
+
+\bibitem{moura2021lean4}
+L.~de Moura and S.~Ullrich,
+\textit{The Lean 4 theorem prover and programming language},
+in Automated Deduction--CADE 28: 28th International Conference, Proceedings, pp.~625--635, Springer, 2021.
+
+\bibitem{dagli2026werr1}
+V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
+\textit{Orbital Error Dynamics: Zero-Memory Reflex Decisions and High-Velocity Phase Horizons},
+arXiv preprint arXiv:2609.30115 [cs.NE], 2026. Zenodo DOI: \texttt{10.5281/zenodo.22900465}.
+
+\bibitem{dagli2026werr2}
+V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
+\textit{Formal Machine Proofs and Bare-Metal Gauntlet Verification in Lean 4},
+arXiv preprint arXiv:2609.33066 [cs.AI, cs.LO], 2026. Zenodo DOI: \texttt{10.5281/zenodo.22983889}.
+
+\bibitem{dagli2026werr3}
+V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
+\textit{Werracle: Sub-Cent EVM Slot Machine and Flash-Loan Defense Oracle},
+arXiv preprint arXiv:2609.30719 [cs.CR], 2026. Zenodo DOI: \texttt{10.5281/zenodo.22942598}.
+
+\bibitem{dagli2026werr4}
+V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
+\textit{WERR: Wave-Error Reflex Resonator for Sub-Millisecond Edge Triage},
+arXiv preprint arXiv:2609.25498, 2026. Zenodo DOI: \texttt{10.5281/zenodo.22939253}.
+
+\bibitem{dagli2026werr5}
+V.~Da\u{g}l\i, Z.~Da\u{g}l\i, and D.~Da\u{g}l\i,
+\textit{Bipartite Carrier Compression and Machine-Certified Bounds in Sch\"{o}nhage Trilinear Multiplication Tensors},
+Zenodo Preprint, 2026. DOI: \texttt{10.5281/zenodo.23268580}.
+
+\bibitem{dagli2026werrsoma}
+D.~Da\u{g}l\i, V.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
+\textit{Bio-Synthetic Neuromorphic Interfacing: Integration of a Zero-Memory Fractal Decision Engine with the Whole-Brain Drosophila Melanogaster Connectome},
+Zenodo Preprint, 2026. DOI: \texttt{10.5281/zenodo.23072929}.
+
+\bibitem{turkpatent_oed_2026}
+V.~Da\u{g}l\i{} and D.~Da\u{g}l\i,
+\textit{Dalga ve Hata Refleks Rezonat\"{o}r\"{u} ile S\i{}f\i{}r Bellekli Fraktal Karar ve Y\"{o}r\"{u}nge D\"{u}zeltme Sistemi},
+T\"{U}RKPATENT National Patent Application TR 2026/016285, Filed: Sept 22, 2026.
+
+\bibitem{turkpatent_werrsoma_2026}
+D.~Da\u{g}l\i, V.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
+\textit{Biyo-Sentetik N\"{o}romorfik Aray\"{u}z ve Tam-Beyin Konnektom BCI Karar Sistemi},
+T\"{U}RKPATENT National Patent Application TR 2026/016633, Filed: Sept 27, 2026.
+
+\bibitem{dorkenwald2024flywire}
+S.~Dorkenwald et al.,
+\textit{Neuronal wiring diagram of an adult brain},
+Nature, vol.~634, no.~8032, pp.~124--138, 2024.
+
+\bibitem{schlegel2024whole}
+P.~Schlegel et al.,
+\textit{A connectomic reconstruction of the entire adult Drosophila brain},
+Nature, vol.~634, no.~8032, pp.~139--152, 2024.
+
+\bibitem{oflazer1994twolevel}
+K.~Oflazer,
+\textit{Two-level description of Turkish morphology},
+Literary and Linguistic Computing, vol.~9, no.~2, pp.~137--148, 1994.
+
+\bibitem{chomsky1957syntactic}
+N.~Chomsky,
+\textit{Syntactic Structures},
+Mouton \& Co., The Hague, 1957.
+
+\end{thebibliography}
