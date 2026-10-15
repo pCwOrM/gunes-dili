@@ -12,7 +12,7 @@
 [![Portal: Docs / Simulator](https://img.shields.io/badge/Simulator-Interactive%20Portal-gold.svg)](docs/index.html)
 [![Lean 4 Verified](https://img.shields.io/badge/Lean%204-Machine%20Checked-blue.svg)](proofs/GunesDiliProof.lean)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
-[![License: BBL Draft](https://img.shields.io/badge/License-BBL%20v1.0%20(Bar%C4%B1%C5%9F%20Bilim%20Liyakat)-gold.svg)](docs/BBL_LISANS_DEGERLENDIRMESI.md)
+[![License: BSL 1.1](https://img.shields.io/badge/License-BSL%201.1-red.svg)](./LICENSE)
 [![UD Turkish Validated](https://img.shields.io/badge/UD%20Turkish-Validated-success.svg)](https://universaldependencies.org/)
 [![Mandelbrot Fractal Trajectory](https://img.shields.io/badge/Fractal-Mandelbrot%20MFNS-orange.svg)](https://doi.org/10.5281/zenodo.22802921)
 [![Ecosystem: answerr.me](https://img.shields.io/badge/Ecosystem-answerr.me-0284c7.svg)](https://answerr.me)
@@ -315,14 +315,15 @@ WERR Külliyatı açık bilim standartlarına uygun olarak derlenen resmi araşt
 
 ---
 
-## ⚖️ Lisans ve Hukuki Statü (BBL Modeli)
+## ⚖️ Lisans ve Hukuki Statü (Business Source License 1.1)
 
-Bu ekosistem, kamuya açılma aşamasında **BBL v1.0 (Barış, Bilim, Liyakat & Beerware/Çay)** hibrit lisansı ile korunacaktır:
+Bu ekosistem ve içerdiği deterministik morfoloji modelleri, **[Business Source License 1.1 (BSL 1.1)](LICENSE)** altında **ITouch Systems (`ITOUCH BİLİŞİM SİSTEMLERİ MÜHENDİSLİK DANIŞMANLIK SANAYİ VE TİCARET LİMİTED ŞİRKETİ`)** kurumsal koruması altındadır:
 
-1. **Barış (Peace):** Bu yazılım ve matematiksel kuram hiçbir askeri taarruz, gözetim veya insan onuruna aykırı amaçla kullanılamaz.
-2. **Bilim (Science):** Kod, algoritma ve ispatlar tamamen şeffaf, akademik ve hakemli doğrulamaya açıktır.
-3. **Liyakat (Merit):** Geliştirici ve katkıcı hakları, Atatürk'ün 1935 mirası ve WERR külliyatı atıf zinciri asla silinemez.
-4. **Beerware / Çay Maddesi:** Bir gün geliştiricilerle karşılaşırsanız ve bu kod işinize yaradıysa, bir bardak çay ısmarlamanız yeterlidir.
+1. **Akademik, Eğitsel ve Bilimsel Araştırma Kullanımı:** Kaynak kodlar, dilbilimsel algoritmalar ve Lean 4 biçimsel ispatları; ticari olmayan akademik araştırmalar, üniversite eğitimleri, bağımsız bilimsel incelemeler ve açık bilim doğrulamaları için tamamen serbesttir.
+2. **Ticari Kısıtlama:** Kodların veya modellerin ticari bir NLP/çeviri ürünü, SaaS platformu, ücretli bulut API servisi olarak sunulması veya ITouch Systems / answerr.me ile doğrudan ticari rekabet oluşturacak şekilde kullanılması Licensor'dan yazılı bir **Ticari Kurumsal Lisans** alınmasını gerektirir.
+3. **Dönüşüm Tarihi (Change Date):** **01.01.2030** tarihinde bu yazılım otomatik olarak tam açık kaynaklı **Apache License, Version 2.0** lisansına dönüşür.
+4. **Felsefi Taahhüt (Barış, Bilim ve Liyakat):** Bu yazılım insan onuruna aykırı, yıkıcı veya askeri taarruz amaçlarıyla kullanılamaz; Atatürk'ün 1935 Güneş-Dil mirası ve WERR külliyatı atıf zinciri korunmalıdır.
+5. **Kurumsal İletişim & Lisanslama:** **ITouch Systems** (MERSİS: `0469094455800001`, VKN: `4690944558`, Sanayi Sicil: `827254`, Çukurova Teknokent - Adana, Türkiye) &bull; [info@itouch.com.tr](mailto:info@itouch.com.tr) &bull; [ask@answerr.me](mailto:ask@answerr.me) &bull; KEP: `itouchbilisim@hs01.kep.tr`.
 
 ### 🛡️ Sınai Mülkiyet ve Patent Öncelikleri
 Güneş Dili kuramının prosedürel karar motoru, nöromorfik biyolojik rezonansı ve tüm-beyin konnektom telemetrisi tescilli patent başvuruları ile korunmaktadır:
