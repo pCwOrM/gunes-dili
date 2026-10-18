@@ -14,16 +14,24 @@ if hasattr(sys.stdout, 'reconfigure'):
         sys.stderr.reconfigure(encoding='utf-8')
     except Exception:
         pass
-from .lexer import Lexer, LexerError
-from .parser import Parser, ParserError
-from .interpreter import Interpreter, RuntimeError
+
+if __package__ is None or __package__ == "":
+    import os
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from gunes_lang.lexer import Lexer, LexerError
+    from gunes_lang.parser import Parser, ParserError
+    from gunes_lang.interpreter import Interpreter, RuntimeError
+else:
+    from .lexer import Lexer, LexerError
+    from .parser import Parser, ParserError
+    from .interpreter import Interpreter, RuntimeError
 
 
 BANNER = r"""
 ================================================================================
-   ☀️  GÜNEŞ-LANG v1.0.0 — AKADEMİK LAB PROGRAMLAMA DİLİ
-   Deterministik Morfo-Semantik Çekirdek & WERR 53-Hölder Rezonans Motoru
-   Newton 1664 & Atatürk 1935 Bilimsel Mirası Üzerine İnşa Edilmiştir
+   (*)  GUNES-LANG v1.0.0 — AKADEMIK LAB PROGRAMLAMA DILI
+   Deterministik Morfo-Semantik Cekirdek & WERR 53-Holder Rezonans Motoru
+   Newton 1664 & Ataturk 1935 Bilimsel Mirasi Uzerine Insa Edilmistir
 ================================================================================
 """
 
