@@ -234,6 +234,7 @@
 
         /* Tablolar (Booktabs Style) */
         .table-responsive {
+            width: 100%;
             overflow-x: auto;
             margin: 1.5rem 0;
         }
@@ -241,14 +242,27 @@
         table.academic-table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 0.85rem;
+            font-size: 0.74rem;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            table-layout: fixed;
+            line-height: 1.35;
         }
 
         table.academic-table th, table.academic-table td {
-            padding: 0.65rem 0.75rem;
+            padding: 0.45rem 0.35rem;
             text-align: left;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            vertical-align: top;
         }
+
+        table.academic-table th:nth-child(1), table.academic-table td:nth-child(1) { width: 19%; }
+        table.academic-table th:nth-child(2), table.academic-table td:nth-child(2) { width: 17%; }
+        table.academic-table th:nth-child(3), table.academic-table td:nth-child(3) { width: 13%; }
+        table.academic-table th:nth-child(4), table.academic-table td:nth-child(4) { width: 11%; }
+        table.academic-table th:nth-child(5), table.academic-table td:nth-child(5) { width: 13%; }
+        table.academic-table th:nth-child(6), table.academic-table td:nth-child(6) { width: 13%; }
+        table.academic-table th:nth-child(7), table.academic-table td:nth-child(7) { width: 14%; }
 
         table.academic-table thead tr {
             border-top: 2px solid #0f172a;
@@ -332,6 +346,26 @@
                 border: none;
                 padding: 0;
                 max-width: 100%;
+                width: 100%;
+            }
+
+            .table-responsive {
+                overflow: visible !important;
+                width: 100% !important;
+                margin: 1.2rem 0 !important;
+            }
+
+            table.academic-table {
+                width: 100% !important;
+                table-layout: fixed !important;
+                font-size: 7.2pt !important;
+                line-height: 1.3 !important;
+            }
+
+            table.academic-table th, table.academic-table td {
+                padding: 3.5px 3px !important;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
             }
 
             .print-btn-container {
@@ -340,7 +374,7 @@
 
             @page {
                 size: A4;
-                margin: 14mm 16mm;
+                margin: 12mm 10mm;
             }
 
             h2.section-title {
