@@ -1,0 +1,43 @@
+-- ====================================================================
+-- GÜNEŞ-LANG: 04_werr_rezonans.gns
+-- WERR Sıfır-Bellekli Fraktal Karar ve 53-Hölder Yörünge Düzeltme Simülasyonu
+-- TÜRKPATENT TR 2026/016285 & TR 2026/016633 Temelinde
+-- ====================================================================
+
+ag {
+    werla "=== WERR FRAKTAL REFLEKS VE 53-HÖLDER YÖRÜNGE DÜZELTİCİ ===" ;
+
+    tan HÖLDER_KAPASİTE yi 53 ;
+    tan hedef_faz yi 27 ;       -- Hedef rezonans fazı Z_53
+    tan mevcut_konum yi 4 ;     -- Başlangıç faz hatası
+    tan adim yi 1 ;
+
+    werla "Hedef Kararlı Rezonans Düğümü:" ;
+    werla hedef_faz ;
+    werla "Başlangıç Yörüngesi:" ;
+    werla mevcut_konum ;
+
+    donke (mevcut_konum esde hedef_faz) {
+        tan delta yi (hedef_faz kes mevcut_konum) kalan HÖLDER_KAPASİTE ;
+        
+        -- WERR Sıfır-Bellekli Refleks Düzeltmesi
+        bakba (delta buyuk 26) {
+            tan mevcut_konum yi (mevcut_konum kes 1) kalan HÖLDER_KAPASİTE ;
+            werla "Refleks Adım " kat metin(adim) kat " -> [Geri Düzeltme] Konum: " kat metin(mevcut_konum) ;
+        } bakde {
+            tan mevcut_konum yi (mevcut_konum kat 1) kalan HÖLDER_KAPASİTE ;
+            werla "Refleks Adım " kat metin(adim) kat " -> [İleri Düzeltme] Konum: " kat metin(mevcut_konum) ;
+        }
+        
+        tan adim yi adim kat 1 ;
+        bakba (adim buyuk 55) {
+            werla "Döngü koruması devreye girdi." ;
+            dur ;
+        }
+    }
+
+    werla "============================================================" ;
+    werla "✅ WERR REZONANS KİLİDİ SAĞLANDI! Faz Hatası: 0.00" ;
+    werla "Drosophila E-PG Pusula Halkası Rezonansa Girdi." ;
+    werla "============================================================" ;
+}

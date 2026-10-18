@@ -1,0 +1,46 @@
+-- ====================================================================
+-- GÜNEŞ-LANG: 01_merhaba.gns
+-- Temel Değişkenler, Morfotaktik Aritmetik ve Koşul Denetimi
+-- ====================================================================
+
+ag {
+    werla "------------------------------------------------------------" ;
+    werla "☀️ GÜNEŞ-LANG v1.0 AKADEMİK ÇALIŞTIRMA ORTAMI DEVREDE" ;
+    werla "------------------------------------------------------------" ;
+
+    -- Değişken Tanımlama (tan ... yi ...)
+    tan sayi_a yi 42 ;
+    tan sayi_b yi 11 ;
+
+    werla "Sayı A:" ;
+    werla sayi_a ;
+    werla "Sayı B:" ;
+    werla sayi_b ;
+
+    -- Morfotaktik Aritmetik İşleçler (kat, kes, tarap, bol, kalan)
+    tan toplam yi sayi_a kat sayi_b ;
+    tan fark yi sayi_a kes sayi_b ;
+    tan carpim yi sayi_a tarap sayi_b ;
+    tan bolum yi sayi_a bol sayi_b ;
+    tan mod yi sayi_a kalan sayi_b ;
+
+    werla "Toplam (kat):" ;
+    werla toplam ;
+    werla "Fark (kes):" ;
+    werla fark ;
+    werla "Çarpım (tarap):" ;
+    werla carpim ;
+    werla "Bölüm (bol):" ;
+    werla bolum ;
+    werla "Kalan (kalan):" ;
+    werla mod ;
+
+    -- Koşullu Mantık (bakba / bakde)
+    bakba (toplam buyuk 50) {
+        werla ">> Mantıksal Karar: Toplam 50'den büyüktür (Doğrulandı)." ;
+    } bakde {
+        werla ">> Mantıksal Karar: Toplam 50 veya daha küçüktür." ;
+    }
+
+    werla "Güneş Dili İlk Faz Tamamlandı." ;
+}

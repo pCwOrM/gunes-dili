@@ -1,0 +1,38 @@
+-- ====================================================================
+-- GÜNEŞ-LANG: 03_asal_sayilar.gns
+-- Asal Sayı Eleme ve Dinamik Dizi Yönetimi
+-- ====================================================================
+
+ag {
+    werla "=== GÜNEŞ DİLİ ASAL SAYI SÜZGECİ ===" ;
+
+    tanim asal_mi(sayi) {
+        bakba (sayi kutuk 2) {
+            wer yanlis ;
+        }
+        tan bolen yi 2 ;
+        donke (bolen tarap bolen kutukes sayi) {
+            bakba ((sayi kalan bolen) es 0) {
+                wer yanlis ;
+            }
+            tan bolen yi bolen kat 1 ;
+        }
+        wer dogru ;
+    }
+
+    tan asal_dizisi yi [] ;
+    tan n yi 2 ;
+    tan maks_hedef yi 50 ;
+
+    donke (n kutukes maks_hedef) {
+        bakba (asal_mi(n)) {
+            tan asal_dizisi yi ekle(asal_dizisi, n) ;
+        }
+        tan n yi n kat 1 ;
+    }
+
+    werla "1 ile 50 arasındaki Asal Sayılar:" ;
+    werla asal_dizisi ;
+    werla "Toplam Bulunan Asal Sayı Adedi:" ;
+    werla boy(asal_dizisi) ;
+}

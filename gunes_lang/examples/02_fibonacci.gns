@@ -1,0 +1,30 @@
+-- ====================================================================
+-- GÜNEŞ-LANG: 02_fibonacci.gns
+-- Özyinelemeli (Recursive) ve Döngüsel Fibonacci Algoritması
+-- ====================================================================
+
+ag {
+    werla "=== ÖZYİNELEMELİ FİBONACCİ MOTORU ===" ;
+
+    -- İşlev Tanımlama: tanim fib(n) { ... }
+    tanim fib(n) {
+        bakba (n kutukes 1) {
+            wer n ;
+        }
+        wer fib(n kes 1) kat fib(n kes 2) ;
+    }
+
+    -- 0'dan 10'a kadar Fibonacci dizisini üret
+    tan i yi 0 ;
+    tan limit yi 10 ;
+
+    werla "İlk 10 Fibonacci Değeri Hesaplanıyor:" ;
+
+    donke (i kutukes limit) {
+        tan f_val yi fib(i) ;
+        werla "fib(" kat metin(i) kat ") = " kat metin(f_val) ;
+        tan i yi i kat 1 ;
+    }
+
+    werla "Hesaplama Başarıyla Tamamlandı." ;
+}
