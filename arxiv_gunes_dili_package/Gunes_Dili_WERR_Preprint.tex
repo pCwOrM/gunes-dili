@@ -1,16 +1,18 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{amsmath,amssymb,amsthm}
-\usepackage{geometry}
-\geometry{margin=1in}
-\usepackage{hyperref}
-\usepackage{booktabs}
+\usepackage[letterpaper, top=1.0in, bottom=1.0in, left=1.25in, right=1.0in]{geometry}
 \usepackage{microtype}
+\usepackage{xurl}
+\usepackage{booktabs}
 \usepackage{cite}
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{graphicx}
+
+\emergencystretch=3em
 
 \lstdefinelanguage{Lean}{
     keywords={theorem,def,structure,where,inductive,match,with,fun,let,in,by,intro,apply,exact,sorry,done,Bool,String,List,Nat,Type,Prop,True,False,Option,some,none,true,false,omega,dsimp,cases,rfl,rw,constructor,rintro,trivial},
@@ -25,15 +27,20 @@
 
 \lstset{
     language=Lean,
-    basicstyle=\footnotesize\ttfamily,
+    basicstyle=\fontsize{7.5pt}{9.5pt}\ttfamily,
     keywordstyle=\color{blue}\bfseries,
     commentstyle=\color{gray}\itshape,
     stringstyle=\color{purple},
     frame=single,
+    framerule=0.5pt,
+    rulecolor=\color{black!30},
     breaklines=true,
+    breakatwhitespace=false,
+    xleftmargin=1.0em,
+    xrightmargin=1.0em,
     captionpos=b,
     numbers=none,
-    backgroundcolor=\color{black!3}
+    backgroundcolor=\color{black!2}
 }
 
 \hypersetup{
@@ -41,6 +48,7 @@
     linkcolor=blue,
     citecolor=blue,
     urlcolor=blue,
+    breaklinks=true,
     pdfauthor={Volkan Dagli, Bekirhan Dagli, Daghan Dagli, Semih Salar, Zerrin Dagli},
     pdftitle={Gunes Dili: Deterministic Morpho-Semantic Tokenization, Machine-Checked Lean 4 Verification, and Bio-Synthetic Neural Resonance in the WERR Corpus},
     pdfsubject={arXiv cs.LO / cs.CL / cs.FL / q-bio.NC | Zenodo DOI: 10.5281/zenodo.23273006}
@@ -54,21 +62,27 @@
 
 \title{\textbf{Güneş Dili: Deterministic Morpho-Semantic Tokenization, Machine-Checked Lean 4 Verification, and Bio-Synthetic Neural Resonance in the WERR Corpus}}
 
-\author{
-    \textbf{Volkan Da\u{g}l\i}$^{1,2,*}$ \quad 
-    \textbf{Bekirhan Da\u{g}l\i}$^{2}$ \quad 
-    \textbf{Da\u{g}han Da\u{g}l\i}$^{3}$ \quad 
-    \textbf{Semih Salar}$^{2}$ \quad 
-    \textbf{Zerrin Da\u{g}l\i}$^{4,5}$\\[0.5em]
+\author{%
+  \begin{minipage}{0.96\textwidth}
+    \centering
+    \textbf{Volkan Da\u{g}l\i}$^{1,2,*}$, \quad
+    \textbf{Bekirhan Da\u{g}l\i}$^{2}$, \quad
+    \textbf{Da\u{g}han Da\u{g}l\i}$^{3}$, \\[0.35em]
+    \textbf{Semih Salar}$^{2}$, \quad
+    \textbf{Zerrin Da\u{g}l\i}$^{4,5}$\\[0.75em]
     \small $^{1}$Anadolu University, Eski\c{s}ehir, T\"{u}rkiye \\
     \small $^{2}$ITouch Systems, \c{C}ukurova Teknokent, Adana/Mersin, T\"{u}rkiye \\
     \small $^{3}$Toros Science High School, Mersin Education Foundation (Toros University), Mersin, T\"{u}rkiye \\
     \small $^{4}$Mersin University, Mersin, T\"{u}rkiye \\
-    \small $^{5}$Yusuf Kalkavan Anatolian High School, Mersin, T\"{u}rkiye\\[0.4em]
-    \small \texttt{ORCID: 0009-0000-1587-8703 (V.D.), 0009-0003-2492-8313 (D.D.), 0000-0001-9490-6425 (Z.D.)} \\
-    \small $^*$Corresponding Author: \texttt{ask@answerr.me} \\[0.3em]
-    \small \textbf{Zenodo DOI:} \href{https://doi.org/10.5281/zenodo.23273006}{10.5281/zenodo.23273006} \quad | \quad \textbf{Concept DOI:} \href{https://doi.org/10.5281/zenodo.23273005}{10.5281/zenodo.23273005} \\[0.2em]
-    \small \textbf{Repository:} \url{https://github.com/pCwOrM/gunes-dili} \quad | \quad \textbf{Live Portal \& Simulator:} \url{https://pcworm.github.io/gunes-dili/}
+    \small $^{5}$Yusuf Kalkavan Anatolian High School, Mersin, T\"{u}rkiye\\[0.6em]
+    \small ORCID: \href{https://orcid.org/0009-0000-1587-8703}{0009-0000-1587-8703} (V.D.), \quad
+    \href{https://orcid.org/0009-0003-2492-8313}{0009-0003-2492-8313} (D.D.), \quad
+    \href{https://orcid.org/0000-0001-9490-6425}{0000-0001-9490-6425} (Z.D.) \\[0.35em]
+    \small $^*$Corresponding Author: \texttt{ask@answerr.me} \\[0.5em]
+    \small \textbf{Zenodo DOI:} \href{https://doi.org/10.5281/zenodo.23273006}{10.5281/zenodo.23273006} \quad (\textbf{Concept:} \href{https://doi.org/10.5281/zenodo.23273005}{10.5281/zenodo.23273005}) \\[0.3em]
+    \small \textbf{Source Repository:} \url{https://github.com/pCwOrM/gunes-dili} \\[0.3em]
+    \small \textbf{Live Web Portal \& Simulator:} \url{https://pcworm.github.io/gunes-dili/}
+  \end{minipage}%
 }
 
 \date{October 18, 2026}
@@ -98,10 +112,12 @@ From the standpoint of mathematical logic and formal language theory \cite{choms
     \item \textbf{Memory-Wall and Latency Bottlenecks:} Dynamic vocabulary embedding tables and projection matrices consume gigabytes of high-bandwidth GPU VRAM, imposing acute latency penalties during edge and neuromorphic execution.
 \end{enumerate}
 
-To establish a principled, deterministic alternative, we synthesize two landmark historical mechanical traditions preserved directly as primary high-resolution archival documents in the open repository (\texttt{archive/}):
+To establish a principled, deterministic alternative, we synthesize two landmark historical mechanical traditions preserved directly as primary high-resolution archival documents in the open repository (\path{archive/}):
 \begin{itemize}
-    \item \textbf{Sir Isaac Newton's 1664 Cambridge Trinity College Notebook (\texttt{archive/newton\_1664\_universal\_language/}):} In his manuscript \textit{Of an Universall Language} (Cambridge University Library MS Add. 3996, ff. 88r--92v) \cite{newton1664universal}, Newton at age 22 formulated a synthetic philosophical language grounded in physiological vocal tract articulation coordinates (lips, tongue, palate), acoustic resonance, and conceptual root tables---establishing the earliest mechanical precursor linking phonetic physics to semantic ontology.
-    \item \textbf{Gazi Mustafa Kemal Atatürk's 1935 Working Manuscripts \& Root Matrices (\texttt{archive/ataturk\_1935\_gunes\_dil/}):} Formulated during the 1935 language reform and recorded in Atatürk's personal working notebooks \cite{ataturk1935nobet, kosay1936gunes, tdk1936kurultay}, the \textit{Güneş Dil Teorisi} (Sun Language Theory) posited that human vocalization expands radially outward from an invariant phonosemantic core, cataloging Turkish agglutinative morphology into an exact 53-cell root/affix matrix.
+    \item \textbf{Sir Isaac Newton's 1664 Cambridge Trinity College Notebook:}\\
+    In his manuscript \textit{Of an Universall Language} (Cambridge University Library MS Add. 3996, ff. 88r--92v; archived in \path{archive/newton_1664_universal_language/}) \cite{newton1664universal}, Newton at age 22 formulated a synthetic philosophical language grounded in physiological vocal tract articulation coordinates (lips, tongue, palate), acoustic resonance, and conceptual root tables---establishing the earliest mechanical precursor linking phonetic physics to semantic ontology.
+    \item \textbf{Gazi Mustafa Kemal Atatürk's 1935 Working Manuscripts \& Root Matrices:}\\
+    Formulated during the 1935 language reform and recorded in Atatürk's personal working notebooks \cite{ataturk1935nobet, kosay1936gunes, tdk1936kurultay} (archived in \path{archive/ataturk_1935_gunes_dil/}), the \textit{Güneş Dil Teorisi} (Sun Language Theory) posited that human vocalization expands radially outward from an invariant phonosemantic core, cataloging Turkish agglutinative morphology into an exact 53-cell root/affix matrix.
 \end{itemize}
 
 In this paper, we reconstruct these mechanical intuitions within modern dependent type theory, formal language theory, and neuromorphic engineering:
@@ -159,7 +175,7 @@ Consonant mutations (voicing assimilation $k \to \breve{g}$, $p \to b$, $t \to d
 
 \section{Machine-Checked Formal Verification in Lean 4}
 
-To establish absolute mathematical certitude, the foundational axioms and algebraic theorems of Güneş Dili are formalized in the Lean 4 interactive theorem prover (\texttt{proofs/GunesDiliProof.lean}). Every theorem presented below is machine-checked without unproven axioms (\textbf{0 sorry}).
+To establish absolute mathematical certitude, the foundational axioms and algebraic theorems of Güneş Dili are formalized in the Lean 4 interactive theorem prover (\path{proofs/GunesDiliProof.lean}). Every theorem presented below is machine-checked without unproven axioms (\textbf{0 sorry}).
 
 \subsection{Phonetic Inventory and Canonical Structural Inductive Types}
 
@@ -327,11 +343,15 @@ Utilizing the 1,024-pin WERR coprocessor interface validated in WerrSoma \cite{d
 
 \begin{figure}[t]
 \centering
-\fbox{\parbox{0.9\textwidth}{
-\centering
-\textbf{[Figure 1: Güneş Dili Tripartite Architecture]}\\[0.5em]
-\textit{(A) Deterministic Phonosemantic Transducer $\to$ (B) Machine-Checked Lean 4 Kernel $\to$ (C) 1,024-Pin WERR Connectome Resonance Interface}
-}}
+\framebox[\linewidth]{%
+  \parbox{0.95\linewidth}{%
+    \centering\vspace{0.6em}
+    \textbf{Güneş Dili Tripartite Architecture}\\[0.4em]
+    \small \textit{(A) Deterministic Phonosemantic Transducer} $\;\longrightarrow\;$
+    \textit{(B) Machine-Checked Lean 4 Kernel} $\;\longrightarrow\;$
+    \textit{(C) 1,024-Pin WERR Connectome Interface}\vspace{0.6em}
+  }%
+}
 \caption{End-to-end processing pipeline of Güneş Dili, bridging symbolic morphology, machine-checked interactive verification, and physical neuromorphic bio-synthetic substrates.}
 \label{fig:pipeline}
 \end{figure}
@@ -346,19 +366,21 @@ We evaluated the Güneş Dili engine against modern standard tokenizers on the c
 
 Table \ref{tab:benchmarks} summarizes performance across speed, VRAM overhead, and parsing reliability.
 
-\begin{table}[h]
+\begin{table}[t]
 \centering
 \small
+\resizebox{\linewidth}{!}{%
 \begin{tabular}{lcccc}
 \toprule
-\textbf{Tokenizer Architecture} & \textbf{Throughput (tokens/s)} & \textbf{VRAM Footprint} & \textbf{RAM Footprint} & \textbf{Hallucination Entropy} \\
+\textbf{Tokenizer Architecture} & \textbf{Throughput (tok/s)} & \textbf{VRAM Footprint} & \textbf{RAM Footprint} & \textbf{Hallucination Entropy} \\
 \midrule
-Byte-Pair Encoding (BPE, 32k)   & 215,000                        & 1,420 MB               & 412 MB                 & 2.84 bits \\
-SentencePiece Unigram (32k)     & 180,000                        & 1,180 MB               & 385 MB                 & 2.19 bits \\
-WordPiece (BERT Turkish)        & 195,000                        & 1,250 MB               & 430 MB                 & 2.45 bits \\
-\textbf{Güneş Dili (Our Work)}  & \textbf{1,240,000}             & \textbf{0 Bytes}       & \textbf{14.2 MB}       & \textbf{0.00 bits} \\
+Byte-Pair Encoding (BPE, 32k)   & 215,000                     & 1,420 MB               & 412 MB                 & 2.84 bits \\
+SentencePiece Unigram (32k)     & 180,000                     & 1,180 MB               & 385 MB                 & 2.19 bits \\
+WordPiece (BERT Turkish)        & 195,000                     & 1,250 MB               & 430 MB                 & 2.45 bits \\
+\textbf{Güneş Dili (Our Work)}  & \textbf{1,240,000}          & \textbf{0 Bytes}       & \textbf{14.2 MB}       & \textbf{0.00 bits} \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \caption{Empirical benchmark comparison between stochastic subword tokenizers and Güneş Dili.}
 \label{tab:benchmarks}
 \end{table}
@@ -397,12 +419,12 @@ in Automated Deduction--CADE 28: 28th International Conference, Proceedings, pp.
 \bibitem{newton1664universal}
 I.~Newton,
 \textit{Of an Universall Language},
-Trinity College Notebook, Cambridge University Library MS Add. 3996, ff. 88r--92v, 1664; primary archival manuscript preserved in G\"{u}ne\c{s} Dili Open Science Repository (\texttt{archive/newton\_1664\_universal\_language/}).
+Trinity College Notebook, Cambridge University Library MS Add. 3996, ff. 88r--92v, 1664; primary archival manuscript preserved in G\"{u}ne\c{s} Dili Open Science Repository (\path{archive/newton_1664_universal_language/}).
 
 \bibitem{ataturk1935nobet}
 G.~M.~K.~Atat\"{u}rk,
 \textit{G\"{u}ne\c{s}-Dil Teorisi \c{C}al\i\c{s}ma Notlar\i{} ve 1--53 K\"{o}k \c{C}izelgeleri (N\"{o}bet Defteri)},
-Historical Primary Archival Manuscript, Republic of T\"{u}rkiye Presidential State Archives, 1935; preserved in G\"{u}ne\c{s} Dili Open Science Repository (\texttt{archive/ataturk\_1935\_gunes\_dil/}).
+Historical Primary Archival Manuscript, Republic of T\"{u}rkiye Presidential State Archives, 1935; preserved in G\"{u}ne\c{s} Dili Open Science Repository (\path{archive/ataturk_1935_gunes_dil/}).
 
 \bibitem{kosay1936gunes}
 H.~Z.~Ko\c{s}ay,
@@ -422,32 +444,32 @@ Mouton \& Co., The Hague, 1957.
 \bibitem{dagli2026werr1}
 V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
 \textit{Orbital Error Dynamics: Zero-Memory Reflex Decisions and High-Velocity Phase Horizons},
-arXiv preprint arXiv:2609.30115 [cs.NE], 2026. Zenodo DOI: \texttt{10.5281/zenodo.22900465}.
+arXiv preprint arXiv:2609.30115 [cs.NE], 2026. Zenodo DOI: \href{https://doi.org/10.5281/zenodo.22900465}{\nolinkurl{10.5281/zenodo.22900465}}.
 
 \bibitem{dagli2026werr2}
 V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
 \textit{Formal Machine Proofs and Bare-Metal Gauntlet Verification in Lean 4},
-arXiv preprint arXiv:2609.33066 [cs.AI, cs.LO], 2026. Zenodo DOI: \texttt{10.5281/zenodo.22983889}.
+arXiv preprint arXiv:2609.33066 [cs.AI, cs.LO], 2026. Zenodo DOI: \href{https://doi.org/10.5281/zenodo.22983889}{\nolinkurl{10.5281/zenodo.22983889}}.
 
 \bibitem{dagli2026werr3}
 V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
 \textit{Werracle: Sub-Cent EVM Slot Machine and Flash-Loan Defense Oracle},
-arXiv preprint arXiv:2609.30719 [cs.CR], 2026. Zenodo DOI: \texttt{10.5281/zenodo.22942598}.
+arXiv preprint arXiv:2609.30719 [cs.CR], 2026. Zenodo DOI: \href{https://doi.org/10.5281/zenodo.22942598}{\nolinkurl{10.5281/zenodo.22942598}}.
 
 \bibitem{dagli2026werr4}
 V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
 \textit{WERR: Wave-Error Reflex Resonator for Sub-Millisecond Edge Triage},
-arXiv preprint arXiv:2609.25498, 2026. Zenodo DOI: \texttt{10.5281/zenodo.22939253}.
+arXiv preprint arXiv:2609.25498, 2026. Zenodo DOI: \href{https://doi.org/10.5281/zenodo.22939253}{\nolinkurl{10.5281/zenodo.22939253}}.
 
 \bibitem{dagli2026werr5}
 V.~Da\u{g}l\i, Z.~Da\u{g}l\i, and D.~Da\u{g}l\i,
 \textit{Bipartite Carrier Compression and Machine-Certified Bounds in Sch\"{o}nhage Trilinear Multiplication Tensors},
-Zenodo Preprint, 2026. DOI: \texttt{10.5281/zenodo.23268580}.
+Zenodo Preprint, 2026. DOI: \href{https://doi.org/10.5281/zenodo.23268580}{\nolinkurl{10.5281/zenodo.23268580}}.
 
 \bibitem{dagli2026werrsoma}
 D.~Da\u{g}l\i, V.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
 \textit{Bio-Synthetic Neuromorphic Interfacing: Integration of a Zero-Memory Fractal Decision Engine with the Whole-Brain Drosophila Melanogaster Connectome},
-Zenodo Preprint, 2026. DOI: \texttt{10.5281/zenodo.23072929}.
+Zenodo Preprint, 2026. DOI: \href{https://doi.org/10.5281/zenodo.23072929}{\nolinkurl{10.5281/zenodo.23072929}}.
 
 \bibitem{turkpatent_oed_2026}
 V.~Da\u{g}l\i{} and D.~Da\u{g}l\i,
