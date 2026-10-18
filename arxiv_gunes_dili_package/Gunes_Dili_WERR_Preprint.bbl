@@ -1,14 +1,9 @@
 \begin{thebibliography}{99}
 
-\bibitem{sennrich2016bpe}
-R.~Sennrich, B.~Haddow, and A.~Birch,
-\textit{Neural Machine Translation of Rare Words with Subword Units},
-in Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp.~1715--1725, 2016.
-
-\bibitem{kudo2018subword}
-T.~Kudo,
-\textit{Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates},
-in Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp.~66--75, 2018.
+\bibitem{moura2021lean4}
+L.~de Moura and S.~Ullrich,
+\textit{The Lean 4 theorem prover and programming language},
+in Automated Deduction--CADE 28: 28th International Conference, Proceedings, pp.~625--635, Springer, 2021.
 
 \bibitem{newton1664universal}
 I.~Newton,
@@ -30,10 +25,10 @@ T\"{u}rk Dil Kurumu,
 \textit{\"{U}\c{c}\"{u}nc\"{u} T\"{u}rk Dil Kurultay\i{} Tezler ve Tutanaklar},
 Devlet Bas\i{}mevi, \.{I}stanbul, 1936.
 
-\bibitem{moura2021lean4}
-L.~de Moura and S.~Ullrich,
-\textit{The Lean 4 theorem prover and programming language},
-in Automated Deduction--CADE 28: 28th International Conference, Proceedings, pp.~625--635, Springer, 2021.
+\bibitem{chomsky1957syntactic}
+N.~Chomsky,
+\textit{Syntactic Structures},
+Mouton \& Co., The Hague, 1957.
 
 \bibitem{dagli2026werr1}
 V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
@@ -90,9 +85,14 @@ K.~Oflazer,
 \textit{Two-level description of Turkish morphology},
 Literary and Linguistic Computing, vol.~9, no.~2, pp.~137--148, 1994.
 
-\bibitem{chomsky1957syntactic}
-N.~Chomsky,
-\textit{Syntactic Structures},
-Mouton \& Co., The Hague, 1957.
+\bibitem{sennrich2016bpe}
+R.~Sennrich, B.~Haddow, and A.~Birch,
+\textit{Neural Machine Translation of Rare Words with Subword Units},
+in Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp.~1715--1725, 2016.
+
+\bibitem{kudo2018subword}
+T.~Kudo,
+\textit{Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates},
+in Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp.~66--75, 2018.
 
 \end{thebibliography}
