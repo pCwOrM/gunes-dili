@@ -4,12 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Güneş-Lang: Akademik Programlama Dili Analiz Raporu</title>
-    <!-- KaTeX CSS & JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
-        onload="renderMathInElement(document.body); window.katexDone = true;"></script>
-
     <style>
         :root {
             --primary: #1e3a8a;
@@ -45,6 +39,28 @@
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             border: 1px solid var(--border);
+        }
+
+        /* Matematiksel Tipografi */
+        .math {
+            font-family: 'Cambria Math', 'Latin Modern Math', 'Times New Roman', serif;
+            font-style: normal;
+        }
+
+        .math i {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-style: italic;
+        }
+
+        .math b {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-weight: 700;
+        }
+
+        .cal-O {
+            font-family: 'Cambria Math', 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: 600;
         }
 
         /* Başlık ve Üst Bilgi */
@@ -128,13 +144,6 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
-        }
-
-        h3.sub-title {
-            font-size: 1.15rem;
-            color: var(--dark);
-            margin-top: 1.4rem;
-            margin-bottom: 0.6rem;
         }
 
         p {
@@ -367,13 +376,13 @@
         <div class="header">
             <div class="badge-bar">
                 <span class="badge">WERR Collaborative Research</span>
-                <span class="badge accent">TÜRKPATENT TR 2026/016285 & 016633</span>
+                <span class="badge accent">TÜRKPATENT TR 2026/016285 &amp; 016633</span>
                 <span class="badge success">Lean 4 Certified: 0 Sorry</span>
             </div>
-            <h1 class="title">Güneş-Lang: Akademik Programlama Dili Analizi, Telemetri Karşılaştırması ve Katkıları</h1>
+            <h1 class="title">Güneş-Lang: Akademik Programlama Dili Analiz Raporu</h1>
             <div class="subtitle">Deterministik Morfo-Semantik Yürütme, 53-Hölder Koması Akustik Rezonansı ve Nöromorfik BCI Eşlemesi</div>
             <div class="authors">Volkan Dağlı, Bekirhan Dağlı, Dağhan Dağlı, Semih Salar, Zerrin Dağlı</div>
-            <div class="institutions">ITouch Systems Teknokent & Toros Fen Lisesi Araştırma Laboratuvarı</div>
+            <div class="institutions">ITouch Systems Teknokent &amp; Toros Fen Lisesi Araştırma Laboratuvarı</div>
         </div>
 
         <!-- Özet -->
@@ -394,15 +403,15 @@
             <svg class="diagram-svg" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
                 <!-- Arka plan kartları -->
                 <rect x="10" y="20" width="160" height="200" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
-                <text x="90" y="45" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#1e3a8a" text-anchor="middle">1. KAYNAK & AYRIŞTIRMA</text>
+                <text x="90" y="45" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#1e3a8a" text-anchor="middle">1. KAYNAK &amp; AYRIŞTIRMA</text>
                 <rect x="25" y="65" width="130" height="40" rx="4" fill="#ffffff" stroke="#93c5fd"/>
                 <text x="90" y="88" font-family="monospace" font-size="9" fill="#1e293b" text-anchor="middle">.gns Kaynak Kodu</text>
                 <rect x="25" y="125" width="130" height="40" rx="4" fill="#ffffff" stroke="#93c5fd"/>
-                <text x="90" y="148" font-family="-apple-system, sans-serif" font-size="9" font-weight="600" fill="#1e293b" text-anchor="middle">Deterministik Lexer (O(L))</text>
+                <text x="90" y="148" font-family="-apple-system, sans-serif" font-size="9" font-weight="600" fill="#1e293b" text-anchor="middle">Deterministik Lexer O(L)</text>
                 <text x="90" y="195" font-family="-apple-system, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Geri İzleme: 0 (Sıfır)</text>
 
                 <!-- Ok 1 -->
-                <path d="M 170 120 L 210 120" stroke="#1e3a8a" stroke-width="2" marker-end="url(#arrow)"/>
+                <path d="M 170 120 L 210 120" stroke="#1e3a8a" stroke-width="2"/>
 
                 <!-- Kart 2 -->
                 <rect x="210" y="20" width="170" height="200" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
@@ -410,7 +419,7 @@
                 <rect x="225" y="65" width="140" height="40" rx="4" fill="#ffffff" stroke="#6ee7b7"/>
                 <text x="295" y="88" font-family="-apple-system, sans-serif" font-size="9" font-weight="600" fill="#065f46" text-anchor="middle">Lean 4 Sınır Biricikliği</text>
                 <rect x="225" y="125" width="140" height="40" rx="4" fill="#ffffff" stroke="#6ee7b7"/>
-                <text x="295" y="148" font-family="-apple-system, sans-serif" font-size="9" font-weight="600" fill="#065f46" text-anchor="middle">AST Ağacı & Çözümleyici</text>
+                <text x="295" y="148" font-family="-apple-system, sans-serif" font-size="9" font-weight="600" fill="#065f46" text-anchor="middle">AST Ağacı &amp; Çözümleyici</text>
                 <text x="295" y="195" font-family="-apple-system, sans-serif" font-size="8" fill="#047857" text-anchor="middle">Allomorfi Yok: 1 Biçim=1 İşlev</text>
 
                 <!-- Ok 2 -->
@@ -446,19 +455,19 @@
             <div class="card pro">
                 <div class="card-header">✅ Güçlü Yönler ve Yenilikler (Advantages)</div>
                 <ul>
-                    <li><strong>Deterministik Morfotaktik ($\mathcal{O}(L)$):</strong> Kök-ek sınırı tek geçişte belirlenir. Geri izleme (backtracking) ve belirsizlik sıfırdır.</li>
-                    <li><strong>Sıfır Halüsinasyon Entropisi ($H = 0.00	ext{ bit}$):</strong> Bir biçim tam olarak bir işleve karşılık gelir; anlamsal sapma yaşanmaz.</li>
+                    <li><strong>Deterministik Morfotaktik (<span class="math"><span class="cal-O">O</span>(<i>L</i>)</span>):</strong> Kök-ek sınırı tek geçişte belirlenir. Geri izleme (backtracking) ve belirsizlik sıfırdır.</li>
+                    <li><strong>Sıfır Halüsinasyon Entropisi (<span class="math"><i>H</i> = 0.00 bit</span>):</strong> Bir biçim tam olarak bir işleve karşılık gelir; anlamsal sapma yaşanmaz.</li>
                     <li><strong>0 Bytes GPU VRAM Ayak İzi:</strong> Bellek duvarını aşar; gömme matrisleri yerine sonlu durum otomatı (DFA) kullanır.</li>
-                    <li><strong>53-Hölder Koması Akustik Rezonansı:</strong> Her talimat cyclic ring $\mathbb{Z}_{53}$ üzerinde mikrotonal frekansa ve açıya ($	heta \in [0, 2\pi)$) sahiptir.</li>
-                    <li><strong>Doğrudan Konnektom / BCI Eşlemesi:</strong> Kodlar doğrudan 158.262 nöronluk *Drosophila* E-PG pusula halkasına enjekte edilebilir ($< 0.1	ext{ ms}$).</li>
+                    <li><strong>53-Hölder Koması Akustik Rezonansı:</strong> Her talimat döngüsel halka <span class="math"><b>Z</b><sub>53</sub></span> üzerinde mikrotonal frekansa ve açıya (<span class="math"><i>&theta;</i> &isin; [0, 2&pi;)</span>) sahiptir.</li>
+                    <li><strong>Doğrudan Konnektom / BCI Eşlemesi:</strong> Kodlar doğrudan 158.262 nöronluk <i>Drosophila</i> E-PG pusula halkasına enjekte edilebilir (&lt; 0.1 ms).</li>
                 </ul>
             </div>
 
             <div class="card con">
                 <div class="card-header">⚠️ Kısıtlar ve Gelişim Alanları (Limitations)</div>
                 <ul>
-                    <li><strong>Yeni Paradigma Öğrenme Eğrisi:</strong> C/Python alışkanlığı olan mühendisler için morfotaktik anahtar sözcükler (`tan`, `yi`, `werla`, `donke`) başlangıçta adaptasyon gerektirir.</li>
-                    <li><strong>Yorumlayıcı Hızı (Lab v1.0 Sürümü):</strong> Tokenizer katmanı >1.2M tok/s çalışsa da, AST yorumlayıcısı şu anda Python üzerindedir. Bir sonraki aşamada LLVM/C transpiler hedeflenmektedir.</li>
+                    <li><strong>Yeni Paradigma Öğrenme Eğrisi:</strong> C/Python alışkanlığı olan mühendisler için morfotaktik anahtar sözcükler (<code>tan</code>, <code>yi</code>, <code>werla</code>, <code>donke</code>) başlangıçta adaptasyon gerektirir.</li>
+                    <li><strong>Yorumlayıcı Hızı (Lab v1.0 Sürümü):</strong> Tokenizer katmanı &gt;1.2M tok/s çalışsa da, AST yorumlayıcısı şu anda Python üzerindedir. Bir sonraki aşamada LLVM/C transpiler hedeflenmektedir.</li>
                     <li><strong>Ekosistem Olgunluğu:</strong> Standart kütüphane şu an temel matematik, dizi, özyineleme ve rezonans fonksiyonlarını içerir; genişletilmiş web/GUI kütüphaneleri yapım aşamasındadır.</li>
                 </ul>
             </div>
@@ -552,7 +561,7 @@
         </div>
 
         <!-- 4. Canlı Kod Örneği -->
-        <h2 class="section-title">4. Doğrulanmış Çalışma Zamanı Örneği: Fibonacci & Rezonans</h2>
+        <h2 class="section-title">4. Doğrulanmış Çalışma Zamanı Örneği: Fibonacci &amp; Rezonans</h2>
         <p>
             Güneş-Lang motorunda çalışan ve 1.189 talimat döngüsünde sıfır bellek kaybıyla başarıyla doğrulanan özyinelemeli program örneği:
         </p>
@@ -583,17 +592,17 @@ ag {
         <!-- 5. Bu Dil Ne Kazandırır? -->
         <h2 class="section-title">5. Bu Dil Bilgisayar Bilimine ve Geleceğe Ne Kazandırır?</h2>
         <p>
-            <strong>1. Nöromorfik ve Biyolojik Donanım Köprüsü:</strong> Klasik diller (C, Rust, Python) ikili (0-1) silikon işlemciler için tasarlanmıştır. Güneş-Lang ise her komutu bir akustik ve faz dalgası ($\mathbb{Z}_{53}$) olarak kodladığı için, derleme katmanına gerek kalmadan doğrudan nöromorfik çiplere ve beyin-bilgisayar arayüzlerine (BCI) elektrik darbeleri şeklinde aktarılabilir.
+            <strong>1. Nöromorfik ve Biyolojik Donanım Köprüsü:</strong> Klasik diller (C, Rust, Python) ikili (0-1) silikon işlemciler için tasarlanmıştır. Güneş-Lang ise her komutu bir akustik ve faz dalgası (<span class="math"><b>Z</b><sub>53</sub></span>) olarak kodladığı için, derleme katmanına gerek kalmadan doğrudan nöromorfik çiplere ve beyin-bilgisayar arayüzlerine (BCI) elektrik darbeleri şeklinde aktarılabilir.
         </p>
         <p>
-            <strong>2. Büyük Dil Modellerinde (LLM) Tokenizer Çıkmazının Aşılması:</strong> BPE gibi algoritmalar eklemeli dilleri yüz binlerce parçaya bölerek milyarlarca parametrelik gereksiz VRAM maliyetine neden olur. Güneş-Lang, eklemeli morfolojinin sonlu durum makineleriyle $\mathcal{O}(L)$ sürede ve %100 doğrulukla ayrıştırılabileceğini kanıtlayarak yeni nesil sembolik yapay zekalara zemin hazırlar.
+            <strong>2. Büyük Dil Modellerinde (LLM) Tokenizer Çıkmazının Aşılması:</strong> BPE gibi algoritmalar eklemeli dilleri yüz binlerce parçaya bölerek milyarlarca parametrelik gereksiz VRAM maliyetine neden olur. Güneş-Lang, eklemeli morfolojinin sonlu durum makineleriyle <span class="math"><span class="cal-O">O</span>(<i>L</i>)</span> sürede ve %100 doğrulukla ayrıştırılabileceğini kanıtlayarak yeni nesil sembolik yapay zekalara zemin hazırlar.
         </p>
         <p>
             <strong>3. Cumhuriyetimizin Bilimsel Mirasının Geleceğe Taşınması:</strong> 1935 Güneş Dil Teorisi'nin fonetik kök matrisleri ve Newton'un 1664 Cambridge notları, 21. yüzyılın en gelişmiş matematiksel doğrulayıcısı olan Lean 4 ve modern derleyici mimarisiyle birleşerek yaşayan, derlenen ve açık bilime hizmet eden egemen bir programlama dili haline getirilmiştir.
         </p>
 
         <div style="margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; color: #64748b; text-align: center;">
-            WERR Collaborative Research Group • ITouch Systems & Toros Fen Lisesi • TÜRKPATENT TR 2026/016285 & TR 2026/016633 • Açık Bilim CC-BY-4.0
+            WERR Collaborative Research Group • ITouch Systems &amp; Toros Fen Lisesi • TÜRKPATENT TR 2026/016285 &amp; TR 2026/016633 • Açık Bilim CC-BY-4.0
         </div>
 
     </div>
