@@ -5,12 +5,13 @@
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage[letterpaper, top=1.0in, bottom=1.0in, left=1.25in, right=1.0in]{geometry}
 \usepackage{microtype}
-\usepackage{xurl}
 \usepackage{booktabs}
 \usepackage{cite}
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage{xurl}
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue, breaklinks=true]{hyperref}
 
 \emergencystretch=3em
 
@@ -44,11 +45,6 @@
 }
 
 \hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    citecolor=blue,
-    urlcolor=blue,
-    breaklinks=true,
     pdfauthor={Volkan Dagli, Bekirhan Dagli, Daghan Dagli, Semih Salar, Zerrin Dagli},
     pdftitle={Gunes Dili: Deterministic Morpho-Semantic Tokenization, Machine-Checked Lean 4 Verification, and Bio-Synthetic Neural Resonance in the WERR Corpus},
     pdfsubject={arXiv cs.LO / cs.CL / cs.FL / q-bio.NC | Zenodo DOI: 10.5281/zenodo.23273006}
@@ -60,7 +56,7 @@
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{remark}[theorem]{Remark}
 
-\title{\textbf{Güneş Dili: Deterministic Morpho-Semantic Tokenization, Machine-Checked Lean 4 Verification, and Bio-Synthetic Neural Resonance in the WERR Corpus}}
+\title{\textbf{G\"{u}ne\c{s} Dili: Deterministic Morpho-Semantic Tokenization, Machine-Checked Lean 4 Verification, and Bio-Synthetic Neural Resonance in the WERR Corpus}}
 
 \author{%
   \begin{minipage}{0.96\textwidth}
@@ -92,14 +88,14 @@
 \maketitle
 
 \begin{abstract}
-Contemporary Natural Language Processing (NLP) models universally depend on stochastic subword tokenization heuristics (e.g., Byte-Pair Encoding, WordPiece, Unigram). While computationally pragmatic for dense Transformer representations, stochastic tokenizers introduce linguistic fragmentation, out-of-vocabulary hallucinations, high GPU VRAM overhead, and an absence of formal semantic compositionality. In this paper, we formulate, implement, and formally certify \textbf{Güneş Dili}: an exact, deterministic morpho-semantic language and tokenization architecture formalized in dependent type theory and verified in the \textbf{Lean 4 interactive theorem prover} without unproven axioms (\textbf{0 sorry}), integrated into the bio-synthetic neural resonance substrates of the \textbf{Waves \& Errors Reflex Resonator (WERR)} corpus. 
+Contemporary Natural Language Processing (NLP) models universally depend on stochastic subword tokenization heuristics (e.g., Byte-Pair Encoding, WordPiece, Unigram). While computationally pragmatic for dense Transformer representations, stochastic tokenizers introduce linguistic fragmentation, out-of-vocabulary hallucinations, high GPU VRAM overhead, and an absence of formal semantic compositionality. In this paper, we formulate, implement, and formally certify \textbf{G\"{u}ne\c{s} Dili}: an exact, deterministic morpho-semantic language and tokenization architecture formalized in dependent type theory and verified in the \textbf{Lean 4 interactive theorem prover} without unproven axioms (\textbf{0 sorry}), integrated into the bio-synthetic neural resonance substrates of the \textbf{Waves \& Errors Reflex Resonator (WERR)} corpus. 
 
-Re-evaluating two foundational mechanical traditions preserved directly as primary manuscripts in the open-science archive---\textbf{Sir Isaac Newton's 1664 Cambridge Trinity College Notebook} (\textit{Of an Universall Language}, MS Add. 3996) and \textbf{Gazi Mustafa Kemal Atatürk's 1935 Güneş Dil Teorisi Working Manuscripts} (\textit{Nöbet Defteri})---we formalize human vocal articulation as an invariant phonosemantic vector space. Morphotactics is modeled as a non-backtracking deterministic finite-state transducer operating over an invariant root monoid. In Lean 4, we mechanically prove: (1)~\textit{Canonical Root-Suffix Boundary Uniqueness}, establishing that composite words contain at most one consonant cluster marking the exact morpheme cut; (2)~\textit{Bijective Suffix Isomorphism}, eliminating allomorphy and homophonic ambiguity; (3)~\textit{DFA State Transition Determinism}, proving that transition cardinality satisfies $|\delta(s, e)| \le 1$; and (4)~\textit{53-Hölder Comma Coset Invariance}, demonstrating orthogonal microtonal acoustic frequency separation in the cyclic ring $\mathbb{Z}_{53}$. 
+Re-evaluating two foundational mechanical traditions preserved directly as primary manuscripts in the open-science archive---\textbf{Sir Isaac Newton's 1664 Cambridge Trinity College Notebook} (\textit{Of an Universall Language}, MS Add. 3996) and \textbf{Gazi Mustafa Kemal Atat\"{u}rk's 1935 G\"{u}ne\c{s} Dil Teorisi Working Manuscripts} (\textit{N\"{o}bet Defteri})---we formalize human vocal articulation as an invariant phonosemantic vector space. Morphotactics is modeled as a non-backtracking deterministic finite-state transducer operating over an invariant root monoid. In Lean 4, we mechanically prove: (1)~\textit{Canonical Root-Suffix Boundary Uniqueness}, establishing that composite words contain at most one consonant cluster marking the exact morpheme cut; (2)~\textit{Bijective Suffix Isomorphism}, eliminating allomorphy and homophonic ambiguity; (3)~\textit{DFA State Transition Determinism}, proving that transition cardinality satisfies $|\delta(s, e)| \le 1$; and (4)~\textit{53-H\"{o}lder Comma Coset Invariance}, demonstrating orthogonal microtonal acoustic frequency separation in the cyclic ring $\mathbb{Z}_{53}$. 
 
-Güneş Dili achieves \textbf{100.0\% morphological parse fidelity} on the complete official lexicon with strict linear time complexity $\mathcal{O}(L)$, sustaining single-thread CPU throughputs exceeding \textbf{1,240,000 tokens/second} with exactly \textbf{0 Bytes VRAM overhead} and \textbf{0-bit hallucination entropy}. Finally, anchored under the dual national patent priority umbrellas of the WERR reflex coprocessor (\textbf{TÜRKPATENT TR 2026/016285}) and the WerrSoma whole-brain connectome interface (\textbf{TÜRKPATENT TR 2026/016633}), we demonstrate real-time linguistic projection into the Ellipsoid Body (EB) and Mushroom Body (MB) neuropils of the 158,262-neuron \textit{Drosophila melanogaster} connectome, achieving sub-millisecond reflex latencies ($< 0.5\text{ ms}$).
+G\"{u}ne\c{s} Dili achieves \textbf{100.0\% morphological parse fidelity} on the complete official lexicon with strict linear time complexity $\mathcal{O}(L)$, sustaining single-thread CPU throughputs exceeding \textbf{1,240,000 tokens/second} with exactly \textbf{0 Bytes VRAM overhead} and \textbf{0-bit hallucination entropy}. Finally, anchored under the dual national patent priority umbrellas of the WERR reflex coprocessor (\textbf{T\"{U}RKPATENT TR 2026/016285}) and the WerrSoma whole-brain connectome interface (\textbf{T\"{U}RKPATENT TR 2026/016633}), we demonstrate real-time linguistic projection into the Ellipsoid Body (EB) and Mushroom Body (MB) neuropils of the 158,262-neuron \textit{Drosophila melanogaster} connectome, achieving sub-millisecond reflex latencies ($< 0.5\text{ ms}$).
 \end{abstract}
 
-\noindent\textbf{Keywords:} Logic in Computer Science, Lean 4 Interactive Theorem Prover, Formal Language Theory, Deterministic Morphology, Phonosemantics, Chomsky Type-3 Grammars, WERR Neuromorphic Architecture, Drosophila Connectome, Newton 1664 Manuscript, Atatürk 1935 Language Reform.
+\noindent\textbf{Keywords:} Logic in Computer Science, Lean 4 Interactive Theorem Prover, Formal Language Theory, Deterministic Morphology, Phonosemantics, Chomsky Type-3 Grammars, WERR Neuromorphic Architecture, Drosophila Connectome, Newton 1664 Manuscript, Atat\"{u}rk 1935 Language Reform.
 
 \section{Introduction: The Logical Fragility of Stochastic Tokenization}
 
@@ -116,8 +112,8 @@ To establish a principled, deterministic alternative, we synthesize two landmark
 \begin{itemize}
     \item \textbf{Sir Isaac Newton's 1664 Cambridge Trinity College Notebook:}\\
     In his manuscript \textit{Of an Universall Language} (Cambridge University Library MS Add. 3996, ff. 88r--92v; archived in \path{archive/newton_1664_universal_language/}) \cite{newton1664universal}, Newton at age 22 formulated a synthetic philosophical language grounded in physiological vocal tract articulation coordinates (lips, tongue, palate), acoustic resonance, and conceptual root tables---establishing the earliest mechanical precursor linking phonetic physics to semantic ontology.
-    \item \textbf{Gazi Mustafa Kemal Atatürk's 1935 Working Manuscripts \& Root Matrices:}\\
-    Formulated during the 1935 language reform and recorded in Atatürk's personal working notebooks \cite{ataturk1935nobet, kosay1936gunes, tdk1936kurultay} (archived in \path{archive/ataturk_1935_gunes_dil/}), the \textit{Güneş Dil Teorisi} (Sun Language Theory) posited that human vocalization expands radially outward from an invariant phonosemantic core, cataloging Turkish agglutinative morphology into an exact 53-cell root/affix matrix.
+    \item \textbf{Gazi Mustafa Kemal Atat\"{u}rk's 1935 Working Manuscripts \& Root Matrices:}\\
+    Formulated during the 1935 language reform and recorded in Atat\"{u}rk's personal working notebooks \cite{ataturk1935nobet, kosay1936gunes, tdk1936kurultay} (archived in \path{archive/ataturk_1935_gunes_dil/}), the \textit{G\"{u}ne\c{s} Dil Teorisi} (Sun Language Theory) posited that human vocalization expands radially outward from an invariant phonosemantic core, cataloging Turkish agglutinative morphology into an exact 53-cell root/affix matrix.
 \end{itemize}
 
 In this paper, we reconstruct these mechanical intuitions within modern dependent type theory, formal language theory, and neuromorphic engineering:
@@ -125,10 +121,10 @@ In this paper, we reconstruct these mechanical intuitions within modern dependen
     \item \textbf{Phonosemantic Coordinate Embedding:} Phonemes are mapped deterministically to physical articulatory coordinates, acoustic resonant frequencies, and optical photonic wavelengths.
     \item \textbf{Deterministic Morphotactic Transducer:} Agglutinative morphology is computed via a non-backtracking finite-state transducer with guaranteed $\mathcal{O}(L)$ time complexity and zero VRAM footprint.
     \item \textbf{Machine-Checked Verification in Lean 4:} The totality of parsing uniqueness, boundary identification, allomorphy elimination, DFA determinism, and harmonic preservation is formally certified in Lean 4 without axioms \cite{moura2021lean4}.
-    \item \textbf{Bio-Synthetic Resonance Telemetry:} Linguistic tokens are directly integrated into the WERR neuromorphic fractal decision engine (TÜRKPATENT TR 2026/016285) \cite{dagli2026werr1, dagli2026werr2} and coupled to the whole-brain \textit{Drosophila melanogaster} connectome (TÜRKPATENT TR 2026/016633) \cite{dagli2026werrsoma, dorkenwald2024flywire, schlegel2024whole}.
+    \item \textbf{Bio-Synthetic Resonance Telemetry:} Linguistic tokens are directly integrated into the WERR neuromorphic fractal decision engine (T\"{U}RKPATENT TR 2026/016285) \cite{dagli2026werr1, dagli2026werr2} and coupled to the whole-brain \textit{Drosophila melanogaster} connectome (T\"{U}RKPATENT TR 2026/016633) \cite{dagli2026werrsoma, dorkenwald2024flywire, schlegel2024whole}.
 \end{itemize}
 
-\section{Mathematical Formulation of Güneş Dili Morphology}
+\section{Mathematical Formulation of G\"{u}ne\c{s} Dili Morphology}
 
 \subsection{Phonosemantic Feature Space}
 
@@ -164,18 +160,18 @@ Agglutination is governed by two orthogonal harmonic invariant projections:
     \begin{equation}
     \mathcal{H}_{\text{pal}}(W) = \text{sign}\left( \sum_{v \in V(W)} \kappa_{\text{pal}}(v) \right) \in \{-1, +1\}
     \end{equation}
-    where $\kappa_{\text{pal}}(v) = +1$ for front vowels $\{e, i, ö, ü\}$ and $-1$ for back vowels $\{a, ı, o, u\}$.
+    where $\kappa_{\text{pal}}(v) = +1$ for front vowels $\{e, i, \ddot{o}, \ddot{u}\}$ and $-1$ for back vowels $\{a, \imath, o, u\}$.
     \item \textbf{Labial Harmony (Rounded/Unrounded):}
     \begin{equation}
     \mathcal{H}_{\text{lab}}(v_i, v_{i+1}) = \mathbb{I}\left( \text{round}(v_i) \implies \text{round}(v_{i+1}) \right)
     \end{equation}
 \end{enumerate}
 
-Consonant mutations (voicing assimilation $k \to \breve{g}$, $p \to b$, $t \to d$, $ç \to c$ and epenthesis) are computed by a deterministic local transducer $\tau_{\text{mut}}$ that evaluates character boundaries in constant time $\mathcal{O}(1)$.
+Consonant mutations (voicing assimilation $k \to \breve{g}$, $p \to b$, $t \to d$, $\text{\c{c}} \to c$ and epenthesis) are computed by a deterministic local transducer $\tau_{\text{mut}}$ that evaluates character boundaries in constant time $\mathcal{O}(1)$.
 
 \section{Machine-Checked Formal Verification in Lean 4}
 
-To establish absolute mathematical certitude, the foundational axioms and algebraic theorems of Güneş Dili are formalized in the Lean 4 interactive theorem prover (\path{proofs/GunesDiliProof.lean}). Every theorem presented below is machine-checked without unproven axioms (\textbf{0 sorry}).
+To establish absolute mathematical certitude, the foundational axioms and algebraic theorems of G\"{u}ne\c{s} Dili are formalized in the Lean 4 interactive theorem prover (\path{proofs/GunesDiliProof.lean}). Every theorem presented below is machine-checked without unproven axioms (\textbf{0 sorry}).
 
 \subsection{Phonetic Inventory and Canonical Structural Inductive Types}
 
@@ -202,7 +198,7 @@ def countConsonantClusters : PhoneticWord -> Nat
 
 \subsection{Canonical Shapes and the Root-Suffix Boundary Uniqueness Theorem}
 
-A central dilemma in natural agglutinative languages is the stem-affix boundary ambiguity. Güneş Dili resolves this by enforcing strict structural shape invariants:
+A central dilemma in natural agglutinative languages is the stem-affix boundary ambiguity. G\"{u}ne\c{s} Dili resolves this by enforcing strict structural shape invariants:
 \begin{itemize}
     \item Suffixes have the canonical shape $C V$ (length 2: exactly one consonant followed by one vowel).
     \item Roots are strictly consonant-final and contain zero internal consonant clusters.
@@ -226,7 +222,7 @@ def composeWord (r : CanonicalRoot) (n : Nat) : PhoneticWord :=
 \end{lstlisting}
 
 \begin{theorem}[Canonical Root-Suffix Boundary Uniqueness]
-In any valid Güneş Dili word $w = \text{composeWord}(r, n)$:
+In any valid G\"{u}ne\c{s} Dili word $w = \text{composeWord}(r, n)$:
 \begin{enumerate}
     \item If $n = 0$ (bare root), the cluster count is strictly $0$.
     \item If $n \ge 1$ (suffixed word), the junction of the consonant-final root and the consonant-initial suffix chain creates \textbf{exactly one} consonant cluster in the entire word.
@@ -261,7 +257,7 @@ theorem root_suffix_junction_is_cluster (r_last e_first : CharClass)
 
 \subsection{Bijective Suffix Isomorphism and Total Elimination of Allomorphy}
 
-In natural languages, allomorphy (e.g., Turkish \textit{-lar / -ler}, \textit{-dan / -den}) generates combinatorial branching in morphological parsers. Güneş Dili establishes a bijective isomorphism between suffix forms and semantic slots:
+In natural languages, allomorphy (e.g., Turkish \textit{-lar / -ler}, \textit{-dan / -den}) generates combinatorial branching in morphological parsers. G\"{u}ne\c{s} Dili establishes a bijective isomorphism between suffix forms and semantic slots:
 \begin{lstlisting}[language=Lean]
 inductive ConsonantFamily where
   | M | N | S | L | T | D | K | B | R | W | G | P | F | Y | H
@@ -303,9 +299,9 @@ theorem dfa_transition_uniqueness {alpha : Type} (res : TransitionResult alpha) 
   cases res <;> trivial
 \end{lstlisting}
 
-\subsection{53-Hölder Comma Discrete Coset Invariance}
+\subsection{53-H\"{o}lder Comma Discrete Coset Invariance}
 
-The acoustic system partitions the musical octave into the 53 equal temperaments of the Hölder comma (53-TET). Each functional suffix family corresponds to an orthogonal resonance node modulo 53:
+The acoustic system partitions the musical octave into the 53 equal temperaments of the H\"{o}lder comma (53-TET). Each functional suffix family corresponds to an orthogonal resonance node modulo 53:
 \begin{lstlisting}[language=Lean]
 def HolderCircleCapacity : Nat := 53
 
@@ -324,17 +320,17 @@ theorem radial_expansion_monotonic (s1 s2 : Nat) (h : s1 < s2) :
 
 \section{Neuromorphic \& Bio-Synthetic Neural Resonance}
 
-\subsection{Anchoring in Dual TÜRKPATENT Priorities}
+\subsection{Anchoring in Dual T\"{U}RKPATENT Priorities}
 
-The Güneş Dili framework is engineered as a foundational symbolic-computational tier of the WERR hardware and algorithmic corpus, secured by two national patent priorities:
+The G\"{u}ne\c{s} Dili framework is engineered as a foundational symbolic-computational tier of the WERR hardware and algorithmic corpus, secured by two national patent priorities:
 \begin{itemize}
-    \item \textbf{TÜRKPATENT TR 2026/016285} (Priority: Sept 22, 2026): \textit{Waves \& Errors Reflex Resonator (WERR) Zero-Memory Fractal Decision and Trajectory Correction Architecture} \cite{turkpatent_oed_2026}.
-    \item \textbf{TÜRKPATENT TR 2026/016633} (Priority: Sept 27, 2026): \textit{Bio-Synthetic Neuromorphic Interface and Whole-Brain Connectome BCI Decision System} \cite{turkpatent_werrsoma_2026}.
+    \item \textbf{T\"{U}RKPATENT TR 2026/016285} (Priority: Sept 22, 2026): \textit{Waves \& Errors Reflex Resonator (WERR) Zero-Memory Fractal Decision and Trajectory Correction Architecture} \cite{turkpatent_oed_2026}.
+    \item \textbf{T\"{U}RKPATENT TR 2026/016633} (Priority: Sept 27, 2026): \textit{Bio-Synthetic Neuromorphic Interface and Whole-Brain Connectome BCI Decision System} \cite{turkpatent_werrsoma_2026}.
 \end{itemize}
 
 \subsection{Coupling to the Whole-Brain Drosophila Connectome}
 
-Utilizing the 1,024-pin WERR coprocessor interface validated in WerrSoma \cite{dagli2026werrsoma}, Güneş Dili phonosemantic tokens are converted into high-frequency biphasic current pulses ($I_{\text{stim}} \in [0.1, 5.0]\ \mu\text{A}$) and injected into targeted neuropils of the adult \textit{Drosophila melanogaster} connectome (Princeton FlyWire, 158,262 neurons, 3,990,039 synapses) \cite{dorkenwald2024flywire, schlegel2024whole}:
+Utilizing the 1,024-pin WERR coprocessor interface validated in WerrSoma \cite{dagli2026werrsoma}, G\"{u}ne\c{s} Dili phonosemantic tokens are converted into high-frequency biphasic current pulses ($I_{\text{stim}} \in [0.1, 5.0]\ \mu\text{A}$) and injected into targeted neuropils of the adult \textit{Drosophila melanogaster} connectome (Princeton FlyWire, 158,262 neurons, 3,990,039 synapses) \cite{dorkenwald2024flywire, schlegel2024whole}:
 \begin{enumerate}
     \item \textbf{Ellipsoid Body (EB) Compass Heading:} Root semantic categories steer the E-PG ring attractor compass bump, encoding linguistic intent as a directional coordinate $\theta \in [0, 2\pi)$.
     \item \textbf{Mushroom Body (MB) Kenyon Cells:} Derivational affixes modulate synaptic weights across the MB lobes ($\alpha/\beta$ and $\gamma$), activating sparse associative memory ensembles.
@@ -346,13 +342,13 @@ Utilizing the 1,024-pin WERR coprocessor interface validated in WerrSoma \cite{d
 \framebox[\linewidth]{%
   \parbox{0.95\linewidth}{%
     \centering\vspace{0.6em}
-    \textbf{Güneş Dili Tripartite Architecture}\\[0.4em]
+    \textbf{G\"{u}ne\c{s} Dili Tripartite Architecture}\\[0.4em]
     \small \textit{(A) Deterministic Phonosemantic Transducer} $\;\longrightarrow\;$
     \textit{(B) Machine-Checked Lean 4 Kernel} $\;\longrightarrow\;$
     \textit{(C) 1,024-Pin WERR Connectome Interface}\vspace{0.6em}
   }%
 }
-\caption{End-to-end processing pipeline of Güneş Dili, bridging symbolic morphology, machine-checked interactive verification, and physical neuromorphic bio-synthetic substrates.}
+\caption{End-to-end processing pipeline of G\"{u}ne\c{s} Dili, bridging symbolic morphology, machine-checked interactive verification, and physical neuromorphic bio-synthetic substrates.}
 \label{fig:pipeline}
 \end{figure}
 
@@ -360,7 +356,7 @@ Utilizing the 1,024-pin WERR coprocessor interface validated in WerrSoma \cite{d
 
 \subsection{Experimental Setup and Lexical Corpus}
 
-We evaluated the Güneş Dili engine against modern standard tokenizers on the complete Turkish Language Association (TDK) official dictionary corpus (85,214 distinct lexical stems and over 1,500,000 inflected word forms) on an AMD Ryzen 9 7950X CPU running Ubuntu 24.04 LTS.
+We evaluated the G\"{u}ne\c{s} Dili engine against modern standard tokenizers on the complete Turkish Language Association (TDK) official dictionary corpus (85,214 distinct lexical stems and over 1,500,000 inflected word forms) on an AMD Ryzen 9 7950X CPU running Ubuntu 24.04 LTS.
 
 \subsection{Throughput and Memory Efficiency}
 
@@ -377,32 +373,32 @@ Table \ref{tab:benchmarks} summarizes performance across speed, VRAM overhead, a
 Byte-Pair Encoding (BPE, 32k)   & 215,000                     & 1,420 MB               & 412 MB                 & 2.84 bits \\
 SentencePiece Unigram (32k)     & 180,000                     & 1,180 MB               & 385 MB                 & 2.19 bits \\
 WordPiece (BERT Turkish)        & 195,000                     & 1,250 MB               & 430 MB                 & 2.45 bits \\
-\textbf{Güneş Dili (Our Work)}  & \textbf{1,240,000}          & \textbf{0 Bytes}       & \textbf{14.2 MB}       & \textbf{0.00 bits} \\
+\textbf{G\"{u}ne\c{s} Dili (Our Work)}  & \textbf{1,240,000}          & \textbf{0 Bytes}       & \textbf{14.2 MB}       & \textbf{0.00 bits} \\
 \bottomrule
 \end{tabular}%
 }
-\caption{Empirical benchmark comparison between stochastic subword tokenizers and Güneş Dili.}
+\caption{Empirical benchmark comparison between stochastic subword tokenizers and G\"{u}ne\c{s} Dili.}
 \label{tab:benchmarks}
 \end{table}
 
 \subsection{Key Empirical Findings}
 \begin{itemize}
-    \item \textbf{6.2$\times$ Speedup:} Güneş Dili achieves 1,240,000 tokens/sec, drastically outperforming statistical trie and BPE implementations.
+    \item \textbf{6.2$\times$ Speedup:} G\"{u}ne\c{s} Dili achieves 1,240,000 tokens/sec, drastically outperforming statistical trie and BPE implementations.
     \item \textbf{Total Elimination of VRAM Overhead:} By replacing tensor embedding matrices with deterministic FST rules, VRAM consumption is strictly 0 Bytes.
     \item \textbf{Zero Out-of-Vocabulary Breakdown:} Unknown complex words are recursively broken down into primitive phonosemantic kernels, ensuring 100\% morphological coverage.
 \end{itemize}
 
 \section{Discussion and Broader Impacts}
 
-The success of Güneş Dili challenges the prevailing assumption that natural language processing must inevitably rely on parameter-heavy, stochastic subword lookups. By synthesizing the historical phonosemantic intuitions of the 1935 Güneş Dil Teorisi with contemporary formal language theory, Lean 4 interactive theorem proving, and neuromorphic bio-synthetic resonance, we demonstrate that deterministic, zero-hallucination language parsing is not only mathematically feasible, but radically more efficient.
+The success of G\"{u}ne\c{s} Dili challenges the prevailing assumption that natural language processing must inevitably rely on parameter-heavy, stochastic subword lookups. By synthesizing the historical phonosemantic intuitions of the 1935 G\"{u}ne\c{s} Dil Teorisi with contemporary formal language theory, Lean 4 interactive theorem proving, and neuromorphic bio-synthetic resonance, we demonstrate that deterministic, zero-hallucination language parsing is not only mathematically feasible, but radically more efficient.
 
 \section*{Acknowledgments and Patent Priorities}
 
 This research was conducted within the WERR Collaborative Research Group at ITouch Systems and Toros Science High School. 
 The technical innovations, neuromorphic BCI interfaces, and decision algorithms presented herein are formally anchored under:
 \begin{itemize}
-    \item TÜRKPATENT National Priority Application \textbf{TR 2026/016285} (Filed: September 22, 2026, 04:52:16 UTC+3)
-    \item TÜRKPATENT National Priority Application \textbf{TR 2026/016633} (Filed: September 27, 2026, 06:16:04 UTC+3)
+    \item T\"{U}RKPATENT National Priority Application \textbf{TR 2026/016285} (Filed: September 22, 2026, 04:52:16 UTC+3)
+    \item T\"{U}RKPATENT National Priority Application \textbf{TR 2026/016633} (Filed: September 27, 2026, 06:16:04 UTC+3)
 \end{itemize}
 
 \section*{Data and Code Availability}
@@ -444,32 +440,32 @@ Mouton \& Co., The Hague, 1957.
 \bibitem{dagli2026werr1}
 V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
 \textit{Orbital Error Dynamics: Zero-Memory Reflex Decisions and High-Velocity Phase Horizons},
-arXiv preprint arXiv:2609.30115 [cs.NE], 2026. Zenodo DOI: \href{https://doi.org/10.5281/zenodo.22900465}{\nolinkurl{10.5281/zenodo.22900465}}.
+arXiv preprint arXiv:2609.30115 [cs.NE], 2026. Zenodo DOI: \url{https://doi.org/10.5281/zenodo.22900465}.
 
 \bibitem{dagli2026werr2}
 V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
 \textit{Formal Machine Proofs and Bare-Metal Gauntlet Verification in Lean 4},
-arXiv preprint arXiv:2609.33066 [cs.AI, cs.LO], 2026. Zenodo DOI: \href{https://doi.org/10.5281/zenodo.22983889}{\nolinkurl{10.5281/zenodo.22983889}}.
+arXiv preprint arXiv:2609.33066 [cs.AI, cs.LO], 2026. Zenodo DOI: \url{https://doi.org/10.5281/zenodo.22983889}.
 
 \bibitem{dagli2026werr3}
 V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
 \textit{Werracle: Sub-Cent EVM Slot Machine and Flash-Loan Defense Oracle},
-arXiv preprint arXiv:2609.30719 [cs.CR], 2026. Zenodo DOI: \href{https://doi.org/10.5281/zenodo.22942598}{\nolinkurl{10.5281/zenodo.22942598}}.
+arXiv preprint arXiv:2609.30719 [cs.CR], 2026. Zenodo DOI: \url{https://doi.org/10.5281/zenodo.22942598}.
 
 \bibitem{dagli2026werr4}
 V.~Da\u{g}l\i, D.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
 \textit{WERR: Wave-Error Reflex Resonator for Sub-Millisecond Edge Triage},
-arXiv preprint arXiv:2609.25498, 2026. Zenodo DOI: \href{https://doi.org/10.5281/zenodo.22939253}{\nolinkurl{10.5281/zenodo.22939253}}.
+arXiv preprint arXiv:2609.25498, 2026. Zenodo DOI: \url{https://doi.org/10.5281/zenodo.22939253}.
 
 \bibitem{dagli2026werr5}
 V.~Da\u{g}l\i, Z.~Da\u{g}l\i, and D.~Da\u{g}l\i,
 \textit{Bipartite Carrier Compression and Machine-Certified Bounds in Sch\"{o}nhage Trilinear Multiplication Tensors},
-Zenodo Preprint, 2026. DOI: \href{https://doi.org/10.5281/zenodo.23268580}{\nolinkurl{10.5281/zenodo.23268580}}.
+Zenodo Preprint, 2026. DOI: \url{https://doi.org/10.5281/zenodo.23268580}.
 
 \bibitem{dagli2026werrsoma}
 D.~Da\u{g}l\i, V.~Da\u{g}l\i, and Z.~Da\u{g}l\i,
 \textit{Bio-Synthetic Neuromorphic Interfacing: Integration of a Zero-Memory Fractal Decision Engine with the Whole-Brain Drosophila Melanogaster Connectome},
-Zenodo Preprint, 2026. DOI: \href{https://doi.org/10.5281/zenodo.23072929}{\nolinkurl{10.5281/zenodo.23072929}}.
+Zenodo Preprint, 2026. DOI: \url{https://doi.org/10.5281/zenodo.23072929}.
 
 \bibitem{turkpatent_oed_2026}
 V.~Da\u{g}l\i{} and D.~Da\u{g}l\i,
