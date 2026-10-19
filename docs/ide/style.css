@@ -535,3 +535,52 @@ footer.ide-footer a {
 footer.ide-footer a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  header.ide-header {
+    padding: 10px 14px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .brand-wrap {
+    justify-content: center;
+  }
+  .nav-links-right {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .nav-link-btn {
+    padding: 5px 8px;
+    font-size: 11.5px;
+  }
+  main.ide-container {
+    padding: 12px 10px;
+    gap: 14px;
+  }
+  .toolbar {
+    padding: 8px 10px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .toolbar-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  select.sample-select {
+    max-width: 130px;
+    font-size: 11px;
+  }
+  footer.ide-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+    padding: 12px 14px;
+  }
+}
