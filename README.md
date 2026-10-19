@@ -34,6 +34,7 @@
 | Doküman | Hedef Kitle ve Kapsam | Bağlantı |
 | :--- | :--- | :--- |
 | 💻 **Güneş-Lang Çevrimiçi Derleyici (Studio / IDE)** | Tarayıcıda güvenli çalışan kod editörü, sözdizim renklendiricisi ve WERR 53-Hölder rezonans motoru | [**Çevrimiçi Derleyiciyi Aç ↗**](https://pcworm.github.io/gunes-dili/ide/) • [**Paket Kılavuzu**](gunes_lang/README.md) |
+| 📚 **Güneş-Lang Bilgi Bankası (Wiki)** | Morfo-semantik kökler, 53 kanonik ek sözlüğü, Lean 4 ispatları ve motor teknik özellikleri | [**Web Wiki (GitHub Pages) ↗**](https://pcworm.github.io/gunes-dili/wiki/) • [**Paket Kılavuzu**](gunes_lang/KNOWLEDGE_BASE.md) |
 | 📊 **Güneş-Lang Akademik Analiz Raporu** | Lojban, Forth, BQN, Lean 4 ve PyNN karşılaştırmalı telemetri matrisi | [**HTML Raporu**](docs/gunes_lang_akademik_analiz.html) • [**PDF Raporu**](docs/pdf/Gunes_Lang_Akademik_Analiz_Raporu.pdf) |
 | 🌐 **Canlı Web Portalı & Simülatör** | Canlı GitHub Pages portalı, çevrimdışı yerel çevirmen, 53 koma çarkı ve görsel rezonans arayüzü | [**Web Portalı (GitHub Pages)**](https://pcworm.github.io/gunes-dili/) • [**Yerel Dosya (`docs/index.html`)**](docs/index.html) |
 | 📐 **Lean 4 Biçimsel İspat Modülü** | Aksiyom 1-3, DFA Tekilliği ve 53 Koma Rezonansının Lean 4 Kanıtları | [**İncele**](proofs/GunesDiliProof.lean) |
