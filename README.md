@@ -9,6 +9,8 @@
 [![Zenodo DOI](https://img.shields.io/badge/Zenodo%20DOI-10.5281%2Fzenodo.23273006-blue.svg)](https://doi.org/10.5281/zenodo.23273006)
 [![Concept DOI](https://img.shields.io/badge/Concept%20DOI-10.5281%2Fzenodo.23273005-purple.svg)](https://doi.org/10.5281/zenodo.23273005)
 [![GitHub Pages: Web Portal](https://img.shields.io/badge/GitHub%20Pages-Live%20Portal-teal.svg)](https://pcworm.github.io/gunes-dili/)
+[![Güneş-Lang Studio](https://img.shields.io/badge/Güneş--Lang%20Studio-Online%20IDE%20%26%20Compiler-gold.svg)](https://pcworm.github.io/gunes-dili/ide/)
+[![Academic Analysis](https://img.shields.io/badge/Academic%20Analysis-HTML%20%7C%20PDF-blue.svg)](docs/gunes_lang_akademik_analiz.html)
 [![Portal: Docs / Simulator](https://img.shields.io/badge/Simulator-Interactive%20Portal-gold.svg)](docs/index.html)
 [![Lean 4 Verified](https://img.shields.io/badge/Lean%204-Machine%20Checked-blue.svg)](proofs/GunesDiliProof.lean)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
@@ -31,6 +33,8 @@
 
 | Doküman | Hedef Kitle ve Kapsam | Bağlantı |
 | :--- | :--- | :--- |
+| 💻 **Güneş-Lang Çevrimiçi Derleyici (Studio / IDE)** | Tarayıcıda güvenli çalışan kod editörü, sözdizim renklendiricisi ve WERR 53-Hölder rezonans motoru | [**Çevrimiçi Derleyiciyi Aç ↗**](https://pcworm.github.io/gunes-dili/ide/) • [**Paket Kılavuzu**](gunes_lang/README.md) |
+| 📊 **Güneş-Lang Akademik Analiz Raporu** | Lojban, Forth, BQN, Lean 4 ve PyNN karşılaştırmalı telemetri matrisi | [**HTML Raporu**](docs/gunes_lang_akademik_analiz.html) • [**PDF Raporu**](docs/pdf/Gunes_Lang_Akademik_Analiz_Raporu.pdf) |
 | 🌐 **Canlı Web Portalı & Simülatör** | Canlı GitHub Pages portalı, çevrimdışı yerel çevirmen, 53 koma çarkı ve görsel rezonans arayüzü | [**Web Portalı (GitHub Pages)**](https://pcworm.github.io/gunes-dili/) • [**Yerel Dosya (`docs/index.html`)**](docs/index.html) |
 | 📐 **Lean 4 Biçimsel İspat Modülü** | Aksiyom 1-3, DFA Tekilliği ve 53 Koma Rezonansının Lean 4 Kanıtları | [**İncele**](proofs/GunesDiliProof.lean) |
 | 📜 **Akademik Gelişim Günlüğü** | Kümülatif akademik kararlar, metrikler ve revizyon arşivi | [**İncele**](docs/AKADEMIK_GELISIM_VE_DEGISIKLIK_GUNLUGU.md) |
@@ -58,11 +62,14 @@
 
 ```
 gunes-dili/
+├── gunes_lang/      # ☀️ Güneş-Lang Programlama Dili Çekirdeği, Yorumlayıcı, Telemetri ve Örnekler
+├── docs/ide/        # 💻 Web Tabanlı Güvenli Çevrimiçi Derleyici (Güneş-Lang Studio / Playground)
 ├── archive/         # Atatürk 1935 Nöbet Defteri, Newton 1664 Notları ve Tarihsel Belgeler
 ├── tokenizer/       # Işıma ve Rezonans Tabanlı Morfolojik Tokenizer (gunes_dil_v4)
 ├── engine/          # Deterministik Güneş Dili Gramer ve Çeviri Motoru (gunes_dili)
 ├── lab/             # İnteraktif Web Tabanlı Çeviri ve Ayrıştırma Laboratuvarı
-└── proofs/          # T1-T5 Kanıt Defteri, Lean 4 İspatları (GunesDiliProof.lean) ve MFNS
+├── proofs/          # T1-T5 Kanıt Defteri, Lean 4 İspatları (GunesDiliProof.lean) ve MFNS
+└── tests/           # Güneş-Lang ve motor için kapsamlı birim test paketi
 ```
 
 ---

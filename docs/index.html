@@ -1298,6 +1298,8 @@
 
       <!-- Desktop Navigation Links -->
       <nav class="nav-links">
+        <a href="ide/index.html" target="_blank" class="nav-btn-highlight" style="color:var(--gold-light) !important; font-weight:700;">💻 Çevrimiçi Derleyici (Studio) ↗</a>
+        <a href="#gunes-lang-ide" style="color:var(--gold);">⚡ Güneş-Lang</a>
         <a href="#simulator">⚡ Hızlı Motor</a>
         <a href="#lab-tam-motor">🧪 Tam Laboratuvar</a>
         <a href="#koma-cemberi">🎵 53 Koma</a>
@@ -1316,6 +1318,8 @@
 
     <!-- Mobile Drawer Menu -->
     <div class="mobile-drawer" id="mobileDrawer">
+      <a href="ide/index.html" target="_blank" style="color:var(--gold); font-weight:800; background:rgba(255,215,0,0.12); border-color:var(--gold);">💻 Çevrimiçi Derleyici (Güneş-Lang Studio) ↗ <span>→</span></a>
+      <a href="#gunes-lang-ide" onclick="toggleMobileMenu()">💻 Güneş-Lang Programlama Dili <span>→</span></a>
       <a href="#simulator" onclick="toggleMobileMenu()">⚡ Hızlı Morfoloji Simülatörü <span>→</span></a>
       <a href="#lab-tam-motor" onclick="toggleMobileMenu()">🧪 Tam Donanımlı Laboratuvar Motoru (Bu Sayfada) <span>→</span></a>
       <a href="#koma-cemberi" onclick="toggleMobileMenu()">🎵 53 Holder Koma Çarkı <span>→</span></a>
@@ -1339,6 +1343,7 @@
 
       <div class="badge-bar">
         <a href="https://doi.org/10.5281/zenodo.23273006" target="_blank" class="badge-pill gold" style="text-decoration:none;">📜 ZENODO DOI: 10.5281/zenodo.23273006 ↗</a>
+        <a href="ide/index.html" target="_blank" class="badge-pill gold" style="text-decoration:none;">💻 GÜNEŞ-LANG v1.0 ÇEVRİMİÇİ DERLEYİCİ ↗</a>
         <span class="badge-pill">☀️ GAZİ MUSTAFA KEMAL ATATÜRK (1935)</span>
         <span class="badge-pill">📜 SIR ISAAC NEWTON (1664)</span>
         <span class="badge-pill cyan">📐 LEAN 4 BİÇİMSEL İSPATLI</span>
@@ -1356,10 +1361,10 @@
       </p>
 
       <div class="hero-cta">
-        <a href="https://doi.org/10.5281/zenodo.23273006" target="_blank" class="btn btn-gold">📜 Zenodo Yayını (DOI) ↗</a>
+        <a href="ide/index.html" target="_blank" class="btn btn-gold" style="box-shadow: 0 0 25px rgba(255, 215, 0, 0.5); font-size:15px;">💻 Çevrimiçi Derleyici (Studio) ↗</a>
+        <a href="#gunes-lang-ide" class="btn btn-cyan">⚡ Güneş-Lang Dili</a>
         <a href="#simulator" class="btn btn-primary">⚡ Hızlı Morfoloji Motoru</a>
-        <a href="#lab-tam-motor" class="btn btn-cyan">🧪 Tam Laboratuvarı Aç</a>
-        <a href="lab/index.html" target="_blank" class="btn btn-secondary">🔗 Ayrı Sayfada Aç ↗</a>
+        <a href="gunes_lang_akademik_analiz.html" target="_blank" class="btn btn-secondary">📄 Akademik Analiz ↗</a>
         <a href="https://github.com/pCwOrM/gunes-dili" target="_blank" class="btn btn-secondary">🐙 GitHub Deposu ↗</a>
       </div>
 
@@ -1398,6 +1403,76 @@
       <div class="stat-card">
         <div class="stat-num">Lean 4</div>
         <div class="stat-label">Makine Onaylı İspat Modülü</div>
+      </div>
+    </section>
+
+    <!-- GUNES-LANG PROGRAMMING LANGUAGE & ONLINE IDE SHOWCASE -->
+    <section id="gunes-lang-ide" style="margin: 50px 0 80px 0;">
+      <div class="section-header">
+        <span class="section-tag" style="background: rgba(255,215,0,0.15); border-color: var(--gold); color: var(--gold-light);">💻 DÜNYANIN İLK NÖRO-SEMANTİK VE AKUSTİK PROGRAMLAMA DİLİ</span>
+        <h2 class="section-title">☀️ Güneş-Lang: Makine İspatlı Deterministik Programlama Dili</h2>
+        <p class="section-desc">
+          Mustafa Kemal Atatürk'ün 1935 Güneş Dil kök-ek morfotaktiği, Sir Isaac Newton'un 1664 Cambridge evrensel dil koordinatları 
+          ve Lean 4 makine-ispatlı sınır biricikliği üzerine inşa edilmiş tam teşekküllü (Turing-complete) programlama dili.
+        </p>
+      </div>
+
+      <div style="background: var(--bg-card); border: 1px solid var(--border-bright); border-radius: 12px; padding: 32px; box-shadow: 0 10px 40px rgba(0,0,0,0.7); position: relative; overflow: hidden;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 28px;">
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,215,0,0.15); border-radius: 8px; padding: 20px;">
+            <div style="font-size: 24px; margin-bottom: 8px;">⚡</div>
+            <h3 style="color: var(--gold); font-size: 16px; margin-bottom: 6px;">O(L) Deterministik Ayrıştırma</h3>
+            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">
+              Geri izleme (backtracking) ve olasılıksal çatallanma sıfırdır. Doğal dillerdeki BPE alt-kelime karmaşası ve token parçalanması tamamen elenmiştir.
+            </p>
+          </div>
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(0,229,255,0.2); border-radius: 8px; padding: 20px;">
+            <div style="font-size: 24px; margin-bottom: 8px;">🎵</div>
+            <h3 style="color: var(--accent-cyan); font-size: 16px; margin-bottom: 6px;">WERR 53-Hölder Rezonansı (Z₅₃)</h3>
+            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">
+              Her bir kod satırı 53 eşit tampere mikrotonal frekansa eşlenir. Kod çalışırken aynı zamanda fiziksel bir ses dalgası ve BCI refleks darbesi yayar.
+            </p>
+          </div>
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(0,230,118,0.2); border-radius: 8px; padding: 20px;">
+            <div style="font-size: 24px; margin-bottom: 8px;">🛡️</div>
+            <h3 style="color: var(--accent-green); font-size: 16px; margin-bottom: 6px;">0 Bytes GPU VRAM & 0 Halüsinasyon</h3>
+            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">
+              Milyarlarca parametrelik tensör gömmeleri yerine sonlu durum dönüştürücüleri (FST) kullanılır. Kod çalıştırma için GPU VRAM'ine ihtiyaç duyulmaz.
+            </p>
+          </div>
+          <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(179,136,255,0.2); border-radius: 8px; padding: 20px;">
+            <div style="font-size: 24px; margin-bottom: 8px;">📐</div>
+            <h3 style="color: var(--accent-purple); font-size: 16px; margin-bottom: 6px;">Lean 4 Biçimsel Doğrulaması</h3>
+            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.6;">
+              Kök-ek sınır biricikliği teoremi, Lean 4 etkileşimli teorem kanıtlayıcısında <code>0 sorry</code> (sıfır varsayım) ile matematiksel olarak ispatlanmıştır.
+            </p>
+          </div>
+        </div>
+
+        <!-- Live Code Card & Action CTAs -->
+        <div style="background: #070A10; border: 1px solid var(--border); border-radius: 8px; padding: 20px; font-family: var(--font-mono); font-size: 13px; line-height: 1.7; color: #F0F4F8; margin-bottom: 24px; overflow-x: auto;">
+<span style="color:#64748B;">-- GÜNEŞ-LANG: Özyinelemeli Fibonacci ve WERR 53-Hölder Rezonansı</span>
+<span style="color:var(--gold); font-weight:700;">ag</span> {
+    <span style="color:var(--accent-cyan); font-weight:600;">tanim</span> <span style="color:#38BDF8;">fib</span>(n) {
+        <span style="color:#C084FC; font-weight:700;">bakba</span> (n <span style="color:#FCD34D;">kutukes</span> <span style="color:#FB923C;">1</span>) { <span style="color:var(--gold); font-weight:700;">wer</span> n ; }
+        <span style="color:var(--gold); font-weight:700;">wer</span> <span style="color:#38BDF8;">fib</span>(n <span style="color:#FCD34D;">kes</span> <span style="color:#FB923C;">1</span>) <span style="color:#FCD34D;">kat</span> <span style="color:#38BDF8;">fib</span>(n <span style="color:#FCD34D;">kes</span> <span style="color:#FB923C;">2</span>) ;
+    }
+    <span style="color:var(--gold); font-weight:700;">tan</span> sonuc <span style="color:var(--gold); font-weight:700;">yi</span> <span style="color:#38BDF8;">fib</span>(<span style="color:#FB923C;">10</span>) ;
+    <span style="color:var(--gold); font-weight:700;">werla</span> <span style="color:#4ADE80;">"fib(10) = "</span> <span style="color:#FCD34D;">kat</span> <span style="color:var(--accent-cyan);">metin</span>(sonuc) ; <span style="color:#64748B;">-- Çıktı: fib(10) = 55</span>
+}
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; align-items: center;">
+          <a href="ide/index.html" target="_blank" class="btn btn-gold" style="font-size: 15px; padding: 12px 28px; box-shadow: 0 0 25px rgba(255,215,0,0.5);">
+            💻 Çevrimiçi Derleyiciyi Aç (Güneş-Lang Studio ↗)
+          </a>
+          <a href="gunes_lang_akademik_analiz.html" target="_blank" class="btn btn-primary" style="font-size: 15px; padding: 12px 24px;">
+            📄 Akademik Karşılaştırma Raporu (HTML) ↗
+          </a>
+          <a href="pdf/Gunes_Lang_Akademik_Analiz_Raporu.pdf" target="_blank" class="btn btn-secondary" style="font-size: 15px; padding: 12px 24px;">
+            📥 Raporu PDF Olarak İndir ↗
+          </a>
+        </div>
       </div>
     </section>
 
