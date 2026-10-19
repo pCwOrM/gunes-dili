@@ -109,7 +109,8 @@
   safe('intro', () => {
     if (page !== 'home' || RM || store.get('sx-intro')) return;
     store.set('sx-intro', '1');
-    const o = el('div', '', '<div class="sky"></div><div class="horizon"></div><div class="mark"><img src="../assets/logo.svg" alt=""><b>GÜNEŞ DİLİ</b><small>1 EK · 1 BİÇİM · 1 İŞLEV</small></div>');
+    const logoSrc = ($('.brand img') && $('.brand img').getAttribute('src')) || 'assets/logo.svg';
+    const o = el('div', '', `<div class="sky"></div><div class="horizon"></div><div class="mark"><img src="${logoSrc}" alt=""><b>GÜNEŞ DİLİ</b><small>1 EK · 1 BİÇİM · 1 İŞLEV</small></div>`);
     o.id = 'sx-intro'; document.body.appendChild(o);
     document.documentElement.style.overflow = 'hidden';
     const close = () => { if (o.classList.contains('out')) return; o.classList.add('out'); document.documentElement.style.overflow = ''; setTimeout(() => o.remove(), 1300); };
