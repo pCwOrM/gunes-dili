@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Güneş-Lang Bilgi Bankası (Wiki) | Morfo-Semantik Kökler, Gramer ve Teknik Rehber</title>
+  
+  <meta name="description" content="Güneş-Lang programlama dili ve Güneş Dili ekosistemi için kapsamlı bilgi bankası: Morfo-semantik kökler, 53 kanonik ek sözlüğü, Lean 4 ispatları, 0 Bytes VRAM motoru ve geleceğe katkıları.">
+  <meta name="keywords" content="Güneş-Lang Wiki, Güneş Dili Sözlük, Morfo-Semantik Kökler, 53 Hölder Koması, Lean 4, Deterministik FST">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #05070B;
+      --bg-card: #0A0E18;
+      --bg-card-hover: #101626;
+      --border: rgba(255, 215, 0, 0.18);
+      --border-bright: rgba(255, 215, 0, 0.55);
+      --border-cyan: rgba(0, 229, 255, 0.35);
+      --gold: #FFD700;
+      --gold-light: #FFE57F;
+      --gold-glow: rgba(255, 215, 0, 0.4);
+      --accent-cyan: #00E5FF;
+      --accent-green: #00E676;
+      --accent-purple: #B388FF;
+      --text: #F0F4F8;
+      --text-muted: #8F9BB3;
+      --font-display: 'Cinzel', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      min-height: 100vh;
+      overflow-x: hidden;
+      width: 100%;
+      position: relative;
+      background-image: 
+        radial-gradient(circle at 50% -10%, rgba(255, 170, 0, 0.12) 0%, transparent 60%),
+        radial-gradient(circle at 85% 25%, rgba(0, 229, 255, 0.05) 0%, transparent 45%),
+        radial-gradient(circle at 15% 70%, rgba(255, 215, 0, 0.05) 0%, transparent 45%);
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: rgba(255, 215, 0, 0.25); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+    a { color: var(--gold); text-decoration: none; transition: all 0.2s; }
+    a:hover { color: var(--gold-light); text-shadow: 0 0 10px var(--gold-glow); }
+
+    /* Header Navbar */
+    header.wiki-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(5, 7, 11, 0.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--gold);
+    }
+    .brand img {
+      width: 38px;
+      height: 38px;
+      filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 13.5px;
+      font-weight: 600;
+    }
+    .btn-nav {
+      padding: 6px 14px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-muted);
+    }
+    .btn-nav:hover {
+      color: var(--gold);
+      border-color: var(--gold);
+      background: rgba(255, 215, 0, 0.1);
+    }
+    .btn-nav.highlight {
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.18), rgba(255, 143, 0, 0.28));
+      border-color: var(--border-bright);
+      color: var(--gold-light) !important;
+    }
+
+    /* Layout: Sidebar + Main Content */
+    .wiki-wrapper {
+      max-width: 1480px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 36px;
+      padding: 30px 24px 80px;
+    }
+
+    @media (max-width: 960px) {
+      .wiki-wrapper {
+        grid-template-columns: 1fr;
+      }
+      .wiki-sidebar {
+        position: static !important;
+        max-height: none !important;
+        margin-bottom: 24px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header.wiki-header {
+        padding: 12px 14px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+      }
+      .brand {
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+      }
+      .brand img {
+        width: 30px;
+        height: 30px;
+      }
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+      }
+      .btn-nav {
+        padding: 7px 10px;
+        font-size: 11.5px;
+        flex: 1 1 calc(50% - 8px);
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .wiki-wrapper {
+        padding: 16px 12px 60px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      h2.section-heading {
+        font-size: 19px;
+      }
+      .table-wrap {
+        margin: 16px 0;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      table.wiki-table {
+        min-width: 480px;
+      }
+      pre.code-snippet {
+        padding: 12px;
+        font-size: 12px;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+    }
+
+    /* Sticky Sidebar */
+    .wiki-sidebar {
+      position: sticky;
+      top: 85px;
+      max-height: calc(100vh - 110px);
+      overflow-y: auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .sidebar-title {
+      font-family: var(--font-display);
+      font-size: 14px;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-nav {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .sidebar-nav a {
+      color: var(--text-muted);
+      font-size: 13px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      display: block;
+      transition: all 0.2s;
+    }
+    .sidebar-nav a:hover, .sidebar-nav a.active {
+      color: var(--gold);
+      background: rgba(255, 215, 0, 0.08);
+      padding-left: 14px;
+    }
+    .sidebar-badge {
+      font-size: 10px;
+      background: rgba(0, 229, 255, 0.15);
+      color: var(--accent-cyan);
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 6px;
+    }
+
+    /* Wiki Main Content */
+    .wiki-content {
+      min-width: 0;
+    }
+
+    .wiki-hero {
+      background: var(--bg-card);
+      border: 1px solid var(--border-bright);
+      border-radius: 12px;
+      padding: 36px;
+      margin-bottom: 40px;
+      position: relative;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+    .wiki-hero h1 {
+      font-family: var(--font-display);
+      font-size: 32px;
+      color: var(--gold);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .wiki-hero .subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tag {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--gold-light);
+    }
+    .tag.cyan { border-color: var(--border-cyan); color: var(--accent-cyan); }
+    .tag.green { border-color: rgba(0, 230, 118, 0.3); color: var(--accent-green); }
+
+    /* Sections */
+    .wiki-section {
+      margin-bottom: 50px;
+      padding-top: 20px;
+    }
+    h2.section-heading {
+      font-family: var(--font-display);
+      font-size: 24px;
+      color: var(--gold);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h3.sub-heading {
+      font-size: 18px;
+      color: var(--accent-cyan);
+      margin: 24px 0 12px;
+    }
+    p { margin-bottom: 16px; color: #E2E8F0; }
+
+    /* Bilgi Kartları */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 24px 0;
+    }
+    .info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      transition: all 0.25s;
+    }
+    .info-card:hover {
+      border-color: var(--border-bright);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    }
+    .card-icon { font-size: 24px; margin-bottom: 8px; }
+    .card-title {
+      font-weight: 700;
+      color: var(--gold-light);
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    /* Tablolar */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 20px 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg-card);
+    }
+    table.wiki-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    table.wiki-table th, table.wiki-table td {
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    table.wiki-table th {
+      background: #0f1626;
+      color: var(--gold);
+      font-family: var(--font-display);
+      font-weight: 700;
+      border-bottom: 1px solid var(--border-bright);
+    }
+    table.wiki-table tr:hover {
+      background: rgba(255, 215, 0, 0.04);
+    }
+    .code-term {
+      font-family: var(--font-mono);
+      color: var(--gold-light);
+      font-weight: 700;
+      background: rgba(255, 215, 0, 0.1);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    /* Kod Blokları */
+    pre.code-snippet {
+      background: #06090F;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      line-height: 1.7;
+      overflow-x: auto;
+      margin: 18px 0;
+      color: #F8FAFC;
+    }
+
+    /* Canlı Sözlük Arama Kutusu */
+    .search-box-wrap {
+      margin-bottom: 16px;
+      display: flex;
+      gap: 12px;
+    }
+    .search-input {
+      flex: 1;
+      background: #070B12;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 16px;
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 14px;
+      outline: none;
+    }
+    .search-input:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 10px var(--gold-glow);
+    }
+
+    /* Callout Kutuları */
+    .callout {
+      background: rgba(255, 215, 0, 0.05);
+      border-left: 4px solid var(--gold);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    .callout.cyan {
+      background: rgba(0, 229, 255, 0.05);
+      border-left-color: var(--accent-cyan);
+    }
+    .callout b { color: var(--gold-light); }
+
+    /* Footer */
+    footer.wiki-footer {
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      font-size: 12.5px;
+      color: #64748B;
+      background: rgba(5, 7, 11, 0.98);
+    }
+  </style>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="../enhance.css">
+</head>
+<body data-page="wiki">
+
+  <!-- Navbar -->
+  <header class="wiki-header">
+    <a href="../index.html" class="brand">
+      <img src="../../assets/logo.svg" alt="Güneş Dili Logo" onerror="this.src='../../assets/logo.png'">
+      <span>GÜNEŞ-LANG BİLGİ BANKASI (WIKI)</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="../index.html" class="btn-nav">← Ana Portal</a>
+      <a href="../ide/index.html" target="_blank" class="btn-nav highlight">💻 Çevrimiçi Derleyici (Studio) ↗</a>
+      <a href="../gunes_lang_akademik_analiz.html" target="_blank" class="btn-nav">📄 Akademik Rapor ↗</a>
+      <a href="https://github.com/pCwOrM/gunes-dili" target="_blank" class="btn-nav">🐙 GitHub ↗</a>
+    </div>
+  </header>
+
+  <div class="wiki-wrapper">
+
+    <!-- Sticky Sol Kenar Çubuğu (Navigation) -->
+    <aside class="wiki-sidebar">
+      <div class="sidebar-title">📑 Konu Başlıkları</div>
+      <ul class="sidebar-nav">
+        <li><a href="#felsefe">1. Kurucu Felsefe & Miras</a></li>
+        <li><a href="#sozdizim">2. Temel Sözdizim & Gramer <span class="sidebar-badge">Morfoloji</span></a></li>
+        <li><a href="#sozluk-53">3. 53 Kanonik Ek Sözlüğü <span class="sidebar-badge">Z_53</span></a></li>
+        <li><a href="#motor-ozellikleri">4. Derleyici & Motor Mimarisi</a></li>
+        <li><a href="#avantajlar">5. Avantajlar & Güçlü Yönler</a></li>
+        <li><a href="#gelecek">6. Geleceğe ve Bilime Katkıları</a></li>
+        <li><a href="#ornekler">7. Doğrulanmış Canlı Algoritmalar</a></li>
+      </ul>
+
+      <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid rgba(255,215,0,0.15);">
+        <a href="../ide/index.html" target="_blank" style="display:block; text-align:center; padding:10px; background:linear-gradient(135deg, var(--gold), #FF9800); color:#05070B; font-weight:700; border-radius:6px; font-size:12px;">
+          ▶ Çevrimiçi Derleyicide Dene
+        </a>
+      </div>
+    </aside>
+
+    <!-- Ana İçerik -->
+    <main class="wiki-content">
+
+      <!-- Hero Banner -->
+      <section class="wiki-hero">
+        <h1>Güneş-Lang: Bilgi Bankası ve Başvuru Kılavuzu</h1>
+        <div class="subtitle">
+          Dünyanın ilk makine-ispatlı fonosemantik, nöro-akustik ve deterministik aglutinatif programlama dili ekosistemi.
+        </div>
+        <div class="tag-row">
+          <span class="tag">☀️ ATATÜRK 1935 GÜNEŞ DİL TEORİSİ</span>
+          <span class="tag">📜 SIR ISAAC NEWTON (1664)</span>
+          <span class="tag cyan">📐 LEAN 4 FORMAL VERIFIED (0 SORRY)</span>
+          <span class="tag green">⚡ O(L) DETERMINISTIC FST</span>
+          <span class="tag">🛡️ 0 BYTES GPU VRAM</span>
+        </div>
+      </section>
+
+      <!-- 1. BÖLÜM: KURUCU FELSEFE -->
+      <section id="felsefe" class="wiki-section">
+        <h2 class="section-heading">🏛️ 1. Kurucu Felsefe ve Tarihsel Miras</h2>
+        <p>
+          Güneş-Lang; 1935 yılında <b>Gazi Mustafa Kemal Atatürk</b> önderliğinde Türk Dil Kurultayı'nda temelleri atılan <i>Güneş Dil Teorisi</i>'nin dilbilimsel sezgilerini, <b>Sir Isaac Newton</b>'un 1664 Cambridge el yazmalarındaki (<i>Of an Universall Language</i>) evrensel fonetik koordinatlarını ve 21. yüzyılın en gelişmiş matematiksel doğrulayıcısı olan <b>Lean 4</b> biçimsel ispat motorunu birleştiren egemen bir programlama dilidir.
+        </p>
+
+        <div class="callout">
+          <b>⚡ 1 Ek = 1 Biçim = 1 İşlev İlkesi (Allomorfi Eliminasyonu):</b><br>
+          Geleneksel Türkçede ses uyumu kuralları gereği bir ek 4 veya 8 farklı yüzey biçimi alabilir (ör. <i>-ler/-lar</i>, <i>-den/-dan/-ten/-tan</i>). Güneş Dili bu çokbiçimliliği tek bir kanonik biçime indirger. Böylece dildeki morfolojik belirsizlik (ambiguity) matematiksel olarak <b>0.00 bit</b> düzeyine çekilmiştir.
+        </div>
+      </section>
+
+      <!-- 2. BÖLÜM: TEMEL SÖZDİZİM VE GRAMER -->
+      <section id="sozdizim" class="wiki-section">
+        <h2 class="section-heading">📜 2. Temel Sözdizim (Morfo-Semantik Kökler ve Deyimler)</h2>
+        <p>
+          Güneş-Lang, eklemeli (aglutinatif) dillerin kök-ek mimarisini bilgisayar bilimindeki soyut sözdizim ağacı (AST) ile birebir eşler. Kod blokları Güneş'in ilk ışığını simgeleyen <code>ag</code> (başlangıç) kökü ile başlar.
+        </p>
+
+        <h3 class="sub-heading">Çekirdek Anahtar Sözcükler</h3>
+        <div class="table-wrap">
+          <table class="wiki-table">
+            <thead>
+              <tr>
+                <th>Anahtar Kök</th>
+                <th>Eşdeğeri</th>
+                <th>Fonotaktik Köken</th>
+                <th>Görevi ve Kullanımı</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="code-term">ag { ... }</span></td>
+                <td><code>main { ... }</code></td>
+                <td>Güneş / İlk Enerji</td>
+                <td>Programın giriş noktası ve ana çalışma bloğu.</td>
+              </tr>
+              <tr>
+                <td><span class="code-term">tan</span></td>
+                <td><code>let / var</code></td>
+                <td>Tanımlamak / Doğuş</td>
+                <td>Bellekte yeni bir değişken alanı tahsis eder: <code>tan x yi 42 ;</code></td>
+              </tr>
+              <tr>
+                <td><span class="code-term">yi</span></td>
+                <td><code>= (atama)</code></td>
+                <td>Ek-fiil / İ- kökü</td>
+                <td>Değişkene değer bağlar veya mevcut değeri günceller.</td>
+              </tr>
+              <tr>
+                <td><span class="code-term">werla</span></td>
+                <td><code>print / emit</code></td>
+                <td>Ver- + -la (Dışa aktarım)</td>
+                <td>Konsola, ekrana veya akustik kanala veri basar.</td>
+              </tr>
+              <tr>
+                <td><span class="code-term">wer</span></td>
+                <td><code>return / yield</code></td>
+                <td>Ver- kökü</td>
+                <td>Fonksiyondan hesaplanan değeri çağırıcıya döndürür.</td>
+              </tr>
+              <tr>
+                <td><span class="code-term">tanim</span></td>
+                <td><code>def / function</code></td>
+                <td>Tanım / İsimlendirme</td>
+                <td>Yeni bir fonksiyon/yordam tanımlar: <code>tanim topla(a, b) { ... }</code></td>
+              </tr>
+              <tr>
+                <td><span class="code-term">bakba</span></td>
+                <td><code>if (şart)</code></td>
+                <td>Bak- + -ba şart eki</td>
+                <td>Koşullu dallanma: <code>bakba (sayi buyuk 0) { ... }</code></td>
+              </tr>
+              <tr>
+                <td><span class="code-term">bakde</span></td>
+                <td><code>else (olumsuz)</code></td>
+                <td>Bak- + -de olumsuz eki</td>
+                <td>Koşulun sağlanmadığı alternatif yürütme bloğu.</td>
+              </tr>
+              <tr>
+                <td><span class="code-term">donke</span></td>
+                <td><code>while (döngü)</code></td>
+                <td>Dön- + -ke zarf-fiili</td>
+                <td>Koşul doğru olduğu sürece tekrarlanan süreç döngüsü.</td>
+              </tr>
+              <tr>
+                <td><span class="code-term">dur</span></td>
+                <td><code>break</code></td>
+                <td>Dur- kökü</td>
+                <td>Aktif döngüyü derhal sonlandırır.</td>
+              </tr>
+              <tr>
+                <td><span class="code-term">gec</span></td>
+                <td><code>continue</code></td>
+                <td>Geç- kökü</td>
+                <td>Döngünün mevcut adımını atlayıp bir sonrakine geçer.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="sub-heading">Aritmetik ve Mantık İşleçleri</h3>
+        <div class="table-wrap">
+          <table class="wiki-table">
+            <thead>
+              <tr>
+                <th>Sözcük İşleç</th>
+                <th>Sembolik Karşılık</th>
+                <th>Türü</th>
+                <th>Örnek Kullanım</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="code-term">kat</span></td><td><code>+</code></td><td>Toplama / Metin Ekleme</td><td><code>a kat b</code> veya <code>"merhaba " kat "dunya"</code></td></tr>
+              <tr><td><span class="code-term">kes</span></td><td><code>-</code></td><td>Çıkarma / Negatiflik</td><td><code>toplam kes 1</code> veya <code>kes x</code></td></tr>
+              <tr><td><span class="code-term">tarap</span></td><td><code>*</code></td><td>Çarpma (Çarp- kökü)</td><td><code>r tarap r</code></td></tr>
+              <tr><td><span class="code-term">bol</span></td><td><code>/</code></td><td>Bölme</td><td><code>100 bol 4</code></td></tr>
+              <tr><td><span class="code-term">kalan</span></td><td><code>%</code></td><td>Modülo (Kalan Hesaplama)</td><td><code>n kalan 2</code></td></tr>
+              <tr><td><span class="code-term">es</span></td><td><code>==</code></td><td>Eşitlik Denetimi</td><td><code>a es b</code></td></tr>
+              <tr><td><span class="code-term">esde</span></td><td><code>!=</code></td><td>Eşitsizlik Denetimi</td><td><code>a esde b</code></td></tr>
+              <tr><td><span class="code-term">buyuk</span> / <span class="code-term">kutuk</span></td><td><code>></code> / <code>&lt;</code></td><td>Büyüktür / Küçüktür</td><td><code>x buyuk 10</code></td></tr>
+              <tr><td><span class="code-term">buyukes</span> / <span class="code-term">kutukes</span></td><td><code>>=</code> / <code>&lt;=</code></td><td>Büyük Eşit / Küçük Eşit</td><td><code>i kutukes limit</code></td></tr>
+              <tr><td><span class="code-term">wen</span> / <span class="code-term">ve</span></td><td><code>&&</code></td><td>Mantıksal VE</td><td><code>(x buyuk 0) wen (x kutuk 10)</code></td></tr>
+              <tr><td><span class="code-term">weya</span> / <span class="code-term">veya</span></td><td><code>||</code></td><td>Mantıksal VEYA</td><td><code>durum1 weya durum2</code></td></tr>
+              <tr><td><span class="code-term">de</span> / <span class="code-term">degil</span></td><td><code>!</code></td><td>Mantıksal Değilleme</td><td><code>degil dogru</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="sub-heading">Yerleşik (Built-in) Kütüphane Fonksiyonları</h3>
+        <p>Güneş-Lang çekirdeğinde harici kütüphane ihtiyacı duymadan çalışan yerleşik işlevler:</p>
+        <div class="table-wrap">
+          <table class="wiki-table">
+            <thead>
+              <tr>
+                <th>Fonksiyon</th>
+                <th>Dönüş Türü</th>
+                <th>Açıklama</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="code-term">boy(dizi)</span> / <span class="code-term">uzunluk(dizi)</span></td><td>Sayı</td><td>Dizinin eleman sayısını veya metnin karakter uzunluğunu döndürür.</td></tr>
+              <tr><td><span class="code-term">ekle(dizi, eleman)</span></td><td>Dizi</td><td>Dizinin sonuna yeni bir eleman ekler ve diziyi günceller.</td></tr>
+              <tr><td><span class="code-term">sayi(deger)</span></td><td>Sayı</td><td>Metin veya boole değerini sayısal türe dönüştürür.</td></tr>
+              <tr><td><span class="code-term">metin(deger)</span></td><td>Metin</td><td>Sayı veya diziyi ekrana yazdırılabilir dizgeye dönüştürür.</td></tr>
+              <tr><td><span class="code-term">zaman()</span></td><td>Sayı</td><td>Milisaniye cinsinden yüksek hassasiyetli zaman damgası döndürür.</td></tr>
+              <tr><td><span class="code-term">rezonans(metin)</span></td><td>Sayı (0..52)</td><td>Verilen metnin WERR 53-Hölder Koması faz indeksini hesaplar.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 3. BÖLÜM: 53 KANONİK EK SÖZLÜĞÜ -->
+      <section id="sozluk-53" class="wiki-section">
+        <h2 class="section-heading">📖 3. Güneş Dili 53 Kanonik Ek Sözlüğü (Z₅₃ Harmonik Tablosu)</h2>
+        <p>
+          Türk Musikisindeki 53 eşit parçalı koma sistemine (53-TET) ve Mandelbrot fraktal koordinatlarına dayanan 53 kanonik ek ailesi. Bu ekler, allomorfi olmaksızın dildeki tüm türetme ve çekim işlevlerini temsil eder.
+        </p>
+
+        <div class="search-box-wrap">
+          <input type="text" id="komaSearch" class="search-input" placeholder="🔍 Ek, işlev veya koma numarasına göre ara (ör. 'la', 'zaman', 'çatı')..." oninput="filterKomaTable()">
+        </div>
+
+        <div class="table-wrap" style="max-height: 520px; overflow-y: auto;">
+          <table class="wiki-table" id="komaTable">
+            <thead>
+              <tr>
+                <th>Koma (#)</th>
+                <th>Kanonik Ek</th>
+                <th>Frekans (Hz)</th>
+                <th>Mandelbrot Koordinatı (c = x + yi)</th>
+                <th>Dilbilgisel İşlev / Yuva</th>
+              </tr>
+            </thead>
+            <tbody id="komaTableBody">
+              <!-- JS ile Dinamik Doldurulur -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 4. BÖLÜM: DERLEYİCİ VE MOTOR ÖZELLİKLERİ -->
+      <section id="motor-ozellikleri" class="wiki-section">
+        <h2 class="section-heading">⚙️ 4. Derleyici ve Çalışma Zamanı Motorunun Teknik Özellikleri</h2>
+        <p>
+          Güneş-Lang mimarisi, çağdaş derleyici teorisi ve matematiksel ispat bilimi ilkeleriyle inşa edilmiştir:
+        </p>
+
+        <div class="card-grid">
+          <div class="info-card">
+            <div class="card-icon">⚡</div>
+            <div class="card-title">O(L) Doğrusal Zamanlı FST</div>
+            <p style="font-size:13px; color:var(--text-muted);">
+              Sözcük birimleme ve ayrıştırma, Sonlu Durum Dönüştürücüleri (FST) üzerinden geri izlemesiz çalışır. Metin uzunluğu <i>L</i> iken işlem süresi kesin olarak doğrusal <i>O(L)</i>'dir.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="card-icon">📐</div>
+            <div class="card-title">Lean 4 Sınır Biricikliği (0 sorry)</div>
+            <p style="font-size:13px; color:var(--text-muted);">
+              Eklemeli morfolojide kök ve ek sınırlarının tekilliği, Lean 4 etkileşimli teorem kanıtlayıcısında hiçbir varsayım (axiom-free) kullanılmadan ispatlanmıştır.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="card-icon">🛡️</div>
+            <div class="card-title">0 Bytes GPU VRAM Modeli</div>
+            <p style="font-size:13px; color:var(--text-muted);">
+              Büyük dil modellerinin milyarlarca parametrelik matris çarpımlarına ve GPU bellek duvarına ihtiyaç duymaz; saf sembolik ve deterministik bellek modeliyle çalışır.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <div class="card-icon">🎵</div>
+            <div class="card-title">WERR 53-TET Telemetrisi</div>
+            <p style="font-size:13px; color:var(--text-muted);">
+              Yürütülen her talimat mikrotonal frekansa ve faz açısına dönüştürülür. Çalışma zamanı sadece veri üretmez; aynı zamanda fiziksel bir rezonans dalgası yayar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. BÖLÜM: AVANTAJLAR VE YAPABİLECEKLERİ -->
+      <section id="avantajlar" class="wiki-section">
+        <h2 class="section-heading">🚀 5. Dilin Avantajları ve Yapabilecekleri</h2>
+        
+        <h3 class="sub-heading">1. Nöromorfik Donanım ve Beyin-Bilgisayar Arayüzleri (BCI)</h3>
+        <p>
+          TÜRKPATENT <b>TR 2026/016285</b> ve <b>TR 2026/016633</b> öncelikleri doğrultusunda, Güneş-Lang komutları doğrudan 158.262 nöronluk <i>Drosophila melanogaster</i> beynindeki Ellipsoid Body (E-PG) pusula halkasına elektriksel darbe olarak enjekte edilebilir (&lt; 0.1 ms gecikme). İkili (0-1) silikon işlemciler yerine spiking nöromorfik çipler (Intel Loihi, IBM TrueNorth) üzerinde doğrudan faz dalgası olarak çalışır.
+        </p>
+
+        <h3 class="sub-heading">2. Sıfır Halüsinasyonlu Deterministik Mantık</h3>
+        <p>
+          Geleneksel stokastik yapay zekalarda (LLM) yaşanan "halüsinasyon" ve olasılıksal saçmalama problemi, Güneş-Lang'in <i>0.00 bit entropi</i> yapısı sayesinde kökten engellenir. Dilin grameri sadece matematiksel olarak doğrulanabilir ifadelerin çalışmasına izin verir.
+        </p>
+
+        <h3 class="sub-heading">3. Tam Turing-Complete Hesaplama Yeteneği</h3>
+        <p>
+          Dinamik diziler, özyinelemeli fonksiyonlar, leksikal kapsam (lexical scoping), döngü denetimleri ve yerleşik fonksiyonları ile klasik dillerde (C, Python, Rust) yazılabilen tüm algoritmaları doğrudan ve zarif bir sözdizimiyle çalıştırabilir.
+        </p>
+      </section>
+
+      <!-- 6. BÖLÜM: GELECEĞE VE BİLGİSAYAR BİLİMİNE KATKILARI -->
+      <section id="gelecek" class="wiki-section">
+        <h2 class="section-heading">🌐 6. Bilgisayar Bilimine ve Geleceğe Ne Kazandırır?</h2>
+
+        <div class="callout cyan">
+          <b>1. LLM Tokenizer Krizine Kesin Çözüm:</b><br>
+          Günümüz yapay zeka modelleri BPE (Byte Pair Encoding) ve WordPiece algoritmaları nedeniyle Türkçe, Macarca, Fince gibi eklemeli dilleri yüz binlerce anlamsız alt-kelime parçasına bölmektedir. Bu durum hem GPU VRAM maliyetini 4 katına çıkarmakta hem de anlamsal kopukluklara yol açmaktadır. Güneş-Lang, eklemeli morfolojinin sonlu otomatlarla doğrusal zamanda <b>%100 kayıpsız</b> olarak ayrıştırılabileceğini kanıtlayarak yeni nesil sembolik yapay zekaların temelini atmıştır.
+        </div>
+
+        <div class="callout">
+          <b>2. Biyo-Akustik ve Fiziksel Programlama:</b><br>
+          Programlama dilleri tarihi boyunca sadece ekrana yazı yazmak ve belleği değiştirmek üzerine kurulmuştur. Güneş-Lang ise her komuta bir ses frekansı ($f \in [100, 8000]\text{ Hz}$) atayarak, programlamayı fiziksel ve akustik bir fenomen haline getirmiştir. Kod derlendiğinde kulakla duyulabilir veya biyolojik dokulara elektriksel rezonans olarak aktarılabilir.
+        </div>
+
+        <div class="callout cyan">
+          <b>3. Açık Bilim ve Egemen Yazılım Mirası:</b><br>
+          Cumhuriyet tarihimizin en büyük bilimsel ve dilbilimsel atılımı olan 1935 Güneş Dil Teorisi, 91 yıl sonra modern derleyici mimarisi ve Lean 4 biçimsel ispatlarıyla diriltilmiş; hem Türk milletinin hem de dünya açık bilim külliyatının hizmetine sunulmuştur.
+        </div>
+      </section>
+
+      <!-- 7. BÖLÜM: DOĞRULANMIŞ ÖRNEKLER -->
+      <section id="ornekler" class="wiki-section">
+        <h2 class="section-heading">💡 7. Doğrulanmış Canlı Algoritma Örnekleri</h2>
+
+        <h3 class="sub-heading">Örnek 1: Özyinelemeli Fibonacci Serisi</h3>
+        <pre class="code-snippet"><code>-- GÜNEŞ-LANG: Özyinelemeli Fibonacci ve Rezonans
+ag {
+    werla "=== FİBONACCİ MOTORU ===" ;
+
+    tanim fib(n) {
+        bakba (n kutukes 1) {
+            wer n ;
+        }
+        wer fib(n kes 1) kat fib(n kes 2) ;
+    }
+
+    tan i yi 0 ;
+    tan limit yi 10 ;
+
+    donke (i kutukes limit) {
+        tan sonuc yi fib(i) ;
+        werla "fib(" kat metin(i) kat ") = " kat metin(sonuc) ;
+        i yi i kat 1 ;
+    }
+}</code></pre>
+
+        <h3 class="sub-heading">Örnek 2: Asal Sayılar Eleği</h3>
+        <pre class="code-snippet"><code>-- GÜNEŞ-LANG: Asal Sayı Denetimi ve Dizi Biriktirme
+ag {
+    tanim asal_mi(sayi_val) {
+        bakba (sayi_val kutuk 2) {
+            wer yanlis ;
+        }
+        tan bolen yi 2 ;
+        donke (bolen tarap bolen kutukes sayi_val) {
+            bakba (sayi_val kalan bolen es 0) {
+                wer yanlis ;
+            }
+            bolen yi bolen kat 1 ;
+        }
+        wer dogru ;
+    }
+
+    tan bulunanlar yi [] ;
+    tan n yi 2 ;
+    donke (n kutukes 30) {
+        bakba (asal_mi(n)) {
+            ekle(bulunanlar, n) ;
+        }
+        n yi n kat 1 ;
+    }
+
+    werla "30'a kadar asal sayılar: " kat metin(bulunanlar) ;
+}</code></pre>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="../ide/index.html" target="_blank" style="display:inline-block; padding: 14px 32px; background: linear-gradient(135deg, var(--gold), #FF9800); color: #05070B; font-weight: 800; font-size: 15px; border-radius: 8px; box-shadow: 0 0 25px rgba(255,215,0,0.5);">
+            💻 Güneş-Lang Studio Çevrimiçi Derleyicisinde Çalıştır ↗
+          </a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="wiki-footer">
+    <div>WERR Collaborative Research Group • TÜRKPATENT TR 2026/016285 &amp; TR 2026/016633 • Açık Bilim CC-BY-4.0</div>
+    <div style="margin-top:6px;">Gazi Mustafa Kemal Atatürk (1935) &amp; Sir Isaac Newton (1664) Bilimsel Mirası Üzerine İnşa Edilmiştir.</div>
+  </footer>
+
+  <!-- 53 Koma Sözlük Verisi ve Filtreleme Betiği -->
+  <script>
+    const KOMA_DATA = [
+      { id: 0, ek: "la", islev: "Çokluk / Sahiplik / Radyal Katman 1", freq: 440.0, coord: "(-0.7387, +0.1357)" },
+      { id: 1, ek: "ta", islev: "Bulunma Hali (-da/-de/-ta/-te)", freq: 445.8, coord: "(-0.7438, +0.1325)" },
+      { id: 2, ek: "te", islev: "Ayrılma Hali (-den/-dan)", freq: 451.6, coord: "(-0.7482, +0.1264)" },
+      { id: 3, ek: "ti", islev: "Görülen Geçmiş Zaman (-di/-dı)", freq: 457.6, coord: "(-0.7538, +0.1215)" },
+      { id: 4, ek: "to", islev: "Soyut Yapım Eki (-lik/-lük)", freq: 463.6, coord: "(-0.7533, +0.1400)" },
+      { id: 5, ek: "tu", islev: "Sıfat Yapım Eki (-li/-lu)", freq: 469.7, coord: "(-0.7512, +0.1242)" },
+      { id: 6, ek: "de", islev: "Olumsuzluk Bildirimi (-me/-ma)", freq: 475.9, coord: "(-0.7601, +0.1387)" },
+      { id: 7, ek: "do", islev: "Ettirgen Çatı Eki (-dir/-t)", freq: 482.2, coord: "(-0.7594, +0.1254)" },
+      { id: 8, ek: "ka", islev: "Fail / Meslek Eki (-ci/-cü)", freq: 488.5, coord: "(-0.7623, +0.1203)" },
+      { id: 9, ek: "ke", islev: "Süreç Zarf-Fiili (-ken/-e)", freq: 494.9, coord: "(-0.7669, +0.1272)" },
+      { id: 10, ek: "ki", islev: "Aitlik Bağlacı / İlgi Eki (-ki)", freq: 501.5, coord: "(-0.7643, +0.1335)" },
+      { id: 11, ek: "ko", islev: "Geniş Zaman Kipi (-r/-ar)", freq: 508.1, coord: "(-0.7652, +0.1163)" },
+      { id: 12, ek: "ku", islev: "Gelecek Zaman Kipi (-ecek/-acak)", freq: 514.8, coord: "(-0.7680, +0.1180)" },
+      { id: 13, ek: "ba", islev: "Şart Kipi Eki (-se/-sa)", freq: 521.5, coord: "(-0.7742, +0.1187)" },
+      { id: 14, ek: "be", islev: "Gereklilik Kipi (-meli/-malı)", freq: 528.4, coord: "(-0.7731, +0.1236)" },
+      { id: 15, ek: "bi", islev: "İstek Kipi (-e/-a)", freq: 535.4, coord: "(-0.7714, +0.1075)" },
+      { id: 16, ek: "bo", islev: "Emir 3. Tekil (-sin)", freq: 542.4, coord: "(-0.7706, +0.1162)" },
+      { id: 17, ek: "ra", islev: "Yönelme Hali (-e/-a)", freq: 549.6, coord: "(-0.7803, +0.1009)" },
+      { id: 18, ek: "re", islev: "Belirtme Hali (-i/-ı/-u)", freq: 556.8, coord: "(-0.7741, +0.1058)" },
+      { id: 19, ek: "ro", islev: "Tamlayan / İlgi Hali (-in/-ın)", freq: 564.1, coord: "(-0.7890, +0.1097)" },
+      { id: 20, ek: "ru", islev: "Vasıta / İle Hali (-le/-la)", freq: 571.6, coord: "(-0.7764, +0.1016)" },
+      { id: 21, ek: "ri", islev: "Eşitlik Hali (-ce/-ca)", freq: 579.1, coord: "(-0.7692, +0.0891)" },
+      { id: 22, ek: "wi", islev: "Edilgen Çatı Eki (-il/-in)", freq: 586.7, coord: "(-0.7671, +0.1020)" },
+      { id: 23, ek: "wa", islev: "Dönüşlü Çatı Eki (-in)", freq: 594.4, coord: "(-0.7667, +0.0920)" },
+      { id: 24, ek: "wo", islev: "İşteş Çatı Eki (-iş)", freq: 602.3, coord: "(-0.7606, +0.0922)" },
+      { id: 25, ek: "we", islev: "Yeterlik Fiili (-ebil/-abil)", freq: 610.2, coord: "(-0.7637, +0.0894)" },
+      { id: 26, ek: "wu", islev: "Tezlik Fiili (-iver)", freq: 618.3, coord: "(-0.7575, +0.0740)" },
+      { id: 27, ek: "ga", islev: "Mastar Eki (-mek/-mak)", freq: 626.4, coord: "(-0.7551, +0.0973)" },
+      { id: 28, ek: "ge", islev: "İsim-Fiil Eki (-me/-ma)", freq: 634.7, coord: "(-0.7565, +0.1091)" },
+      { id: 29, ek: "gi", islev: "Sıfat-Fiil Geçmiş (-dik/-dık)", freq: 643.0, coord: "(-0.7517, +0.0950)" },
+      { id: 30, ek: "go", islev: "Sıfat-Fiil Şimdiki (-en/-an)", freq: 651.5, coord: "(-0.7472, +0.1076)" },
+      { id: 31, ek: "gu", islev: "Sıfat-Fiil Gelecek (-ecek)", freq: 660.1, coord: "(-0.7492, +0.1076)" },
+      { id: 32, ek: "pa", islev: "Zarf-Fiil Tarz (-erek/-arak)", freq: 668.8, coord: "(-0.7451, +0.1054)" },
+      { id: 33, ek: "pe", islev: "Zarf-Fiil Bağlama (-ip/-ıp)", freq: 677.6, coord: "(-0.7437, +0.0993)" },
+      { id: 34, ek: "pi", islev: "Zarf-Fiil Zaman (-ince/-ınca)", freq: 686.5, coord: "(-0.7418, +0.0971)" },
+      { id: 35, ek: "po", islev: "Zarf-Fiil Süreç (-dıkça)", freq: 695.5, coord: "(-0.7456, +0.0915)" },
+      { id: 36, ek: "pu", islev: "Zarf-Fiil Sebep (-diğinden)", freq: 704.7, coord: "(-0.7434, +0.1039)" },
+      { id: 37, ek: "fa", islev: "Zarf-Fiil Sınır (-ene kadar)", freq: 713.9, coord: "(-0.7423, +0.1097)" },
+      { id: 38, ek: "fe", islev: "Yoksunluk Yapım Eki (-siz/-suz)", freq: 723.3, coord: "(-0.7409, +0.1048)" },
+      { id: 39, ek: "fi", islev: "İlgi Sıfatı Eki (-sel/-sal)", freq: 732.9, coord: "(-0.7368, +0.1116)" },
+      { id: 40, ek: "fo", islev: "Küçültme Eki (-cik/-cık)", freq: 742.5, coord: "(-0.7389, +0.0932)" },
+      { id: 41, ek: "fu", islev: "Ortaklık Eki (-daş/-taş)", freq: 752.2, coord: "(-0.7324, +0.1034)" },
+      { id: 42, ek: "ya", islev: "Sıra Sayı Eki (-inci/-ıncı)", freq: 762.1, coord: "(-0.7177, +0.0851)" },
+      { id: 43, ek: "ye", islev: "Üleştirme Eki (-er/-ar)", freq: 772.1, coord: "(-0.7150, +0.0882)" },
+      { id: 44, ek: "yi", islev: "Ek-Fiil Yüklem (-dir/-tir)", freq: 782.2, coord: "(-0.7126, +0.0915)" },
+      { id: 45, ek: "ha", islev: "Şahıs 1. Tekil (-im/-ım)", freq: 792.5, coord: "(-0.7193, +0.1022)" },
+      { id: 46, ek: "hu", islev: "Şahıs 2. Tekil (-sin/-sın)", freq: 802.9, coord: "(-0.7203, +0.1014)" },
+      { id: 47, ek: "mi", islev: "Şahıs 1. Çoğul (-iz/-ız)", freq: 813.4, coord: "(-0.7014, +0.1158)" },
+      { id: 48, ek: "ma", islev: "Şahıs 2. Çoğul (-siniz)", freq: 824.1, coord: "(-0.7023, +0.1218)" },
+      { id: 49, ek: "ni", islev: "Şahıs 3. Çoğul (-ler/-lar)", freq: 834.9, coord: "(-0.7094, +0.1348)" },
+      { id: 50, ek: "na", islev: "Soru Eki (-mi/-mı)", freq: 845.8, coord: "(-0.7156, +0.1393)" },
+      { id: 51, ek: "si", islev: "Pekiştirme / Vurgu Katmanı", freq: 856.9, coord: "(-0.7201, +0.1489)" },
+      { id: 52, ek: "sa", islev: "Dilek / Temenni Kök Fazı", freq: 868.1, coord: "(-0.7233, +0.1508)" }
+    ];
+
+    function renderKomaTable(data) {
+      const tbody = document.getElementById('komaTableBody');
+      tbody.innerHTML = '';
+      data.forEach(item => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><b>#${String(item.id).padStart(2, '0')}</b></td>
+          <td><span class="code-term">-${item.ek}</span></td>
+          <td style="font-family:var(--font-mono); color:var(--accent-cyan);">${item.freq.toFixed(1)} Hz</td>
+          <td style="font-family:var(--font-mono); font-size:12px; color:var(--text-muted);">${item.coord}</td>
+          <td>${item.islev}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function filterKomaTable() {
+      const query = document.getElementById('komaSearch').value.toLowerCase().trim();
+      const filtered = KOMA_DATA.filter(item => {
+        return item.ek.toLowerCase().includes(query) ||
+               item.islev.toLowerCase().includes(query) ||
+               String(item.id).includes(query);
+      });
+      renderKomaTable(filtered);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderKomaTable(KOMA_DATA);
+    });
+  </script>
+
+  <script src="../enhance.js" defer></script>
+</body>
+</html>

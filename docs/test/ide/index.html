@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Güneş-Lang Studio | Çevrimiçi Derleyici & Kodlama Ortamı</title>
+  
+  <meta name="description" content="Atatürk 1935 Güneş Dil Teorisi, Newton 1664 ve Lean 4 ispatlı ilk fonosemantik programlama dili Güneş-Lang için çevrimiçi etkileşimli derleyici ve rezonans motoru.">
+  <meta name="keywords" content="Güneş-Lang, Güneş Dili, Çevrimiçi Derleyici, Online IDE, Lean 4, 53 Holder Koması, WERR">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="../enhance.css">
+</head>
+<body data-page="ide">
+
+  <!-- Üst Gezinti Çubuğu (Navbar) -->
+  <header class="ide-header">
+    <a href="../index.html" class="brand-wrap">
+      <img src="../../assets/logo.svg" alt="Güneş Dili Logosu" onerror="this.src='../../assets/logo.png'">
+      <div class="brand-text">
+        <h1>GÜNEŞ-LANG STUDIO</h1>
+        <span>v1.0.0 AKADEMİK ÇEVRİMİÇİ LAB</span>
+      </div>
+    </a>
+
+    <div class="nav-links-right">
+      <a href="../index.html" class="nav-link-btn">← Ana Portala Dön</a>
+      <a href="../wiki/index.html" target="_blank" class="nav-link-btn">📚 Bilgi Bankası (Wiki) ↗</a>
+      <a href="../gunes_lang_akademik_analiz.html" target="_blank" class="nav-link-btn">📄 Akademik Rapor ↗</a>
+      <a href="https://github.com/pCwOrM/gunes-dili" target="_blank" class="nav-link-btn highlight">🐙 GitHub Deposu ↗</a>
+    </div>
+  </header>
+
+  <!-- Ana Çalışma Alanı -->
+  <main class="ide-container">
+
+    <!-- Sol Sütun: Kod Editörü ve Araç Çubuğu -->
+    <section class="editor-panel">
+      
+      <!-- Araç Çubuğu -->
+      <div class="toolbar">
+        <div class="toolbar-group">
+          <label for="exampleSelect" style="font-size:12px; color:var(--text-muted); font-weight:600;">Örnek:</label>
+          <select id="exampleSelect" class="select-dropdown">
+            <option value="merhaba">🌟 01 - Merhaba Dünya & Değişkenler</option>
+            <option value="fibonacci">🌀 02 - Özyinelemeli Fibonacci Serisi</option>
+            <option value="asal">🔢 03 - Asal Sayılar Eleği</option>
+            <option value="werr_rezonans">⚡ 04 - WERR 53-Hölder Rezonansı</option>
+            <option value="diziler">📊 05 - Dinamik Dizi ve Metinler</option>
+          </select>
+
+          <button id="runBtn" class="btn btn-primary" title="Çalıştır (Kısayol: Ctrl + Enter)">
+            <span>▶</span> Çalıştır <span style="font-size:11px; opacity:0.8;">(Ctrl+Enter)</span>
+          </button>
+
+          <button id="clearBtn" class="btn btn-secondary" title="Konsolu Temizle">
+            <span>🧹</span> Temizle
+          </button>
+        </div>
+
+        <div class="toolbar-group">
+          <button id="audioToggle" class="btn btn-audio" title="53-Hölder Akustik Sentezini Aç/Kapat">
+            🎵 Akustik Sentez: <b>KAPALI</b>
+          </button>
+          <button id="copyBtn" class="btn btn-secondary" title="Kodu Kopyala">
+            📋 Kopyala
+          </button>
+          <button id="downloadBtn" class="btn btn-secondary" title="Güneş-Lang Dosyası (.gns) Olarak İndir">
+            💾 İndir
+          </button>
+        </div>
+      </div>
+
+      <!-- Sözdizimi Renklendirmeli Kod Girişi -->
+      <div class="editor-body">
+        <div id="lineNumbers" class="line-numbers">
+          <div>1</div>
+        </div>
+        <div class="editor-wrap">
+          <pre id="highlightArea" class="highlight-area" aria-hidden="true"></pre>
+          <textarea id="codeInput" class="code-input" spellcheck="false" autocomplete="off" autocapitalize="off"></textarea>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Sağ Sütun: Konsol Terminali ve WERR Rezonans Telemetrisi -->
+    <aside class="sidebar-panel">
+
+      <!-- Konsol Terminal Kartı -->
+      <div class="panel-card">
+        <div class="panel-header">
+          <div class="panel-title">
+            <span>💻</span> Konsol Çıktısı (Stdout)
+          </div>
+          <div id="statusText" class="status-badge status-idle">
+            ● HAZIR
+          </div>
+        </div>
+        <div id="consoleOutput" class="console-body">
+          <div class="console-line console-system">Güneş-Lang v1.0.0 Web Yorumlayıcısı hazır.</div>
+          <div class="console-line console-system">Kodu çalıştırmak için yukarıdaki 'Çalıştır' butonuna veya Ctrl+Enter'a basın.</div>
+        </div>
+      </div>
+
+      <!-- WERR 53-Hölder Rezonans Kartı -->
+      <div class="panel-card">
+        <div class="panel-header">
+          <div class="panel-title">
+            <span>🎵</span> WERR 53-Hölder Akustik Telemetrisi
+          </div>
+          <span style="font-size:11px; color:var(--text-muted); font-family:var(--font-mono);">Z_53 (Newton 1664)</span>
+        </div>
+        <div class="telemetry-body">
+          <div class="telemetry-row">
+            <div class="dial-wrap">
+              <svg id="komaDialSvg" width="160" height="160" viewBox="0 0 160 160"></svg>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-label">Toplam Adım</div>
+                <div id="statsTicks" class="stat-val">0</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">Yürütme Süresi</div>
+                <div id="statsDuration" class="stat-val green">0.0 ms</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">Aktif Koma Düğümü</div>
+                <div id="statsKoma" class="stat-val cyan">0 / 53</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">Baskın Frekans</div>
+                <div id="statsFreq" class="stat-val">440.0 Hz</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <b>🛡️ İstemci Tarafı Güvenlik Sandboxing:</b> Kodunuz harici hiçbir sunucuya iletilmeden, tamamen tarayıcınızın yalıtılmış ortamında <i>O(L)</i> kesin deterministik FST motoruyla çalıştırılır. Sonsuz döngü ve bellek taşması koruması (150.000 adım bütçesi) devrededir. GPU VRAM: <b>0 Bytes</b>.
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- Alt Bilgi (Footer) -->
+  <footer class="ide-footer">
+    <div>
+      WERR Collaborative Research Group • TÜRKPATENT TR 2026/016285 &amp; TR 2026/016633 • Açık Bilim CC-BY-4.0
+    </div>
+    <div>
+      Gazi Mustafa Kemal Atatürk (1935) &amp; Sir Isaac Newton (1664) Bilimsel Mirası
+    </div>
+  </footer>
+
+  <!-- Çalışma Zamanı Motoru ve Editör Betikleri -->
+  <script src="gunes_engine.js"></script>
+  <script src="editor.js"></script>
+
+  <script src="../enhance.js" defer></script>
+</body>
+</html>
