@@ -111,36 +111,171 @@
     }
     .brand:hover img { transform: rotate(15deg) scale(1.08); }
 
-    /* Desktop Navigation Links */
+    /* Desktop Navigation Links & Dropdown Menus */
     nav.nav-links {
       display: flex;
       align-items: center;
-      gap: 22px;
-      font-size: 14px;
-      font-weight: 600;
+      gap: 12px;
+      margin: 0 auto;
     }
-    nav.nav-links a {
-      color: var(--text-muted);
-      padding: 6px 10px;
-      border-radius: 8px;
+    .nav-dropdown {
+      position: relative;
+    }
+    .nav-link-trigger {
       display: inline-flex;
       align-items: center;
       gap: 6px;
+      padding: 8px 14px;
+      color: var(--text-muted);
+      font-size: 13.5px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: transparent;
+      border: 1px solid transparent;
+      font-family: inherit;
     }
-    nav.nav-links a:hover, nav.nav-links a.active {
+    .nav-link-trigger:hover,
+    .nav-dropdown:hover .nav-link-trigger,
+    .nav-dropdown.active .nav-link-trigger {
       color: var(--gold);
       background: rgba(255, 215, 0, 0.08);
-      text-shadow: 0 0 8px var(--gold-glow);
+      border-color: rgba(255, 215, 0, 0.2);
     }
-    .nav-btn-highlight {
-      background: linear-gradient(135deg, rgba(255, 215, 0, 0.18), rgba(255, 143, 0, 0.28)) !important;
-      border: 1px solid var(--border-bright) !important;
+    .nav-link-trigger .chevron {
+      font-size: 9px;
+      transition: transform 0.25s ease;
+      opacity: 0.7;
+    }
+    .nav-dropdown:hover .nav-link-trigger .chevron,
+    .nav-dropdown.active .nav-link-trigger .chevron {
+      transform: rotate(180deg);
+      opacity: 1;
+      color: var(--gold);
+    }
+
+    /* Dropdown Flyout Card */
+    .dropdown-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%) translateY(8px);
+      min-width: 320px;
+      background: rgba(8, 12, 20, 0.98);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-bright);
+      border-radius: 12px;
+      padding: 8px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.1);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 1050;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown.active .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+    .dropdown-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.18s ease;
+      background: transparent;
+      border: 1px solid transparent;
+    }
+    .dropdown-item:hover {
+      background: rgba(255, 215, 0, 0.08);
+      border-color: rgba(255, 215, 0, 0.2);
+      transform: translateX(3px);
+    }
+    .dropdown-icon {
+      font-size: 18px;
+      line-height: 1;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+    .dropdown-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .dropdown-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .dropdown-item:hover .dropdown-title {
+      color: var(--gold-light);
+    }
+    .dropdown-desc {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.35;
+    }
+
+    /* Right Action Bar in Navbar */
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .nav-btn-studio {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 18px;
+      border-radius: 10px;
+      font-size: 13.5px;
+      font-weight: 700;
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.22), rgba(255, 143, 0, 0.35));
+      border: 1px solid var(--border-bright);
       color: var(--gold-light) !important;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+      box-shadow: 0 0 18px rgba(255, 215, 0, 0.22);
+      text-decoration: none;
+      transition: all 0.25s ease;
+      white-space: nowrap;
     }
-    .nav-btn-highlight:hover {
-      box-shadow: 0 0 25px rgba(255, 215, 0, 0.45) !important;
+    .nav-btn-studio:hover {
+      box-shadow: 0 0 28px rgba(255, 215, 0, 0.5);
       transform: translateY(-1px);
+      background: linear-gradient(135deg, rgba(255, 215, 0, 0.32), rgba(255, 143, 0, 0.45));
+    }
+    .nav-btn-github {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .nav-btn-github:hover {
+      color: var(--gold);
+      border-color: var(--gold);
+      background: rgba(255, 215, 0, 0.08);
     }
 
     /* Mobile Hamburger Menu Toggle Button */
@@ -1272,6 +1407,7 @@
       .wheel-section { grid-template-columns: 1fr; padding: 32px 24px; gap: 28px; }
       .wheel-canvas-wrap { order: -1; }
       nav.nav-links { display: none; }
+      .nav-actions { display: none; }
       .mobile-menu-btn { display: flex; }
       .embedded-lab-section { padding: 22px 18px; }
       .lean-proofs-container { padding: 28px 20px; }
@@ -1360,17 +1496,112 @@
         <span>GÜNEŞ DİLİ</span>
       </a>
 
-      <!-- Desktop Navigation Links -->
+      <!-- Desktop Navigation: Grouped Dropdowns & Hierarchy -->
       <nav class="nav-links">
-        <a href="ide/index.html" target="_blank" class="nav-btn-highlight">💻 Studio IDE ↗</a>
-        <a href="wiki/index.html" class="nav-btn-highlight">📚 Bilgi Bankası (Wiki) ↗</a>
-        <a href="#simulator">⚡ Simülatör</a>
-        <a href="#lab-tam-motor">🧪 Laboratuvar</a>
-        <a href="#koma-cemberi">🎵 53 Koma</a>
-        <a href="#ispatlar">📐 Lean 4</a>
-        <a href="#kurucu-deha">🏛️ Miras & Tarih</a>
-        <a href="#ekip">⚙️ Ekip</a>
+        <!-- 1. Motorlar & Simülatör Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-link-trigger" aria-haspopup="true">
+            <span>⚡ Motorlar</span>
+            <span class="chevron">▼</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#simulator" class="dropdown-item">
+              <span class="dropdown-icon">⚡</span>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Hızlı Morfoloji Simülatörü</span>
+                <span class="dropdown-desc">DFA tabanlı kök & ek çözümleme</span>
+              </div>
+            </a>
+            <a href="#lab-tam-motor" class="dropdown-item">
+              <span class="dropdown-icon">🧪</span>
+              <div class="dropdown-text">
+                <span class="dropdown-title">İnteraktif Laboratuvar</span>
+                <span class="dropdown-desc">Tam teşekküllü sözdizim motoru</span>
+              </div>
+            </a>
+            <a href="#koma-cemberi" class="dropdown-item">
+              <span class="dropdown-icon">🎵</span>
+              <div class="dropdown-text">
+                <span class="dropdown-title">53 Holder Koma Çarkı</span>
+                <span class="dropdown-desc">Akustik mikrotonal ses fiziği</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Teori & Kanıtlar Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-link-trigger" aria-haspopup="true">
+            <span>📐 Teori & Kanıt</span>
+            <span class="chevron">▼</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#ispatlar" class="dropdown-item">
+              <span class="dropdown-icon">📐</span>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Lean 4 Biçimsel İspatlar</span>
+                <span class="dropdown-desc">Makine onaylı tip-teorik kanıtlar</span>
+              </div>
+            </a>
+            <a href="#kurucu-deha" class="dropdown-item">
+              <span class="dropdown-icon">☀️</span>
+              <div class="dropdown-text">
+                <span class="dropdown-title">1935 Atatürk Güneş-Dil Mirası</span>
+                <span class="dropdown-desc">Tarihsel kökenler ve Başöğretmen</span>
+              </div>
+            </a>
+            <a href="#tarihsel-notlar" class="dropdown-item">
+              <span class="dropdown-icon">📜</span>
+              <div class="dropdown-text">
+                <span class="dropdown-title">1664 Newton Notları</span>
+                <span class="dropdown-desc">Newton'ın evrensel dil tasarısı</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Dokümantasyon Dropdown -->
+        <div class="nav-dropdown">
+          <button class="nav-link-trigger" aria-haspopup="true">
+            <span>📚 Kaynaklar</span>
+            <span class="chevron">▼</span>
+          </button>
+          <div class="dropdown-menu">
+            <a href="wiki/index.html" class="dropdown-item">
+              <span class="dropdown-icon">📚</span>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Güneş-Lang Bilgi Bankası ↗</span>
+                <span class="dropdown-desc">Kanonik 53 ek sözlüğü & wiki</span>
+              </div>
+            </a>
+            <a href="#dokumanlar" class="dropdown-item">
+              <span class="dropdown-icon">📄</span>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Akademik Raporlar & PDF</span>
+                <span class="dropdown-desc">Zenodo DOI & teknik manifestolar</span>
+              </div>
+            </a>
+            <a href="#ekip" class="dropdown-item">
+              <span class="dropdown-icon">⚙️</span>
+              <div class="dropdown-text">
+                <span class="dropdown-title">Geliştirici Ekip</span>
+                <span class="dropdown-desc">Katkıda bulunanlar & mimari</span>
+              </div>
+            </a>
+          </div>
+        </div>
       </nav>
+
+      <!-- Right Action Area -->
+      <div class="nav-actions">
+        <a href="https://github.com/pcworm/gunes-dili" target="_blank" class="nav-btn-github" title="GitHub Deposu">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="ide/index.html" target="_blank" class="nav-btn-studio">
+          <span>💻 Studio IDE ↗</span>
+        </a>
+      </div>
 
       <!-- Mobile Hamburger Button -->
       <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menüyü Aç/Kapat">
@@ -2223,6 +2454,23 @@
       if (!mobileBtn.contains(e.target) && !mobileDrawer.contains(e.target) && mobileDrawer.classList.contains('open')) {
         toggleMobileMenu();
       }
+    });
+
+    // Dropdown click/tap toggle for touch devices & keyboards
+    document.querySelectorAll('.nav-dropdown').forEach(dd => {
+      const trigger = dd.querySelector('.nav-link-trigger');
+      if (trigger) {
+        trigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const wasActive = dd.classList.contains('active');
+          document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('active'));
+          if (!wasActive) dd.classList.add('active');
+        });
+      }
+    });
+
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('active'));
     });
 
     // -------------------------------------------------------------------------
