@@ -14,9 +14,9 @@
 
 ## 📋 Kopyala - Yapıştır LinkedIn Gönderi Metni:
 
-1935'ten 2026'ya Bir Kültür ve Bilim Mirası: Gazi Mustafa Kemal Atatürk'ün Güneş-Dil Kuramını, WERR Külliyatı'nın 9. Kanonik Eseri ve Çalışan Bir Programlama Dili Olarak İlim Dünyasının İstifadesine Sunuyoruz.
+1664 Newton Notlarından 1935 Atatürk Güneş-Dil Kuramına: WERR Külliyatı'nın 9. Kanonik Eseri ve Güneş-Lang Deterministik Programlama Dili Yayında.
 
-Büyük fikirler, ancak arkasındaki hakikat matematiksel bir kesinlikle işlendiğinde geleceğe köprü olur. 1935'te Dolmabahçe Sarayı'nda Gazi Mustafa Kemal Atatürk'ün inşa ettiği Güneş-Dil Teorisini; dünün hatırası olarak bırakmak yerine, aynı mesuliyet şuuruyla modern bilgisayar biliminin ve derleyici teorisinin ilkeleriyle buluşturduk.
+Büyük fikirler, ancak arkasındaki hakikat matematiksel bir kesinlikle işlendiğinde insanlığa köprü olur. Sir Isaac Newton'ın 1664'te evrensel bir mantık dili arayışıyla kaleme aldığı notlardan, 1935'te Gazi Mustafa Kemal Atatürk'ün inşa ettiği Güneş-Dil Teorisinin kök ontolojisine uzanan bu ilmi mirası; dünün hatırası olarak bırakmak yerine, modern bilgisayar bilimi ve biçimsel derleyici teorisinin ilkeleriyle buluşturduk.
 
 ITouch Systems olarak, WERR Külliyatı'nın 9. Kanonik Eseri olan GÜNEŞ DİLİ v1.0 ekosistemini ve GÜNEŞ-LANG deterministik programlama dilini kamuoyuna duyurmaktan onur duyuyoruz.
 
@@ -28,10 +28,10 @@ Bu çalışma; iddialı söylemlerle değil, makine onaylı ispatlar, açık kay
 Doğal dillerdeki morfolojik ambigüite sıfırlanmıştır. Chomsky Tip-3 düzenli gramer ve FST üzerinde koşan Güneş-Lang, kök hücresini "Ag" radyasyon ontolojisiyle modeller.
 
 🧠 2. Sıfır GPU VRAM Modeli (0 Bytes Memory Footprint)
-LLM'lerin yüksek enerji tüketen devasa matris işlemlerine karşı; eklemeli dillerin matematiksel genetiğiyle istemci tarafında 0 Byte GPU VRAM ile deterministik akıl yürütme sağlar.
+LLM'lerin devasa matris işlemlerine karşı; eklemeli dillerin matematiksel genetiğiyle istemci tarafında 0 Byte GPU VRAM ile deterministik akıl yürütme sağlar.
 
 🎵 3. 53-Hölder Koması (Z₅₃) & Akustik Sentez
-Batı'nın 12 eşit yarım sesine (12-TET) karşın; Türk Musikisinin 53 eşit mikrotonal koma sistemi (53-TET) ile dilin 53 kanonik ek ailesi arasında 1:1 harmonik izomorfizma kurulmuştur. Web Audio motoruyla, yazılan her algoritma derlenirken arka planda makamsal bir akustik rezonans üretilir.
+Batı'nın 12 eşit yarım sesine (12-TET) karşın; Türk Musikisinin 53 mikrotonal koma sistemi (53-TET) ile dilin 53 kanonik ek ailesi arasında 1:1 harmonik izomorfizma kurulmuştur. Web Audio motoruyla, yazılan her algoritma derlenirken arka planda makamsal bir akustik rezonans üretilir.
 
 📐 4. Lean 4 ile Biçimsel Olarak Doğrulanmış Hakikat
 Çalışmamız bir varsayım değil, kesinleşmiş bir teoremdir: @leanprover Lean 4 ortamında GunesDili_Deterministic teoremi sıfır açıkla (0 sorry) ispatlanmıştır. WerrSoma konnektomu (TR 2026/016633) ve MFNS fraktal senteziyle (TR 2026/016285) tam bir mimari uyum içindedir.
