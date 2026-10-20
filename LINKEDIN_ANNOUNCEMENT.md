@@ -57,6 +57,6 @@ https://github.com/pcworm/gunes-dili
 
 Bu çalışma; başta Başöğretmenimiz Atatürk olmak üzere, Türk diline ve bilimin ortak mirasına samimiyetle emek vermiş tüm ilim ehline ithaf olunur.
 
-Mimari & Külliyat: Volkan Dağlı (@pCwOrM), Bekirhan Dağlı (@bdagli) • ITouch Systems & answerr.me
+Mimari & Külliyat: Volkan Dağlı (@pCwOrM), Bekirhan Dağlı (@bdagli_web) • ITouch Systems & answerr.me
 
 #ITouchSystems #WERR #GunesDili #GunesLang #Atatürk #CompilerDesign #ProgrammingLanguage #FormalVerification #Lean4 #ComputerScience #OpenSource #TürkMüziği #AçıkKaynak #AçıkBilim

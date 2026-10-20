@@ -8,8 +8,8 @@
 * **Kurucu Düşünce ve Tarihsel Vizyon:** Gazi Mustafa Kemal Atatürk (1935 Güneş-Dil Teorisi)
 * **Tarihsel Karşılaştırma Arşivi:** Sir Isaac Newton (1664 Trinity College *Of an Universall Language*)
 * **1. Yazar, Sorumlu Yazar & WERR Mimarı:** Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM)) — Anadolu University & ITouch Systems, Çukurova Teknokent (`ask@answerr.me`)
-* **2. Yazar & Sistem Geliştirme Lideri:** Bekirhan Dağlı ([@bdagli](https://github.com/bdagli)) — ITouch Systems, Çukurova Teknokent (Gramer ve Çeviri Motoru, `engine/gunes_dili.py`)
-* **3. Yazar & Mimari Lideri:** Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)) — Toros Science High School, MEV (Toros University)
+* **2. Yazar & Sistem Geliştirme Lideri:** Bekirhan Dağlı ([@bdagli_web](https://github.com/bdagli_web)) — ITouch Systems, Çukurova Teknokent (Gramer ve Çeviri Motoru, `engine/gunes_dili.py`)
+* **3. Yazar & Mimari Lideri:** Dağhan Dağlı ([@lexovian](https://github.com/lexovian)) — Toros Science High School, MEV (Toros University)
 * **4. Yazar & Platform Mühendisliği Lideri:** Semih Salar — ITouch Systems, Çukurova Teknokent (Kozmik ve Felsefi Arşiv, `archive/`)
 * **5. Yazar & Akademik Koordinasyon:** Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)) — Mersin University & Yusuf Kalkavan Anatolian High School
 * **Tescilli Patent Öncelikleri:**
@@ -103,7 +103,7 @@
 * **Uygulanan Değişiklik:**
   * `docs/index.html` ve `README.md` içerisinde iki bağımsız bölüm oluşturuldu:
     1. **Tarihsel Kurucu Vizyon ve Felsefi Öncüler:** Atatürk (Kurucu Deha ve Başöğretmen) ve Newton (17. Yüzyıl Fonetik Evrensel Dil Tasarımı).
-    2. **Proje Geliştirme Ekibi & Modern Katkıda Bulunanlar:** [@pCwOrM](https://github.com/pCwOrM), Bekirhan Dağlı ([@bdagli](https://github.com/bdagli)), Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian)), Semih Salar ve Dr. Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)).
+    2. **Proje Geliştirme Ekibi & Modern Katkıda Bulunanlar:** [@pCwOrM](https://github.com/pCwOrM), Bekirhan Dağlı ([@bdagli_web](https://github.com/bdagli_web)), Dağhan Dağlı ([@lexovian](https://github.com/lexovian)), Semih Salar ve Dr. Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)).
 
 #### 2. 🧪 Sayfa İçi Tam Donanımlı Güneş Dili Laboratuvar Motoru (`#lab-tam-motor`)
 * **Gerekçe:** Kullanıcının harici bir sayfaya gitmeksizin tüm sözlük köklerine, 53 ek ailesine ve morfolojik tersine çözümleme motoruna doğrudan tek sayfa üzerinden erişebilmesi sağlandı.

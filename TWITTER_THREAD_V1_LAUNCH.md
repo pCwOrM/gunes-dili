@@ -97,5 +97,5 @@ Atatürk'ün vizyonuyla, bilimin emrinde! ☀️🇹🇷
 ---
 
 ## 🏷️ İlgili Mentionlar ve Hashtag Havuzu (Yanıt veya Biyografi İçin)
-- **Geliştirici Mentionları:** `@pCwOrM` (Volkan Dağlı), `@bdagli` (Bekirhan Dağlı), `@leanprover` (Lean 4 Topluluğu)
+- **Geliştirici Mentionları:** `@pCwOrM` (Volkan Dağlı), `@bdagli_web` (Bekirhan Dağlı), `@leanprover` (Lean 4 Topluluğu)
 - **Hashtagler:** `#GüneşDili #GunesLang #Atatürk #Compiler #ProgrammingLanguage #Lean4 #FormalVerification #OpenSource #TürkMüziği`

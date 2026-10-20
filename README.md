@@ -19,7 +19,7 @@
 [![Mandelbrot Fractal Trajectory](https://img.shields.io/badge/Fractal-Mandelbrot%20MFNS-orange.svg)](https://doi.org/10.5281/zenodo.22802921)
 [![Ecosystem: answerr.me](https://img.shields.io/badge/Ecosystem-answerr.me-0284c7.svg)](https://answerr.me)
 [![Sister Repo: WerreduR v4.0](https://img.shields.io/badge/Sister%20Repo-WerreduR%20v4.0-059669.svg)](https://github.com/jesmaat/WerreduR)
-[![Sister Repo: WerrSoma](https://img.shields.io/badge/Sister%20Repo-WerrSoma-purple.svg)](https://github.com/Lexovian/WerrSoma)
+[![Sister Repo: WerrSoma](https://img.shields.io/badge/Sister%20Repo-WerrSoma-purple.svg)](https://github.com/lexovian/WerrSoma)
 [![Sister Repo: GAP--Lean4](https://img.shields.io/badge/Sister%20Repo-GAP--Lean4-7c3aed.svg)](https://github.com/pCwOrM/gap-lean4-port)
 [![Sister Repo: WERRobotics](https://img.shields.io/badge/Sister%20Repo-WERRobotics%20(Arduino%20Edge%20AI)-ff9100.svg?logo=arduino&logoColor=white)](https://github.com/pCwOrM/WERRobotics)
 [![Sister Repo: Schönhage Record](https://img.shields.io/badge/Sister%20Repo-Sch%C3%B6nhage%20Record-brightgreen.svg)](https://github.com/pCwOrM/integer-mult-bounds)
@@ -43,7 +43,7 @@
 | 🎓 **Teknik ve Akademik Rehber** | Dilbilimciler, matematikçiler ve mühendisler için biçimsel ispatlar (T1-T5) | [İncele](docs/TEKNIK_VE_AKADEMIK_REHBER.md) |
 | 🌍 **Halka Anlatım Rehberi** | Karmaşık terimlerden arındırılmış, 7'den 77'ye Güneş Dili ve Atatürk mirası | [İncele](docs/HALKA_ANLATIM_REHBERI.md) |
 | 🛡️ **Açık Bilim ve Fikri Mülkiyet Stratejisi** | Patent rüçhanları ve halka açık bilim standartları | [İncele](docs/ACIKLIK_GIZLILIK_MATRISI.md) |
-| ⚖️ **BBL Lisans Modeli** | Barış, Bilim, Liyakat ve Beerware/Çay dual lisans manifestosu | [İncele](docs/BBL_LISANS_DEGERLENDIRMESI.md) |
+| ⚖️ **BSL 1.1 Lisans Modeli** | Business Source License 1.1: Açık bilim & akademik araştırma serbestisi, ITouch Systems güvencesi | [İncele](LICENSE) |
 
 ---
 
@@ -288,11 +288,11 @@ Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel i
 * **☀️ Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM))** — *1. Yazar, Sorumlu Yazar & WERR Çekirdek Mimarı*  
   Anadolu University & ITouch Systems, Çukurova Teknokent  
   *ORCID:* [0009-0000-1587-8703](https://orcid.org/0009-0000-1587-8703) | *İletişim:* `ask@answerr.me`  
-  Sistemin hem ruhunu üfleyen hem tutkalını süren kurucu mimar; WERR fraktal sentezi, MFNS teorem modelleri, 53 Holder koması ses-foton fiziği ve ontolojik omurganın kurucusu.
-* **⚙️ Bekirhan Dağlı ([@bdagli](https://github.com/bdagli))** — *2. Yazar & Sistem Geliştirme Lideri*  
+  WERR Kurucu Mimarı & Baş Araştırmacı; sistem ontolojisi, WERR fraktal sentezi, MFNS teorem modelleri, 53 Hölder koması ses-foton fiziği ve disiplinlerarası kuramsal mimarinin kurucusu.
+* **⚙️ Bekirhan Dağlı ([@bdagli_web](https://github.com/bdagli_web))** — *2. Yazar & Sistem Geliştirme Lideri*  
   ITouch Systems, Çukurova Teknokent  
   Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`), kök sözlüğünün ve O(N) DFA durum makinesinin kurucu geliştiricisi.
-* **🔬 Dağhan Dağlı ([@Lexovian](https://github.com/Lexovian))** — *3. Yazar & Mimari Lideri*  
+* **🔬 Dağhan Dağlı ([@lexovian](https://github.com/lexovian))** — *3. Yazar & Mimari Lideri*  
   Toros Science High School, Mersin Education Foundation (Toros University), Mersin  
   *ORCID:* [0009-0003-2492-8313](https://orcid.org/0009-0003-2492-8313)  
   Işıma ve Rezonans Tabanlı Deterministik Morfolojik Tokenizer'ın (`tokenizer/gunes_dil_v4.py`), arşifonem kurallarının ve tekil konsonant kümesi sınır algoritmasının mimarı.
@@ -351,7 +351,7 @@ Güneş Dili, CERN Zenodo, arXiv ve GitHub üzerinde yayınlanan ve birbiriyle �
 | **Paper 3: WerreduR** | Procedural Fractal Pedagogy (v4.0) | [`10.5281/zenodo.23128224`](https://doi.org/10.5281/zenodo.23128224) | [`10.5281/zenodo.22999420`](https://doi.org/10.5281/zenodo.22999420) | Hedef: Q1 AIED / CAEAI • [Canlı Simülatör](https://pcworm.github.io/WerreduR/) | [`jesmaat/WerreduR`](https://github.com/jesmaat/WerreduR) (Mirror: [`pCwOrM/WerreduR`](https://github.com/pCwOrM/WerreduR)) |
 | **Paper 4: BH Page** | Black Hole Page Curve & Quantum Gravity (v5) | [`10.5281/zenodo.23072120`](https://doi.org/10.5281/zenodo.23072120) | [`10.5281/zenodo.22961999`](https://doi.org/10.5281/zenodo.22961999) | CERN Record 22978460 • Stabilizer Kodları | [`pCwOrM/mandelbrot-fractal-neural-synthesis`](https://github.com/pCwOrM/mandelbrot-fractal-neural-synthesis) |
 | **Paper 5: Formal** | Lean 4 40-Core Gauntlet (v2) | [`10.5281/zenodo.22983889`](https://doi.org/10.5281/zenodo.22983889) | [`10.5281/zenodo.22974543`](https://doi.org/10.5281/zenodo.22974543) | [`arXiv:2609.33066`](https://arxiv.org/abs/2609.33066) • [HF Paper](https://huggingface.co/papers/2609.33066) | [`pCwOrM/werr`](https://github.com/pCwOrM/werr) & [`werracle`](https://github.com/pCwOrM/werracle) |
-| **Paper 6: WerrSoma** | Drosophila Connectome (158K Nöron, v1.1) | [`10.5281/zenodo.23072929`](https://doi.org/10.5281/zenodo.23072929) | [`10.5281/zenodo.22996625`](https://doi.org/10.5281/zenodo.22996625) | `arXiv:submit/8161759` [on hold] • [3D Portal](https://werrsoma.answerr.me/) | [`Lexovian/WerrSoma`](https://github.com/Lexovian/WerrSoma) (Mirror: [`pCwOrM/WerrSoma`](https://github.com/pCwOrM/WerrSoma)) |
+| **Paper 6: WerrSoma** | Drosophila Connectome (158K Nöron, v1.1) | [`10.5281/zenodo.23072929`](https://doi.org/10.5281/zenodo.23072929) | [`10.5281/zenodo.22996625`](https://doi.org/10.5281/zenodo.22996625) | `arXiv:submit/8161759` [on hold] • [3D Portal](https://werrsoma.answerr.me/) | [`Lexovian/WerrSoma`](https://github.com/lexovian/WerrSoma) (Mirror: [`pCwOrM/WerrSoma`](https://github.com/pCwOrM/WerrSoma)) |
 | **Paper 7: Werracle** | Sub-Cent Intra-Block EVM AI Oracle (v1) | [`10.5281/zenodo.22942599`](https://doi.org/10.5281/zenodo.22942599) | [`10.5281/zenodo.22942598`](https://doi.org/10.5281/zenodo.22942598) | [`arXiv:2609.30719`](https://arxiv.org/abs/2609.30719) • [HF Paper](https://huggingface.co/papers/2609.30719) | [`pCwOrM/werracle`](https://github.com/pCwOrM/werracle) & [`werralem`](https://github.com/pCwOrM/werralem) |
 | **Paper 8: Schönhage**| Tensor Taşıyıcı Sıkıştırma ($W=176M$) | [`10.5281/zenodo.23268580`](https://doi.org/10.5281/zenodo.23268580) | [`10.5281/zenodo.23268579`](https://doi.org/10.5281/zenodo.23268579) | [`arXiv:2610.14263`](https://arxiv.org/abs/2610.14263) ([PDF](https://arxiv.org/pdf/2610.14263) • [DOI: `10.48550/arXiv.2610.14263`](https://doi.org/10.48550/arXiv.2610.14263) • `submit/8207241` [published]) • [CrocSwap #226 (Incorporated)](https://github.com/CrocSwap/integer-mult-bounds/pull/226) • [Contributors](https://github.com/CrocSwap/integer-mult-bounds/blob/50d768818f579d4e165b4c257c6ee25bca300802/CONTRIBUTORS.md) • [Audit `50d76881`](https://github.com/CrocSwap/integer-mult-bounds/blob/50d768818f579d4e165b4c257c6ee25bca300802/docs/research/community-reconciliation-next100-review.md) | [`pCwOrM/integer-mult-bounds`](https://github.com/pCwOrM/integer-mult-bounds) |
 | **Paper 9: Güneş Dili**| Deterministik Morfoloji & 53 Koma (Bu Çalışma) | [`10.5281/zenodo.23273006`](https://doi.org/10.5281/zenodo.23273006) | [`10.5281/zenodo.23273005`](https://doi.org/10.5281/zenodo.23273005) | Lean 4 Doğrulanmış • [Canlı Portal](https://pcworm.github.io/gunes-dili/) | [`pCwOrM/gunes-dili`](https://github.com/pCwOrM/gunes-dili) |
@@ -362,7 +362,7 @@ Güneş Dili, CERN Zenodo, arXiv ve GitHub üzerinde yayınlanan ve birbiriyle �
 | **Ayrık Alg** | GAP-Lean4 Biçimsel Doğrulanmış Port (35 Teorem)| [`10.5281/zenodo.23045504`](https://doi.org/10.5281/zenodo.23045504) | [`10.5281/zenodo.23045503`](https://doi.org/10.5281/zenodo.23045503) | [`arXiv:2609.38492`](https://arxiv.org/abs/2609.38492) • [HF Paper](https://huggingface.co/papers/2609.38492) | [`pCwOrM/gap-lean4-port`](https://github.com/pCwOrM/gap-lean4-port) |
 | **Robotik: WERRobotics** | Sıfır-Bellek Arduino & Gömülü Edge AI Çekirdeği (`v0.5.1`) | [`10.5281/zenodo.22939253`](https://doi.org/10.5281/zenodo.22939253) | [`10.5281/zenodo.22867425`](https://doi.org/10.5281/zenodo.22867425) | ATmega328P / ESP32 / STM32 (`0 Byte Heap`, `TR 2026/016633`) | [`pCwOrM/WERRobotics`](https://github.com/pCwOrM/WERRobotics) |
 
-Ayrıntılı yasal ve felsefi analiz için [BBL Lisans Değerlendirmesi](docs/BBL_LISANS_DEGERLENDIRMESI.md) belgesini inceleyiniz.
+Ayrıntılı yasal ve kurumsal kapsam için [Business Source License 1.1 (BSL 1.1)](LICENSE) belgesini inceleyiniz.
 
 ---
 
