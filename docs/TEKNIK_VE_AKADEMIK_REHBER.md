@@ -62,7 +62,7 @@ $$C = \text{MERKEZ} + r \cdot e^{i \cdot \theta}$$
 * **Rezonans Faz Açısı ($\theta$):** İşlev ailesinin kutupsal fazı:
   $$\theta = \frac{\text{İndeks}(\text{Aile})}{13} \times 2\pi + \delta$$
 
-Bu parametre ile Mandelbrot kaçış dinamikleri ($Z_{n+1} = Z_n^2 + C$) çalıştırılarak kelimenin fraktal faz yörüngesi elde edilir.
+Bu parametre ile polinom kaçış dinamikleri (Polynomial Escape Dynamics, $Z_{n+1} = Z_n^2 + C$) ve prosedürel sınır analizi koşturularak kelimenin fraktal faz yörüngesi elde edilir.
 
 ---
 

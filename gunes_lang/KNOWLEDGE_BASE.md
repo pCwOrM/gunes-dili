@@ -70,9 +70,9 @@ Program blokları Güneş'in ilk enerjisini simgeleyen `ag` kökü ile açılır
 
 ## 📖 3. Güneş Dili 53 Kanonik Ek Sözlüğü (Z₅₃ Harmonik Tablosu)
 
-Güneş Dili'nin 53 eşit parçalı koma sistemine (53-TET) ve Mandelbrot fraktal koordinatlarına dayanan 53 kanonik ek ailesi:
+Güneş Dili'nin 53 eşit parçalı koma sistemine (53-TET) ve fraktal faz koordinatlarına (Procedural Boundary Dynamics) dayanan 53 kanonik ek ailesi:
 
-| Koma (#) | Kanonik Ek | Frekans (Hz) | Mandelbrot Koordinatı | Dilbilgisel İşlev / Yuva |
+| Koma (#) | Kanonik Ek | Frekans (Hz) | Fraktal Faz Koordinatı (c = x + yi) | Dilbilgisel İşlev / Yuva |
 | :---: | :---: | :---: | :---: | :--- |
 | **00** | `-la` | 440.0 Hz | `(-0.7387, +0.1357)` | Çokluk / Sahiplik / Radyal Katman 1 |
 | **01** | `-ta` | 445.8 Hz | `(-0.7438, +0.1325)` | Bulunma Hali (-da/-de/-ta/-te) |

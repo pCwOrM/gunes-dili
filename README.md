@@ -16,7 +16,7 @@
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![License: BSL 1.1](https://img.shields.io/badge/License-BSL%201.1-red.svg)](./LICENSE)
 [![UD Turkish Validated](https://img.shields.io/badge/UD%20Turkish-Validated-success.svg)](https://universaldependencies.org/)
-[![Mandelbrot Fractal Trajectory](https://img.shields.io/badge/Fractal-Mandelbrot%20MFNS-orange.svg)](https://doi.org/10.5281/zenodo.22802921)
+[![Procedural Boundary Dynamics](https://img.shields.io/badge/Dynamics-Procedural%20Boundary-orange.svg)](https://doi.org/10.5281/zenodo.22802921)
 [![Ecosystem: answerr.me](https://img.shields.io/badge/Ecosystem-answerr.me-0284c7.svg)](https://answerr.me)
 [![Sister Repo: WerreduR v4.0](https://img.shields.io/badge/Sister%20Repo-WerreduR%20v4.0-059669.svg)](https://github.com/jesmaat/WerreduR)
 [![Sister Repo: WerrSoma](https://img.shields.io/badge/Sister%20Repo-WerrSoma-purple.svg)](https://github.com/lexovian/WerrSoma)
@@ -153,7 +153,7 @@ print(cozum["kok"], cozum["ekler"])
 | **T2 (Kaba Kuvvet Doğrulama)** | 1.291.220 ek dizisi | **%100 (0 hata)** | Geçerli her kelimenin tam olarak 1 çözümü vardır. |
 | **T3 (Sınanabilirlik)** | 20.000 rastgele dizi | **%3.27 kabul** | Rastgele harf yığınları elenir; kurallar katıdır. |
 | **T4 (Universal Dependencies)** | BOUN & IMST Test Setleri | **%100 gidiş-dönüş** | Türkçeden Güneş Dili'ne kayıpsız çeviri ve geri-alım. |
-| **T5 (Fraktal Yapay Zeka)** | Mandelbrot Gömme Modeli | **%94.3 doğruluk** | Sinir ağı fraktal uzayda morfemleri sınıflandırabilir. |
+| **T5 (Fraktal Yapay Zeka)** | Fraktal Faz Gömme Modeli (Procedural Boundary Embedding) | **%94.3 doğruluk** | Sinir ağı fraktal uzayda morfemleri sınıflandırabilir. |
 
 ---
 

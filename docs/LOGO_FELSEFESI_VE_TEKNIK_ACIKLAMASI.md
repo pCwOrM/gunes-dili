@@ -49,7 +49,7 @@ Logo yalnızca sanatsal bir görsel değil; arkasındaki çalışan kod mimarisi
 ### B. Mandelbrot Fraktal Spirali (WERR Külliyatı Uyumu)
 * Işınların arkasında kıvrılan fraktal desen; Mandelbrot kümesinin **Seahorse Valley** sınır geometrisidir ($c = -0.7453 + 0.1127i$).
 * Dilin sonsuz üretkenliği (Chomsky sonsuzluğu), fraktalların sonlu alanda sonsuz çevre üretme yetisiyle özdeştir.
-* WERR külliyatının sıfır bellekli fraktal karar motoru (Deterministic Chaotic Mandelbrot Boundary Escape), burada sözcüklerin anlam yörüngelerini sentezleyen fiziksel motor olarak logonun dokusuna işlenmiştir.
+* WERR külliyatının sıfır bellekli karar motoru (Procedural Boundary Dynamics & Deterministic Polynomial Escape), burada sözcüklerin anlam yörüngelerini sentezleyen fiziksel motor olarak logonun dokusuna işlenmiştir.
 
 ### C. Nöromorfik Sinirsel Lifler (WerrSoma Entegrasyonu)
 * Arka plandaki derin lacivert uzayda parıldayan ince mavi lifler; Princeton FlyWire Drosophila bütün-beyin konnektomunun 158.262 nöronluk biyofiziksel akson yollarını simgeler.

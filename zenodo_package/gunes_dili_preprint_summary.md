@@ -80,6 +80,6 @@ Dönüştürücü $\tau_{\text{mut}}$, ünlü uyumu ($\mathcal{H}_{\text{pal}}, 
 ---
 
 ## 5. Biyo-Sentetik Nöromorfik BCI Entegrasyonu
-* **1.024-Pin WERR Koprocessörü:** Mandelbrot sınır kaçış dinamikleri ($\partial M$) ile 0 Byte VRAM kullanarak $< 0.5\text{ ms}$ gecikmeyle Sistem-1 dilsel refleks sınıflandırması.
+* **1.024-Pin WERR Koprocessörü:** Prosedürel sınır dinamikleri (Procedural Boundary Dynamics, TR 2026/016285) ve polinom kaçış analizi ($\partial M$) ile 0 Byte GPU VRAM kullanarak $< 0.5\text{ ms}$ gecikmeyle Sistem-1 dilsel refleks sınıflandırması.
 * **FlyWire 158k Drosophila Konnektomu:** EB elipsoid halka çekici (von Mises bump, $R = 0.841$) ve mantar gövdesi (MB) projeksiyonu.
 * **Anti-Burnout Koruması:** 20.0 ms refrakter klempleme ve GABAerjik geri-besleme ile eksitotoksik paroksismal polarizasyon tamamen önlenir (Ağ Kararlılık İndeksi $\text{NSI} = 0.965$).

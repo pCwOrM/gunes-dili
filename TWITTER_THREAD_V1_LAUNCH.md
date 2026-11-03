@@ -26,7 +26,7 @@
 
 3. 📚 **Görsel 3 (Güneş-Lang Bilgi Bankası - Wiki):**  
    Dosya: [`assets/twitter/gunes_lang_wiki_action.png`](file:///c:/Users/maat/Documents/antigravity/gunes-dili/assets/twitter/gunes_lang_wiki_action.png)  
-   *İçerik: 53 Kanonik Ek Sözlüğü (Z53), Mandelbrot koordinatları ve teknik mimari özellikleri.*
+   *İçerik: 53 Kanonik Ek Sözlüğü (Z53), fraktal faz koordinatları ve prosedürel sınır dinamikleri.*
 
 ---
 
@@ -69,7 +69,7 @@ Canlı IDE: https://pcworm.github.io/gunes-dili/ide/
 ```text
 2/3 📚 Güneş-Lang Bilgi Bankası (Wiki)
 
-53 Hölder komasından Mandelbrot fraktal koordinatlarına (C = X + Yi):
+53 Hölder komasından fraktal faz koordinatlarına (C = X + Yi):
 • 53 kanonik ek ailesi
 • Canlı filtreli akustik frekans sözlüğü
 • O(L) FST ve Lean 4 makine onaylı sınır biricikliği
