@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Disallow: /gunes-dili/test/
+Disallow: /test/
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+Sitemap: https://pcworm.github.io/gunes-dili/sitemap.xml

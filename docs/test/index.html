@@ -1,18 +1,91 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
+      <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Güneş Dili (Sun Language) Ekosistemi | Deterministik & Fraktal Dil Mimarisi</title>
-  
-  <!-- SEO & Open Graph Metadata -->
-  <meta name="description" content="Mustafa Kemal Atatürk'ün 1935 Güneş-Dil kuramının deterministik morfoloji, 53 Holder koması ve prosedürel sınır rezonansı (Procedural Boundary Dynamics / MFNS) ile matematiksel olarak kanıtlanabilir evrensel dil motoru.">
-  <meta name="keywords" content="Güneş Dili, Atatürk 1935, Newton 1664, Mandelbrot, Fraktal Dil, Lean 4, Deterministik Morfoloji, WERR, answerr">
-  <meta name="author" content="pCwOrM, bdagli_web, lexovian, Semih Salar, jesmaat">
-  <meta property="og:title" content="Güneş Dili Ekosistemi — Deterministik Evrensel Dil">
-  <meta property="og:description" content="Dilde %100 biçimbilimsel determinizm, 0 belirsizlik, 53 Holder koması ses rezonansı ve Lean 4 makine onaylı ispatlar.">
-  <meta property="og:image" content="../assets/logo.png">
+  <title>☀️ Güneş Dili — Deterministik Morfoloji, 53 Hölder Koması & Lean 4 Dil Mimarisi</title>
+
+  <!-- Primary SEO Metadata -->
+  <meta name="description" content="Mustafa Kemal Atatürk'ün 1935 Güneş-Dil kuramının deterministik morfoloji (Chomsky Tip-3 DFA), 53 Hölder koması akustik rezonans, prosedürel sınır dinamiği (Procedural Boundary Dynamics / MFNS) ve Lean 4 makine onaylı ispatlarla kanıtlanabilir evrensel dil motoru.">
+  <meta name="keywords" content="Güneş Dili, Sun Language, Atatürk 1935, Isaac Newton 1664, Deterministik Morfoloji, 53 Hölder Koması, Procedural Boundary Dynamics, Polynomial Escape Dynamics, Lean 4, Güneş-Lang, WERR, answerr">
+  <meta name="author" content="Volkan Dağlı (@pCwOrM), Bekirhan Dağlı (@bdagli_web), Dağhan Dağlı (@lexovian), Semih Salar, Zerrin Dağlı (@jesmaat)">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://pcworm.github.io/gunes-dili/">
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="theme-color" content="#05070B">
+
+  <!-- Open Graph / WhatsApp / LinkedIn / Facebook / Telegram -->
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://pcworm.github.io/gunes-dili/">
+  <meta property="og:site_name" content="Güneş Dili Araştırma Portalı • WERR Külliyatı">
+  <meta property="og:title" content="☀️ Güneş Dili — %100 Deterministik Morfoloji, 53 Hölder Koması & Kanıtlanabilir Dil Mimarisi">
+  <meta property="og:description" content="1935 Güneş-Dil Kuramı, Newton 1664 ve Prosedürel Sınır Dinamiği (MFNS) sentezi. %100 biçimbilimsel determinizm, 53 Hölder koması ses rezonansı, 0 Bytes VRAM ve Lean 4 (0 sorry) formal ispatları.">
+  <meta property="og:image" content="https://pcworm.github.io/gunes-dili/assets/og-main.png">
+  <meta property="og:image:secure_url" content="https://pcworm.github.io/gunes-dili/assets/og-main.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Güneş Dili — Deterministik Morfoloji, 53 Hölder Koması ve Fraktal Faz Mimarisi">
+  <meta property="og:locale" content="tr_TR">
+
+  <!-- Twitter / X Large Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@pCwOrM">
+  <meta name="twitter:creator" content="@pCwOrM">
+  <meta name="twitter:url" content="https://pcworm.github.io/gunes-dili/">
+  <meta name="twitter:title" content="☀️ Güneş Dili — %100 Deterministik Morfoloji, 53 Hölder Koması & Kanıtlanabilir Dil Mimarisi">
+  <meta name="twitter:description" content="1935 Güneş-Dil Kuramı, Newton 1664 ve Prosedürel Sınır Dinamiği (MFNS) sentezi. %100 biçimbilimsel determinizm, 53 Hölder koması ses rezonansı, 0 Bytes VRAM ve Lean 4 (0 sorry) formal ispatları.">
+  <meta name="twitter:image" content="https://pcworm.github.io/gunes-dili/assets/og-main.png">
+  <meta name="twitter:image:alt" content="Güneş Dili — Deterministik Morfoloji, 53 Hölder Koması ve Fraktal Faz Mimarisi">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://pcworm.github.io/gunes-dili/#website",
+        "url": "https://pcworm.github.io/gunes-dili/",
+        "name": "Güneş Dili Araştırma Portalı",
+        "alternateName": "Sun Language Deterministic Morphology & Fractal Phase Architecture",
+        "inLanguage": "tr-TR",
+        "publisher": {
+          "@type": "Organization",
+          "name": "WERR Collaborative Research Group • ITouch Systems",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://pcworm.github.io/gunes-dili/assets/logo.png"
+          }
+        }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://pcworm.github.io/gunes-dili/#article",
+        "headline": "Güneş Dili: %100 Deterministik Morfoloji, 53 Hölder Koması ve Prosedürel Sınır Dinamiği (MFNS)",
+        "description": "Mustafa Kemal Atatürk'ün 1935 Güneş-Dil kuramı ve Isaac Newton'un 1664 evrensel dil taslağının, deterministik sonlu durum makineleri (DFA), 53 Hölder koması akustik rezonansı, prosedürel sınır dinamiği (Procedural Boundary Dynamics) ve Lean 4 formal ispatlarıyla birleştirilen evrensel dil mimarisi.",
+        "identifier": "https://doi.org/10.5281/zenodo.23273006",
+        "sameAs": "https://doi.org/10.5281/zenodo.23273006",
+        "url": "https://pcworm.github.io/gunes-dili/",
+        "image": "https://pcworm.github.io/gunes-dili/assets/og-main.png",
+        "author": [
+          {"@type": "Person", "name": "Volkan Dağlı", "url": "https://github.com/pCwOrM"},
+          {"@type": "Person", "name": "Bekirhan Dağlı", "url": "https://github.com/bdagli_web"},
+          {"@type": "Person", "name": "Dağhan Dağlı", "url": "https://github.com/lexovian"},
+          {"@type": "Person", "name": "Semih Salar"},
+          {"@type": "Person", "name": "Zerrin Dağlı", "url": "https://github.com/jesmaat"}
+        ]
+      }
+    ]
+  }
+  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1035,7 +1108,7 @@
     /* DOCUMENTATION HUB CARDS */
     .docs-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
       gap: 22px;
       margin-bottom: 90px;
     }
@@ -1087,7 +1160,7 @@
     /* HISTORICAL MANUSCRIPTS & ARCHIVES */
     .archive-showcase {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
       gap: 22px;
       margin-bottom: 90px;
     }
@@ -1259,7 +1332,7 @@
     /* MODERN ENGINEERING & DEV TEAM */
     .architects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
       gap: 20px;
       margin-bottom: 90px;
     }
@@ -1485,7 +1558,6 @@
       canvas#resonanceCanvas { max-width: 270px; }
     }
   </style>
-  <meta name="robots" content="noindex">
   <link rel="stylesheet" href="enhance.css">
 </head>
 <body data-page="home">
@@ -1764,7 +1836,7 @@
       </div>
 
       <div style="background: var(--bg-card); border: 1px solid var(--border-bright); border-radius: 12px; padding: 32px; box-shadow: 0 10px 40px rgba(0,0,0,0.7); position: relative; overflow: hidden;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-bottom: 28px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 24px; margin-bottom: 28px;">
           <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,215,0,0.15); border-radius: 8px; padding: 20px;">
             <div style="font-size: 24px; margin-bottom: 8px;">⚡</div>
             <h3 style="color: var(--gold); font-size: 16px; margin-bottom: 6px;">O(L) Deterministik Ayrıştırma</h3>
@@ -2009,7 +2081,7 @@
         Güneş Dili mimarisinin 3 temel aksiyomu ve determinizm teoremleri, Lean 4 bağımlı tip teorisinde makine onaylı olarak ispatlanmıştır:
       </p>
 
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:18px;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap:18px;">
         <!-- Teorem 1 -->
         <div class="lean-code-card">
           <div style="color:var(--gold); font-weight:700; margin-bottom:6px;">Aksiyom 1: 1 Ek = 1 Biçim = 1 İşlev (İnjektiflik)</div>
@@ -2116,7 +2188,7 @@
         Kaotik aksiyon potansiyeli vızıltılarının Güneş Dili devresiyle ulvi ve evrensel bir sentaksa dönüşümü.
       </p>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 32px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 24px; margin-bottom: 32px;">
         <!-- Sol: Siyah Terminal (Ham Gürültü) -->
         <div style="background: #080B12; border: 1px solid rgba(255, 82, 82, 0.3); border-radius: 14px; padding: 22px;">
           <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
@@ -2166,7 +2238,7 @@
       </div>
 
       <!-- Altı Sütun Genişleme Paneli -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 24px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 16px; margin-top: 24px;">
         <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 18px;">
           <h4 style="font-family: var(--font-display); font-size: 16px; color: var(--gold); margin-bottom: 6px;">🕊️ Mantıku't-Tayr (Kuş Dili)</h4>
           <p style="font-size: 13px; color: var(--text-muted);">Tüm hayvanlar aleminin frekans ve aksiyon potansiyellerini 53 komalık koda tercüme eden türler arası iletişim köprüsü.</p>
@@ -2261,7 +2333,7 @@
           <span style="font-family: var(--font-mono); font-size: 12px; color: var(--gold-light); background: rgba(255, 215, 0, 0.1); padding: 4px 12px; border-radius: 6px; border: 1px solid rgba(255, 215, 0, 0.2);">Çevrimdışı ve Yerel Okuma</span>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 16px;">
           <div class="doc-card" style="padding: 18px; border-color: var(--gold); background: rgba(255, 215, 0, 0.08);">
             <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
               <span style="font-size: 26px;">📜</span>

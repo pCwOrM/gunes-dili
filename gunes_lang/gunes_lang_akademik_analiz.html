@@ -1,10 +1,71 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Güneş-Lang: Akademik Programlama Dili Analiz Raporu</title>
-    <style>
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📜 Güneş-Lang Akademik Raporu — Biçimsel Dil Kuramı, Deterministik FST & Derleyici Mimarisi</title>
+
+  <!-- Primary SEO Metadata -->
+  <meta name="description" content="Güneş-Lang programlama dilinin biçimsel dil teorisi (Chomsky Hiyerarşisi), deterministik sonlu durum dönüştürücüleri (FST), O(N) zaman/alan karmaşıklığı, 53 Hölder koması rezonansı ve Lean 4 doğrulama mimarisi üzerine akademik analiz raporu.">
+  <meta name="keywords" content="Güneş-Lang Akademik Rapor, Biçimsel Dil Kuramı, Chomsky Tip-3, Deterministik FST, Lean 4, 53 Hölder Koması, Nöromorfik BCI, WERR">
+  <meta name="author" content="Volkan Dağlı (@pCwOrM), Bekirhan Dağlı (@bdagli_web), Dağhan Dağlı (@lexovian), Semih Salar, Zerrin Dağlı (@jesmaat)">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://pcworm.github.io/gunes-dili/gunes_lang_akademik_analiz.html">
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/svg+xml" href="../docs/assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../docs/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../docs/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../docs/assets/apple-touch-icon.png">
+  <link rel="shortcut icon" href="../docs/favicon.ico">
+  <link rel="manifest" href="../docs/site.webmanifest">
+  <meta name="theme-color" content="#05070B">
+
+  <!-- Open Graph / WhatsApp / LinkedIn / Facebook / Telegram -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://pcworm.github.io/gunes-dili/gunes_lang_akademik_analiz.html">
+  <meta property="og:site_name" content="Güneş Dili Araştırma Portalı • WERR Külliyatı">
+  <meta property="og:title" content="📜 Güneş-Lang Akademik Analiz Raporu — Chomsky Tip-3 FST, O(N) Ayrıştırma & Derleyici Mimarisi">
+  <meta property="og:description" content="Güneş-Lang programlama dilinin biçimsel dil teorisi (Chomsky Hiyerarşisi), deterministik sonlu durum dönüştürücüleri (FST), O(N) zaman/alan karmaşıklığı ve Lean 4 doğrulama mimarisi üzerine teknik inceleme.">
+  <meta property="og:image" content="https://pcworm.github.io/gunes-dili/assets/og-report.png">
+  <meta property="og:image:secure_url" content="https://pcworm.github.io/gunes-dili/assets/og-report.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Güneş-Lang Akademik Programlama Dili Analiz Raporu">
+  <meta property="og:locale" content="tr_TR">
+
+  <!-- Twitter / X Large Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@pCwOrM">
+  <meta name="twitter:creator" content="@pCwOrM">
+  <meta name="twitter:url" content="https://pcworm.github.io/gunes-dili/gunes_lang_akademik_analiz.html">
+  <meta name="twitter:title" content="📜 Güneş-Lang Akademik Analiz Raporu — Chomsky Tip-3 FST, O(N) Ayrıştırma & Derleyici Mimarisi">
+  <meta name="twitter:description" content="Güneş-Lang programlama dilinin biçimsel dil teorisi (Chomsky Hiyerarşisi), deterministik sonlu durum dönüştürücüleri (FST), O(N) zaman/alan karmaşıklığı ve Lean 4 doğrulama mimarisi üzerine teknik inceleme.">
+  <meta name="twitter:image" content="https://pcworm.github.io/gunes-dili/assets/og-report.png">
+  <meta name="twitter:image:alt" content="Güneş-Lang Akademik Programlama Dili Analiz Raporu">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Güneş-Lang Akademik Analiz Raporu: Biçimsel Dil Kuramı, Deterministik FST Karmaşıklığı ve Derleyici Mimarisi",
+    "url": "https://pcworm.github.io/gunes-dili/gunes_lang_akademik_analiz.html",
+    "identifier": "https://doi.org/10.5281/zenodo.23273006",
+    "description": "Güneş-Lang programlama dilinin biçimsel dil teorisi (Chomsky Hiyerarşisi), deterministik sonlu durum dönüştürücüleri (FST), O(N) zaman/alan karmaşıklığı ve Lean 4 doğrulama mimarisi üzerine teknik inceleme.",
+    "image": "https://pcworm.github.io/gunes-dili/assets/og-report.png",
+    "author": [
+      {"@type": "Person", "name": "Volkan Dağlı"},
+      {"@type": "Person", "name": "Bekirhan Dağlı"},
+      {"@type": "Person", "name": "Dağhan Dağlı"},
+      {"@type": "Person", "name": "Semih Salar"},
+      {"@type": "Person", "name": "Zerrin Dağlı"}
+    ]
+  }
+  </script>
+
+  <style>
         :root {
             --primary: #1e3a8a;
             --primary-light: #3b82f6;
@@ -386,17 +447,116 @@
             }
         }
 
-        @media (max-width: 768px) {
+        /* Top Navigation Bar for Web View */
+        .report-topnav {
+            max-width: 900px;
+            margin: 0 auto 1.25rem auto;
+            background: #0f172a;
+            color: #f8fafc;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
+        }
+        .report-topnav a {
+            color: #fbbf24;
+            text-decoration: none;
+            font-size: 0.82rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.35rem 0.65rem;
+            border-radius: 6px;
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            transition: all 0.2s;
+        }
+        .report-topnav a:hover {
+            background: rgba(251, 191, 36, 0.22);
+            color: #fde68a;
+        }
+        .report-topnav .nav-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        @media print {
+            .report-topnav { display: none !important; }
+        }
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 0.75rem 0.5rem 4.5rem 0.5rem;
+            }
+            .report-topnav {
+                padding: 0.65rem 0.75rem;
+                margin-bottom: 0.85rem;
+                justify-content: center;
+            }
+            .report-topnav .nav-group {
+                justify-content: center;
+            }
             .paper-container {
-                padding: 2rem 1.25rem;
+                padding: 1.5rem 1rem;
+            }
+            h1.title {
+                font-size: 1.45rem;
+            }
+            .subtitle {
+                font-size: 0.95rem;
+            }
+            h2.section-title {
+                font-size: 1.15rem;
+            }
+            p {
+                text-align: left;
+                font-size: 0.94rem;
+            }
+            .abstract-box {
+                padding: 1rem;
+            }
+            .diagram-container {
+                padding: 0.75rem 0.5rem;
+                overflow-x: auto;
             }
             .grid-2 {
                 grid-template-columns: 1fr;
+            }
+            .table-responsive {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                border: 1px solid var(--border);
+                border-radius: 6px;
+            }
+            table.academic-table {
+                min-width: 640px;
+            }
+            .print-btn-container {
+                bottom: 14px;
+                left: 14px;
+                right: auto;
+            }
+            .print-btn {
+                padding: 0.65rem 1.1rem;
+                font-size: 0.82rem;
             }
         }
     </style>
 </head>
 <body>
+    <nav class="report-topnav" aria-label="Güneş Dili Ekosistem Navigasyonu">
+        <a href="../docs/index.html">☀️ Ana Portal</a>
+        <div class="nav-group">
+            <a href="../docs/ide/index.html">💻 Güneş-Lang Studio IDE</a>
+            <a href="../docs/wiki/index.html">🏛️ Wiki &amp; Sözlük</a>
+            <a href="../docs/lab/index.html">🔬 Canlı Laboratuvar</a>
+        </div>
+    </nav>
 
     <div class="print-btn-container">
         <button class="print-btn" onclick="window.print()">

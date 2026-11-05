@@ -1,0 +1,27 @@
+{
+  "name": "Güneş Dili — Deterministik Morfoloji & Fraktal Faz Mimarisi",
+  "short_name": "Güneş Dili",
+  "description": "1935 Güneş-Dil Kuramı, 53 Hölder Koması, Prosedürel Sınır Dinamiği (MFNS) ve Lean 4 Makine Onaylı Evrensel Dil Motoru.",
+  "start_url": "/gunes-dili/",
+  "scope": "/gunes-dili/",
+  "display": "standalone",
+  "background_color": "#05070B",
+  "theme_color": "#05070B",
+  "icons": [
+    {
+      "src": "/gunes-dili/assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/gunes-dili/assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/gunes-dili/assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

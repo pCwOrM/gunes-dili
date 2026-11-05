@@ -146,6 +146,10 @@ main.ide-container {
   }
 }
 
+main.ide-container > * {
+  min-width: 0;
+}
+
 /* Sol Panel: Editör ve Araç Çubuğu */
 .editor-panel {
   display: flex;
@@ -538,13 +542,16 @@ footer.ide-footer a:hover {
 
 @media (max-width: 768px) {
   header.ide-header {
-    padding: 10px 14px;
+    padding: 10px 12px;
     flex-direction: column;
     align-items: stretch;
     gap: 8px;
   }
   .brand-wrap {
     justify-content: center;
+  }
+  .brand-text h1 {
+    font-size: 16px;
   }
   .nav-links-right {
     justify-content: center;
@@ -556,8 +563,9 @@ footer.ide-footer a:hover {
     font-size: 11.5px;
   }
   main.ide-container {
-    padding: 12px 10px;
+    padding: 10px 8px;
     gap: 14px;
+    grid-template-columns: minmax(0, 1fr);
   }
   .toolbar {
     padding: 8px 10px;
@@ -568,19 +576,45 @@ footer.ide-footer a:hover {
   .toolbar-group {
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
   }
   .btn {
     padding: 6px 10px;
     font-size: 12px;
   }
-  select.sample-select {
-    max-width: 130px;
-    font-size: 11px;
+  .select-dropdown, select.sample-select {
+    flex: 1 1 140px;
+    min-width: 0;
+    max-width: 100%;
+    font-size: 11.5px;
+    padding: 6px 8px;
+    text-overflow: ellipsis;
+  }
+  .editor-body {
+    min-height: 380px;
+  }
+  .line-numbers {
+    width: 36px;
+    padding: 12px 4px;
+    font-size: 11.5px;
+  }
+  .code-input, .highlight-area {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+  .telemetry-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stats-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   footer.ide-footer {
     flex-direction: column;
     text-align: center;
     gap: 6px;
-    padding: 12px 14px;
+    padding: 12px 10px;
   }
 }

@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Güneş-Lang Studio | Çevrimiçi Derleyici & Kodlama Ortamı</title>
-  
-  <meta name="description" content="Atatürk 1935 Güneş Dil Teorisi, Newton 1664 ve Lean 4 ispatlı ilk fonosemantik programlama dili Güneş-Lang için çevrimiçi etkileşimli derleyici ve rezonans motoru.">
-  <meta name="keywords" content="Güneş-Lang, Güneş Dili, Çevrimiçi Derleyici, Online IDE, Lean 4, 53 Holder Koması, WERR">
+  <title>💻 Güneş-Lang Studio — Fonosemantik Programlama Dili, Canlı Derleyici & Rezonans IDE</title>
+
+  <!-- Primary SEO Metadata -->
+  <meta name="description" content="İlk fonosemantik programlama dili Güneş-Lang için tarayıcı tabanlı canlı geliştirme ortamı (IDE): O(N) deterministik AST/DFA ayrıştırıcı, 53 Hölder koması sesli kod yürütümü ve Python/JS/C transpiler.">
+  <meta name="keywords" content="Güneş-Lang Studio, Güneş-Lang IDE, Fonosemantik Programlama Dili, Çevrimiçi Derleyici, Transpiler, 53 Hölder Koması, Lean 4, WERR">
+  <meta name="author" content="Volkan Dağlı (@pCwOrM), Bekirhan Dağlı (@bdagli_web), Dağhan Dağlı (@lexovian), Semih Salar, Zerrin Dağlı (@jesmaat)">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://pcworm.github.io/gunes-dili/ide/">
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="theme-color" content="#05070B">
+
+  <!-- Open Graph / WhatsApp / LinkedIn / Facebook / Telegram -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pcworm.github.io/gunes-dili/ide/">
+  <meta property="og:site_name" content="Güneş Dili Araştırma Portalı • WERR Külliyatı">
+  <meta property="og:title" content="💻 Güneş-Lang Studio — Fonosemantik Programlama Dili & Çevrimiçi Rezonans Derleyicisi">
+  <meta property="og:description" content="Kök-ek matematiğiyle kodlanan ilk fonosemantik programlama dili Güneş-Lang için canlı IDE, AST/DFA ayrıştırıcı, 53 Hölder koması sesli yürütüm ve Python/JS/C transpiler ortamı.">
+  <meta property="og:image" content="https://pcworm.github.io/gunes-dili/assets/og-ide.png">
+  <meta property="og:image:secure_url" content="https://pcworm.github.io/gunes-dili/assets/og-ide.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Güneş-Lang Studio Çevrimiçi Derleyici ve Rezonans IDE">
+  <meta property="og:locale" content="tr_TR">
+
+  <!-- Twitter / X Large Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@pCwOrM">
+  <meta name="twitter:creator" content="@pCwOrM">
+  <meta name="twitter:url" content="https://pcworm.github.io/gunes-dili/ide/">
+  <meta name="twitter:title" content="💻 Güneş-Lang Studio — Fonosemantik Programlama Dili & Çevrimiçi Rezonans Derleyicisi">
+  <meta name="twitter:description" content="Kök-ek matematiğiyle kodlanan ilk fonosemantik programlama dili Güneş-Lang için canlı IDE, AST/DFA ayrıştırıcı, 53 Hölder koması sesli yürütüm ve Python/JS/C transpiler ortamı.">
+  <meta name="twitter:image" content="https://pcworm.github.io/gunes-dili/assets/og-ide.png">
+  <meta name="twitter:image:alt" content="Güneş-Lang Studio Çevrimiçi Derleyici ve Rezonans IDE">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Güneş-Lang Studio — Çevrimiçi Derleyici & Rezonans IDE",
+    "url": "https://pcworm.github.io/gunes-dili/ide/",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Web Browser (Zero-VRAM)",
+    "description": "Atatürk 1935 Güneş-Dil Teorisi, Newton 1664 ve Lean 4 ispatlı ilk fonosemantik programlama dili Güneş-Lang için çevrimiçi derleyici, AST/DFA ayrıştırıcı, 53 Hölder koması akustik yürütüm ve Python/JS/C transpiler ortamı.",
+    "image": "https://pcworm.github.io/gunes-dili/assets/og-ide.png"
+  }
+  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
