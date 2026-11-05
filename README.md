@@ -286,21 +286,21 @@ Güneş-Dil Teorisinin yegâne kurucusu, dil devriminin önderi ve vizyoneri:
 Güneş Dili'ni modern deterministik durum otomatları (DFA), Lean 4 biçimsel ispatları, morfolojik tokenizer, çeviri motoru ve biyo-sentetik konnektom rezonansıyla geliştiren çalışma grubu ve Zenodo yayın künyesi:
 
 * **☀️ Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM))** — *1. Yazar, Sorumlu Yazar & WERR Çekirdek Mimarı*  
-  Anadolu University & ITouch Systems, Çukurova Teknokent  
+  Anadolu University & ITouch Systems, Cukurova University Science Park  
   *ORCID:* [0009-0000-1587-8703](https://orcid.org/0009-0000-1587-8703) | *İletişim:* `ask@answerr.me`  
   WERR Kurucu Mimarı & Baş Araştırmacı; sistem ontolojisi, WERR fraktal sentezi, MFNS teorem modelleri, 53 Hölder koması ses-foton fiziği ve disiplinlerarası kuramsal mimarinin kurucusu.
 * **⚙️ Bekirhan Dağlı ([@bdagli_web](https://github.com/bdagli_web))** — *2. Yazar & Sistem Geliştirme Lideri*  
-  ITouch Systems, Çukurova Teknokent  
+  ITouch Systems, Cukurova University Science Park  
   Güneş Dili Gramer ve Deterministik Çeviri Motorunun (`engine/gunes_dili.py`), kök sözlüğünün ve O(N) DFA durum makinesinin kurucu geliştiricisi.
 * **🔬 Dağhan Dağlı ([@lexovian](https://github.com/lexovian))** — *3. Yazar & Mimari Lideri*  
-  Toros Science High School, Mersin Education Foundation (Toros University), Mersin  
+  Toros University, Mersin  
   *ORCID:* [0009-0003-2492-8313](https://orcid.org/0009-0003-2492-8313)  
   Işıma ve Rezonans Tabanlı Deterministik Morfolojik Tokenizer'ın (`tokenizer/gunes_dil_v4.py`), arşifonem kurallarının ve tekil konsonant kümesi sınır algoritmasının mimarı.
 * **🌌 Semih Salar** — *4. Yazar & Platform Mühendisliği Lideri*  
-  ITouch Systems, Çukurova Teknokent  
+  ITouch Systems, Cukurova University Science Park  
   Kozmik İşletim Sistemi ontolojisi, Kuantum Palimpsest, Yunus Emre irfanı ve dil-evren rezonansı felsefi arşivlerinin araştırmacısı ve mimarı (`archive/kozmik_ve_kuantum/`).
 * **🛡️ Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat))** — *5. Yazar & Akademik Koordinasyon*  
-  Mersin University & Yusuf Kalkavan Anatolian High School  
+  Mersin University  
   *ORCID:* [0000-0001-9490-6425](https://orcid.org/0000-0001-9490-6425)  
   Çekirdek takım omurgası; akademik koordinasyon, kurumsal strateji, dokümantasyon bütünlüğü ve araştırma yürütücülüğü.
 
@@ -331,7 +331,7 @@ Bu ekosistem ve içerdiği deterministik morfoloji modelleri, **[Business Source
 2. **Ticari Kısıtlama:** Kodların veya modellerin ticari bir NLP/çeviri ürünü, SaaS platformu, ücretli bulut API servisi olarak sunulması veya ITouch Systems / answerr.me ile doğrudan ticari rekabet oluşturacak şekilde kullanılması Licensor'dan yazılı bir **Ticari Kurumsal Lisans** alınmasını gerektirir.
 3. **Dönüşüm Tarihi (Change Date):** **01.01.2030** tarihinde bu yazılım otomatik olarak tam açık kaynaklı **Apache License, Version 2.0** lisansına dönüşür.
 4. **Felsefi Taahhüt (Barış, Bilim ve Liyakat):** Bu yazılım insan onuruna aykırı, yıkıcı veya askeri taarruz amaçlarıyla kullanılamaz; Atatürk'ün 1935 Güneş-Dil mirası ve WERR külliyatı atıf zinciri korunmalıdır.
-5. **Kurumsal İletişim & Lisanslama:** **ITouch Systems** (MERSİS: `0469094455800001`, VKN: `4690944558`, Sanayi Sicil: `827254`, Çukurova Teknokent - Adana, Türkiye) &bull; [info@itouch.com.tr](mailto:info@itouch.com.tr) &bull; [ask@answerr.me](mailto:ask@answerr.me) &bull; KEP: `itouchbilisim@hs01.kep.tr`.
+5. **Kurumsal İletişim & Lisanslama:** **ITouch Systems** (MERSİS: `0469094455800001`, VKN: `4690944558`, Sanayi Sicil: `827254`, Cukurova University Science Park - Adana, Türkiye) &bull; [info@itouch.com.tr](mailto:info@itouch.com.tr) &bull; [ask@answerr.me](mailto:ask@answerr.me) &bull; KEP: `itouchbilisim@hs01.kep.tr`.
 
 ### 🛡️ Sınai Mülkiyet ve Patent Öncelikleri
 Güneş Dili kuramının prosedürel karar motoru, nöromorfik biyolojik rezonansı ve tüm-beyin konnektom telemetrisi tescilli patent başvuruları ile korunmaktadır:
