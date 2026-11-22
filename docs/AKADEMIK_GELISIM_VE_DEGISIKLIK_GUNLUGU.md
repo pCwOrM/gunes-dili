@@ -7,10 +7,10 @@
 
 * **Kurucu Düşünce ve Tarihsel Vizyon:** Gazi Mustafa Kemal Atatürk (1935 Güneş-Dil Teorisi)
 * **Tarihsel Karşılaştırma Arşivi:** Sir Isaac Newton (1664 Trinity College *Of an Universall Language*)
-* **1. Yazar, Sorumlu Yazar & WERR Mimarı:** Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM)) — Anadolu University & ITouch Systems, Çukurova Teknokent (`ask@answerr.me`)
-* **2. Yazar & Sistem Geliştirme Lideri:** Bekirhan Dağlı ([@bdagli_web](https://github.com/bdagli_web)) — ITouch Systems, Çukurova Teknokent (Gramer ve Çeviri Motoru, `engine/gunes_dili.py`)
+* **1. Yazar, Sorumlu Yazar & WERR Mimarı:** Volkan Dağlı ([@pCwOrM](https://github.com/pCwOrM)) — Anadolu University & ITouch Systems, Çukurova Üniversitesi Teknokent (`ask@answerr.me`)
+* **2. Yazar & Sistem Geliştirme Lideri:** Bekirhan Dağlı ([@bdagli_web](https://github.com/bdagli_web)) — ITouch Systems, Çukurova Üniversitesi Teknokent (Gramer ve Çeviri Motoru, `engine/gunes_dili.py`)
 * **3. Yazar & Mimari Lideri:** Dağhan Dağlı ([@lexovian](https://github.com/lexovian)) — Toros Science High School, MEV (Toros University)
-* **4. Yazar & Platform Mühendisliği Lideri:** Semih Salar — ITouch Systems, Çukurova Teknokent (Kozmik ve Felsefi Arşiv, `archive/`)
+* **4. Yazar & Platform Mühendisliği Lideri:** Semih Salar — ITouch Systems, Çukurova Üniversitesi Teknokent (Kozmik ve Felsefi Arşiv, `archive/`)
 * **5. Yazar & Akademik Koordinasyon:** Zerrin Dağlı ([@jesmaat](https://github.com/jesmaat)) — Mersin University & Yusuf Kalkavan Anatolian High School
 * **Tescilli Patent Öncelikleri:**
   * TÜRKPATENT TR 2026/016285 (*WERR Engine & OED - Waves & Errors Reflex Resonator*, Başvuru: 22.09.2026)
@@ -27,9 +27,9 @@
   * **Başlık:** *«Güneş Dili: Deterministic Morpho-Semantic Tokenization, Machine-Checked Lean 4 Verification, and Bio-Synthetic Neural Resonance in the WERR Corpus»*
   * **Yazarlar & Kurumsal Künyeler:**
     * 1. Volkan Dağlı (Anadolu University & ITouch Systems, ORCID: 0009-0000-1587-8703, `ask@answerr.me`)
-    * 2. Bekirhan Dağlı (ITouch Systems, Çukurova Teknokent)
+    * 2. Bekirhan Dağlı (ITouch Systems, Çukurova Üniversitesi Teknokent)
     * 3. Dağhan Dağlı (Toros Science High School, MEV (Toros University), ORCID: 0009-0003-2492-8313)
-    * 4. Semih Salar (ITouch Systems, Çukurova Teknokent)
+    * 4. Semih Salar (ITouch Systems, Çukurova Üniversitesi Teknokent)
     * 5. Zerrin Dağlı (Mersin University & Yusuf Kalkavan Anatolian High School, ORCID: 0000-0001-9490-6425)
 * **Tescilli Çift Patent Önceliğiyle Koruma:**
   * TÜRKPATENT TR 2026/016285 (*OED / MFNS / WERR Karar Motoru*, Başvuru: 22.09.2026)

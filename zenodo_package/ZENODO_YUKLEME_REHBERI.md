@@ -44,12 +44,12 @@ Sıralama WERR külliyatı ve akademik protokol standartlarına uygundur:
 
 1. **1. Yazar (First / Corresponding Author):**
    * **Family name:** `Dağlı` | **Given names:** `Volkan`
-   * **Affiliation:** `Anadolu University & ITouch Systems, Çukurova Teknokent, Türkiye`
+   * **Affiliation:** `Anadolu University & ITouch Systems, Çukurova Üniversitesi Teknokent, Türkiye`
    * **ORCID:** `0009-0000-1587-8703`
 
 2. **2. Yazar:**
    * **Family name:** `Dağlı` | **Given names:** `Bekirhan`
-   * **Affiliation:** `ITouch Systems, Çukurova Teknokent, Türkiye`
+   * **Affiliation:** `ITouch Systems, Çukurova Üniversitesi Teknokent, Türkiye`
 
 3. **3. Yazar:**
    * **Family name:** `Dağlı` | **Given names:** `Dağhan`
@@ -58,7 +58,7 @@ Sıralama WERR külliyatı ve akademik protokol standartlarına uygundur:
 
 4. **4. Yazar:**
    * **Family name:** `Salar` | **Given names:** `Semih`
-   * **Affiliation:** `ITouch Systems, Çukurova Teknokent, Türkiye`
+   * **Affiliation:** `ITouch Systems, Çukurova Üniversitesi Teknokent, Türkiye`
 
 5. **5. Yazar:**
    * **Family name:** `Dağlı` | **Given names:** `Zerrin`
