@@ -27,6 +27,24 @@
 [![arXiv DOI: 10.48550/arXiv.2610.14263](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2610.14263-b31b1b.svg)](https://doi.org/10.48550/arXiv.2610.14263)
 [![CrocSwap PR #226: Incorporated](https://img.shields.io/badge/CrocSwap%20Main-PR%20%23226%20Incorporated%20(50d76881)-brightgreen.svg)](https://github.com/CrocSwap/integer-mult-bounds/blob/50d768818f579d4e165b4c257c6ee25bca300802/docs/research/community-reconciliation-next100-review.md)
 
+<p align="center">
+  <img src="assets/demo.gif" alt="Güneş Dili & Güneş-Lang Demo" width="820" />
+</p>
+
+## ⚡ 30-Second Quick Start
+
+```bash
+git clone https://github.com/pCwOrM/gunes-dili.git && cd gunes-dili
+python -c "from gunes_lang.lexer import Lexer; print([(t.type.name, t.literal) for t in Lexer('ag x wer 53').tokenize()[:-1]])"
+python -m pytest tests -q
+```
+
+**Observed Output:**
+```text
+[('AG', None), ('IDENTIFIER', None), ('WER', None), ('NUMBER', 53)]
+10 passed in 0.10s
+```
+
 ---
 
 ## 📚 Kılavuzlar, Çevrimdışı Portal ve Özel Dokümantasyon
