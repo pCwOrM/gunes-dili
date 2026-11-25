@@ -45,6 +45,14 @@ python -m pytest tests -q
 10 passed in 0.10s
 ```
 
+## 🧠 Codebase Knowledge Graph & Call-Flow
+
+<p align="center">
+  <img src="assets/architecture_graph.svg" alt="Güneş Dili Codebase Knowledge Graph" width="860" />
+</p>
+
+> Explore the interactive AST dependency graph ([`docs/architecture/graph.html`](docs/architecture/graph.html)) or the Mermaid call-flow explorer ([`docs/architecture/callflow.html`](docs/architecture/callflow.html)), generated deterministically via `graphify`.
+
 ---
 
 ## 📚 Kılavuzlar, Çevrimdışı Portal ve Özel Dokümantasyon
